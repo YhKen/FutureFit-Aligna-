@@ -1,0 +1,8 @@
+{
+  "method": "Independent Python Fraction for money and datetime iteration for schedule; no JS helper reuse; independent set intersection and circular distance for pair feasibility",
+  "incomeCases": 600,
+  "scheduleCases": 48,
+  "checks": 1796,
+  "passed": true,
+  "pairFeasibilityCases": 500
+}

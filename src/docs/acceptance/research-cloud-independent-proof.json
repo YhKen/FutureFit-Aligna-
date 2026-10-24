@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "comparisons": 110,
+  "scope": "Independent Python refit of current Firebase-derived cohort, excluding current withdrawn/unconsented rows; not real human validity.",
+  "testedAt": "2026-10-23T13:05:55.023Z",
+  "sourceDigest": "prototype-evidence:51347d0c02651088",
+  "cloudSource": "aligna_research_prototypes/PdRLSAORDGZLgUIucoVLhyll3Lz1_xIa9M0PKvNq3y2EYkres",
+  "synthetic": true
+}

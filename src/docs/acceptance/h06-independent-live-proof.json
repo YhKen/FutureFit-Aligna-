@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-22T15:35:07.755993+00:00",
+  "allPassed": true,
+  "matchMethod": "Independent Python Fraction and Euclidean dot-product calculation on saved vectors",
+  "coverageFraction": "1/3",
+  "coverage": 33,
+  "cosine": 0.5773502691896258,
+  "cosinePercent": 58,
+  "timeMethod": "Python datetime fixed UTC offsets from the saved browser proposal",
+  "jst": "2026-11-06T14:15",
+  "utc": "2026-11-06T05:15:00.000Z",
+  "taskScores": [
+    83,
+    83
+  ],
+  "scope": "Arithmetic and timestamp checks only; not validation of weights or human observations"
+}

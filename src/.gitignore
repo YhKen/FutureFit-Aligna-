@@ -1,0 +1,15 @@
+.vercel
+.env*
+!.env.example
+node_modules/
+public/
+*.log
+work/
+*-private.json
+*credentials*.json
+*service-account*.json
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+START-HERE.txt

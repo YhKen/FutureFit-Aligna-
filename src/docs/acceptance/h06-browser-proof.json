@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-10-22T15:24:38.658Z",
+  "syntheticOnly": true,
+  "proposalSubmittedViaBrowser": true,
+  "profileAndProposalExpandSeparately": true,
+  "languageAndWidthChecks": [
+    {
+      "content": 305,
+      "lang": "en",
+      "page": "applications",
+      "text": "Search role or name\nStage\nAll\nSubmitted\nUnder review\nInterview invitation\nInterview completed\nNot progressing\nWithdrawn\nQA Synthetic Studio — test only\nH06 QA resource and records — SYNTHETIC ONLY 1792682242382\n\nCompared with the posting frozen at application · v1\n\nInterview invitation\n\nInterview time: 5 Nov 2026, 10:30 · JST (UTC+9)\n\nSYNTHETIC UI CHECK — no real appointment.\n\nResponse: Alternative time proposed\n\nCandidate proposal: 6 Nov 2026, 14:15 · JST (UTC+9)\nSYNTHETIC browser test: alternative slot, not a real appointment.\n\n33%\nJob description skill coverage\n58% · Cosine\nRecorded skills 2\nMathematics\nCritical Thinking\nTo add / confirm 4\nManagement of Financial Resources\nJudgment and De",
+      "viewport": 305
+    },
+    {
+      "content": 305,
+      "lang": "en",
+      "page": "formal-work",
+      "text": "← Back to applications\n\nFUTURE FIT / WORK SAMPLES\n\nShow your thinking through a work task.\n\nReload recordsReview, corrections and clarification ↗\n\nH06 QA resource and records — SYNTHETIC ONLY 1792682242382 · SYNTHETIC H06 QA\n\nThese are numerical checks and observations from this task, not population rankings, verified competence or a hiring decision. Existing skill-match scores do not change automatically.\n\nWhich handover records can we confirm · B\n\nformal-work-v1 · formal-rubric:2d5526ad706e17fb · 25 min · Independent; calculator and spreadsheet allowed\n\nLinked job skill IDs：skill:Mathematics, skill:Critical%20Thinking, skill:Quality%20Control%20Analysis, skill:Complex%20Problem%20Solving ·",
+      "viewport": 305
+    },
+    {
+      "content": 305,
+      "heading": "Tunjukkan cara berfikir melalui tugasan kerja.",
+      "lang": "ms",
+      "page": "formal-work",
+      "viewport": 305
+    },
+    {
+      "content": 305,
+      "heading": "Tunjukkan cara berfikir melalui tugasan kerja.",
+      "lang": "ms",
+      "page": "formal-work-final",
+      "viewport": 305
+    },
+    {
+      "content": 305,
+      "heading": "把思路放进一份实际任务。",
+      "lang": "zh",
+      "page": "formal-work-final",
+      "viewport": 305
+    },
+    {
+      "content": 305,
+      "heading": "Show your thinking through a work task.",
+      "lang": "en",
+      "page": "formal-work-final",
+      "viewport": 305
+    }
+  ],
+  "hrSameProposalVisible": true,
+  "hrNoOpBrowserSavePreservedProposal": true,
+  "finalSavedNotice": "Saved.",
+  "hrTaskScores": [
+    83,
+    83
+  ],
+  "interfacesRetainUserAuthoredLanguage": true,
+  "allRecordedViewsNoHorizontalOverflow": true
+}

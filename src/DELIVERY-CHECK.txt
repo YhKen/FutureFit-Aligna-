@@ -1,0 +1,60 @@
+Future Fit 合并验收 2026-10-22
+
+正式网站 https://aligna-two.vercel.app/
+最终部署 dpl_2tfY3YMLmoaCCsCG9mzcv55Urx9N
+Firebase project-d32d7，保持免费服务，没有绑卡或启用付费。
+
+本轮已正式验证
+1. 全新合成账号注册，收到并完成邮箱验证。
+2. PDF、DOCX、TXT 简历自动填写两段教育、两段经历及技能。
+3. 30 题后真实触发补题，完成 50 个不同题目；全部选择值与云端一致。
+4. 记忆 6 轮和规则切换 24 题，三个计时阶段；独立重算云端原始记录。
+5. 两个挑战完成后才进入工作区；职业参考每组五个，目标与学习进度保存后刷新恢复。
+6. 新账号申请既有测试职位，HR 查看证据、保存备注和站内面试邀请；求职者接受。撤回后 HR 读取申请和备注被拒，分享资料清空。
+7. H01 三项结构化技能、一项产出和薪资范围真实发布。无修改保存不加版本。
+8. 新申请冻结完整 v1 职位。公开职位改成 v2 后，新预览覆盖率 100%，原申请两端仍为 60% / 75%。
+9. 新闻真实抓取 90 条，免费新型号成功生成五条三语摘要并保存用量。两条无来源扩写摘要被拒。
+10. 真实审核账号完成批准、撤回和恢复；公开目录与五条独立审计读回通过，旧页面的重复提交被拒。
+11. 相同行业合成订阅的路线版本与生成时间随撤回和恢复更新，不相关行业保留原版本。测试订阅已恢复。
+12. 无职业关联的旧队列条目现在由后台阻止发布，避免状态与公开目录不一致。
+
+检查结果
+41 项 Node 测试通过；静态构建 144 个页面或资源及 vendor。
+28 项新增 H01 规则检查通过，原有私人权限与回归保留。
+新规则已明确确认并发布。最新合并源码与验收记录同步至 GitHub；正式部署与代码提交分别记录。
+
+尚未完成
+HR 正式任务、标准解、独立评分者与相关图表材料尚未交齐。
+132 项浏览器尺寸与语言检查通过；3 账号、4 会话及 8 个同时 API 请求通过。实体手机与大规模容量测试另验。
+本轮无足够正文支持的正向技能需求变化，未编造学习优先级提升；相关数学由受控测试验证。
+Department of Labor 来源本轮不可用；失败保留，日调用达到 20 后停止，不走付费回退。
+
+边界
+覆盖与相似度是透明的资料对照工具，不是录用概率。
+自评、公开练习和游戏不认证 IQ、诚实、完整工作能力或技能达标。
+所有验收使用合成求职资料，密码、令牌和 Secret 不进交付包。
+
+本轮修复
+手机顶部按钮及职位百分比溢出；面试标题、证据类型和题数文案；旧账号覆盖门槛；公司输入加载与语言切换；同职位并发冲突；重复申请反馈；收藏按账号隔离。
+网络故障采用真实云端提交后的丢失确认注入；重试读回，不重复写入。
+
+Shared job description acceptance follow-up 2026-10-22
+- 55 Node tests pass; production dpl_BhhR1ibxXXUofVd8mHAxEPX9CKT7.
+- Frozen application: both authenticated reads and actual Chinese UI show 60% coverage / 75% cosine; all three localized advice renderers match.
+- HR sees the same per-skill advice; private learning progress remains hidden.
+- Structured-only skill requirements receive learning suggestions.
+- Unchanged invitations preserve accepted/declined replies; rescheduling and injected failures were read back from Firebase. Test state restored.
+- Updated 18-page acceptance PDF and 45-page beginner algorithm guide are in docs/acceptance.
+Formal work samples 2026-10-22 latest
+- App code: 69bcf2c; production: dpl_AajPmzYr1XQ4HVNCeyD9GzphuPYu.
+- Two original tasks, each A/B, declared conditions, reference answers and four anchored criteria.
+- Browser A-form journey and production API B-form journey passed; actual Firebase readback, draft privacy, immutable submissions/reviews and withdrawal denial verified.
+- Independent Python dynamic programming, SQLite and Fraction arithmetic match reference answers and saved review totals.
+- New rules 154 checks, existing regression 131, Node tests 49. No paid services.
+- Final master PDF 16 pages; algorithm beginner guide 40 pages. Professional validity, independent human raters, norms and form equivalence remain pending.
+
+Latest follow-up 2026-10-22
+Code 57a1bc4; production dpl_9srg2KRKEH9PGRnYCtwZuRUsndXp.
+Append-only corrections, candidate clarification, per-task-consented blind second rating, private profile/avatar/theme and Settings terms/sign-out delivered.
+25 production checks +8 withdrawal read denials; independent Fraction arithmetic; 101 new +309 prior permission checks. Node55, static assets154.
+Updated master18 pages, beginner guide45 pages. Actual professional human agreement study is still pending.

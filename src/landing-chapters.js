@@ -1,0 +1,10 @@
+const copy={
+ zh:{eyebrow:'为你的下一步',heading:'工作有很多种。\n适合你的，不止一种。',cta:'从我开始',cards:[['看见你的优势','经历 · 兴趣 · 做事方式','每一段经历，都有用处。'],['找到值得投的职位','真实 Job description · 技能对照','看看哪里合拍。'],['把下一步学到手','课程 · 作品 · 可选证书','有方向，也有办法。']],footer:'你的经历，值得一个新去处。'},
+ en:{eyebrow:'YOUR NEXT CHAPTER',heading:'A world of work.\nMore than one way to fit.',cta:'Start with me',cards:[['See your strengths','Experience · Interests · Work style','There’s more to your experience.'],['Find roles worth a look','Real job descriptions · Skill matches','See where you click.'],['Make your next move','Courses · Work samples · Credentials','A direction. And a way forward.']],footer:'Your experience has somewhere new to go.'},
+ ms:{eyebrow:'LANGKAH SETERUSNYA',heading:'Banyak jenis kerja.\nLebih daripada satu yang sesuai.',cta:'Mula dengan saya',cards:[['Kenali kekuatan anda','Pengalaman · Minat · Cara bekerja','Setiap pengalaman ada nilainya.'],['Cari jawatan yang berbaloi','Job description sebenar · Padanan kemahiran','Lihat yang serasi.'],['Bina langkah seterusnya','Kursus · Hasil kerja · Kelayakan','Ada arah. Ada caranya.']],footer:'Pengalaman anda boleh dibawa lebih jauh.'}
+};
+export function mountLandingSkills(section,lang='en'){
+ const c=copy[lang]||copy.en;
+ section.innerHTML=`<div class="chapter-intro"><div><span class="chapter-eyebrow">01 / ${c.eyebrow}</span><h2>${c.heading.replace('\n','<br>')}</h2></div><a href="account.html?role=seeker">${c.cta}<span>↗</span></a></div><div class="chapter-cards">${c.cards.map((card,i)=>`<a class="chapter-card chapter-${i}" href="account.html?role=seeker"><div class="chapter-card-top"><span>0${i+1}</span><span>↗</span></div><div class="chapter-art" aria-hidden="true">${i===0?'<div class="chapter-sheets"><i></i><i></i><i>✳</i></div>':i===1?'<div class="chapter-window"><i></i><i></i><b>✓</b><span></span><span></span></div>':'<div class="chapter-steps"><i></i><i></i><i>↗</i><b>✧</b></div>'}</div><small>${card[1]}</small><h3>${card[0]}</h3><div class="chapter-card-end"><span>${card[2]}</span><span>→</span></div></a>`).join('')}</div><div class="chapter-footer"><span>FUTURE FIT</span><span>${c.footer}</span></div>`;
+ return()=>{};
+}

@@ -1,0 +1,17 @@
+{
+  "testedAt": "2026-10-23T11:32:36.560Z",
+  "passed": true,
+  "nodeTestCases": 15,
+  "independentNumericComparisons": 11268,
+  "checks": [
+    {
+      "name": "matching, frozen inputs, privacy invariants and sensitivity",
+      "passed": true
+    },
+    {
+      "name": "independent Python arithmetic",
+      "passed": true
+    }
+  ],
+  "scope": "Deterministic synthetic software audit only. No optimal weights, human agreement, professional validity or fairness certification is granted."
+}

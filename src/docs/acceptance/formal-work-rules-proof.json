@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-10-22T11:24:08.796221+00:00",
+  "project": "project-d32d7",
+  "rulesSha256": "5405c3fa6fd397d2df270ba7d44937390b72a064d8230aeb4923f75870913e73",
+  "formalPermissionChecks": 154,
+  "priorRegressionChecks": 131,
+  "allPassed": true,
+  "publishedAfterExplicitConfirmation": true,
+  "consolePublishedTime": "2026-10-22 18:18 Asia/Jakarta",
+  "priorPublishedRulesMatchedRepositoryHEAD": true,
+  "scope": "Assignments, private draft, explicit submitted sharing, immutable posting-HR review, withdrawal access closure; no raw CV/questionnaire/game expansion"
+}

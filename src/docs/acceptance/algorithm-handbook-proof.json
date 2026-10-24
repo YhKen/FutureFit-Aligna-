@@ -1,0 +1,125 @@
+{
+  "pages": 22,
+  "sourceCommit": "4bf72bc25b774f6f9bd776909a3152dfd2ba7a20",
+  "textCharacters": 14756,
+  "pageManifest": [
+    {
+      "page": 1,
+      "title": "先把整件事看懂",
+      "sources": ""
+    },
+    {
+      "page": 2,
+      "title": "我们用什么技术，分别做什么",
+      "sources": ""
+    },
+    {
+      "page": 3,
+      "title": "题库到底包含哪些，哪些没有",
+      "sources": ""
+    },
+    {
+      "page": 4,
+      "title": "CV 怎样变成可用资料",
+      "sources": "cv.js；cv-profile.js；profile-fields.js"
+    },
+    {
+      "page": 5,
+      "title": "下一题是怎样选出来的",
+      "sources": "engine-v2.js：next()、summarize()"
+    },
+    {
+      "page": 6,
+      "title": "30 题不够，什么时候继续问",
+      "sources": "evidence-standard.js；assessment-v2.js"
+    },
+    {
+      "page": 7,
+      "title": "职业推荐的排序怎么算",
+      "sources": "engine-v2.js：mapping()；career-shortlist.js"
+    },
+    {
+      "page": 8,
+      "title": "HR 和求职者的配对分怎么算",
+      "sources": "match-engine.js；job-requirements.js"
+    },
+    {
+      "page": 9,
+      "title": "点技能，为什么能看见证据",
+      "sources": "integration-contract.js；match-engine.js；match-trace-panel.js"
+    },
+    {
+      "page": 10,
+      "title": "两个小游戏实际分析了什么",
+      "sources": "games-v2.js；switch-challenge.js；integrated-evidence.js"
+    },
+    {
+      "page": 11,
+      "title": "缺什么，先学什么，怎么算",
+      "sources": "career-growth.js；transition-core.js；jd-learning-data.js"
+    },
+    {
+      "page": 12,
+      "title": "三个月、五个月怎样排",
+      "sources": "transition-core.js：transitionPlan()；future-engine.js：learningSchedule()"
+    },
+    {
+      "page": 13,
+      "title": "未来情景怎样改变建议",
+      "sources": "future-engine.js；trend-evidence.js"
+    },
+    {
+      "page": 14,
+      "title": "新闻怎样抓、摘要、审核和更新",
+      "sources": "lib/news-pipeline.js；news-policy.js；news-personalize.js"
+    },
+    {
+      "page": 15,
+      "title": "HR 正式任务与标准答案怎样来",
+      "sources": "formal-work-data.js；lib/formal-work-keys.js"
+    },
+    {
+      "page": 16,
+      "title": "怎样由第二种方法核对",
+      "sources": "tests/validation-stat-crosscheck.py；docs/acceptance/*proof.json"
+    },
+    {
+      "page": 17,
+      "title": "可信度与矛盾，究竟看什么",
+      "sources": "interview-evidence-charts.js；integrated-evidence.js；evidence-standard.js"
+    },
+    {
+      "page": 18,
+      "title": "真人盲评与一致性统计",
+      "sources": "validation-statistics.js；lib/validation-service.js"
+    },
+    {
+      "page": 19,
+      "title": "图表名字和正确读法",
+      "sources": "jd-sankey.js；interview-evidence-charts.js；validation-view.js"
+    },
+    {
+      "page": 20,
+      "title": "Firebase 怎样保存与保护结果",
+      "sources": "firebase/firestore.rules；seeker-records.js；company-verification-store.js"
+    },
+    {
+      "page": 21,
+      "title": "这一版实际验收到了哪里",
+      "sources": ""
+    },
+    {
+      "page": 22,
+      "title": "下一步怎么把算法做得更准",
+      "sources": ""
+    }
+  ],
+  "layoutAssertionsPassed": true,
+  "pdfSHA256": "2dc5d1e0791ebd72cd4b3e2dd6e9da4868ddc8a17183eb35ac5b46eac08d2908",
+  "renderedPagesInspected": 22,
+  "latestChangedPagesRerendered": [
+    21,
+    22
+  ],
+  "scope": "Current implementation, not a claim of human validity."
+}

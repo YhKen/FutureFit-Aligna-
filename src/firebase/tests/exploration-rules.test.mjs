@@ -1,0 +1,26 @@
+import fs from 'node:fs';import {initializeTestEnvironment,assertSucceeds,assertFails} from '@firebase/rules-unit-testing';
+import {doc,setDoc,getDoc,updateDoc,deleteDoc,getDocs,collection} from 'firebase/firestore';
+import {extractLifeSkills,lifeRecord} from '../../life-skills-core.js';import {tryRecord} from '../../career-try-core.js';
+const env=await initializeTestEnvironment({projectId:'demo-futurefit-validation',firestore:{host:'127.0.0.1',port:8180,rules:fs.readFileSync(process.env.FUTUREFIT_RULES_PATH||new URL('../firestore.rules',import.meta.url),'utf8')}});
+const db=id=>env.authenticatedContext(id,{email_verified:true}).firestore(),owner=db('explore-owner'),hr=db('hr'),other=db('explore-other'),unverified=env.authenticatedContext('explore-owner',{email_verified:false}).firestore(),anon=env.unauthenticatedContext().firestore(),worker=env.authenticatedContext('aligna-news-worker',{email_verified:true,alignaNewsWorker:true}).firestore();let checks=0;
+const pass=async p=>{await assertSucceeds(p);checks++;},deny=async p=>{await assertFails(p);checks++;},ref=(db,col,id)=>doc(db,'aligna_users','explore-owner',col,id),now='2026-10-23T10:15:00.000Z';
+const text='I ran a stall, counted stock and served customers.',claims=extractLifeSkills(text),life=lifeRecord({id:'life-case',text,claims,selected:claims.map(c=>c.skillId),now}),trial=tryRecord({id:'try-case',goalId:'13-2011.00',templateId:'records',locale:'en',answers:{selected:[],sum:'29',mismatch:true,explanation:'Synthetic records explanation.',verification:'Check source logs.'},reflection:{ease:3,interest:4,liked:'Checking records.',hard:'Writing clearly.'},startedAt:'2026-10-23T10:00:00.000Z',now});
+try{
+ await env.clearFirestore();
+ for(const bad of [hr,other,unverified,anon,worker]){await deny(setDoc(ref(bad,'life_experiences','life-case'),life));await deny(setDoc(ref(bad,'career_trials','try-case'),trial));}
+ for(const patch of [{verified:true},{sourceType:'verified-work'},{claims:[]},{text:'x'},{active:false},{unexpected:'raw'},{claims:[{...life.claims[0],verified:true}]},{claims:[{...life.claims[0],confidence:'certified'}]}])await deny(setDoc(ref(owner,'life_experiences','life-case'),{...life,...patch}));
+ await pass(setDoc(ref(owner,'life_experiences','life-case'),life));await pass(getDoc(ref(owner,'life_experiences','life-case')));await pass(getDocs(collection(owner,'aligna_users','explore-owner','life_experiences')));
+ for(const bad of [hr,other,unverified,anon,worker]){await deny(getDoc(ref(bad,'life_experiences','life-case')));await deny(getDocs(collection(bad,'aligna_users','explore-owner','life_experiences')));}
+ await deny(updateDoc(ref(owner,'life_experiences','life-case'),{text:'Changed original description.'}));await deny(updateDoc(ref(owner,'life_experiences','life-case'),{verified:true}));await deny(updateDoc(ref(owner,'life_experiences','life-case'),{claims:[]}));await deny(deleteDoc(ref(owner,'life_experiences','life-case')));
+ await pass(updateDoc(ref(owner,'life_experiences','life-case'),{active:false,updatedAt:'2026-10-23T10:16:00.000Z'}));await deny(updateDoc(ref(owner,'life_experiences','life-case'),{active:true}));
+ for(const patch of [{verified:true},{templateId:'forged'},{goalId:'not-a-role'},{definitionHash:'forged'},{reflection:{...trial.reflection,interest:6}},{reflection:{...trial.reflection,ease:0}},{answers:{...trial.answers,explanation:''}},{result:{...trial.result,verified:true}},{result:{...trial.result,checks:[{key:'hiring',status:'pass'}]}},{sourceType:'verified-work'},{unexpected:'raw'}])await deny(setDoc(ref(owner,'career_trials','try-case'),{...trial,...patch}));
+ await pass(setDoc(ref(owner,'career_trials','try-case'),trial));await pass(getDoc(ref(owner,'career_trials','try-case')));await pass(getDocs(collection(owner,'aligna_users','explore-owner','career_trials')));
+ for(const bad of [hr,other,unverified,anon,worker]){await deny(getDoc(ref(bad,'career_trials','try-case')));await deny(getDocs(collection(bad,'aligna_users','explore-owner','career_trials')));}
+ await deny(updateDoc(ref(owner,'career_trials','try-case'),{reflection:{...trial.reflection,interest:5}}));await deny(deleteDoc(ref(owner,'career_trials','try-case')));
+ const manyText='I counted stock; reconciled cash; managed a budget; served customers; handled complaints; ran a stall; scheduled appointments; organised an event; coordinated volunteers; assigned roles; tutored; kept attendance; wrote reports; negotiated prices; used excel;',manyClaims=extractLifeSkills(manyText),many=lifeRecord({id:'life-twelve',text:manyText,claims:manyClaims,selected:manyClaims.map(c=>c.skillId),now});
+ if(many.claims.length!==12)throw Error('maximum-case-not-exercised');
+ await pass(setDoc(ref(owner,'life_experiences','life-twelve'),many));await pass(getDoc(ref(owner,'life_experiences','life-twelve')));
+ await pass(updateDoc(ref(owner,'life_experiences','life-twelve'),{active:false,updatedAt:now}));
+ await deny(setDoc(ref(owner,'life_experiences','life-forged-last'),{...many,experienceId:'life-forged-last',claims:many.claims.map((c,i)=>i===11?{...c,verified:true}:c)}));
+ console.log(JSON.stringify({suite:'private-life-and-career-trials',passed:checks,failed:0}));
+}finally{await env.cleanup();}

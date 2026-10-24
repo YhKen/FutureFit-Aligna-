@@ -1,0 +1,62 @@
+{
+  "environment": "Firestore Emulator, demo project only",
+  "suites": [
+    {
+      "checks": 24,
+      "passed": true,
+      "scope": "rules checks: verified auth, owner drafts, publish visibility, close, cross-account isolation, schema, private assessment isolation."
+    },
+    {
+      "checks": 30,
+      "passed": true,
+      "scope": "application permission checks"
+    },
+    {
+      "checks": 30,
+      "passed": true,
+      "scope": "H01 production-contract rule checks."
+    },
+    {
+      "checks": 47,
+      "passed": true,
+      "scope": "seeker rules checks: owner-only persistence, immutable attempts, no self-verification, tool conditions, learning actions, settings, routes and news receipts."
+    },
+    {
+      "checks": 26,
+      "passed": true,
+      "scope": "news rules checks: worker isolation, owner consent, stop, private profiles, no self-approval and immutable audit."
+    },
+    {
+      "checks": 154,
+      "passed": true,
+      "scope": "four forms; private drafts; immutable submissions and reviews; reviewer identity; withdrawn sharing; unrelated users and news worker denied"
+    },
+    {
+      "checks": 101,
+      "passed": true,
+      "scope": "atomic correction history; stale/forged writes; explicit clarification; candidate-controlled blind review; no CV or primary rating access; revocation and withdrawal"
+    },
+    {
+      "checks": 28,
+      "passed": true,
+      "scope": "alternative-time privacy and validation; immutable frozen basis; closed and withdrawn boundaries; exact task skill/output links; legacy withdrawal"
+    },
+    {
+      "checks": 126,
+      "passed": true,
+      "scope": "expert privacy; immutable frozen plans and opinions; candidate-only research consent and withdrawal; private append-only statistics; no validity pass; max-panel transaction"
+    },
+    {
+      "checks": 67,
+      "passed": true,
+      "scope": "private-life-and-career-trials"
+    },
+    {
+      "checks": 116,
+      "passed": true,
+      "scope": "career-tools-private-rules"
+    }
+  ],
+  "checks": 749,
+  "passed": true
+}

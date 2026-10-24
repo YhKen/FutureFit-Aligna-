@@ -1,0 +1,21 @@
+{
+  "testedAt": "2026-10-23T13:04:55.723Z",
+  "passed": true,
+  "synthetic": true,
+  "jobId": "xIa9M0PKvNq3y2EYkres",
+  "learningPath": "aligna_users/PdRLSAORDGZLgUIucoVLhyll3Lz1/plans/skill-jd-xIa9M0PKvNq3y2EYkres--Communication",
+  "steps": [
+    true,
+    false,
+    false
+  ],
+  "hrCannotReadPrivateProgress": true,
+  "sameSnapshotBothRoles": "PdRLSAORDGZLgUIucoVLhyll3Lz1_xIa9M0PKvNq3y2EYkres--browser-final-1792760693307",
+  "sourceDigest": "prototype-evidence:51347d0c02651088",
+  "consent": {
+    "research": true,
+    "training": true,
+    "ratings": true,
+    "withdrawn": false
+  }
+}

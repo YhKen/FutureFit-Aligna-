@@ -1,0 +1,241 @@
+{
+  "version": "work-followup-live-v1",
+  "date": "2026-10-22T12:18:25.817Z",
+  "source": "production Firebase with existing synthetic accounts",
+  "applicationId": "icsrKzw7rATWG3B2QD2yeS8T69p2_IbyLRM1Iahi5FGGzJGqB",
+  "assignmentId": "icsrKzw7rATWG3B2QD2yeS8T69p2_IbyLRM1Iahi5FGGzJGqB--resource-plan--A",
+  "requestId": "icsrKzw7rATWG3B2QD2yeS8T69p2_IbyLRM1Iahi5FGGzJGqB--resource-plan--A--zJEoEXKyUwOO0byLxzCAuQV6UWl1",
+  "checks": [
+    {
+      "name": "pending request cannot be read by proposed reviewer",
+      "passed": true
+    },
+    {
+      "name": "posting HR cannot grant consent",
+      "passed": true
+    },
+    {
+      "name": "clarification and linked response survived readback",
+      "passed": true
+    },
+    {
+      "name": "correction chain preserved original score and linked revision",
+      "passed": true
+    },
+    {
+      "name": "approved reviewer API returns single blind response without first rating or profile",
+      "passed": true
+    },
+    {
+      "name": "reviewer direct read denied: aligna_work_reviews",
+      "passed": true
+    },
+    {
+      "name": "reviewer direct read denied: aligna_work_corrections",
+      "passed": true
+    },
+    {
+      "name": "reviewer direct read denied: aligna_applications",
+      "passed": true
+    },
+    {
+      "name": "reviewer direct read denied: aligna_work_attempts other task",
+      "passed": true
+    },
+    {
+      "name": "reviewer direct read denied: aligna_users",
+      "passed": true
+    },
+    {
+      "name": "approved reviewer direct reads specific assignment and submitted answer",
+      "passed": true
+    },
+    {
+      "name": "original rating remains unchanged after correction",
+      "passed": true
+    },
+    {
+      "name": "frozen application and match data unchanged by followup",
+      "passed": true
+    },
+    {
+      "name": "two simultaneous corrections produce one version; stale request rejected",
+      "passed": true
+    },
+    {
+      "name": "old clarification retry after rating version changed is rejected without duplication",
+      "passed": true
+    },
+    {
+      "name": "reviewer cannot read private sessions",
+      "passed": true
+    },
+    {
+      "name": "reviewer cannot read private games",
+      "passed": true
+    },
+    {
+      "name": "seeker and posting HR read identical scores, corrections, clarification and comparison",
+      "passed": true
+    },
+    {
+      "name": "second rating cannot be overwritten after submission",
+      "passed": true
+    },
+    {
+      "name": "revoked reviewer direct read denied: aligna_work_attempts",
+      "passed": true
+    },
+    {
+      "name": "revoked reviewer direct read denied: aligna_work_assignments",
+      "passed": true
+    },
+    {
+      "name": "revoked reviewer direct read denied: aligna_work_review_requests",
+      "passed": true
+    },
+    {
+      "name": "revoked reviewer direct read denied: aligna_work_independent_reviews",
+      "passed": true
+    },
+    {
+      "name": "revoked reviewer API access denied",
+      "passed": true
+    },
+    {
+      "name": "owner retains independent score after revoking future access",
+      "passed": true
+    }
+  ],
+  "numbers": {
+    "first": [
+      2,
+      3,
+      2,
+      3
+    ],
+    "current": [
+      2,
+      3,
+      2,
+      3
+    ],
+    "second": [
+      2,
+      2,
+      2,
+      3
+    ],
+    "firstSummary": {
+      "observed": 4,
+      "totalCriteria": 4,
+      "points": 10,
+      "maxPoints": 12,
+      "percent": 83,
+      "notObserved": 0,
+      "scope": "Observed criteria in this work sample only; not job-match score"
+    },
+    "currentSummary": {
+      "observed": 4,
+      "totalCriteria": 4,
+      "points": 10,
+      "maxPoints": 12,
+      "percent": 83,
+      "notObserved": 0,
+      "scope": "Observed criteria in this work sample only; not job-match score"
+    },
+    "secondSummary": {
+      "observed": 4,
+      "totalCriteria": 4,
+      "points": 9,
+      "maxPoints": 12,
+      "percent": 75,
+      "notObserved": 0,
+      "scope": "Observed criteria in this work sample only; not job-match score"
+    },
+    "originalComparison": {
+      "dimensions": [
+        {
+          "criterionId": "numeracy",
+          "first": 2,
+          "second": 2,
+          "paired": true,
+          "difference": 0
+        },
+        {
+          "criterionId": "constraints",
+          "first": 3,
+          "second": 2,
+          "paired": true,
+          "difference": -1
+        },
+        {
+          "criterionId": "reasoning",
+          "first": 2,
+          "second": 2,
+          "paired": true,
+          "difference": 0
+        },
+        {
+          "criterionId": "verification",
+          "first": 3,
+          "second": 3,
+          "paired": true,
+          "difference": 0
+        }
+      ],
+      "paired": 4,
+      "exact": 3,
+      "agreementPercent": 75,
+      "meanAbsoluteDifference": 0.25,
+      "scope": "Descriptive agreement for this task only; not inter-rater reliability, ability or hiring probability",
+      "reliabilityStatus": "requires-independent-human-sample-by-criterion-and-equivalent-conditions"
+    },
+    "currentComparison": {
+      "dimensions": [
+        {
+          "criterionId": "numeracy",
+          "first": 2,
+          "second": 2,
+          "paired": true,
+          "difference": 0
+        },
+        {
+          "criterionId": "constraints",
+          "first": 3,
+          "second": 2,
+          "paired": true,
+          "difference": -1
+        },
+        {
+          "criterionId": "reasoning",
+          "first": 2,
+          "second": 2,
+          "paired": true,
+          "difference": 0
+        },
+        {
+          "criterionId": "verification",
+          "first": 3,
+          "second": 3,
+          "paired": true,
+          "difference": 0
+        }
+      ],
+      "paired": 4,
+      "exact": 3,
+      "agreementPercent": 75,
+      "meanAbsoluteDifference": 0.25,
+      "scope": "Descriptive agreement for this task only; not inter-rater reliability, ability or hiring probability",
+      "reliabilityStatus": "requires-independent-human-sample-by-criterion-and-equivalent-conditions"
+    }
+  },
+  "browser": {
+    "clarificationSubmitted": true,
+    "correctionAppended": true,
+    "responseLinked": true,
+    "candidateApproved": true,
+    "secondAccountSubmitted": true
+  },
+  "allPassed": true
+}

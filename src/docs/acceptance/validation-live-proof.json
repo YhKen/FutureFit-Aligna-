@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-23",
+  "environment": "production Firebase project-d32d7",
+  "syntheticOnly": true,
+  "studyId": "study-qa-validation-20261023",
+  "checks": 23,
+  "readback": {
+    "expertOpinion": true,
+    "twoCredentials": true,
+    "candidateResearchConsent": true,
+    "twoIndependentRatings": true,
+    "statisticsReport": true,
+    "internalDecision": true,
+    "fractionalStatistic": 0.75,
+    "sourceCheck": "matches-current-sources"
+  },
+  "human": {
+    "experts": 0,
+    "pairedCases": 0,
+    "status": "pending-human-validation"
+  },
+  "demonstration": {
+    "experts": 1,
+    "pairedCases": 1,
+    "sCviAverage": 0.75,
+    "totalIcc": null
+  },
+  "denied": [
+    {
+      "role": "r1",
+      "collection": "aligna_validation_studies",
+      "denied": true
+    },
+    {
+      "role": "r1",
+      "collection": "aligna_validation_reports",
+      "denied": true
+    },
+    {
+      "role": "r2",
+      "collection": "aligna_work_reviews",
+      "denied": true
+    },
+    {
+      "role": "r2",
+      "collection": "aligna_work_independent_reviews",
+      "denied": true
+    },
+    {
+      "role": "seeker",
+      "collection": "aligna_validation_opinions",
+      "denied": true
+    }
+  ],
+  "rawPersonalDataIncluded": false,
+  "professionalValidity": "pending"
+}

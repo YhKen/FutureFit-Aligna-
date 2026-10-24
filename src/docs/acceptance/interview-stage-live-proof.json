@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-22T10:46:22.048Z",
+  "syntheticOnly": true,
+  "applicationId": "icsrKzw7rATWG3B2QD2yeS8T69p2_IbyLRM1Iahi5FGGzJGqB",
+  "productionHelper": "stageApplicationRecord",
+  "invitationWrittenAndReadBySeeker": true,
+  "seekerAcceptedReadByHR": true,
+  "duplicateSavePreservedAcceptedAndTimestamp": true,
+  "reschedulingResetToPending": true,
+  "seekerDeclinedReadByHR": true,
+  "duplicateSavePreservedDeclined": true,
+  "injectedNetworkFailureDidNotMutate": true,
+  "candidateUnchanged": true,
+  "noEmailSent": true,
+  "noRulesChanged": true,
+  "allPassed": true,
+  "originalInvitationFieldsRestored": true
+}

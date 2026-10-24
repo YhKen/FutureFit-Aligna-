@@ -1,0 +1,37 @@
+{
+  "version": "h06-local-gate-v1",
+  "checkedAt": "2026-10-22",
+  "baseline": "aligna-main-h05-completed.zip",
+  "scope": "HR joint acceptance gate for one synthetic job, candidate and application",
+  "localChecks": {
+    "command": "npm run test:h06",
+    "passed": 3,
+    "failed": 0,
+    "coverage": [
+      "H01 structured requirements are linked to the formal task",
+      "H03 task assignment, candidate submission and HR review read back",
+      "H04 review is saved with observed criteria and unrelated HR access is rejected",
+      "H05 invitation, candidate reply, idempotent resave and withdrawal rejection",
+      "three-language and 320px evidence records remain explicitly scoped"
+    ]
+  },
+  "fullRegression": {
+    "command": "node --test tests/*.test.mjs",
+    "passed": 60,
+    "failed": 0,
+    "buildAssets": 154
+  },
+  "existingEvidence": {
+    "sharedApplication": "docs/acceptance/shared-jd-live-proof.json",
+    "formalWork": "docs/acceptance/formal-work-live-proof.json",
+    "interview": "docs/acceptance/interview-stage-live-proof.json",
+    "responsive": "docs/acceptance/responsive-language-proof.json",
+    "mobile": "docs/acceptance/mobile-interaction-proof.json"
+  },
+  "limitations": [
+    "The local H06 gate uses an in-memory store and transaction adapter; it does not replace authenticated Firebase readback.",
+    "The supplied browser evidence uses Chromium viewport emulation, not physical iOS, Android or Safari certification.",
+    "All acceptance samples are synthetic; professional content validity and independent human-rater reliability remain pending."
+  ],
+  "secretsIncluded": false
+}

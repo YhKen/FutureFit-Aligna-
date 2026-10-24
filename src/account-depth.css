@@ -1,0 +1,55 @@
+/* A quiet, tactile surface. The form stays still while its controls lift. */
+body[data-page="account"] {
+  background:radial-gradient(ellipse at 15% 20%,#eee7db80,transparent 45%),radial-gradient(ellipse at 85% 75%,#e7e3f180,transparent 48%),#faf8f1!important;
+}
+#account.account-panel {
+  position:relative;isolation:isolate;
+  background:linear-gradient(145deg,#fffefa 0%,#fffdf8 58%,#f7f3ed 100%);
+  border:1px solid #e5ddcd;border-top-color:#fff;
+  box-shadow:0 1px 0 1px #ffffff inset,0 5px 0 -1px #ede7db,0 6px 0 #ded6c8,0 24px 50px -22px #6e607c45,0 7px 18px -10px #786b5930;
+}
+#account.account-panel .account-mark {
+  display:inline-grid;place-items:center;width:47px;height:47px;border-radius:16px;
+  background:linear-gradient(135deg,#fffdf7,#eae3d2);color:#9c8454;
+  box-shadow:inset 1px 1px 1px white,inset -1px -2px 2px #c9bfa14d,0 5px 10px #6b5d4820;
+}
+#account.account-panel input {
+  background:linear-gradient(#fcfbf8,#fff);border-color:#ded6c9;
+  box-shadow:inset 0 2px 4px #5c4f3d08,0 1px 0 #fff;
+  transition:border-color .2s,box-shadow .2s;
+}
+#account.account-panel input:focus {
+  border-color:#9b93ae;box-shadow:0 0 0 4px #ece7f0,inset 0 1px 2px #5c4f3d06;
+}
+#account.account-panel button,#account.account-panel a.social-button {
+  position:relative;min-height:46px;border-radius:18px!important;
+  background:linear-gradient(155deg,#fffef8,#f0ebde)!important;
+  border:1px solid #ddd4c2!important;border-top-color:#eee8dc!important;
+  color:#4d455d!important;line-height:1.45;
+  box-shadow:inset 0 1px 0 #fff,0 3px 0 #d9d0bd,0 7px 14px -6px #6b5c4825!important;
+  transition:transform .2s,box-shadow .2s,filter .2s;
+  -webkit-tap-highlight-color:transparent;
+}
+#account.account-panel button.primary,#account.account-panel a.primary {
+  background:linear-gradient(155deg,#55546f 0%,#41415c 55%,#38394f 100%)!important;
+  border-color:#414159!important;border-top-color:#77748c!important;color:#fffdf9!important;
+  box-shadow:inset 0 1px 0 #ffffff26,0 4px 0 #292a3e,0 10px 20px -7px #3e3c6552!important;
+}
+@media(hover:hover) and (pointer:fine) {
+  #account.account-panel button:not(:disabled):hover,#account.account-panel a.social-button:hover {
+    transform:translateY(-3px);
+    box-shadow:inset 0 1px 0 #fff,0 5px 0 #d9d0bd,0 12px 22px -8px #6b5c4838!important;
+  }
+  #account.account-panel button.primary:not(:disabled):hover,#account.account-panel a.primary:hover {
+    box-shadow:inset 0 1px 0 #ffffff35,0 6px 0 #292a3e,0 16px 24px -9px #3e3c6555!important;
+  }
+}
+#account.account-panel button:not(:disabled):active,#account.account-panel a.social-button:active {
+  transform:translateY(2px);box-shadow:inset 0 1px 3px #473b5120,0 1px 0 #cfc5b1!important;
+}
+#account.account-panel button.primary:not(:disabled):active,#account.account-panel a.primary:active {
+  box-shadow:inset 0 2px 5px #20203340,0 1px 0 #292a3e!important;
+}
+#account.account-panel button:disabled {transform:none;box-shadow:inset 0 1px 0 #fff,0 1px 0 #d9d0bd!important;}
+@media(max-width:520px) {#account.account-panel{padding:27px 23px;}#account #mode,#account #reset{font-size:13px;padding:12px 14px;}}
+@media(prefers-reduced-motion:reduce) {#account.account-panel button,#account.account-panel a.social-button,#account.account-panel input{transition:none!important;transform:none!important;}}

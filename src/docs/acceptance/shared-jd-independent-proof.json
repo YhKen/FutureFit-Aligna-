@@ -1,0 +1,8 @@
+{
+  "method": "Independent Python Fraction arithmetic and dot product",
+  "coverageExact": "3/5",
+  "cosine": 0.7453559924999299,
+  "perSkillContributionsChecked": 3,
+  "passed": true,
+  "proves": "Arithmetic implementation only; does not establish scientific validity of weights"
+}

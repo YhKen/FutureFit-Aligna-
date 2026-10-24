@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en" data-auth-pending>
+  <head><style>html[data-auth-pending] body{visibility:hidden}</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HR job requirement intake form" />
+    <title>Job requirement intake | Future Fit · 企业工作台</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="hiring-start.js"></script>
+  <link rel="stylesheet" href="shared.css"></head>
+  <body data-page="employer">
+    <header class="topbar">
+      <a class="brand" href="#main-content" aria-label="Future Fit · 企业工作台 home">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span>Future Fit · 企业工作台</span>
+      </a>
+      <div class="topbar-meta">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>本地草稿</span>
+        <span class="avatar" aria-label="HR / Manager">HR</span>
+      </div>
+    </header>
+
+    <main id="main-content" class="page-shell">
+      <section class="page-heading" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">EMPLOYER WORKSPACE / 企业工作台</p>
+          <h1 id="page-title">创建职位需求</h1>
+          <p class="intro">让合适的人，遇见合适的机会。完善岗位信息，明确技能与成长方向。</p>
+        </div>
+        <div class="completion-note" aria-label="Form status">
+          <span class="completion-icon" aria-hidden="true">✓</span>
+          <span><strong>12 fields</strong><br />to complete</span>
+        </div>
+      </section>
+
+      <form id="job-form" class="form-card" novalidate>
+        <section class="form-section" aria-labelledby="role-details-title">
+          <div class="section-heading">
+            <div class="section-number">01</div>
+            <div>
+              <h2 id="role-details-title">Role details</h2>
+              <p>Start with the essentials of this position.</p>
+            </div>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="job-title">Job title <span class="required">*</span></label>
+              <input id="job-title" name="jobTitle" type="text" placeholder="e.g. CISO" autocomplete="organization-title" required />
+              <p class="field-hint">Use the title candidates will see in the listing.</p>
+              <p class="error-message" data-error-for="job-title"></p>
+            </div>
+
+            <div class="field">
+              <label for="salary">Salary <span class="required">*</span></label>
+              <div class="input-with-prefix">
+                <span aria-hidden="true">RM</span>
+                <input id="salary" name="salary" type="number" min="0" step="0.01" placeholder="e.g. 8,000" inputmode="decimal" required />
+              </div>
+              <p class="field-hint">Enter the monthly salary budget.</p>
+              <p class="error-message" data-error-for="salary"></p>
+            </div>
+
+            <div class="field field-wide">
+              <label for="job-description">Job description <span class="required">*</span></label>
+              <textarea id="job-description" name="jobDescription" rows="4" placeholder="e.g. Monitor network traffic weekly and lead security improvements..." required></textarea>
+              <p class="error-message" data-error-for="job-description"></p>
+            </div>
+
+            <div class="field">
+              <label for="job-field">Job field <span class="required">*</span></label>
+              <input id="job-field" name="jobField" type="text" placeholder="e.g. Business, IT" required />
+              <p class="error-message" data-error-for="job-field"></p>
+            </div>
+
+            <div class="field">
+              <label for="location">Location <span class="required">*</span></label>
+              <input id="location" name="location" type="text" placeholder="e.g. Kuala Lumpur" required />
+              <p class="error-message" data-error-for="location"></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section" aria-labelledby="requirements-title">
+          <div class="section-heading">
+            <div class="section-number">02</div>
+            <div>
+              <h2 id="requirements-title">Candidate requirements</h2>
+              <p>Describe the skills and experience that matter most.</p>
+            </div>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="skills">Skills <span class="required">*</span></label>
+              <input id="skills" name="skills" type="text" placeholder="e.g. Python, XGBoost, Java OOP" required />
+              <p class="field-hint">Separate multiple skills with commas.</p>
+              <p class="error-message" data-error-for="skills"></p>
+            </div>
+
+            <div class="field">
+              <label for="soft-skills">Soft skills <span class="required">*</span></label>
+              <input id="soft-skills" name="softSkills" type="text" placeholder="e.g. Communication, leadership" required />
+              <p class="field-hint">List behaviours that support success in the role.</p>
+              <p class="error-message" data-error-for="soft-skills"></p>
+            </div>
+
+            <div class="field field-wide">
+              <label for="job-requirements">Job requirements <span class="required">*</span></label>
+              <textarea id="job-requirements" name="jobRequirements" rows="5" placeholder="e.g.&#10;Previous experience in document handling or administrative support is preferred.&#10;Excellent attention to detail and strong organisational skills." required></textarea>
+              <p class="field-hint">Add one requirement per line for easier reading.</p>
+              <p class="error-message" data-error-for="job-requirements"></p>
+            </div>
+
+            <div class="field field-wide">
+              <label for="future-skills">Future required skills <span class="required">*</span></label>
+              <input id="future-skills" name="futureSkills" type="text" placeholder="e.g. AI, automation, data analytics" required />
+              <p class="field-hint">Mention skills that may become important for this role.</p>
+              <p class="error-message" data-error-for="future-skills"></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section" aria-labelledby="work-outputs-title">
+          <div class="section-heading">
+            <div class="section-number">03</div>
+            <div>
+              <h2 id="work-outputs-title">Work outputs</h2>
+              <p>Describe the concrete results this person should deliver.</p>
+            </div>
+          </div>
+
+          <div class="field-grid">
+            <div class="field field-wide">
+              <label for="work-output-1">Work output 1</label>
+              <textarea id="work-output-1" name="workOutput1" rows="3" placeholder="e.g. Reconcile weekly orders and identify the reason for anomalies."></textarea>
+              <p class="field-hint">Describe an observable result, not only a personality trait.</p>
+            </div>
+
+            <div class="field field-wide">
+              <label for="work-output-1-skills">Related skill IDs or names</label>
+              <input id="work-output-1-skills" name="workOutput1Skills" type="text" placeholder="e.g. skill_data_analysis, skill_attention_to_detail" />
+              <p class="field-hint">This will be connected to the shared skill catalogue in the next implementation step.</p>
+            </div>
+
+            <div class="field field-wide">
+              <label for="work-output-2">Work output 2</label>
+              <textarea id="work-output-2" name="workOutput2" rows="3" placeholder="e.g. Explain order issues clearly to clients and internal teams."></textarea>
+            </div>
+
+            <div class="field field-wide">
+              <label for="work-output-2-skills">Related skill IDs or names</label>
+              <input id="work-output-2-skills" name="workOutput2Skills" type="text" placeholder="e.g. skill_communication, skill_critical_thinking" />
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section" aria-labelledby="structured-skills-title">
+          <div class="section-heading">
+            <div class="section-number">04</div>
+            <div>
+              <h2 id="structured-skills-title">Structured skill requirements</h2>
+              <p>Make each important skill specific, observable and assessable.</p>
+            </div>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="structured-skill-1">Skill 1</label>
+              <input id="structured-skill-1" name="structuredSkill1" type="text" placeholder="e.g. Data Analysis" />
+            </div>
+
+            <div class="field">
+              <label for="structured-skill-1-id">Shared skill ID</label>
+              <input id="structured-skill-1-id" name="structuredSkill1Id" type="text" placeholder="e.g. skill_data_analysis" />
+            </div>
+
+            <fieldset class="field choice-field">
+              <legend>Skill type</legend>
+              <div class="choice-group">
+                <label class="choice-card">
+                  <input type="radio" name="structuredSkill1Type" value="professional" />
+                  <span><strong>Professional</strong><small>Role-specific capability</small></span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="structuredSkill1Type" value="collaboration" />
+                  <span><strong>Collaboration</strong><small>Communication or teamwork</small></span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="field choice-field">
+              <legend>Requirement level</legend>
+              <div class="choice-group">
+                <label class="choice-card">
+                  <input type="radio" name="structuredSkill1Requirement" value="entry_required" />
+                  <span><strong>Required at entry</strong><small>Candidate should already have it</small></span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="structuredSkill1Requirement" value="trainable" />
+                  <span><strong>Trainable</strong><small>Company can develop it after joining</small></span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="field field-wide">
+              <label for="structured-skill-1-behaviour">Observable behaviour</label>
+              <textarea id="structured-skill-1-behaviour" name="structuredSkill1Behaviour" rows="3" placeholder="e.g. Can use a spreadsheet to reconcile orders and identify unusual patterns."></textarea>
+            </div>
+
+            <div class="field field-wide">
+              <label for="structured-skill-1-evidence">Allowed evidence</label>
+              <input id="structured-skill-1-evidence" name="structuredSkill1Evidence" type="text" placeholder="e.g. Work sample, interview, assessment" />
+              <p class="field-hint">Later this will become a structured list shared with the candidate flow.</p>
+            </div>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="structured-skill-2">Skill 2</label>
+              <input id="structured-skill-2" name="structuredSkill2" type="text" placeholder="e.g. Communication" />
+            </div>
+
+            <div class="field">
+              <label for="structured-skill-2-id">Shared skill ID</label>
+              <input id="structured-skill-2-id" name="structuredSkill2Id" type="text" placeholder="e.g. skill_communication" />
+            </div>
+
+            <div class="field field-wide">
+              <label for="structured-skill-2-behaviour">Observable behaviour</label>
+              <textarea id="structured-skill-2-behaviour" name="structuredSkill2Behaviour" rows="3" placeholder="e.g. Can explain an issue, its impact and the next action clearly."></textarea>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section" aria-labelledby="qualifications-title">
+          <div class="section-heading">
+            <div class="section-number">05</div>
+            <div>
+              <h2 id="qualifications-title">Qualifications and verification</h2>
+              <p>Record education or certificates without treating unverified claims as confirmed.</p>
+            </div>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="qualification-name">Qualification or certificate</label>
+              <input id="qualification-name" name="qualificationName" type="text" placeholder="e.g. Bachelor’s Degree / Excel Certificate" />
+            </div>
+
+            <div class="field">
+              <label for="qualification-issuer">Issuing organisation</label>
+              <input id="qualification-issuer" name="qualificationIssuer" type="text" placeholder="e.g. University or certifying body" />
+            </div>
+
+            <div class="field">
+              <label for="qualification-region">Applicable region</label>
+              <input id="qualification-region" name="qualificationRegion" type="text" placeholder="e.g. Malaysia" />
+            </div>
+
+            <div class="field">
+              <label for="qualification-source">Source URL</label>
+              <input id="qualification-source" name="qualificationSource" type="url" placeholder="https://example.com" />
+            </div>
+
+            <div class="field">
+              <label for="qualification-status">Verification status</label>
+              <select id="qualification-status" name="qualificationStatus">
+                <option value="">Choose status</option>
+                <option value="verified">Verified</option>
+                <option value="pending">Pending verification</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section" aria-labelledby="work-arrangement-title">
+          <div class="section-heading">
+            <div class="section-number">06</div>
+            <div>
+              <h2 id="work-arrangement-title">Work arrangement</h2>
+              <p>Set expectations for the working schedule.</p>
+            </div>
+          </div>
+
+          <div class="field-grid field-grid-last">
+            <fieldset class="field choice-field">
+              <legend>Employment type <span class="required">*</span></legend>
+              <div class="choice-group">
+                <label class="choice-card">
+                  <input type="radio" name="employmentType" value="Full-time" required />
+                  <span><strong>Full-time</strong><small>Regular working hours</small></span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="employmentType" value="Part-time" />
+                  <span><strong>Part-time</strong><small>Flexible working hours</small></span>
+                </label>
+              </div>
+              <p class="error-message" data-error-for="employment-type"></p>
+            </fieldset>
+
+            <div class="field">
+              <label for="employee-count">Number of employees <span class="required">*</span></label>
+              <input id="employee-count" name="employeeCount" type="number" min="1" step="1" placeholder="e.g. 3" inputmode="numeric" required />
+              <p class="error-message" data-error-for="employee-count"></p>
+            </div>
+
+            <div class="field">
+              <label for="working-time">Time <span class="required">*</span></label>
+              <input id="working-time" name="workingTime" type="text" placeholder="e.g. Mon–Fri, 9:00 AM–6:00 PM" required />
+              <p class="field-hint">Include the expected working days or hours.</p>
+              <p class="error-message" data-error-for="working-time"></p>
+            </div>
+
+            <fieldset class="field field-wide choice-field">
+              <legend>Work arrangement mode</legend>
+              <div class="choice-group">
+                <label class="choice-card">
+                  <input type="radio" name="workArrangementMode" value="onsite" />
+                  <span><strong>On-site</strong><small>Work from the stated location</small></span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="workArrangementMode" value="hybrid" />
+                  <span><strong>Hybrid</strong><small>Combine office and remote work</small></span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="workArrangementMode" value="remote" />
+                  <span><strong>Remote</strong><small>Work remotely</small></span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="workArrangementMode" value="unknown" />
+                  <span><strong>Unknown</strong><small>To be confirmed by HR</small></span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
+        </section>
+
+        <div id="success-message" class="success-message" role="status" aria-live="polite" hidden>
+          <span class="success-icon" aria-hidden="true">✓</span>
+          <div><strong>Job requirement saved</strong><span>Saved in this browser. No job has been published.</span></div>
+        </div>
+
+        <div class="form-actions">
+          <p><span class="required">*</span> Required fields</p>
+          <button class="primary-button" type="submit">Save job requirement <span aria-hidden="true">→</span></button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

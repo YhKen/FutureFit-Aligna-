@@ -1,0 +1,83 @@
+{
+  "testedAt": "2026-10-23T13:07:20.000209+00:00",
+  "passed": true,
+  "checks": 941,
+  "newChecks": 83,
+  "regressionChecks": 858,
+  "suites": [
+    {
+      "suite": "applications",
+      "checks": 30,
+      "passed": true
+    },
+    {
+      "suite": "career-tools-rules.test.mjs",
+      "checks": 116,
+      "passed": true
+    },
+    {
+      "suite": "company-interview-rules.test.mjs",
+      "checks": 89,
+      "passed": true
+    },
+    {
+      "suite": "exploration-rules.test.mjs",
+      "checks": 67,
+      "passed": true
+    },
+    {
+      "suite": "formal-work-rules.test.mjs",
+      "checks": 154,
+      "passed": true
+    },
+    {
+      "suite": "h01-rules.test.mjs",
+      "checks": 30,
+      "passed": true
+    },
+    {
+      "suite": "h06-rules.test.mjs",
+      "checks": 28,
+      "passed": true
+    },
+    {
+      "suite": "news-rules.test.mjs",
+      "checks": 26,
+      "passed": true
+    },
+    {
+      "suite": "research-prototype-rules.test.mjs",
+      "checks": 83,
+      "passed": true
+    },
+    {
+      "suite": "rules.test.mjs",
+      "checks": 24,
+      "passed": true
+    },
+    {
+      "suite": "seeker-rules.test.mjs",
+      "checks": 47,
+      "passed": true
+    },
+    {
+      "suite": "validation-rules.test.mjs",
+      "checks": 126,
+      "passed": true
+    },
+    {
+      "suite": "work-followup-rules.test.mjs",
+      "checks": 101,
+      "passed": true
+    },
+    {
+      "suite": "workspace-shortcuts-rules.test.mjs",
+      "checks": 20,
+      "passed": true
+    }
+  ],
+  "rulesSHA256": "5ee6e554ee888b2a75624e8c55b777a4f4251165e1aeccfd63a4fb737939ccbd",
+  "published": true,
+  "publishedSourceVerifiedExact": true,
+  "scope": "Emulator permissions and exact source publication; not human validity."
+}

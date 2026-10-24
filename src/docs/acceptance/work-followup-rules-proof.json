@@ -1,0 +1,12 @@
+{
+  "newChecks": 101,
+  "previousRegressionChecks": 309,
+  "total": 410,
+  "allPassed": true,
+  "published": true,
+  "project": "project-d32d7",
+  "publishedConsoleTime": "2026-10-22 19:11 browser display",
+  "sha256": "8ce44b2d1d391e878519c5801b7caedae0639022ed2360dbcdbe2fdefa4ebd22",
+  "priorRulesMatchedGitHeadBeforePublish": true,
+  "scope": "per-task explicit second-review consent, append-only correction history, clarification, owner-only profile preferences"
+}

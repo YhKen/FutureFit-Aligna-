@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-23T03:56:27.936Z",
+  "syntheticOnly": true,
+  "checks": [
+    "actual-browser-life-record-seven-confirmed",
+    "all-three-browser-trial-templates-read-back",
+    "stored-conditions-recompute-customer",
+    "stored-conditions-recompute-budget",
+    "stored-conditions-recompute-records",
+    "stored-conditions-recompute-customer",
+    "no-raw-private-quotation-export",
+    "all-confirmed-still-self-report",
+    "shared-seeker-hr-engine-parity",
+    "life-presence-not-example-coverage",
+    "hr-direct-read-denied-life_experiences",
+    "hr-direct-write-denied-life_experiences",
+    "hr-direct-read-denied-career_trials",
+    "hr-direct-write-denied-career_trials",
+    "r1-direct-read-denied-life_experiences",
+    "r1-direct-write-denied-life_experiences",
+    "r1-direct-read-denied-career_trials",
+    "r1-direct-write-denied-career_trials",
+    "r2-direct-read-denied-life_experiences",
+    "r2-direct-write-denied-life_experiences",
+    "r2-direct-read-denied-career_trials",
+    "r2-direct-write-denied-career_trials",
+    "all-923-counterfactuals-evaluate",
+    "hypothesis-never-mutates-candidate"
+  ],
+  "match": {
+    "coverage": 100,
+    "evidenceCoverage": 0
+  },
+  "sourceRecordCounts": {
+    "activeExperiences": 1,
+    "confirmedSkills": 7,
+    "trials": 4,
+    "sessions": 1,
+    "games": 2
+  },
+  "humanValidation": "pending"
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-23",
+  "syntheticOnly": true,
+  "checks": 23,
+  "withdrawalExcludesFromFreshStatistics": true,
+  "historicalSnapshotPreserved": true,
+  "staleDecisionStatus": 409,
+  "concurrentStaleWriteStatus": 409,
+  "closedAndRevokedExpertReadStatus": 403,
+  "respondentStillReadsOwnConsent": true,
+  "primaryStudyUnchanged": true,
+  "newReportHumanCases": 0,
+  "newReportSyntheticCases": 0,
+  "professionalValidity": "pending"
+}

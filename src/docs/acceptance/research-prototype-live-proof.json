@@ -1,0 +1,64 @@
+{
+  "testedAt": "2026-10-23T12:08:39.488Z",
+  "passed": true,
+  "codeCommit": "167887028d6b73c50ac2f3760cee25056f005f79",
+  "deployment": "dpl_8P4pwy3DH1vgwVtTaqq4Dcc8KYyE",
+  "url": "https://aligna-two.vercel.app/research-lab.html",
+  "assets": [
+    {
+      "name": "research-lab.html",
+      "sha256": "afc4f41b4dbe7d4a2b77ac3bf1b9d8a58e1f85d8aa0743650138ffed328913b7"
+    },
+    {
+      "name": "research-lab.css",
+      "sha256": "6ea6f0d8e7e413a24c3d16ea0a9a8549bb29e1701bbc0e7e9c621d0aecf4e9c3"
+    },
+    {
+      "name": "research-lab.js",
+      "sha256": "3e0c40e3de0e1400af290f167b5505367d338e1306b096690dc480e65a6007fb"
+    },
+    {
+      "name": "research-prototype.js",
+      "sha256": "f4025511b9cd0b3fbe3189091345f9669856a8047fdf9a6ec41279bbbf087824"
+    },
+    {
+      "name": "validation-statistics.js",
+      "sha256": "19f10355e5ccca146a38e0c98375f611f5c8e868b1b79eb999232b4fc271694e"
+    },
+    {
+      "name": "validation.html",
+      "sha256": "76321a5294c5fd88f5e9e376cc9515ffc01daf40ec02949b5221dbb8d9d987b4"
+    }
+  ],
+  "guideSha256": "5ce68055fdd286afb65982a735a02666fe210a13421890ebbe5ffd7faa8868a6",
+  "browser": {
+    "views": 45,
+    "widths": [
+      1280,
+      390,
+      320
+    ],
+    "languages": [
+      "zh",
+      "en",
+      "ms"
+    ],
+    "overflow": 0,
+    "mixedChineseBody": 0,
+    "operations": [
+      "separate training consent changed 61/25/21 to 61/24/21",
+      "withdrawal reduced research eligibility 107 to 106",
+      "reload retained simulation",
+      "reset restored seed",
+      "expert missing opinion filled and S-CVI recomputed",
+      "second rating changed to missing and paired n updated",
+      "eight unique items exhausted; ninth blocked",
+      "actual JSON download parsed: synthetic=true, 120 people, 6 experts, productionEnabled=false"
+    ]
+  },
+  "nodeTests": 164,
+  "independentNumericComparisons": 110,
+  "storage": "sessionStorage in current tab only; no Firebase writes",
+  "professionalValidation": "pending",
+  "productionModelEnabled": false
+}

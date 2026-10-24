@@ -1,0 +1,3 @@
+// Emulator fixture only. Never run this helper against production.
+import {doc,setDoc,Timestamp} from 'firebase/firestore';
+export async function seedCompanyFixture(env,uid,legalName){return env.withSecurityRulesDisabled(async c=>{const db=c.firestore(),synthetic=/synthetic/i.test(legalName);await setDoc(doc(db,'aligna_company_requests',uid),{ownerUid:uid,legalName,synthetic,requestVersion:'company-fixture'});await setDoc(doc(db,'aligna_company_reviews',uid),{status:synthetic?'sandbox':'approved',requestVersion:'company-fixture',expiresAt:Timestamp.fromDate(new Date(Date.now()+86400000)),registryMatched:true,documentChecked:true,authorityConfirmed:true});});}

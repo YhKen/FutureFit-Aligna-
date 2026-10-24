@@ -1,0 +1,12 @@
+{
+  "allPassed": true,
+  "pointComparisons": 320,
+  "bootstrapReplicates": 2000,
+  "bootstrapValid": 2000,
+  "methods": [
+    "Fraction contingency-table weighted kappa",
+    "Fraction covariance identity for ICC(A,1)",
+    "NumPy covariance bootstrap and independent quantile"
+  ],
+  "scope": "Synthetic numerical cross-check only; not professional or human validation"
+}

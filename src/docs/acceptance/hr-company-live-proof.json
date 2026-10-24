@@ -1,0 +1,20 @@
+{
+  "testedAt": "2026-10-23T08:16:05.328Z",
+  "company": {
+    "submissionPath": "ordinary production UI",
+    "synthetic": true,
+    "fileBytes": 1874,
+    "hashMatched": true,
+    "access": "sandbox",
+    "reviewStatus": "sandbox"
+  },
+  "checks": [
+    "ordinary HR SDK reads actual UI company submission",
+    "downloaded Firebase PDF bytes exactly equal uploaded synthetic fixture",
+    "r1 cannot read company request",
+    "r1 cannot read company PDF",
+    "r2 cannot read company request",
+    "r2 cannot read company PDF",
+    "S003 cannot read company registration document"
+  ]
+}

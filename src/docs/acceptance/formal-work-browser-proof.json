@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-22T11:35:38.879Z",
+  "production": "https://aligna-two.vercel.app",
+  "syntheticOnly": true,
+  "formsA": {
+    "assignedViaHrUI": 2,
+    "startedAndSubmittedViaSeekerUI": 2,
+    "resourcePrivateDraftSavedAndReloaded": true,
+    "reviewedViaHrUI": 2,
+    "seekerSignedBackInAndReadSameScores": true,
+    "displayedScores": [
+      92,
+      83
+    ]
+  },
+  "threeLanguagesVisited": true,
+  "responsiveProof": "formal-work-responsive-proof.json",
+  "scope": "Functional synthetic acceptance only; agent-entered reviews do not establish independent professional rater validity"
+}

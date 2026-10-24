@@ -1,0 +1,37 @@
+{
+  "testedAt": "2026-10-23T08:49:59.680Z",
+  "deployment": "dpl_8ZHNpNX5Wv97SeoLF8fMreo1d3FA",
+  "codeCommit": "1a9cdc17c6d6ea17d4bc3aa70c43e238cbef2cfb",
+  "assetsExact": 6,
+  "assets": [
+    {
+      "name": "ui-typography.css",
+      "sha256": "27590978c9184d0b8f42d300d963e3998e7492e80fe3e823bd8b9bac02b09730"
+    },
+    {
+      "name": "account-screen.js",
+      "sha256": "e606b55e3dfcd5d5c36667f49b4f42d17c566f162e8cadf8c1b78ec290d90387"
+    },
+    {
+      "name": "account-destination.js",
+      "sha256": "68f448b3e0ad8d3d9450b0296e188fb364b401779aa2ba3571f9b0c804065f7b"
+    },
+    {
+      "name": "account-gate.js",
+      "sha256": "732f6fc137335ecb48fb9d04d112bef658ac3861ed8cb50482b3e713f615eda1"
+    },
+    {
+      "name": "shared.js",
+      "sha256": "68bb6ab8659f0b84cbeee3d46005ceeee6bc0a720fa937ae53f95004cb1b9b77"
+    },
+    {
+      "name": "applications.js",
+      "sha256": "c96fac5fe0411acc57ff88bc1af42e689f4eecb8783102137e8090c0d647b6fa"
+    }
+  ],
+  "nodeTests": 141,
+  "browserChecks": 24,
+  "pairFirebaseChecks": 11,
+  "applicationId": "PdRLSAORDGZLgUIucoVLhyll3Lz1_xIa9M0PKvNq3y2EYkres",
+  "scope": "Same active application, full frozen job description, candidate and shared feedback. Dedicated coherent synthetic posting prepared. No new account, privilege, T&C acceptance or password change. Credentials are never stored in repository."
+}

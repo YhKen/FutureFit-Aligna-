@@ -1,0 +1,162 @@
+{
+  "updatedAt": "2026-10-23T13:08:24.822355+00:00",
+  "sourceGuide": "FutureFit_算法与技术说明_从输入到结果.pdf",
+  "runtimeCommit": "4bf72bc25b774f6f9bd776909a3152dfd2ba7a20",
+  "deployment": "dpl_Ci9ovagnYMEx4yid1xpSSS785yN1",
+  "nodeTests": 173,
+  "independentComparisons": 11268,
+  "tasks": [
+    {
+      "id": "A01",
+      "priority": "P0",
+      "task": "异常岗位输入阻断",
+      "status": "已上线，技术验收通过",
+      "owner": "整合组",
+      "acceptance": "非法结构化资料不得回退旧字段算分；百分比留空；新申请阻断；合法旧格式继续可用。",
+      "evidence": "algorithm-sensitivity.test.mjs；algorithm-priorities-live-proof.json"
+    },
+    {
+      "id": "A02",
+      "priority": "P0",
+      "task": "双端同一输入、同一算法",
+      "status": "已有功能，本轮回归通过",
+      "owner": "整合组 + HR组",
+      "acceptance": "同一冻结申请的覆盖率、余弦、trace、诊断与三语说明相同，原正式分数80/94不变。",
+      "evidence": "algorithm-priorities-live-proof.json"
+    },
+    {
+      "id": "A03",
+      "priority": "P1",
+      "task": "岗位权重敏感性面板",
+      "status": "已上线，技术验收通过",
+      "owner": "整合组",
+      "acceptance": "预设1:1、2:1、3:1；不改正式分数；不得称置信区间或正确权重。",
+      "evidence": "match-sensitivity-view.js；6个HR浏览器尺寸/语言检查"
+    },
+    {
+      "id": "A04",
+      "priority": "P1",
+      "task": "职业排序敏感性诊断",
+      "status": "计算与合成报告完成；普通结果页未新增此面板",
+      "owner": "整合组 + 求职者组",
+      "acceptance": "四组兴趣/技能比重；923职业；不足3条相关技能回退兴趣；平坦兴趣保留保护。",
+      "evidence": "algorithm-sensitivity-independent-proof.json"
+    },
+    {
+      "id": "A05",
+      "priority": "P1",
+      "task": "独立核算与一键复跑",
+      "status": "已完成，技术验收通过",
+      "owner": "整合组",
+      "acceptance": "npm run audit:algorithms；任何差异返回失败；输出带范围说明的JSON，不签发专业通过。",
+      "evidence": "algorithm-audit-proof.json"
+    },
+    {
+      "id": "A06",
+      "priority": "P2",
+      "task": "岗位专家审题与别名审核",
+      "status": "待专家，不标通过",
+      "owner": "HR组组织，岗位专家判断",
+      "acceptance": "冻结题目与岗位版本；真实专家资历/利益冲突/逐维度意见；CVI保留缺失，不自动盖章。",
+      "prototypeStatus": "双端 Firebase 模拟流程技术验收完成；真实专家、真人结果、等值与许可仍待外部验收",
+      "prototypeEvidence": "research-cloud-live-proof.json; research-cloud-independent-proof.json; research-cloud-rules-proof.json"
+    },
+    {
+      "id": "A07",
+      "priority": "P2",
+      "task": "真人独立盲评一致性",
+      "status": "待真人与授权，不标通过",
+      "owner": "HR组 + 研究负责人",
+      "acceptance": "真实获授权作答；固定两位独立评分者；同题同条件；报告Kappa/ICC、区间与缺失。",
+      "prototypeStatus": "双端 Firebase 模拟流程技术验收完成；真实专家、真人结果、等值与许可仍待外部验收",
+      "prototypeEvidence": "research-cloud-live-proof.json; research-cloud-independent-proof.json; research-cloud-rules-proof.json"
+    },
+    {
+      "id": "A08",
+      "priority": "P2",
+      "task": "权重校准与真实效果验证",
+      "status": "待真实结果数据",
+      "owner": "研究负责人 + 整合组",
+      "acceptance": "先登记指标及比较方案，分离验证数据，说明偏差与公平性；不能靠调参获得漂亮结果。",
+      "prototypeStatus": "双端 Firebase 模拟流程技术验收完成；真实专家、真人结果、等值与许可仍待外部验收",
+      "prototypeEvidence": "research-cloud-live-proof.json; research-cloud-independent-proof.json; research-cloud-rules-proof.json"
+    },
+    {
+      "id": "A09",
+      "priority": "P2",
+      "task": "A/B等值、游戏阈值和三语测量等值",
+      "status": "待真人试测",
+      "owner": "研究负责人 + 求职者组",
+      "acceptance": "分别核对题型、语言、工具、设备和合理调整；真实样本不足时不出常模/百分位。",
+      "prototypeStatus": "双端 Firebase 模拟流程技术验收完成；真实专家、真人结果、等值与许可仍待外部验收",
+      "prototypeEvidence": "research-cloud-live-proof.json; research-cloud-independent-proof.json; research-cloud-rules-proof.json"
+    },
+    {
+      "id": "A10",
+      "priority": "P2",
+      "task": "DISC/CAAS/CDSE/TEIQue正式题项与许可",
+      "status": "待版权与专业确认",
+      "owner": "内容负责人 + 权利方",
+      "acceptance": "得到可审计的使用与翻译许可、原版计分规则，再安排接入与效度验证。",
+      "prototypeStatus": "双端 Firebase 模拟流程技术验收完成；真实专家、真人结果、等值与许可仍待外部验收",
+      "prototypeEvidence": "research-cloud-live-proof.json; research-cloud-independent-proof.json; research-cloud-rules-proof.json"
+    },
+    {
+      "id": "A11",
+      "priority": "P3",
+      "task": "真实数据训练、IRT/CAT及学习排序模型",
+      "status": "前置数据不足，暂不训练",
+      "owner": "整合组 + 研究负责人",
+      "acceptance": "在数据授权、样本与测量问题明确后，再设基线、留出集、校准、漂移与回退。",
+      "prototypeStatus": "双端 Firebase 模拟流程技术验收完成；真实专家、真人结果、等值与许可仍待外部验收",
+      "prototypeEvidence": "research-cloud-live-proof.json; research-cloud-independent-proof.json; research-cloud-rules-proof.json"
+    }
+  ],
+  "humanValidation": "pending; synthetic arithmetic and browser tests do not establish human validity",
+  "prototypeUpdate": {
+    "version": "synthetic-research-v1",
+    "synthetic": true,
+    "storage": "current-tab sessionStorage; exportable JSON; no production Firebase writes",
+    "comparisons": 110,
+    "realValidation": "pending",
+    "path": "research-lab.html",
+    "nodeTests": 164,
+    "independentNumericComparisons": 110,
+    "deployment": "dpl_8P4pwy3DH1vgwVtTaqq4Dcc8KYyE",
+    "codeCommit": "167887028d6b73c50ac2f3760cee25056f005f79",
+    "browserViews": 45,
+    "guide": "FutureFit_模拟研究与训练_操作验收指南.pdf",
+    "acceptance": "prototype-technical-checks-passed; human-validation-pending",
+    "proof": "research-prototype-live-proof.json",
+    "supersededBy": "cloudPrototypeUpdate; previous session-only milestone retained as history"
+  },
+  "cloudPrototypeUpdate": {
+    "version": "paired-synthetic-research-cloud-v1",
+    "synthetic": true,
+    "storage": "Firebase project-d32d7; paired active synthetic application; caller-scoped API",
+    "nodeTests": 173,
+    "permissionChecks": 941,
+    "newPermissionChecks": 83,
+    "productionApiChecks": 24,
+    "independentNumericComparisons": 110,
+    "realValidation": "pending",
+    "productionModelEnabled": false,
+    "applicationId": "PdRLSAORDGZLgUIucoVLhyll3Lz1_xIa9M0PKvNq3y2EYkres",
+    "hrUrl": "https://aligna-two.vercel.app/research-lab.html?role=hr",
+    "seekerUrl": "https://aligna-two.vercel.app/research-lab.html?role=seeker",
+    "proofs": [
+      "research-cloud-live-proof.json",
+      "research-cloud-learning-proof.json",
+      "research-cloud-independent-proof.json",
+      "research-cloud-rules-proof.json",
+      "research-cloud-browser-proof.json",
+      "research-cloud-release-proof.json"
+    ],
+    "guide": "FutureFit_模拟研究与训练_操作验收指南.pdf",
+    "browserViews": 90,
+    "browserScope": "2 roles x 3 widths (1280/390/320) x 3 languages x 5 tabs; no document overflow or stray Chinese in EN/MS",
+    "deployment": "dpl_5eVpKdegsrVyF4xC6YbrkNca9CAh",
+    "sourceDigest": "prototype-evidence:51347d0c02651088",
+    "currentReport": "PdRLSAORDGZLgUIucoVLhyll3Lz1_xIa9M0PKvNq3y2EYkres--browser-final-1792760693307"
+  }
+}

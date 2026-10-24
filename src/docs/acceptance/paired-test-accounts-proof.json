@@ -1,0 +1,25 @@
+{
+  "testedAt": "2026-10-23T13:05:58.436Z",
+  "checks": [
+    "both supplied test credentials sign in to email-verified accounts",
+    "same active application, candidate and frozen job description are present",
+    "company submission, PDF and synthetic review already present",
+    "demo posting uses the exact submitted company name",
+    "private interview is not empty",
+    "seeker has explicit shared feedback, not an empty demo",
+    "both match results and evidence traces are exactly equal",
+    "demo location is consistent and old unrelated SQL wording is absent",
+    "zh same learn/practise/credential advice for same frozen job",
+    "en same learn/practise/credential advice for same frozen job",
+    "ms same learn/practise/credential advice for same frozen job"
+  ],
+  "passed": true,
+  "applicationId": "PdRLSAORDGZLgUIucoVLhyll3Lz1_xIa9M0PKvNq3y2EYkres",
+  "jobTitle": "SYNTHETIC QA — Customer Operations Assistant",
+  "candidateName": "QA Aina Noor — Synthetic S003",
+  "companyReview": "synthetic sandbox only",
+  "coverage": 80,
+  "cosinePercent": 94,
+  "sharedFeedback": true,
+  "credentialsExcluded": true
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-23",
+  "url": "https://aligna-two.vercel.app/validation-guide.pdf",
+  "unauthenticated": true,
+  "status": 200,
+  "contentType": "application/pdf",
+  "bytes": 241484,
+  "sha256": "9d310f887d3cca6cac81838d8a3fd2fef9c18824b669bbbd4a1d0c3d9f52fbe7",
+  "matchesDeliveredLocalPdf": true,
+  "githubLoginRequired": false
+}

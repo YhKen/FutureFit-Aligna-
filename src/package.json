@@ -1,0 +1,21 @@
+{
+  "name": "future-fit-domain-one",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Domain 1 career and skills exploration with Firebase",
+  "scripts": {
+    "start": "node server.cjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:h06": "node --test tests/h06-acceptance.test.mjs",
+    "audit:algorithms": "node scripts/audit-algorithms.mjs",
+    "audit:research": "node scripts/audit-research-prototype.mjs"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  }
+}

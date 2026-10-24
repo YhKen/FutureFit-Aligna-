@@ -1,0 +1,4 @@
+// Synthetic skills only. No cloud account, private record or API key is needed.
+import occupations from '../occupations.js';import {singleStepPreview,occupationRequirements} from '../counterfactual-core.js';
+const skills=["Complex Problem Solving", "Instructing", "Judgment and Decision Making", "Management of Financial Resources", "Management of Personnel Resources", "Mathematics", "Operations Monitoring", "Persuasion", "Quality Control Analysis", "Reading Comprehension"].map(name=>({name,example:''}));
+console.log(JSON.stringify(occupations.jobs.map(j=>{const p=singleStepPreview(occupationRequirements(j),{skills});return {id:j.id,rows:p.baseline.rows.map(r=>({name:r.name,weight:r.weight,present:!!r.evidence})),before:p.baseline.coverage,cosine:p.baseline.cosine,after:p.best?.after.coverage,gain:p.best?.gain,name:p.best?.name}})));

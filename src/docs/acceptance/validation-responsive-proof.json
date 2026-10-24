@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-23",
+  "requestedMobileWidth": 320,
+  "actualViews": [
+    {
+      "language": "en",
+      "pending": "Professional validation pending",
+      "scrollWidth": 954,
+      "title": "Future Fit · Expert review and validation",
+      "width": 954
+    },
+    {
+      "language": "ms",
+      "pending": "Pengesahan profesional belum selesai",
+      "scrollWidth": 954,
+      "title": "Future Fit · Semakan pakar dan pengesahan",
+      "width": 954
+    },
+    {
+      "language": "zh",
+      "pending": "专业验证待完成",
+      "scrollWidth": 954,
+      "title": "Future Fit · 审题与验收",
+      "width": 954
+    }
+  ],
+  "threeLanguagesSwitched": true,
+  "mobileViewportApplied": false,
+  "mobilePassed": false,
+  "reason": "Viewport override returned successfully but observed page stayed at desktop width; not counted as mobile verification.",
+  "physicalDevices": "pending"
+}

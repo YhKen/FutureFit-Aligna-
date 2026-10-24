@@ -1,0 +1,787 @@
+{
+  "date": "2026-10-23",
+  "application": "Future Fit",
+  "repository": "https://github.com/EvaCeryana/aligna",
+  "codeCommit": "e1a0a7205bc7d1172023c13a7e868ab7e6f7a40e",
+  "productionUrl": "https://aligna-two.vercel.app/",
+  "verifiedDeployment": "dpl_9xqqYyDL2nq6bkbHproMjkkLrd8g",
+  "nodeTests": {
+    "passed": 126,
+    "failed": 0
+  },
+  "buildAssets": 184,
+  "responsiveLanguageViews": 96,
+  "allRecordedViewsPassed": true,
+  "languages": [
+    "zh",
+    "en",
+    "ms"
+  ],
+  "viewportWidths": [
+    320,
+    390
+  ],
+  "concurrentAcceptance": {
+    "accounts": 3,
+    "independentSessions": 4,
+    "parallelPrivateWrites": 6,
+    "parallelPersonalNewsRequests": 8
+  },
+  "rawQuestionAndGamePrivacyUnchanged": true,
+  "rulesChangedThisFollowup": true,
+  "secretsIncluded": false,
+  "limitations": [
+    "Chromium viewport simulation is not physical iOS/Android/Safari certification.",
+    "Bounded concurrency is not a large-scale capacity or uptime benchmark.",
+    "Original task materials and cloud flow are delivered. Professional content validity, independent human inter-rater reliability, form equivalence and norms are not established.",
+    "No newly collected full-text news item justified a positive learning-priority change.",
+    "Mobile acceptance uses actual Chromium 320px core interactions and 390px owner views. Physical iOS/Android/Safari, soft keyboard and assistive technology remain pending."
+  ],
+  "pdfPages": 30,
+  "pdfSha256": "4d0fd5c50454394c586d2b910faa96c86ec441b286640f501383c9cec59cff08",
+  "algorithmGuidePages": 45,
+  "sharedApplicationAcceptance": {
+    "coverage": 60,
+    "cosinePercent": 75,
+    "currentPostingCoverage": 100,
+    "frozenApplicationVersion": 1,
+    "currentPostingVersion": 2,
+    "threeLanguageRendererParity": true,
+    "realBrowserChineseParity": true,
+    "independentPythonPerSkillCheck": true,
+    "privateProgressNotShared": true
+  },
+  "interviewAcceptance": {
+    "noOpKeepsReply": true,
+    "rescheduleRequestsReply": true,
+    "networkFailureRetainsState": true,
+    "testStateRestored": true
+  },
+  "algorithmGuideSha256": "92f18fb38d3ad500afd9f6a8175825ed83ba9ff41affa6b3dadef44b8a4a233b",
+  "formalWorkAcceptance": {
+    "version": "formal-work-v1",
+    "distinctTasks": 2,
+    "formsPerTask": 2,
+    "permissionChecks": 154,
+    "priorRuleRegressionChecks": 131,
+    "allFourFormsProductionApiPassed": true,
+    "aFormsActualBrowserJourneyPassed": true,
+    "sameRecordsBothRoles": true,
+    "withdrawnHrDirectReadsDenied": 6,
+    "independentNumericalMethods": [
+      "Python dynamic programming",
+      "SQLite DISTINCT and latest-time grouping"
+    ],
+    "independentRatingArithmetic": "Python Fraction exact half-up rounding",
+    "browserLanguages": [
+      "zh",
+      "en",
+      "ms"
+    ],
+    "viewportChecks": 3,
+    "professionalValidation": "pending"
+  },
+  "workFollowupAcceptance": {
+    "version": "work-followup-v1",
+    "newPermissionChecks": 101,
+    "priorRegressionChecks": 309,
+    "rulesPublished": true,
+    "productionChecks": 25,
+    "withdrawnDirectReadsDenied": 8,
+    "sameRecordsBothRoles": true,
+    "originalScorePreserved": true,
+    "concurrentCorrectionStatuses": [
+      200,
+      409
+    ],
+    "blindSecondAccountBrowserSubmission": true,
+    "reviewerAccessRevokedAfterTest": true,
+    "independentArithmetic": "Python Fraction",
+    "humanRaterValidity": "pending",
+    "threeLanguageMobileViews": 3,
+    "mobileWidth": 320,
+    "allViewsNoHorizontalOverflow": true
+  },
+  "profileAcceptance": {
+    "browserNamePhotoSaved": true,
+    "privateServerReadback": true,
+    "darkAndLight": true,
+    "signOutViaSettings": true,
+    "otherAccountReadDenied": true
+  },
+  "h06Integration": {
+    "package": "aligna-main-h06-completed.zip",
+    "packageSha256": "de3011846652bbfc76b9e362db959ba11ba4bf4ac3fb16997bffe9c3a055e8f9",
+    "priorCodeCommit": "31c88809fd42b91f7e36c1ab819d86e7f46fbb39",
+    "currentRuleChecks": 440,
+    "productionMainChecks": 16,
+    "productionBoundaryChecks": 10,
+    "browserCandidateProposalAndHrNoOpSave": true,
+    "sameFrozenApplicationBothRoles": true,
+    "oldRubricHashesPreserved": true,
+    "oldCoverage": 60,
+    "oldCosinePercent": 75,
+    "newSyntheticCoverage": 33,
+    "newSyntheticCosinePercent": 58,
+    "taskScores": [
+      83,
+      83
+    ],
+    "taskLinkMethod": "Frozen-JD and task-skill set intersection; exact output references",
+    "interviewMethods": [
+      "UTC instants",
+      "Explicit fixed-offset IANA zones",
+      "Transaction",
+      "Invitation content token",
+      "Idempotent retry",
+      "Server readback"
+    ],
+    "timeZones": [
+      "Asia/Kuala_Lumpur",
+      "Asia/Singapore",
+      "Asia/Tokyo",
+      "UTC"
+    ],
+    "independentChecks": [
+      "Python dynamic programming",
+      "SQLite DISTINCT and latest grouping",
+      "Python Fraction and Euclidean dot product",
+      "Python datetime UTC offsets"
+    ],
+    "rulesSha256": "41fb1006531e45487af5726fb286524f94b404668ae14ac091bc2189c26bb04a",
+    "productionRulesPublished": true,
+    "syntheticTestPostingsClosed": true,
+    "professionalValidity": "pending",
+    "responsiveScope": "Recorded Chromium 320px checks in zh/en/ms; not physical device certification",
+    "packageSelfReportSeparateFromActualAcceptance": true
+  },
+  "validationAcceptance": {
+    "version": "validation-statistics-v1",
+    "expertStudyWorkflow": true,
+    "candidateControlledIndependentRatings": true,
+    "separateResearchConsent": true,
+    "actualAdministrationLanguageHumanChecked": true,
+    "twoFixedRaters": true,
+    "professionalValidity": "pending",
+    "realHumanExpertCount": 0,
+    "realHumanPairedCaseCount": 0,
+    "syntheticDemonstrationSeparated": true,
+    "newPermissionChecks": 126,
+    "totalPermissionChecks": 566,
+    "productionRulesPublished": true,
+    "rulesSha256": "3ba20efaf0732c3f1260cf4423afc7e27541cd12167d08cf53093cc2bd031de6",
+    "productionLiveChecks": 23,
+    "productionBoundaryChecks": 23,
+    "directFirebaseReadback": true,
+    "actualBrowserOwnerCreatedAndFroze": true,
+    "actualBrowserExpertSubmitted": true,
+    "browserSaveReportReadback": true,
+    "languageSwitchRetainsExpertInputs": true,
+    "independentPointChecks": 320,
+    "independentBootstrapReplicates": 2000,
+    "methods": [
+      "I-CVI and S-CVI/Ave / S-CVI/UA",
+      "Linear weighted Cohen kappa per criterion",
+      "Exact agreement, MAD and signed rater bias",
+      "ICC(A,1), fixed selected pair",
+      "Case-level percentile bootstrap 95% interval, 2000 replicates",
+      "Independent Fraction contingency-table and covariance implementation; NumPy quantiles"
+    ],
+    "guidePages": 16,
+    "guideSha256": "9d310f887d3cca6cac81838d8a3fd2fef9c18824b669bbbd4a1d0c3d9f52fbe7",
+    "masterWordScope": "20-page historical Word copy; current master is the 30-page PDF",
+    "mobileViewportVerified": true,
+    "mobileViewportReason": "Actual DOM dimensions checked: 320px core actions and 390px owner post-withdrawal views; 19 language/size observations",
+    "physicalDevices": "pending",
+    "noNewPaidServicesOrSecrets": true,
+    "contentDefinitionManifest": true,
+    "allFourDefinitionsGuarded": true,
+    "threeLanguageActualBrowser": true,
+    "browserViewportScope": "Chromium actual CSS viewport simulation; not physical devices or every operation-language-width permutation",
+    "guidePublicUrl": "https://aligna-two.vercel.app/validation-guide.pdf",
+    "publicDownloadUnauthenticated200": true,
+    "mobileCloudApiChecks": 22,
+    "mobileDirectFirebaseReadback": true,
+    "mobileThreeLanguageResearchConsentAndWithdrawal": true,
+    "mobileTwoBrowserIndependentRatings": true,
+    "mobileRevokedExpertsAndRatersApiAndFirestoreDenied": true,
+    "mobileHistoricalSnapshotsPreserved": true,
+    "noPermissionRuleChangesThisFollowup": true
+  },
+  "mobileValidationAcceptance": {
+    "date": "2026-10-23",
+    "proof": "docs/acceptance/validation-mobile-proof.json",
+    "measuredViews": 19,
+    "actualWidths": [
+      320,
+      390
+    ],
+    "languages": [
+      "zh",
+      "en",
+      "ms"
+    ],
+    "cloudBeforeChecks": 8,
+    "cloudAfterChecks": 14,
+    "directFirebaseReadback": true,
+    "syntheticOnly": true,
+    "humanExperts": 0,
+    "humanPairedCases": 0,
+    "physicalDevices": "pending",
+    "mentorQuestions": 10,
+    "mentorPdfPages": 2,
+    "rulesRegressionScope": "Existing 566 rule checks and published rules retained; no rules changed in this UI follow-up"
+  },
+  "explorationAcceptance": {
+    "date": "2026-10-23",
+    "features": [
+      1,
+      2,
+      3
+    ],
+    "publishedRules": true,
+    "rulesSha256": "c1fb9c493dd4c618e7a811dfc9461df9c2d6bf8dbb9bf88911907e17bdcb7278",
+    "privateLifeVersion": "life-evidence-v2",
+    "careerTryVersion": "career-try-v1",
+    "counterfactualVersion": "single-record-preview-v1",
+    "newPermissionChecks": 67,
+    "priorRegressionChecks": 566,
+    "totalPermissionChecks": 633,
+    "cloudChecks": 28,
+    "actualBrowserProductionWrites": true,
+    "directFirebaseReadback": true,
+    "browserRecords": 25,
+    "measuredViews": 23,
+    "widths": [
+      320,
+      390
+    ],
+    "languages": [
+      "zh",
+      "en",
+      "ms"
+    ],
+    "allMeasuredNoHorizontalOverflow": true,
+    "threeTemplates": [
+      "budget",
+      "records",
+      "customer"
+    ],
+    "deliberateConflictSaved": true,
+    "maxTwelveClaimsCloudReadback": true,
+    "lifeRemovalCloudReadback": true,
+    "otherThreeAccountsReadWriteDenied": true,
+    "originalQuestionnaireAndGamesUnchanged": true,
+    "sharedSeekerHrMatcher": true,
+    "lifeQuotesExcludedFromApplicationExport": true,
+    "originalApplicationSnapshotsNotRebased": true,
+    "independentOccupations": 923,
+    "independentPointChecks": 4550,
+    "independentMethods": [
+      "Python Fraction weighted sums and half-up rounding",
+      "Independent squared-weight dot product and Euclidean norms",
+      "Enumeration of every missing explicit skill"
+    ],
+    "independentReproduction": "NODE_BINARY=node python tests/counterfactual-crosscheck.py",
+    "productionAssetsExact": 13,
+    "professionalValidity": "pending",
+    "humanExpertCount": 0,
+    "humanPairedCaseCount": 0,
+    "noPaidServiceOrNewAiSecret": true,
+    "limitations": [
+      "Life skill extraction is catalogue/action rules on-device, not an LLM semantic extractor.",
+      "Three fixed simplified templates, not 923 validated working-day simulations.",
+      "Written reasoning is unassessed and try-out reflection does not alter match scores.",
+      "No specific course or credential is invented where the curated catalogue lacks one.",
+      "Chromium CSS viewport simulations do not certify physical phones or Safari."
+    ]
+  },
+  "careerTools": {
+    "date": "2026-10-23",
+    "features": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "routes": [
+      "ai-trends.html",
+      "study-calendar.html",
+      "application-reflection.html",
+      "portfolio-careers.html"
+    ],
+    "implementation": "published and verified on production",
+    "nodeTests": {
+      "passed": 125,
+      "failed": 0
+    },
+    "firestoreEmulator": {
+      "suites": 11,
+      "checks": 749,
+      "passed": true
+    },
+    "independentArithmetic": {
+      "checks": 1796,
+      "passed": true,
+      "incomeCases": 600,
+      "scheduleCases": 48,
+      "pairFeasibilityCases": 500
+    },
+    "newPrivateRules": "published after explicit user confirmation; published UI source matched tested repository source",
+    "productionSaveAcceptance": "passed: 51 production authenticated SDK checks; browser saves, reopen, remove and priority-to-growth flow verified",
+    "responsiveLanguageAcceptance": "passed: 24 production views, all four new pages in zh/en/ms at 320 and 390 CSS px; not physical devices",
+    "masterPages": 30,
+    "limitations": [
+      "manual task-to-skill AI outlook; no skill-level validation or replacement forecasts",
+      "local explicit-clause rejection extraction, not an LLM or verified employer reason",
+      "fixed recurring whole-hour shifts only; gross income estimates, no hiring or wage guarantees",
+      "professional validity and real human rating consistency remain pending"
+    ],
+    "codeCommit": "ac2931e182ba8f2e1c00c2d846237df52554239a",
+    "deployment": "dpl_CMvvx625Ho2o4VYrKzotytQUfLRR",
+    "rulesNormalizedSha256": "d5f83b3c9ed5d327ff62a58558defcd10f02fd3ac8dc9ce7632e99bfd6c62a8c",
+    "formalCloudChecks": 51,
+    "directFirebaseReadback": true,
+    "privateOtherAccountsAndNewsWorkerDenied": true,
+    "calendarDownloadEvents": 12,
+    "originalQuestionnaireGamesAndApplicationsUnchanged": true,
+    "productionAssetsExact": 9,
+    "consoleErrorsObserved": 0,
+    "noPaidServiceOrNewSecret": true
+  },
+  "responsiveLanguageScope": "Latest S003 acceptance: 16 complete states x zh/en/ms x 320/390px. One historical mobile failure and six desktop observations kept separately; fixed state retested.",
+  "freshSeekerAcceptance": {
+    "date": "2026-10-23",
+    "status": "passed synthetic software and production data-flow acceptance",
+    "syntheticAccount": "S003",
+    "accountCreation": "new account through production UI; user-approved existing terms; actual email verification link; began with zero questionnaire sessions and games",
+    "cv": "actual synthetic PDF upload; two education, two employment entries, six confirmed skills",
+    "adaptive": {
+      "initialQuestions": 30,
+      "finalQuestions": 50,
+      "uniqueQuestions": 50,
+      "coveragePopupObserved": true,
+      "saveAndResumeObserved": true,
+      "deterministicReplay": 50,
+      "alteredPriorAnswerPrefixesChangingRouting": 22,
+      "method": "deterministic coverage/clarification/career-gap routing with seeded tie-breaking; not a trained self-learning model"
+    },
+    "games": {
+      "memoryRounds": 6,
+      "switchRecordedTrials": 24,
+      "readBackConfirmed": true,
+      "timing": "24 automated anticipations excluded; valid timing trials zero; median withheld"
+    },
+    "features": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "sharedGoal": "43-4051.00",
+    "country": "MY",
+    "weeklyHours": 4,
+    "calendar": {
+      "weeks": 13,
+      "scheduledHours": 45,
+      "icsEventsProgrammaticallyChecked": 45,
+      "actualBrowserDownloadRepeatedThisRun": false
+    },
+    "application": {
+      "synthetic": true,
+      "coverage": 70,
+      "cosinePercent": 85,
+      "matchedWeight": 7,
+      "totalWeight": 10,
+      "sameFrozenInputsAndResultsReadByAuthorizedHR": true
+    },
+    "formalFirebaseChecks": 114,
+    "independentPythonChecks": 125,
+    "mobileLanguageViews": 96,
+    "masterPages": 34,
+    "originalQuestionnaireAndGamesUnchanged": true,
+    "privateDataDeniedToOtherAccountsAndNewsWorker": true,
+    "fixes": [
+      "Challenge saved/privacy caption follows actual save state and server readback",
+      "Mobile insufficient-timing metrics wrap within grid columns"
+    ],
+    "codeCommit": "e1a0a7205bc7d1172023c13a7e868ab7e6f7a40e",
+    "deployment": "dpl_9xqqYyDL2nq6bkbHproMjkkLrd8g",
+    "productionAssetsExact": 7,
+    "proofs": [
+      "seven-fresh-live-proof.json",
+      "seven-fresh-independent-proof.json",
+      "seven-fresh-browser-proof.json",
+      "seven-fresh-deploy-proof.json"
+    ],
+    "limitations": [
+      "Professional validity and real human inter-rater agreement remain pending.",
+      "Chromium CSS viewport tests do not certify physical iOS/Android or assistive technology.",
+      "Life skill claims and written career try-out reflections are self-reported, not verified competence.",
+      "No hiring probability, IQ, lie detection, perfect personality inference or course/certificate eligibility claim.",
+      "No new paid service, secret or Firestore permission change in this run."
+    ]
+  },
+  "hrCompanyIntegration": {
+    "testedAt": "2026-10-23T08:27:55.141Z",
+    "production": "https://aligna-two.vercel.app",
+    "deployment": "dpl_CELLMXBun4aNxfRn4hAe3nEF6n3Y",
+    "codeCommit": "b5aca69ab43fe6abfd6f74f92657a86cf3b48522",
+    "nodeChecks": 139,
+    "emulatorSuites": 12,
+    "emulatorChecks": 838,
+    "newRuleChecks": 89,
+    "productionFinalIntegrationChecks": 25,
+    "productionDeliveryChecks": 5,
+    "independentPythonChecks": 12,
+    "mobileLanguageViews": 54,
+    "productionAssetsExact": 24,
+    "masterPages": 38,
+    "rulesPublished": true,
+    "rulesCopiedBackEqual": true,
+    "scope": "Selective merge of HR archives; preserve S003 questionnaire, games and seven private seeker tools. Real production UI upload, reviewer sandbox review and HR record save, with ordinary SDK persistence and isolation checks.",
+    "company": {
+      "country": "MY",
+      "publicRegistry": "manual review; no free automated government API active",
+      "syntheticReview": "normal designated reviewer UI; sandbox only",
+      "fileSHAReadback": true,
+      "newSyntheticJobPublishedThenClosed": true,
+      "passportSelfie": "secure disabled entry; no documents or biometrics collected; no paid service enabled"
+    },
+    "interview": {
+      "sharedSkillCount": 1,
+      "savedFollowups": 3,
+      "sharedFollowups": 1,
+      "realHRWebFormSaved": true,
+      "skillPanelShowsRealVisibleInterviewRecord": true,
+      "sameFrozenApplicationCoverage": 80,
+      "sameCosinePercent": 94,
+      "privateHRVisibleCompleteness": 67,
+      "seekerVisibleCompleteness": 33,
+      "completenessScope": "Counts fields visible to each role; it is not the shared match score or honesty.",
+      "withdrawalClosesHRAccess": true,
+      "invitationUI": "synthetic only; 2026-11-06 10:00 MYT stored as 02:00 UTC; no email or external meeting"
+    },
+    "fixes": [
+      "Preserve original follow-up questions and answers, including skills already recorded",
+      "Disable empty-looking interview form on read failure and offer reload",
+      "Atomic private/public saves and canonical readback including time and conditions",
+      "Follow-up sharing stays explicit, not inferred from answered status",
+      "Company registered address checked; review drafts retained across language changes",
+      "Google popup has bounded UI waiting; actual designated account returned successfully",
+      "Real interview feedback displayed per skill without changing match percent",
+      "Unified beige graph styles load after graph base styles; localized chart and preference labels"
+    ],
+    "proofs": [
+      "hr-company-live-proof.json",
+      "hr-interview-live-proof.json",
+      "hr-company-final-live-proof.json",
+      "hr-company-independent-proof.json",
+      "hr-company-browser-proof.json",
+      "hr-company-deploy-proof.json",
+      "hr-company-rule-proof.json",
+      "hr-preserved-seeker-proof.json"
+    ],
+    "limitations": [
+      "Real company document authenticity and representative authority still require human checks. Synthetic sandbox is not live verification.",
+      "Existing jobs are not automatically unpublished when a company review expires; a real operations policy is still needed.",
+      "Passport/selfie provider is not active; no bank-style KYC claim.",
+      "Professional validity, real independent human ratings, predictive calibration, physical mobile devices and assistive technology remain unaccepted.",
+      "Match weights are transparent, not calibrated hiring probabilities. Completeness is field availability, not trust or ability.",
+      "Browser viewport tests and backend SDK tests are labelled separately; no Admin SDK or invented human results."
+    ]
+  },
+  "pairedTestAccounts": {
+    "testedAt": "2026-10-23T08:49:59.680Z",
+    "deployment": "dpl_8ZHNpNX5Wv97SeoLF8fMreo1d3FA",
+    "codeCommit": "1a9cdc17c6d6ea17d4bc3aa70c43e238cbef2cfb",
+    "assetsExact": 6,
+    "nodeTests": 141,
+    "browserChecks": 24,
+    "pairFirebaseChecks": 11,
+    "applicationId": "PdRLSAORDGZLgUIucoVLhyll3Lz1_xIa9M0PKvNq3y2EYkres",
+    "scope": "Same active application, full frozen job description, candidate and shared feedback. Dedicated coherent synthetic posting prepared. No new account, privilege, T&C acceptance or password change. Credentials are never stored in repository.",
+    "typography": {
+      "family": "Arial / PingFang SC / Microsoft YaHei / Noto Sans SC",
+      "bodyAndInputs": 16,
+      "labelsAndTables": 14,
+      "auxiliary": 13,
+      "titleDesktop": 36,
+      "titleMobile": 28
+    },
+    "proofs": [
+      "paired-test-accounts-proof.json",
+      "paired-typography-browser-proof.json",
+      "paired-test-delivery-proof.json"
+    ]
+  },
+  "reviewerGuideDelivery": {
+    "testedAt": "2026-10-23T09:04:31.430Z",
+    "status": "production-ready",
+    "production": "https://aligna-two.vercel.app/",
+    "localReview": "http://127.0.0.1:4173/review-guide.html",
+    "guidePages": 14,
+    "nodeTests": 141,
+    "firebasePairChecks": 11,
+    "productionRoutesOK": 12,
+    "newsSectorsResponding": 15,
+    "responsiveLanguageViews": 6,
+    "pdfLocalBytesExact": true,
+    "deploymentBlocker": null,
+    "pending": [
+      "Professional validity and real independent human ratings remain unaccepted.",
+      "Physical phones and assistive technology require real-device acceptance."
+    ],
+    "proofs": [
+      "reviewer-guide-proof.json",
+      "paired-test-accounts-proof.json"
+    ],
+    "deployment": "dpl_XXEm2pSED3J2iGFtr3TnSTDLZpfh",
+    "codeCommit": "2f2171a30ab0d4cd74db44c24bf49e35bc284aae",
+    "verifiedAt": "2026-10-23T09:07:18.441Z",
+    "onlineReview": "https://aligna-two.vercel.app/review-guide.html",
+    "onlinePDF": "https://aligna-two.vercel.app/project-guide.pdf",
+    "productionAssetsExact": 4,
+    "browserScope": "Production 390px and 1280px in zh/en/ms. Existing seeker session followed review link through account continue to stored application, matching and missing-skill advice. HR link target verified; HR data read by ordinary authenticated SDK, HR browser re-login not repeated.",
+    "independentChecks": {
+      "matchOccupations": 923,
+      "matchPointChecks": 4550,
+      "formalWorkForms": 4,
+      "statisticsPointComparisons": 320,
+      "bootstrapReplicates": 2000,
+      "allPassed": true,
+      "scope": "Independent arithmetic and implementation checks only; no human validity claim."
+    }
+  },
+  "workspacePersonalization": {
+    "testedAt": "2026-10-23T10:00:53.942Z",
+    "status": "production-verified",
+    "deployment": "dpl_Hqixw9yRcaFvvartBnusscy3Pag5",
+    "codeCommit": "b47a237f0c3ba9322bc16737c085445191c33b2e",
+    "selectedFeatures": 4,
+    "availableFeatures": 12,
+    "privatePreferencePath": "aligna_users/{uid}/preferences/workspace",
+    "ownerPreferenceSdkChecks": 6,
+    "rulesChecks": 20,
+    "totalRulesRegressionChecks": 828,
+    "sharedRoleNavigation": true,
+    "proofs": [
+      "shortcuts-live-proof.json",
+      "workspace-shortcuts-browser-proof.json",
+      "company-submit-fix-proof.json"
+    ],
+    "scope": "First-entry chooser, save, readback, edit, cancel, reload and zh/en/ms at desktop and 390 CSS pixels. Existing browser account navigation preferences only; separate synthetic SDK tests. No physical phone claim."
+  },
+  "companySubmissionFix": {
+    "testedAt": "2026-10-23T10:00:53.942Z",
+    "status": "production-synthetic-end-to-end-verified",
+    "deployment": "dpl_Hqixw9yRcaFvvartBnusscy3Pag5",
+    "codeCommit": "b47a237f0c3ba9322bc16737c085445191c33b2e",
+    "nodeTests": 148,
+    "emulatorChecks": 6,
+    "productionLanguageViewportChecks": 6,
+    "changes": [
+      "Specific field, authorization, PDF and Firebase errors",
+      "PDF extension plus header validation, including absent browser MIME",
+      "Exact persisted version and hash readback; lost-response recovery",
+      "Duplicate submission recovery and pending-record guard",
+      "Compact checkbox alignment; separate synthetic test options"
+    ],
+    "proofs": [
+      "company-submit-fix-proof.json"
+    ],
+    "pending": [
+      "The reported user account and original document were not supplied; this verifies the existing synthetic HR account and synthetic PDF.",
+      "Real registry and representative authority checks remain human-reviewed.",
+      "Professional validity and real independent ratings remain pending."
+    ]
+  },
+  "companyProductionResubmission": {
+    "testedAt": "2026-10-23T11:00:27.722Z",
+    "status": "passed-production-synthetic-flow",
+    "deployment": "dpl_FxfHhA73z5Tukzc5U3MpdAdsNMBH",
+    "codeCommit": "b682d6a0a799553784cb49761271dcd5ec8e306b",
+    "nodeTests": 149,
+    "productionReadbackChecks": 17,
+    "companyFileBytes": 1874,
+    "requestVersion": "company:f1505e312a04ed1f",
+    "pdfBytesExact": true,
+    "review": "sandbox only, exact new request version",
+    "publishedJob": "twoIfnNTceZZ0MIUZfP1",
+    "structuredSkills": 3,
+    "seekerReadsPublishedJob": true,
+    "seekerCannotReadCompanyPDF": true,
+    "temporaryJobClosed": true,
+    "proofs": [
+      "company-resubmission-completion-proof.json",
+      "company-resubmission-pending-live-proof.json",
+      "company-resubmission-final-live-proof.json"
+    ],
+    "pending": [
+      "Real company registry authenticity and representative authorization still require independent human review.",
+      "No real-company approval, professional validity, physical-phone acceptance or production 2 MB boundary claim."
+    ]
+  },
+  "algorithmPriorities": {
+    "updatedAt": "2026-10-23T11:33:12.125Z",
+    "sourceGuide": "FutureFit_算法与技术说明_从输入到结果.pdf",
+    "runtimeCommit": "4bf72bc25b774f6f9bd776909a3152dfd2ba7a20",
+    "deployment": "dpl_Ci9ovagnYMEx4yid1xpSSS785yN1",
+    "nodeTests": 154,
+    "independentComparisons": 11268,
+    "tasks": [
+      {
+        "id": "A01",
+        "priority": "P0",
+        "task": "异常岗位输入阻断",
+        "status": "已上线，技术验收通过",
+        "owner": "整合组",
+        "acceptance": "非法结构化资料不得回退旧字段算分；百分比留空；新申请阻断；合法旧格式继续可用。",
+        "evidence": "algorithm-sensitivity.test.mjs；algorithm-priorities-live-proof.json"
+      },
+      {
+        "id": "A02",
+        "priority": "P0",
+        "task": "双端同一输入、同一算法",
+        "status": "已有功能，本轮回归通过",
+        "owner": "整合组 + HR组",
+        "acceptance": "同一冻结申请的覆盖率、余弦、trace、诊断与三语说明相同，原正式分数80/94不变。",
+        "evidence": "algorithm-priorities-live-proof.json"
+      },
+      {
+        "id": "A03",
+        "priority": "P1",
+        "task": "岗位权重敏感性面板",
+        "status": "已上线，技术验收通过",
+        "owner": "整合组",
+        "acceptance": "预设1:1、2:1、3:1；不改正式分数；不得称置信区间或正确权重。",
+        "evidence": "match-sensitivity-view.js；6个HR浏览器尺寸/语言检查"
+      },
+      {
+        "id": "A04",
+        "priority": "P1",
+        "task": "职业排序敏感性诊断",
+        "status": "计算与合成报告完成；普通结果页未新增此面板",
+        "owner": "整合组 + 求职者组",
+        "acceptance": "四组兴趣/技能比重；923职业；不足3条相关技能回退兴趣；平坦兴趣保留保护。",
+        "evidence": "algorithm-sensitivity-independent-proof.json"
+      },
+      {
+        "id": "A05",
+        "priority": "P1",
+        "task": "独立核算与一键复跑",
+        "status": "已完成，技术验收通过",
+        "owner": "整合组",
+        "acceptance": "npm run audit:algorithms；任何差异返回失败；输出带范围说明的JSON，不签发专业通过。",
+        "evidence": "algorithm-audit-proof.json"
+      },
+      {
+        "id": "A06",
+        "priority": "P2",
+        "task": "岗位专家审题与别名审核",
+        "status": "待专家，不标通过",
+        "owner": "HR组组织，岗位专家判断",
+        "acceptance": "冻结题目与岗位版本；真实专家资历/利益冲突/逐维度意见；CVI保留缺失，不自动盖章。"
+      },
+      {
+        "id": "A07",
+        "priority": "P2",
+        "task": "真人独立盲评一致性",
+        "status": "待真人与授权，不标通过",
+        "owner": "HR组 + 研究负责人",
+        "acceptance": "真实获授权作答；固定两位独立评分者；同题同条件；报告Kappa/ICC、区间与缺失。"
+      },
+      {
+        "id": "A08",
+        "priority": "P2",
+        "task": "权重校准与真实效果验证",
+        "status": "待真实结果数据",
+        "owner": "研究负责人 + 整合组",
+        "acceptance": "先登记指标及比较方案，分离验证数据，说明偏差与公平性；不能靠调参获得漂亮结果。"
+      },
+      {
+        "id": "A09",
+        "priority": "P2",
+        "task": "A/B等值、游戏阈值和三语测量等值",
+        "status": "待真人试测",
+        "owner": "研究负责人 + 求职者组",
+        "acceptance": "分别核对题型、语言、工具、设备和合理调整；真实样本不足时不出常模/百分位。"
+      },
+      {
+        "id": "A10",
+        "priority": "P2",
+        "task": "DISC/CAAS/CDSE/TEIQue正式题项与许可",
+        "status": "待版权与专业确认",
+        "owner": "内容负责人 + 权利方",
+        "acceptance": "得到可审计的使用与翻译许可、原版计分规则，再安排接入与效度验证。"
+      },
+      {
+        "id": "A11",
+        "priority": "P3",
+        "task": "真实数据训练、IRT/CAT及学习排序模型",
+        "status": "前置数据不足，暂不训练",
+        "owner": "整合组 + 研究负责人",
+        "acceptance": "在数据授权、样本与测量问题明确后，再设基线、留出集、校准、漂移与回退。"
+      }
+    ],
+    "humanValidation": "pending; synthetic arithmetic and browser tests do not establish human validity",
+    "browserViews": 6,
+    "productionChecks": 13,
+    "auditNodeSubset": 15,
+    "proofs": [
+      "algorithm-priority-tracker.json",
+      "algorithm-priorities-live-proof.json",
+      "algorithm-sensitivity-independent-proof.json",
+      "algorithm-audit-proof.json",
+      "algorithm-sensitivity-browser-proof.json"
+    ]
+  },
+  "researchPrototype": {
+    "testedAt": "2026-10-23T12:08:39.488Z",
+    "codeCommit": "167887028d6b73c50ac2f3760cee25056f005f79",
+    "deployment": "dpl_8P4pwy3DH1vgwVtTaqq4Dcc8KYyE",
+    "url": "https://aligna-two.vercel.app/research-lab.html",
+    "nodeTests": 164,
+    "independentNumericComparisons": 110,
+    "storage": "sessionStorage in current tab only; no Firebase writes",
+    "professionalValidation": "pending",
+    "productionModelEnabled": false,
+    "browserViews": 45,
+    "proof": "research-prototype-live-proof.json",
+    "githubRepository": "https://github.com/EvaCeryana/aligna",
+    "supersededBy": "researchCloudRelease; previous standalone session-storage release retained as history"
+  },
+  "researchCloudRelease": {
+    "testedAt": "2026-10-23T13:08:24.822355+00:00",
+    "version": "paired-synthetic-research-cloud-v1",
+    "synthetic": true,
+    "storage": "Firebase project-d32d7; paired active synthetic application; caller-scoped API",
+    "nodeTests": 173,
+    "permissionChecks": 941,
+    "newPermissionChecks": 83,
+    "productionApiChecks": 24,
+    "independentNumericComparisons": 110,
+    "realValidation": "pending",
+    "productionModelEnabled": false,
+    "applicationId": "PdRLSAORDGZLgUIucoVLhyll3Lz1_xIa9M0PKvNq3y2EYkres",
+    "hrUrl": "https://aligna-two.vercel.app/research-lab.html?role=hr",
+    "seekerUrl": "https://aligna-two.vercel.app/research-lab.html?role=seeker",
+    "proofs": [
+      "research-cloud-live-proof.json",
+      "research-cloud-learning-proof.json",
+      "research-cloud-independent-proof.json",
+      "research-cloud-rules-proof.json",
+      "research-cloud-browser-proof.json",
+      "research-cloud-release-proof.json"
+    ],
+    "guide": "FutureFit_模拟研究与训练_操作验收指南.pdf",
+    "browserViews": 90,
+    "browserScope": "2 roles x 3 widths (1280/390/320) x 3 languages x 5 tabs; no document overflow or stray Chinese in EN/MS",
+    "deployment": "dpl_5eVpKdegsrVyF4xC6YbrkNca9CAh",
+    "sourceDigest": "prototype-evidence:51347d0c02651088",
+    "currentReport": "PdRLSAORDGZLgUIucoVLhyll3Lz1_xIa9M0PKvNq3y2EYkres--browser-final-1792760693307"
+  }
+}

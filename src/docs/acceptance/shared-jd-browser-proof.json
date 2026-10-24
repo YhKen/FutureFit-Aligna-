@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-22T10:44:33.436Z",
+  "seeker": {
+    "comparison": "match:a49f3035021ee999",
+    "cosine": "75",
+    "coverage": "60",
+    "examples": "0",
+    "skills": [
+      {
+        "advice": "继续巩固学什么表格整理、查找公式、数据透视表Microsoft · Excel ↗练什么清理 50 行模拟工作记录，制作分类汇总，并用公式核对总数。怎样复核交付工作簿；请同伴重算总数，检查缺失值与重复项。考什么先补作品或相关培训，不为这项技能强推考试。岗位若要求执照或认可课程，请向 HR 核对名称。建议版本: learning:86089f6a2dce3800",
+        "detail": "已有记录Excel 表格权重 2Job descriptionMicrosoft Excel专业技能入职前需要Reconcile a synthetic workbook and explain two differences.允许的证据类型: 工作样本, 面试候选人分享的技能记录Microsoft Excel技能编号: skill:Microsoft%20Excel记录编号: evidence:b424613772166fb1自报记录，不代表已经核验能力。这项如何影响百分比技能记录覆盖贡献: 2 / 5 × 100 = 40.0 个百分点余弦相似度贡献: (2 × 2) / √(9 × 5) = 59.6 个百分点各项贡献相加后才四舍五入显示总百分比。继续巩固学什么表格整理、查找公式、数据透视表Microsoft · Excel ↗练什么清理 50 行模拟工作记录，制作分类汇总，并用公式核对总数。怎样复核交付工作簿；请同伴重算总数，检查缺失值与重复项。考什么先补作品或相关培训，不为这项技能强推考试。岗位若要求执照或认可课程，请向 HR 核对名称。建议版本: learning:86089f6a2dce3800",
+        "learningReference": "learning:86089f6a2dce3800",
+        "recordId": "evidence:b424613772166fb1",
+        "skillId": "skill:Microsoft%20Excel"
+      },
+      {
+        "advice": "从这里补上学什么SELECT、筛选、JOIN、分组与空值处理Microsoft Learn · Transact-SQL ↗练什么在模拟订单和客户表上写 5 条查询，覆盖关联、汇总、空值与重复记录。怎样复核交付 SQL 文件和预期结果；用手算样本核对，注明所用 SQL 方言。考什么先补作品或相关培训，不为这项技能强推考试。岗位若要求执照或认可课程，请向 HR 核对名称。建议版本: learning:b1faae9303423aeb",
+        "detail": "待补充 / 核对SQL权重 2Job descriptionSQL专业技能入职后可培养Learn to write a grouped query using a synthetic dataset.允许的证据类型: 工作样本, 面试候选人分享的技能记录目前还没有对应记录。技能编号: skill:SQL请补充例子或用面试 / 工作样本确认。这项如何影响百分比技能记录覆盖贡献: 0 / 5 × 100 = 0.0 个百分点余弦相似度贡献: (2 × 0) / √(9 × 5) = 0.0 个百分点各项贡献相加后才四舍五入显示总百分比。从这里补上学什么SELECT、筛选、JOIN、分组与空值处理Microsoft Learn · Transact-SQL ↗练什么在模拟订单和客户表上写 5 条查询，覆盖关联、汇总、空值与重复记录。怎样复核交付 SQL 文件和预期结果；用手算样本核对，注明所用 SQL 方言。考什么先补作品或相关培训，不为这项技能强推考试。岗位若要求执照或认可课程，请向 HR 核对名称。建议版本: learning:b1faae9303423aeb",
+        "learningReference": "learning:b1faae9303423aeb",
+        "recordId": "",
+        "skillId": "skill:SQL"
+      },
+      {
+        "advice": "继续巩固学什么澄清需求、复述确认、书面交接与跟进OpenLearn · Effective communication in the workplace ↗练什么模拟一次客户或同事沟通：录一段 3 分钟回应，写一封确认下一步与截止时间的邮件。怎样复核请同伴按「听懂需求、回应清楚、下一步明确」逐项反馈；修改后保留前后版本。考什么先补作品或相关培训，不为这项技能强推考试。岗位若要求执照或认可课程，请向 HR 核对名称。建议版本: learning:b766ca4f79fe4513",
+        "detail": "已有记录沟通表达权重 1Job descriptionCommunication沟通与协作入职前需要Explain a handover and verify the next steps.允许的证据类型: 工作样本, 面试候选人分享的技能记录Communication技能编号: skill:Communication记录编号: evidence:5243682b9ab2a995自报记录，不代表已经核验能力。这项如何影响百分比技能记录覆盖贡献: 1 / 5 × 100 = 20.0 个百分点余弦相似度贡献: (1 × 1) / √(9 × 5) = 14.9 个百分点各项贡献相加后才四舍五入显示总百分比。继续巩固学什么澄清需求、复述确认、书面交接与跟进OpenLearn · Effective communication in the workplace ↗练什么模拟一次客户或同事沟通：录一段 3 分钟回应，写一封确认下一步与截止时间的邮件。怎样复核请同伴按「听懂需求、回应清楚、下一步明确」逐项反馈；修改后保留前后版本。考什么先补作品或相关培训，不为这项技能强推考试。岗位若要求执照或认可课程，请向 HR 核对名称。建议版本: learning:b766ca4f79fe4513",
+        "learningReference": "learning:b766ca4f79fe4513",
+        "recordId": "evidence:5243682b9ab2a995",
+        "skillId": "skill:Communication"
+      }
+    ]
+  },
+  "hr": {
+    "comparison": "match:a49f3035021ee999",
+    "cosine": "75",
+    "coverage": "60",
+    "examples": "0",
+    "skills": [
+      {
+        "advice": "继续巩固学什么表格整理、查找公式、数据透视表Microsoft · Excel ↗练什么清理 50 行模拟工作记录，制作分类汇总，并用公式核对总数。怎样复核交付工作簿；请同伴重算总数，检查缺失值与重复项。考什么先补作品或相关培训，不为这项技能强推考试。岗位若要求执照或认可课程，请向 HR 核对名称。建议版本: learning:86089f6a2dce3800",
+        "detail": "已有记录Excel 表格权重 2Job descriptionMicrosoft Excel专业技能入职前需要Reconcile a synthetic workbook and explain two differences.允许的证据类型: 工作样本, 面试候选人分享的技能记录Microsoft Excel技能编号: skill:Microsoft%20Excel记录编号: evidence:b424613772166fb1自报记录，不代表已经核验能力。这项如何影响百分比技能记录覆盖贡献: 2 / 5 × 100 = 40.0 个百分点余弦相似度贡献: (2 × 2) / √(9 × 5) = 59.6 个百分点各项贡献相加后才四舍五入显示总百分比。继续巩固学什么表格整理、查找公式、数据透视表Microsoft · Excel ↗练什么清理 50 行模拟工作记录，制作分类汇总，并用公式核对总数。怎样复核交付工作簿；请同伴重算总数，检查缺失值与重复项。考什么先补作品或相关培训，不为这项技能强推考试。岗位若要求执照或认可课程，请向 HR 核对名称。建议版本: learning:86089f6a2dce3800",
+        "learningReference": "learning:86089f6a2dce3800",
+        "recordId": "evidence:b424613772166fb1",
+        "skillId": "skill:Microsoft%20Excel"
+      },
+      {
+        "advice": "从这里补上学什么SELECT、筛选、JOIN、分组与空值处理Microsoft Learn · Transact-SQL ↗练什么在模拟订单和客户表上写 5 条查询，覆盖关联、汇总、空值与重复记录。怎样复核交付 SQL 文件和预期结果；用手算样本核对，注明所用 SQL 方言。考什么先补作品或相关培训，不为这项技能强推考试。岗位若要求执照或认可课程，请向 HR 核对名称。建议版本: learning:b1faae9303423aeb",
+        "detail": "待补充 / 核对SQL权重 2Job descriptionSQL专业技能入职后可培养Learn to write a grouped query using a synthetic dataset.允许的证据类型: 工作样本, 面试候选人分享的技能记录目前还没有对应记录。技能编号: skill:SQL请补充例子或用面试 / 工作样本确认。这项如何影响百分比技能记录覆盖贡献: 0 / 5 × 100 = 0.0 个百分点余弦相似度贡献: (2 × 0) / √(9 × 5) = 0.0 个百分点各项贡献相加后才四舍五入显示总百分比。从这里补上学什么SELECT、筛选、JOIN、分组与空值处理Microsoft Learn · Transact-SQL ↗练什么在模拟订单和客户表上写 5 条查询，覆盖关联、汇总、空值与重复记录。怎样复核交付 SQL 文件和预期结果；用手算样本核对，注明所用 SQL 方言。考什么先补作品或相关培训，不为这项技能强推考试。岗位若要求执照或认可课程，请向 HR 核对名称。建议版本: learning:b1faae9303423aeb",
+        "learningReference": "learning:b1faae9303423aeb",
+        "recordId": "",
+        "skillId": "skill:SQL"
+      },
+      {
+        "advice": "继续巩固学什么澄清需求、复述确认、书面交接与跟进OpenLearn · Effective communication in the workplace ↗练什么模拟一次客户或同事沟通：录一段 3 分钟回应，写一封确认下一步与截止时间的邮件。怎样复核请同伴按「听懂需求、回应清楚、下一步明确」逐项反馈；修改后保留前后版本。考什么先补作品或相关培训，不为这项技能强推考试。岗位若要求执照或认可课程，请向 HR 核对名称。建议版本: learning:b766ca4f79fe4513",
+        "detail": "已有记录沟通表达权重 1Job descriptionCommunication沟通与协作入职前需要Explain a handover and verify the next steps.允许的证据类型: 工作样本, 面试候选人分享的技能记录Communication技能编号: skill:Communication记录编号: evidence:5243682b9ab2a995自报记录，不代表已经核验能力。这项如何影响百分比技能记录覆盖贡献: 1 / 5 × 100 = 20.0 个百分点余弦相似度贡献: (1 × 1) / √(9 × 5) = 14.9 个百分点各项贡献相加后才四舍五入显示总百分比。继续巩固学什么澄清需求、复述确认、书面交接与跟进OpenLearn · Effective communication in the workplace ↗练什么模拟一次客户或同事沟通：录一段 3 分钟回应，写一封确认下一步与截止时间的邮件。怎样复核请同伴按「听懂需求、回应清楚、下一步明确」逐项反馈；修改后保留前后版本。考什么先补作品或相关培训，不为这项技能强推考试。岗位若要求执照或认可课程，请向 HR 核对名称。建议版本: learning:b766ca4f79fe4513",
+        "learningReference": "learning:b766ca4f79fe4513",
+        "recordId": "evidence:5243682b9ab2a995",
+        "skillId": "skill:Communication"
+      }
+    ]
+  },
+  "identical": true
+}

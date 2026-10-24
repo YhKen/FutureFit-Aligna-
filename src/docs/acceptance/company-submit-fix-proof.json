@@ -1,0 +1,125 @@
+{
+  "testedAt": "2026-10-23T10:00:53.942Z",
+  "production": "https://aligna-two.vercel.app",
+  "deployment": "dpl_Hqixw9yRcaFvvartBnusscy3Pag5",
+  "codeCommit": "b47a237f0c3ba9322bc16737c085445191c33b2e",
+  "assets": [
+    {
+      "file": "workspace.html",
+      "sha256": "446ed02c918895d1c586e5ae52dc0c8cb858c2f798c133fc35e36b793ee4b4cc"
+    },
+    {
+      "file": "workspace-shortcuts-data.js",
+      "sha256": "e259a92e26a32078c27ff34de99036eb195c01fb51549fe160f7491a01a3430a"
+    },
+    {
+      "file": "workspace-shortcuts.js",
+      "sha256": "34d7a1baecbcbf07875445b34dc39d0961559b35b81d98d74ce85085a9111356"
+    },
+    {
+      "file": "workspace-shortcuts.css",
+      "sha256": "6e7e72c41e7a19548c6f0bb00d70931986938cd16fa09487e073be4a03b25eb7"
+    },
+    {
+      "file": "workspace-navigation.css",
+      "sha256": "ece74f4696198b39172f905a6550d0a640fd37f31e2ccd9f0063a1972a66132a"
+    },
+    {
+      "file": "shared.js",
+      "sha256": "f838ee15c7ce817f992b14968816071fec2ed9d479cf8b2d1bdb47f2b550237b"
+    },
+    {
+      "file": "company.html",
+      "sha256": "085c9d51d5b7f38d3b7f8c722358839848d38783c26fe69ef94e3cc50bca9fff"
+    },
+    {
+      "file": "company-verification-core.js",
+      "sha256": "736e86f8bfdd8f97317f26311690eb24d29d68794a2ba90632d8fd8c51185489"
+    },
+    {
+      "file": "company-verification-store.js",
+      "sha256": "a7f295c3cc21285a9c82d625865524f19506596141217c6be0151163fd79ebad"
+    },
+    {
+      "file": "company-verification.js",
+      "sha256": "4f8f3589dc9fc15dbbe7d6c0d5c8fd6478c74a82bacee6269140f5a695be7dfd"
+    },
+    {
+      "file": "company-verification.css",
+      "sha256": "86d42942bff0c7e0bbba8b25e9ea5204d71a11b3879be4cd4446bb23a09a8abb"
+    },
+    {
+      "file": "company-submit-copy.js",
+      "sha256": "46be82b962bca5cb17c9dc4454b3ef418f7b64b204d813d2d70d2a41f0b1dff7"
+    }
+  ],
+  "nodeTests": 148,
+  "companyEmulatorChecks": 6,
+  "browser": {
+    "views": [
+      {
+        "collapsedTest": true,
+        "consentWidth": 22,
+        "disabled": true,
+        "helper": "Confirm that you are authorized before submitting.",
+        "lang": "en",
+        "scroll": 1265,
+        "title": "Let’s meet your company.",
+        "width": 1280
+      },
+      {
+        "collapsedTest": true,
+        "consentWidth": 22,
+        "disabled": true,
+        "helper": "Sahkan kuasa anda sebelum menghantar.",
+        "lang": "ms",
+        "scroll": 1265,
+        "title": "Kenali syarikat anda.",
+        "width": 1280
+      },
+      {
+        "collapsedTest": true,
+        "consentWidth": 22,
+        "disabled": true,
+        "helper": "请先勾选授权确认，再提交。",
+        "lang": "zh",
+        "scroll": 1265,
+        "title": "先认识你的公司。",
+        "width": 1280
+      },
+      {
+        "collapsedTest": true,
+        "consentWidth": 22,
+        "disabled": true,
+        "helper": "Confirm that you are authorized before submitting.",
+        "lang": "en",
+        "scroll": 375,
+        "title": "Let’s meet your company.",
+        "width": 390
+      },
+      {
+        "collapsedTest": true,
+        "consentWidth": 22,
+        "disabled": true,
+        "helper": "Sahkan kuasa anda sebelum menghantar.",
+        "lang": "ms",
+        "scroll": 375,
+        "title": "Kenali syarikat anda.",
+        "width": 390
+      },
+      {
+        "collapsedTest": true,
+        "consentWidth": 22,
+        "disabled": true,
+        "helper": "请先勾选授权确认，再提交。",
+        "lang": "zh",
+        "scroll": 375,
+        "title": "先认识你的公司。",
+        "width": 390
+      }
+    ],
+    "scope": "Production DOM and CSS viewport checks; no company authorization accepted or real company submission made in this browser test."
+  },
+  "passed": true,
+  "scope": "Actual production assets and layout; atomic document write/readback and isolation exercised in the Firestore emulator. This release did not submit a real company document in production or confirm the exact failing user payload."
+}

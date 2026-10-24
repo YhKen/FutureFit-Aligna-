@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-23T07:28:30.771Z",
+  "deployment": "dpl_9xqqYyDL2nq6bkbHproMjkkLrd8g",
+  "codeCommit": "e1a0a7205bc7d1172023c13a7e868ab7e6f7a40e",
+  "production": "https://aligna-two.vercel.app",
+  "assets": [
+    {
+      "file": "assessment.css",
+      "status": 200,
+      "sha256": "f3b6b0a206f7540a019b3bcaa0541654abb6352be137fb4dd6d2082bbf2c80b0"
+    },
+    {
+      "file": "game-results.js",
+      "status": 200,
+      "sha256": "275ba8457899b72059f14adfff5777a7873f0931e53e2d259be2f648afb35517"
+    },
+    {
+      "file": "games-v2.js",
+      "status": 200,
+      "sha256": "c77f9558d7d9eda8172c1ea3ac4f72d354adf032020a3966cbb2c1cd8773dc00"
+    },
+    {
+      "file": "career-tools.js",
+      "status": 200,
+      "sha256": "a2d2a403765339ea0816b5d1cfe7a874615f188e9536b34ceecbd4998c52ca1c"
+    },
+    {
+      "file": "seeker-tools-core.js",
+      "status": 200,
+      "sha256": "8b1067ae84b8bdaefec3dd1af54de1287aeccc1219120f8aa85e089ad6d396ed"
+    },
+    {
+      "file": "life-skills.js",
+      "status": 200,
+      "sha256": "756f686915961a6ad1b5e0f808a3f31c008bd4d9e0297f49ca2c90d8504447c1"
+    },
+    {
+      "file": "career-try.js",
+      "status": 200,
+      "sha256": "bd2df3551b106e65b1b75efd5aa476a2d520a0e889f65448e01b8dd899420b14"
+    }
+  ],
+  "passed": true
+}

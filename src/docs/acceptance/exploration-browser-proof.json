@@ -1,0 +1,284 @@
+{
+  "date": "2026-10-23",
+  "syntheticOnly": true,
+  "views": [
+    {
+      "candidates": 8,
+      "client": 305,
+      "lang": "zh",
+      "locale": "zh",
+      "page": "life-skills",
+      "scroll": 305,
+      "selected": 1,
+      "width": 320
+    },
+    {
+      "candidates": 8,
+      "client": 305,
+      "lang": "en",
+      "locale": "en",
+      "page": "life-skills",
+      "scroll": 305,
+      "selected": 1,
+      "width": 320
+    },
+    {
+      "candidates": 8,
+      "client": 305,
+      "lang": "ms",
+      "locale": "ms",
+      "page": "life-skills",
+      "scroll": 305,
+      "selected": 1,
+      "width": 320
+    },
+    {
+      "checks": [
+        "分项合计\n符合本题条件",
+        "发现数字不一致\n符合本题条件",
+        "文字推理与沟通质量\n未自动评价"
+      ],
+      "client": 305,
+      "ease": "3",
+      "interest": "4",
+      "lang": "zh",
+      "locale": "zh",
+      "page": "career-try-results",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "checks": [
+        "Subtotal\nMeets this condition",
+        "Recognise inconsistent totals\nMeets this condition",
+        "Written reasoning and communication\nNot automatically assessed"
+      ],
+      "client": 305,
+      "ease": "3",
+      "interest": "4",
+      "lang": "en",
+      "locale": "en",
+      "page": "career-try-results",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "checks": [
+        "Jumlah kecil\nMemenuhi syarat ini",
+        "Kenal pasti jumlah tidak sepadan\nMemenuhi syarat ini",
+        "Penaakulan bertulis dan komunikasi\nTidak dinilai automatik"
+      ],
+      "client": 305,
+      "ease": "3",
+      "interest": "4",
+      "lang": "ms",
+      "locale": "ms",
+      "page": "career-try-results",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "client": 305,
+      "ease": "3",
+      "interest": "5",
+      "lang": "en",
+      "page": "/career-try.html",
+      "saved": "Disimpan ke Firebase dan disahkan melalui bacaan semula.",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "client": 305,
+      "ease": "3",
+      "interest": "5",
+      "lang": "zh",
+      "page": "/career-try.html",
+      "saved": "Disimpan ke Firebase dan disahkan melalui bacaan semula.",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "client": 305,
+      "ease": "3",
+      "interest": "5",
+      "lang": "ms",
+      "page": "/career-try.html",
+      "saved": "Disimpan ke Firebase dan disahkan melalui bacaan semula.",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "careers": 5,
+      "client": 305,
+      "lang": "zh",
+      "page": "/counterfactual.html",
+      "preview": "36% → 41%+5 个百分点",
+      "qualification": true,
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "careers": 5,
+      "client": 305,
+      "lang": "en",
+      "page": "/counterfactual.html",
+      "preview": "36% → 41%+5 percentage points",
+      "qualification": true,
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "careers": 5,
+      "client": 305,
+      "lang": "ms",
+      "page": "/counterfactual.html",
+      "preview": "36% → 41%+5 mata peratus",
+      "qualification": true,
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "action": "remove-life",
+      "lang": "ms",
+      "page": "/life-skills.html",
+      "remaining": 0,
+      "scroll": 305,
+      "status": "Dikeluarkan daripada padanan baharu; rekod peribadi dikekalkan.",
+      "width": 320
+    },
+    {
+      "careers": 0,
+      "client": 375,
+      "heading": "经历里的技能",
+      "lang": "zh",
+      "origin": "https://aligna-two.vercel.app",
+      "page": "/life-skills.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "careers": 0,
+      "client": 375,
+      "heading": "Your experience counts.",
+      "lang": "en",
+      "origin": "https://aligna-two.vercel.app",
+      "page": "/life-skills.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "careers": 0,
+      "client": 375,
+      "heading": "Pengalaman anda bernilai.",
+      "lang": "ms",
+      "origin": "https://aligna-two.vercel.app",
+      "page": "/life-skills.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "careers": 0,
+      "client": 375,
+      "heading": "先试一段，再做打算。",
+      "lang": "zh",
+      "origin": "https://aligna-two.vercel.app",
+      "page": "/career-try.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "careers": 0,
+      "client": 375,
+      "heading": "Try a little of the work.",
+      "lang": "en",
+      "origin": "https://aligna-two.vercel.app",
+      "page": "/career-try.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "careers": 0,
+      "client": 375,
+      "heading": "Cuba dahulu, baru rancang.",
+      "lang": "ms",
+      "origin": "https://aligna-two.vercel.app",
+      "page": "/career-try.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "careers": 5,
+      "client": 375,
+      "heading": "差哪一步，先看清楚。",
+      "lang": "zh",
+      "origin": "https://aligna-two.vercel.app",
+      "page": "/counterfactual.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "careers": 5,
+      "client": 375,
+      "heading": "See the next step.",
+      "lang": "en",
+      "origin": "https://aligna-two.vercel.app",
+      "page": "/counterfactual.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "careers": 5,
+      "client": 375,
+      "heading": "Lihat langkah seterusnya.",
+      "lang": "ms",
+      "origin": "https://aligna-two.vercel.app",
+      "page": "/counterfactual.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "action": "production-conflict-save",
+      "client": 375,
+      "lang": "zh",
+      "origin": "https://aligna-two.vercel.app",
+      "page": "/career-try.html",
+      "results": [
+        "先核实事实需要再核对",
+        "遵守退款权限需要再核对",
+        "不索取密码符合本题条件",
+        "文字推理与沟通质量未自动评价"
+      ],
+      "scroll": 375,
+      "status": "已保存到 Firebase，并读回确认。",
+      "width": 390
+    },
+    {
+      "action": "production-life-save",
+      "chosen": 1,
+      "client": 1425,
+      "lang": "en",
+      "origin": "https://aligna-two.vercel.app",
+      "page": "/life-skills.html",
+      "scroll": 1425,
+      "status": "Saved to Firebase and confirmed by readback.",
+      "width": 1440
+    },
+    {
+      "action": "production-life-remove",
+      "lang": "en",
+      "origin": "https://aligna-two.vercel.app",
+      "page": "/life-skills.html",
+      "remainingActiveRecords": 1,
+      "status": "Removed from future matches; the private record is retained.",
+      "width": 1440
+    }
+  ],
+  "measuredViews": 23,
+  "allMeasuredNoHorizontalOverflow": true,
+  "scope": "Actual Chromium CSS widths, not physical iOS/Android/Safari certification. Not every operation-language-width permutation.",
+  "rulesConsoleReadbackEqualsLocal": true,
+  "rulesSha256": "c1fb9c493dd4c618e7a811dfc9461df9c2d6bf8dbb9bf88911907e17bdcb7278",
+  "productionNegativeTrialSaved": true,
+  "productionLifeSaveAndRemoval": true,
+  "initialUnfinishedAccountRedirectedToAssessment": true
+}

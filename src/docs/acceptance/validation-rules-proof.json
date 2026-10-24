@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-23",
+  "environment": "Firestore Emulator on 127.0.0.1:8180",
+  "newChecks": 126,
+  "priorRegressionChecks": 440,
+  "totalChecks": 566,
+  "passed": true,
+  "productionPublished": true,
+  "userConfirmation": "Explicit approval for expert review and study statistics rules",
+  "sha256": "3ba20efaf0732c3f1260cf4423afc7e27541cd12167d08cf53093cc2bd031de6",
+  "rawAnswerSharing": "Existing per-assignment candidate consent only",
+  "professionalValidity": "pending",
+  "publishedSourceMatches": true,
+  "normalizedPublishedSha256": "5f076855a311cb996022ed3d6bbd141095d36f8227e10735759fee8cd2bffe90"
+}

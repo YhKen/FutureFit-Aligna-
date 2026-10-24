@@ -1,0 +1,53 @@
+{
+  "views": [
+    {
+      "lang": "en",
+      "open": true,
+      "scroll": 1265,
+      "tableWidth": 963,
+      "text": "How much do other weights change this result?\n\nThe same job and shared records are kept; only role versus collaboration weights change. The production score still uses 2:1.\n\nRole : collaboration\tRecord coverage\tCosine similarity\n1:1\t67%\t82%\n2:1 · Current\t80%\t94%\n3:1\t86%\t97%\n\nCoverage differs across these three scenarios by 19.0 percentage points.\n\nThis compares predeclared weight scenarios. It is not a confidence interval or proof that a policy is better, and does not change the production score.",
+      "width": 1280
+    },
+    {
+      "lang": "ms",
+      "open": true,
+      "scroll": 1265,
+      "tableWidth": 963,
+      "text": "Berapa banyak keputusan berubah dengan wajaran lain?\n\nJawatan dan rekod dikongsi dikekalkan; hanya wajaran kemahiran jawatan berbanding kerjasama berubah. Skor sebenar kekal 2:1.\n\nJawatan : kerjasama\tLiputan rekod\tPersamaan kosinus\n1:1\t67%\t82%\n2:1 · Semasa\t80%\t94%\n3:1\t86%\t97%\n\nPerbezaan liputan antara tiga senario ini ialah 19.0 mata peratusan.\n\nIni perbandingan senario wajaran yang ditetapkan awal, bukan selang keyakinan atau bukti wajaran terbaik. Skor sebenar tidak berubah.",
+      "width": 1280
+    },
+    {
+      "lang": "zh",
+      "open": true,
+      "scroll": 1265,
+      "tableWidth": 963,
+      "text": "换一组权重，结果会变多少？\n\n保持同一份职位和已分享记录，只改变专业技能与协作技能的权重。当前正式分数仍使用 2:1。\n\n专业 : 协作\t记录覆盖\t余弦相似度\n1:1\t67%\t82%\n2:1 · 当前\t80%\t94%\n3:1\t86%\t97%\n\n这三种方案的覆盖率相差 19.0 个百分点。\n\n这是预先列明的权重情景比较，不是置信区间，也没有证明哪组权重更对；不会更改已发布的正式分数。",
+      "width": 1280
+    },
+    {
+      "lang": "en",
+      "open": true,
+      "scroll": 375,
+      "tableWidth": 283,
+      "text": "How much do other weights change this result?\n\nThe same job and shared records are kept; only role versus collaboration weights change. The production score still uses 2:1.\n\nRole : collaboration\tRecord coverage\tCosine similarity\n1:1\t67%\t82%\n2:1 · Current\t80%\t94%\n3:1\t86%\t97%\n\nCoverage differs across these three scenarios by 19.0 percentage points.\n\nThis compares predeclared weight scenarios. It is not a confidence interval or proof that a policy is better, and does not change the production score.",
+      "width": 390
+    },
+    {
+      "lang": "ms",
+      "open": true,
+      "scroll": 375,
+      "tableWidth": 280,
+      "text": "Berapa banyak keputusan berubah dengan wajaran lain?\n\nJawatan dan rekod dikongsi dikekalkan; hanya wajaran kemahiran jawatan berbanding kerjasama berubah. Skor sebenar kekal 2:1.\n\nJawatan : kerjasama\tLiputan rekod\tPersamaan kosinus\n1:1\t67%\t82%\n2:1 · Semasa\t80%\t94%\n3:1\t86%\t97%\n\nPerbezaan liputan antara tiga senario ini ialah 19.0 mata peratusan.\n\nIni perbandingan senario wajaran yang ditetapkan awal, bukan selang keyakinan atau bukti wajaran terbaik. Skor sebenar tidak berubah.",
+      "width": 390
+    },
+    {
+      "lang": "zh",
+      "open": true,
+      "scroll": 375,
+      "tableWidth": 280,
+      "text": "换一组权重，结果会变多少？\n\n保持同一份职位和已分享记录，只改变专业技能与协作技能的权重。当前正式分数仍使用 2:1。\n\n专业 : 协作\t记录覆盖\t余弦相似度\n1:1\t67%\t82%\n2:1 · 当前\t80%\t94%\n3:1\t86%\t97%\n\n这三种方案的覆盖率相差 19.0 个百分点。\n\n这是预先列明的权重情景比较，不是置信区间，也没有证明哪组权重更对；不会更改已发布的正式分数。",
+      "width": 390
+    }
+  ],
+  "scope": "Production HR browser, desktop and 390 CSS pixels, zh/en/ms. Other role equality verified by ordinary SDK readback and shared renderer, not another browser login."
+}

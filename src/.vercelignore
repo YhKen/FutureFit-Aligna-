@@ -1,0 +1,12 @@
+.git
+.vercel
+public
+node_modules
+START-HERE.txt
+server.cjs
+*.log
+.env*
+.gitignore
+tests
+firebase
+README.md

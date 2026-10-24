@@ -1,0 +1,74 @@
+{
+  "forms": [
+    {
+      "task": "resource-plan",
+      "variant": "A",
+      "independentMethod": "Python dynamic programming over resource states",
+      "mainMethod": "Exhaustive 0/1 subset enumeration",
+      "maximum": 120,
+      "optimal": [
+        [
+          "A",
+          "B",
+          "E"
+        ],
+        [
+          "A",
+          "C",
+          "D"
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "task": "resource-plan",
+      "variant": "B",
+      "independentMethod": "Python dynamic programming over resource states",
+      "mainMethod": "Exhaustive 0/1 subset enumeration",
+      "maximum": 116,
+      "optimal": [
+        [
+          "A",
+          "B",
+          "E"
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "task": "record-audit",
+      "variant": "A",
+      "independentMethod": "SQLite DISTINCT, latest-time join and GROUP BY",
+      "mainMethod": "Exact event deduplication and latest-state grouping",
+      "uniqueCount": 6,
+      "completedCount": 3,
+      "exceptions": [
+        "P102",
+        "P103",
+        "P106"
+      ],
+      "conflicts": [],
+      "passed": true
+    },
+    {
+      "task": "record-audit",
+      "variant": "B",
+      "independentMethod": "SQLite DISTINCT, latest-time join and GROUP BY",
+      "mainMethod": "Exact event deduplication and latest-state grouping",
+      "uniqueCount": 6,
+      "completedCount": 2,
+      "exceptions": [
+        "Q202",
+        "Q203",
+        "Q204",
+        "Q206"
+      ],
+      "conflicts": [
+        "Q204"
+      ],
+      "passed": true
+    }
+  ],
+  "allPassed": true,
+  "scope": "Independent numerical reference checks only; human reasoning anchors require human judgement; no psychometric validity claim"
+}

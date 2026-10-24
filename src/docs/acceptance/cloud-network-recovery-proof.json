@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-22T10:02:21.231Z",
+  "realFirebase": true,
+  "syntheticOnly": true,
+  "scope": "Client fault injection around a real committed Firebase write; not a physical mobile network test",
+  "lostAckReportedFailure": true,
+  "retryConfirmedFromServer": true,
+  "writeAttempts": 1,
+  "duplicateWrites": 0,
+  "recordId": "qa-network-1792663340184",
+  "staleEditorUiReadBack": {
+    "jobId": "UOMiaxPWgmpUViLLOQmi",
+    "titlePreserved": true,
+    "status": "draft",
+    "version": 3
+  }
+}

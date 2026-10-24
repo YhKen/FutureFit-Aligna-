@@ -1,0 +1,961 @@
+{
+  "date": "2026-10-23",
+  "environment": "Production; S003 synthetic new seeker; actual Chromium CSS viewport sizes, not physical devices",
+  "passed": true,
+  "completeStateMatrices": 16,
+  "finalPassingViews": 96,
+  "languages": [
+    "zh",
+    "en",
+    "ms"
+  ],
+  "widths": [
+    320,
+    390
+  ],
+  "views": [
+    {
+      "client": 305,
+      "educationRows": 2,
+      "experienceRows": 2,
+      "lang": "zh",
+      "name": "QA Aina Noor — Synthetic S003",
+      "page": "/assessment.html",
+      "scroll": 305,
+      "selectedSkills": 6,
+      "stage": "saved CV profile",
+      "width": 320
+    },
+    {
+      "client": 375,
+      "educationRows": 2,
+      "experienceRows": 2,
+      "lang": "zh",
+      "name": "QA Aina Noor — Synthetic S003",
+      "page": "/assessment.html",
+      "scroll": 375,
+      "selectedSkills": 6,
+      "stage": "saved CV profile",
+      "width": 390
+    },
+    {
+      "client": 305,
+      "educationRows": 2,
+      "experienceRows": 2,
+      "lang": "en",
+      "name": "QA Aina Noor — Synthetic S003",
+      "page": "/assessment.html",
+      "scroll": 305,
+      "selectedSkills": 6,
+      "stage": "saved CV profile",
+      "width": 320
+    },
+    {
+      "client": 375,
+      "educationRows": 2,
+      "experienceRows": 2,
+      "lang": "en",
+      "name": "QA Aina Noor — Synthetic S003",
+      "page": "/assessment.html",
+      "scroll": 375,
+      "selectedSkills": 6,
+      "stage": "saved CV profile",
+      "width": 390
+    },
+    {
+      "client": 305,
+      "educationRows": 2,
+      "experienceRows": 2,
+      "lang": "ms",
+      "name": "QA Aina Noor — Synthetic S003",
+      "page": "/assessment.html",
+      "scroll": 305,
+      "selectedSkills": 6,
+      "stage": "saved CV profile",
+      "width": 320
+    },
+    {
+      "client": 375,
+      "educationRows": 2,
+      "experienceRows": 2,
+      "lang": "ms",
+      "name": "QA Aina Noor — Synthetic S003",
+      "page": "/assessment.html",
+      "scroll": 375,
+      "selectedSkills": 6,
+      "stage": "saved CV profile",
+      "width": 390
+    },
+    {
+      "client": 320,
+      "lang": "zh",
+      "number": "11 / 30",
+      "page": "/assessment.html",
+      "question": "进入一个陌生领域时，你能找到从哪里开始学习吗？",
+      "scroll": 320,
+      "selected": "4",
+      "stage": "live adaptive question",
+      "width": 320
+    },
+    {
+      "client": 390,
+      "lang": "zh",
+      "number": "11 / 30",
+      "page": "/assessment.html",
+      "question": "进入一个陌生领域时，你能找到从哪里开始学习吗？",
+      "scroll": 390,
+      "selected": "4",
+      "stage": "live adaptive question",
+      "width": 390
+    },
+    {
+      "client": 320,
+      "lang": "en",
+      "number": "11 / 30",
+      "page": "/assessment.html",
+      "question": "Can you find where to begin learning in an unfamiliar field?",
+      "scroll": 320,
+      "selected": "4",
+      "stage": "live adaptive question",
+      "width": 320
+    },
+    {
+      "client": 390,
+      "lang": "en",
+      "number": "11 / 30",
+      "page": "/assessment.html",
+      "question": "Can you find where to begin learning in an unfamiliar field?",
+      "scroll": 390,
+      "selected": "4",
+      "stage": "live adaptive question",
+      "width": 390
+    },
+    {
+      "client": 305,
+      "lang": "ms",
+      "number": "11 / 30",
+      "page": "/assessment.html",
+      "question": "Bolehkah anda mencari titik mula pembelajaran dalam bidang baharu?",
+      "scroll": 305,
+      "selected": "4",
+      "stage": "live adaptive question",
+      "width": 320
+    },
+    {
+      "client": 390,
+      "lang": "ms",
+      "number": "11 / 30",
+      "page": "/assessment.html",
+      "question": "Bolehkah anda mencari titik mula pembelajaran dalam bidang baharu?",
+      "scroll": 390,
+      "selected": "4",
+      "stage": "live adaptive question",
+      "width": 390
+    },
+    {
+      "client": 320,
+      "continue": "继续补题 · 30 → 50",
+      "dialog": "还差几块拼图。",
+      "lang": "zh",
+      "page": "/assessment.html",
+      "scroll": 320,
+      "stage": "coverage follow-up popup",
+      "width": 320
+    },
+    {
+      "client": 390,
+      "continue": "继续补题 · 30 → 50",
+      "dialog": "还差几块拼图。",
+      "lang": "zh",
+      "page": "/assessment.html",
+      "scroll": 390,
+      "stage": "coverage follow-up popup",
+      "width": 390
+    },
+    {
+      "client": 320,
+      "continue": "Answer the follow-ups · 30 → 50",
+      "dialog": "A few pieces are still missing.",
+      "lang": "en",
+      "page": "/assessment.html",
+      "scroll": 320,
+      "stage": "coverage follow-up popup",
+      "width": 320
+    },
+    {
+      "client": 390,
+      "continue": "Answer the follow-ups · 30 → 50",
+      "dialog": "A few pieces are still missing.",
+      "lang": "en",
+      "page": "/assessment.html",
+      "scroll": 390,
+      "stage": "coverage follow-up popup",
+      "width": 390
+    },
+    {
+      "client": 320,
+      "continue": "Jawab soalan susulan · 30 → 50",
+      "dialog": "Masih ada ruang untuk dilengkapkan.",
+      "lang": "ms",
+      "page": "/assessment.html",
+      "scroll": 320,
+      "stage": "coverage follow-up popup",
+      "width": 320
+    },
+    {
+      "client": 390,
+      "continue": "Jawab soalan susulan · 30 → 50",
+      "dialog": "Masih ada ruang untuk dilengkapkan.",
+      "lang": "ms",
+      "page": "/assessment.html",
+      "scroll": 390,
+      "stage": "coverage follow-up popup",
+      "width": 390
+    },
+    {
+      "stage": "two-game lobby",
+      "client": 305,
+      "heading": "两个挑战，换个节奏。",
+      "lang": "zh",
+      "page": "/games.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "two-game lobby",
+      "client": 375,
+      "heading": "两个挑战，换个节奏。",
+      "lang": "zh",
+      "page": "/games.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "two-game lobby",
+      "client": 305,
+      "heading": "Two challenges. A change of pace.",
+      "lang": "en",
+      "page": "/games.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "two-game lobby",
+      "client": 375,
+      "heading": "Two challenges. A change of pace.",
+      "lang": "en",
+      "page": "/games.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "two-game lobby",
+      "client": 305,
+      "heading": "Dua cabaran. Rentak berbeza.",
+      "lang": "ms",
+      "page": "/games.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "two-game lobby",
+      "client": 375,
+      "heading": "Dua cabaran. Rentak berbeza.",
+      "lang": "ms",
+      "page": "/games.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "memory result, one challenge saved",
+      "client": 305,
+      "heading": "位置记忆",
+      "lang": "zh",
+      "page": "/games.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "memory result, one challenge saved",
+      "client": 375,
+      "heading": "位置记忆",
+      "lang": "zh",
+      "page": "/games.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "memory result, one challenge saved",
+      "client": 305,
+      "heading": "Pattern recall",
+      "lang": "en",
+      "page": "/games.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "memory result, one challenge saved",
+      "client": 375,
+      "heading": "Pattern recall",
+      "lang": "en",
+      "page": "/games.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "memory result, one challenge saved",
+      "client": 305,
+      "heading": "Ingatan corak",
+      "lang": "ms",
+      "page": "/games.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "memory result, one challenge saved",
+      "client": 375,
+      "heading": "Ingatan corak",
+      "lang": "ms",
+      "page": "/games.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "fresh completed workspace",
+      "client": 305,
+      "heading": "我的职业空间。",
+      "lang": "zh",
+      "page": "/workspace.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "fresh completed workspace",
+      "client": 375,
+      "heading": "我的职业空间。",
+      "lang": "zh",
+      "page": "/workspace.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "fresh completed workspace",
+      "client": 305,
+      "heading": "Your career, in view.",
+      "lang": "en",
+      "page": "/workspace.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "fresh completed workspace",
+      "client": 375,
+      "heading": "Your career, in view.",
+      "lang": "en",
+      "page": "/workspace.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "fresh completed workspace",
+      "client": 305,
+      "heading": "Ruang kerjaya anda.",
+      "lang": "ms",
+      "page": "/workspace.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "fresh completed workspace",
+      "client": 375,
+      "heading": "Ruang kerjaya anda.",
+      "lang": "ms",
+      "page": "/workspace.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 1 counterfactual, same target",
+      "client": 305,
+      "heading": "差哪一步，先看清楚。",
+      "lang": "zh",
+      "page": "/counterfactual.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 1 counterfactual, same target",
+      "client": 375,
+      "heading": "差哪一步，先看清楚。",
+      "lang": "zh",
+      "page": "/counterfactual.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 1 counterfactual, same target",
+      "client": 305,
+      "heading": "See the next step.",
+      "lang": "en",
+      "page": "/counterfactual.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 1 counterfactual, same target",
+      "client": 375,
+      "heading": "See the next step.",
+      "lang": "en",
+      "page": "/counterfactual.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 1 counterfactual, same target",
+      "client": 305,
+      "heading": "Lihat langkah seterusnya.",
+      "lang": "ms",
+      "page": "/counterfactual.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 1 counterfactual, same target",
+      "client": 375,
+      "heading": "Lihat langkah seterusnya.",
+      "lang": "ms",
+      "page": "/counterfactual.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "saved learning route, Customer Service, 4 hours per week",
+      "client": 305,
+      "heading": "下一站，换个方向。",
+      "lang": "zh",
+      "page": "/transition.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "saved learning route, Customer Service, 4 hours per week",
+      "client": 375,
+      "heading": "下一站，换个方向。",
+      "lang": "zh",
+      "page": "/transition.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "saved learning route, Customer Service, 4 hours per week",
+      "client": 305,
+      "heading": "A different direction. A plan to get there.",
+      "lang": "en",
+      "page": "/transition.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "saved learning route, Customer Service, 4 hours per week",
+      "client": 375,
+      "heading": "A different direction. A plan to get there.",
+      "lang": "en",
+      "page": "/transition.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "saved learning route, Customer Service, 4 hours per week",
+      "client": 305,
+      "heading": "Arah baharu. Langkah yang lebih jelas.",
+      "lang": "ms",
+      "page": "/transition.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "saved learning route, Customer Service, 4 hours per week",
+      "client": 375,
+      "heading": "Arah baharu. Langkah yang lebih jelas.",
+      "lang": "ms",
+      "page": "/transition.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 2 confirmed life skill record",
+      "client": 305,
+      "heading": "经历里的技能",
+      "lang": "zh",
+      "page": "/life-skills.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 2 confirmed life skill record",
+      "client": 375,
+      "heading": "经历里的技能",
+      "lang": "zh",
+      "page": "/life-skills.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 2 confirmed life skill record",
+      "client": 305,
+      "heading": "Your experience counts.",
+      "lang": "en",
+      "page": "/life-skills.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 2 confirmed life skill record",
+      "client": 375,
+      "heading": "Your experience counts.",
+      "lang": "en",
+      "page": "/life-skills.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 2 confirmed life skill record",
+      "client": 305,
+      "heading": "Pengalaman anda bernilai.",
+      "lang": "ms",
+      "page": "/life-skills.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 2 confirmed life skill record",
+      "client": 375,
+      "heading": "Pengalaman anda bernilai.",
+      "lang": "ms",
+      "page": "/life-skills.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 3 saved customer career try-out",
+      "client": 305,
+      "heading": "先试一段，再做打算。",
+      "lang": "zh",
+      "page": "/career-try.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 3 saved customer career try-out",
+      "client": 375,
+      "heading": "先试一段，再做打算。",
+      "lang": "zh",
+      "page": "/career-try.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 3 saved customer career try-out",
+      "client": 305,
+      "heading": "Try a little of the work.",
+      "lang": "en",
+      "page": "/career-try.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 3 saved customer career try-out",
+      "client": 375,
+      "heading": "Try a little of the work.",
+      "lang": "en",
+      "page": "/career-try.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 3 saved customer career try-out",
+      "client": 305,
+      "heading": "Cuba dahulu, baru rancang.",
+      "lang": "ms",
+      "page": "/career-try.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 3 saved customer career try-out",
+      "client": 375,
+      "heading": "Cuba dahulu, baru rancang.",
+      "lang": "ms",
+      "page": "/career-try.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 4 personal life skills and published news",
+      "client": 305,
+      "heading": "技能，放到变化里看。",
+      "lang": "zh",
+      "page": "/ai-trends.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 4 personal life skills and published news",
+      "client": 375,
+      "heading": "技能，放到变化里看。",
+      "lang": "zh",
+      "page": "/ai-trends.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 4 personal life skills and published news",
+      "client": 305,
+      "heading": "Skills in a changing workplace.",
+      "lang": "en",
+      "page": "/ai-trends.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 4 personal life skills and published news",
+      "client": 375,
+      "heading": "Skills in a changing workplace.",
+      "lang": "en",
+      "page": "/ai-trends.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 4 personal life skills and published news",
+      "client": 305,
+      "heading": "Kemahiran dalam dunia berubah.",
+      "lang": "ms",
+      "page": "/ai-trends.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 4 personal life skills and published news",
+      "client": 375,
+      "heading": "Kemahiran dalam dunia berubah.",
+      "lang": "ms",
+      "page": "/ai-trends.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 5 saved calendar reloaded",
+      "client": 305,
+      "heading": "学习，放进你的空档。",
+      "lang": "zh",
+      "page": "/study-calendar.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 5 saved calendar reloaded",
+      "client": 375,
+      "heading": "学习，放进你的空档。",
+      "lang": "zh",
+      "page": "/study-calendar.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 5 saved calendar reloaded",
+      "client": 305,
+      "heading": "Make learning fit your week.",
+      "lang": "en",
+      "page": "/study-calendar.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 5 saved calendar reloaded",
+      "client": 375,
+      "heading": "Make learning fit your week.",
+      "lang": "en",
+      "page": "/study-calendar.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 5 saved calendar reloaded",
+      "client": 305,
+      "heading": "Belajar mengikut masa lapang.",
+      "lang": "ms",
+      "page": "/study-calendar.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 5 saved calendar reloaded",
+      "client": 375,
+      "heading": "Belajar mengikut masa lapang.",
+      "lang": "ms",
+      "page": "/study-calendar.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 6 saved reflection and confirmed Payroll priority",
+      "client": 305,
+      "heading": "这次没成，下一步怎么走？",
+      "lang": "zh",
+      "page": "/application-reflection.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 6 saved reflection and confirmed Payroll priority",
+      "client": 375,
+      "heading": "这次没成，下一步怎么走？",
+      "lang": "zh",
+      "page": "/application-reflection.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 6 saved reflection and confirmed Payroll priority",
+      "client": 305,
+      "heading": "What comes after this application?",
+      "lang": "en",
+      "page": "/application-reflection.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 6 saved reflection and confirmed Payroll priority",
+      "client": 375,
+      "heading": "What comes after this application?",
+      "lang": "en",
+      "page": "/application-reflection.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 6 saved reflection and confirmed Payroll priority",
+      "client": 305,
+      "heading": "Langkah selepas permohonan ini?",
+      "lang": "ms",
+      "page": "/application-reflection.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 6 saved reflection and confirmed Payroll priority",
+      "client": 375,
+      "heading": "Langkah selepas permohonan ini?",
+      "lang": "ms",
+      "page": "/application-reflection.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 7 saved mixed hourly monthly estimates",
+      "client": 305,
+      "heading": "两份工作，一起算清楚。",
+      "lang": "zh",
+      "page": "/portfolio-careers.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 7 saved mixed hourly monthly estimates",
+      "client": 375,
+      "heading": "两份工作，一起算清楚。",
+      "lang": "zh",
+      "page": "/portfolio-careers.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 7 saved mixed hourly monthly estimates",
+      "client": 305,
+      "heading": "See how two roles fit together.",
+      "lang": "en",
+      "page": "/portfolio-careers.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 7 saved mixed hourly monthly estimates",
+      "client": 375,
+      "heading": "See how two roles fit together.",
+      "lang": "en",
+      "page": "/portfolio-careers.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 7 saved mixed hourly monthly estimates",
+      "client": 305,
+      "heading": "Lihat dua kerja bersama.",
+      "lang": "ms",
+      "page": "/portfolio-careers.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "feature 7 saved mixed hourly monthly estimates",
+      "client": 375,
+      "heading": "Lihat dua kerja bersama.",
+      "lang": "ms",
+      "page": "/portfolio-careers.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "fixed rule-switch saved result, insufficient valid timing trials",
+      "client": 305,
+      "heading": "规则切换",
+      "lang": "zh",
+      "page": "/games.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "fixed rule-switch saved result, insufficient valid timing trials",
+      "client": 375,
+      "heading": "规则切换",
+      "lang": "zh",
+      "page": "/games.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "fixed rule-switch saved result, insufficient valid timing trials",
+      "client": 305,
+      "heading": "Rule switch",
+      "lang": "en",
+      "page": "/games.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "fixed rule-switch saved result, insufficient valid timing trials",
+      "client": 375,
+      "heading": "Rule switch",
+      "lang": "en",
+      "page": "/games.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "fixed rule-switch saved result, insufficient valid timing trials",
+      "client": 305,
+      "heading": "Tukar peraturan",
+      "lang": "ms",
+      "page": "/games.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "fixed rule-switch saved result, insufficient valid timing trials",
+      "client": 375,
+      "heading": "Tukar peraturan",
+      "lang": "ms",
+      "page": "/games.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "feature 6 expanded matching Sankey",
+      "client": 305,
+      "lang": "zh",
+      "page": "/application-reflection.html",
+      "scroll": 305,
+      "traceOpen": true,
+      "width": 320
+    },
+    {
+      "stage": "feature 6 expanded matching Sankey",
+      "client": 375,
+      "lang": "zh",
+      "page": "/application-reflection.html",
+      "scroll": 375,
+      "traceOpen": true,
+      "width": 390
+    },
+    {
+      "stage": "feature 6 expanded matching Sankey",
+      "client": 305,
+      "lang": "en",
+      "page": "/application-reflection.html",
+      "scroll": 305,
+      "traceOpen": true,
+      "width": 320
+    },
+    {
+      "stage": "feature 6 expanded matching Sankey",
+      "client": 375,
+      "lang": "en",
+      "page": "/application-reflection.html",
+      "scroll": 375,
+      "traceOpen": true,
+      "width": 390
+    },
+    {
+      "stage": "feature 6 expanded matching Sankey",
+      "client": 305,
+      "lang": "ms",
+      "page": "/application-reflection.html",
+      "scroll": 305,
+      "traceOpen": true,
+      "width": 320
+    },
+    {
+      "stage": "feature 6 expanded matching Sankey",
+      "client": 375,
+      "lang": "ms",
+      "page": "/application-reflection.html",
+      "scroll": 375,
+      "traceOpen": true,
+      "width": 390
+    }
+  ],
+  "gates": [
+    {
+      "requested": "workspace.html",
+      "actual": "/assessment.html?onboarding=1"
+    },
+    {
+      "requested": "study-calendar.html",
+      "actual": "/assessment.html?onboarding=1"
+    },
+    {
+      "requested": "games.html?onboarding=1",
+      "actual": "/assessment.html?onboarding=1&view=results"
+    },
+    {
+      "requested": "workspace after 50 questions, zero games",
+      "actual": "/games.html?onboarding=1"
+    },
+    {
+      "requested": "workspace after only memory saved",
+      "actual": "/games.html?onboarding=1"
+    }
+  ],
+  "desktopObservationsExcluded": 6,
+  "preFixObservations": {
+    "passed": 2,
+    "failed": 1,
+    "issue": "English insufficient-trials result inflated min-content columns to 458px at a 320px viewport",
+    "resolution": "assessment.css wraps result metrics and uses minmax(0,1fr); final zh/en/ms 320/390 recheck passed"
+  },
+  "consoleErrorsObserved": 0,
+  "uiAssertions": {
+    "genericMessageCorrect": true,
+    "noReplyCorrect": true,
+    "removedPairEmpty": true,
+    "demoIsolation": true,
+    "pair600": true,
+    "pair800": true
+  },
+  "limits": [
+    "Registration and email verification were actually completed; not separately accepted as a three-language mobile registration matrix.",
+    "Synthetic automated game timings are excluded from valid reaction medians; no human ability validation.",
+    "Published news filtering was checked; this run did not re-approve news or pretend a relevant story existed."
+  ]
+}

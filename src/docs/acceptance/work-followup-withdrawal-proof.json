@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-22T12:28:31.019Z",
+  "syntheticOnly": true,
+  "checks": [],
+  "transport": "Production HTTPS API and authenticated Firestore SDK",
+  "disposableApplicationId": "icsrKzw7rATWG3B2QD2yeS8T69p2_68QXICI6FNvkZNWyR1eE",
+  "withdrawal": {
+    "deniedDirectReads": 8,
+    "secondReviewerHadApprovedAccess": true,
+    "seekerRetainsCorrection": true
+  },
+  "correctedPoints": {
+    "before": 67,
+    "after": 78,
+    "observed": 3,
+    "notObservedExcluded": true,
+    "actualSavedRatings": [
+      3,
+      2,
+      2,
+      null
+    ],
+    "independentCheck": 78
+  },
+  "allPassed": true,
+  "syntheticJobClosed": true
+}

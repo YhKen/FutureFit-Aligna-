@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-22T15:23:09.652Z",
+  "syntheticOnly": true,
+  "checks": [
+    {
+      "name": "resource-plan draft remains private",
+      "passed": true
+    },
+    {
+      "name": "record-audit draft remains private",
+      "passed": true
+    },
+    {
+      "name": "Closed posting rejects new invitation",
+      "passed": true
+    },
+    {
+      "name": "Closed posting rejects pending reply",
+      "passed": true
+    },
+    {
+      "name": "Closed posting still allows HR to complete existing application and clear scheduling",
+      "passed": true
+    },
+    {
+      "name": "Withdrawal denies HR but preserves own aligna_work_assignments/resource-plan",
+      "passed": true
+    },
+    {
+      "name": "Withdrawal denies HR but preserves own aligna_work_attempts/resource-plan",
+      "passed": true
+    },
+    {
+      "name": "Withdrawal denies HR but preserves own aligna_work_assignments/record-audit",
+      "passed": true
+    },
+    {
+      "name": "Withdrawal denies HR but preserves own aligna_work_attempts/record-audit",
+      "passed": true
+    },
+    {
+      "name": "API denies withdrawn sharing with HTTP 403",
+      "passed": true
+    }
+  ],
+  "applicationId": "icsrKzw7rATWG3B2QD2yeS8T69p2_2hIlLEvCH5unFA8gxNTz",
+  "jobId": "2hIlLEvCH5unFA8gxNTz",
+  "syntheticPostingClosed": true,
+  "allPassed": true
+}

@@ -1,0 +1,38 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+import {initializeTestEnvironment,assertSucceeds,assertFails} from '@firebase/rules-unit-testing';
+import {doc,setDoc,getDoc,getDocs,updateDoc,collection,query,where,serverTimestamp} from 'firebase/firestore';
+const env=await initializeTestEnvironment({projectId:'demo-aligna-apps',firestore:{host:'127.0.0.1',port:8180,rules:fs.readFileSync(process.env.FUTUREFIT_RULES_PATH||new URL('../firestore.rules',import.meta.url),'utf8')}});
+const db=id=>env.authenticatedContext(id,{email_verified:true}).firestore(),hr=db('hr'),seeker=db('candidate'),other=db('other'),unverified=env.authenticatedContext('candidate',{email_verified:false}).firestore();let count=0;
+const pass=async p=>{await assertSucceeds(p);count++;},deny=async p=>{await assertFails(p);count++;};
+const data={seekerUid:'candidate',employerUid:'hr',jobId:'job',jobTitle:'Synthetic analyst',companyName:'Synthetic Co',candidate:{displayName:'S001',summary:'Synthetic',education:'',experience:'',location:'',employmentType:'',portfolio:'',skills:[{name:'SQL',example:'Synthetic query'}],synthetic:true},consentVersion:'application-share-v1',synthetic:true,active:true,status:'submitted',interviewAt:'',interviewDetails:'',interviewResponse:'pending',createdAt:serverTimestamp(),updatedAt:serverTimestamp()};
+try{
+ await env.clearFirestore();await env.withSecurityRulesDisabled(c=>setDoc(doc(c.firestore(),'aligna_jobs/job'),{ownerUid:'hr',status:'published',jobTitle:'Synthetic analyst',companyName:'Synthetic Co'}));
+ const path='aligna_applications/candidate_job';
+ await deny(setDoc(doc(unverified,path),data));await deny(setDoc(doc(other,path),data));
+ await deny(setDoc(doc(seeker,path),{...data,consentVersion:''}));
+ await deny(setDoc(doc(seeker,path),{...data,employerUid:'other'}));
+ await deny(setDoc(doc(seeker,path),{...data,candidate:{...data.candidate,rawAnswers:[]}}));
+ const many=db('many'),manyPath='aligna_applications/many_job';
+ await pass(setDoc(doc(many,manyPath),{...data,seekerUid:'many',candidate:{...data.candidate,skills:Array.from({length:50},(_,i)=>({name:'Skill '+i,example:'Synthetic example'}))}}));
+ await pass(updateDoc(doc(many,manyPath),{active:false,status:'withdrawn',candidate:null,interviewAt:'',interviewDetails:'',interviewResponse:'pending',updatedAt:serverTimestamp()}));
+ await pass(setDoc(doc(seeker,path),data));await deny(setDoc(doc(seeker,path),data));
+ await pass(getDoc(doc(hr,path)));await pass(getDoc(doc(seeker,path)));await deny(getDoc(doc(other,path)));
+ await pass(getDocs(query(collection(hr,'aligna_applications'),where('employerUid','==','hr'),where('active','==',true))));
+ await deny(getDocs(collection(hr,'aligna_applications')));
+ await deny(updateDoc(doc(hr,path),{candidate:{...data.candidate,displayName:'Changed'},updatedAt:serverTimestamp()}));
+ await deny(updateDoc(doc(seeker,path),{status:'completed',updatedAt:serverTimestamp()}));
+ await pass(updateDoc(doc(hr,path),{status:'reviewing',updatedAt:serverTimestamp()}));
+ await deny(updateDoc(doc(hr,path),{status:'interview',interviewAt:'',updatedAt:serverTimestamp()}));
+ await pass(updateDoc(doc(hr,path),{status:'interview',interviewAt:'2026-11-01T02:00:00Z',interviewDetails:'Synthetic meeting in app',updatedAt:serverTimestamp()}));
+ await pass(updateDoc(doc(seeker,path),{interviewResponse:'accepted',updatedAt:serverTimestamp()}));
+ await deny(updateDoc(doc(other,path),{interviewResponse:'declined',updatedAt:serverTimestamp()}));
+ await pass(setDoc(doc(hr,'aligna_application_notes/candidate_job'),{employerUid:'hr',text:'Work sample not yet observed',updatedAt:serverTimestamp()}));
+ await deny(getDoc(doc(seeker,'aligna_application_notes/candidate_job')));
+ await deny(getDoc(doc(other,'aligna_application_notes/candidate_job')));
+ await pass(updateDoc(doc(seeker,path),{active:false,status:'withdrawn',candidate:null,interviewAt:'',interviewDetails:'',interviewResponse:'pending',updatedAt:serverTimestamp()}));
+ await deny(getDoc(doc(hr,path)));await pass(getDoc(doc(seeker,path)));
+ await deny(getDoc(doc(hr,'aligna_application_notes/candidate_job')));
+ await deny(updateDoc(doc(hr,path),{status:'reviewing',updatedAt:serverTimestamp()}));
+ assert.equal((await getDocs(query(collection(hr,'aligna_applications'),where('employerUid','==','hr'),where('active','==',true)))).size,0);count++;
+ console.log('PASS '+count+' application permission checks');
+}finally{await env.cleanup();}

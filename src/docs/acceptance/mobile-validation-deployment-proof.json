@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-23",
+  "production": "https://aligna-two.vercel.app/",
+  "deploymentId": "dpl_LmR2TP2w2Jip3m9Hfg2uwf5RT1AL",
+  "checks": [
+    {
+      "path": "validation.js",
+      "status": 200,
+      "sha256": "47e84502d01e1ec49b41233fb39a5dbfa7615ca6319ec92b2d49628fd44b351c"
+    },
+    {
+      "path": "validation.css",
+      "status": 200,
+      "sha256": "6904a5b72126bcb42e7347609f14a5e8d8de34fd0d9395a4ec2327c53e2e6e3c"
+    },
+    {
+      "path": "validation-view.js",
+      "status": 200,
+      "sha256": "192a064f14a3ffd11396d34f385da2e8f4c2eb4b1a01d469e4c56bd9905ccc91"
+    },
+    {
+      "path": "work-review.js",
+      "status": 200,
+      "sha256": "65ce26c842c2b45e21319054e0fd5cfcb6c7c0c32243e758fd38879e329d7c74"
+    },
+    {
+      "path": "work-review.css",
+      "status": 200,
+      "sha256": "3639173c3d5b74bf0227f582b7099e0062f7b25cd0ffbf64b3c22b01d7db5658"
+    },
+    {
+      "path": "api/validation",
+      "status": 401,
+      "noStore": true
+    },
+    {
+      "path": "api/work-followup",
+      "status": 401,
+      "noStore": true
+    }
+  ]
+}

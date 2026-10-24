@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-22T11:26:14.423Z",
+  "syntheticOnly": true,
+  "checks": [
+    {
+      "taskId": "resource-plan",
+      "form": "B",
+      "numericPassed": true,
+      "partialReview": {
+        "points": 6,
+        "max": 9,
+        "observed": 3,
+        "percent": 67
+      },
+      "immutableReview": true,
+      "immutableSubmission": true
+    },
+    {
+      "taskId": "record-audit",
+      "form": "B",
+      "numericPassed": true,
+      "partialReview": {
+        "points": 6,
+        "max": 9,
+        "observed": 3,
+        "percent": 67
+      },
+      "immutableReview": true,
+      "immutableSubmission": true
+    }
+  ],
+  "transport": "Production HTTPS API and authenticated Firestore SDK",
+  "disposableApplicationId": "icsrKzw7rATWG3B2QD2yeS8T69p2_AdsHhhVaui5NMlWfdTia",
+  "withdrawal": {
+    "hrReadsDenied": 6,
+    "seekerRetainedRecords": 6
+  },
+  "allPassed": true,
+  "syntheticJobClosed": true
+}

@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-23T04:01:20.965Z",
+  "origin": "https://aligna-two.vercel.app",
+  "assets": [
+    {
+      "file": "life-skills.html",
+      "status": 200,
+      "sha256": "61630ea531bf6333550b7677b27e8bd8234e4c67e6a21a9b0ca0d5e27f5c4b95"
+    },
+    {
+      "file": "life-skills.js",
+      "status": 200,
+      "sha256": "756f686915961a6ad1b5e0f808a3f31c008bd4d9e0297f49ca2c90d8504447c1"
+    },
+    {
+      "file": "life-skills-core.js",
+      "status": 200,
+      "sha256": "a71631f5d2d2d62f91a89d3f6d9d75a02feb52048ed3a8c5fb83d20c98b3fd4c"
+    },
+    {
+      "file": "career-try.html",
+      "status": 200,
+      "sha256": "bf012657019a9812cb5b347b523ff70ea3182f838f6654d9812f134ffedfdb29"
+    },
+    {
+      "file": "career-try.js",
+      "status": 200,
+      "sha256": "bd2df3551b106e65b1b75efd5aa476a2d520a0e889f65448e01b8dd899420b14"
+    },
+    {
+      "file": "career-try-core.js",
+      "status": 200,
+      "sha256": "63f0f3fb3e1965b92ef38e69f5c35bc4c309a5a9fee5044c33f3b892bc192bf9"
+    },
+    {
+      "file": "counterfactual.html",
+      "status": 200,
+      "sha256": "f8147ad91272b9af51660da54ff9989dbd441066f214117dfc3f2903d8445be1"
+    },
+    {
+      "file": "counterfactual.js",
+      "status": 200,
+      "sha256": "97d32ad8120f98bfbaadef26e660019a87e08cf835f52882d72b7f2c48f5c2bc"
+    },
+    {
+      "file": "counterfactual-view.js",
+      "status": 200,
+      "sha256": "7841fda243671d10c92ddbbe899157f0886eaafab41e2cc82e474e3e57a50e72"
+    },
+    {
+      "file": "exploration.css",
+      "status": 200,
+      "sha256": "55af2231921a2affa2b7fed4d03080b1387cd608b2d1ab7f0b6f59cc967c6385"
+    },
+    {
+      "file": "shared.js",
+      "status": 200,
+      "sha256": "bf2190987acaf3d23bf7d996d0870c5b101f511455c862d1ddc09a1dae337bd2"
+    },
+    {
+      "file": "jobs-board.js",
+      "status": 200,
+      "sha256": "4a38a01af5a42920a4f97577b7a74d7fff4f3816e839802352adffb371391339"
+    },
+    {
+      "file": "applications.js",
+      "status": 200,
+      "sha256": "cfc65297040949129fe0ff98cdd33dac36570bdfc8d4b6c4a4e9a54d9575d5db"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-22T15:35:54.147348+00:00",
+  "environment": "Firestore Emulator at 127.0.0.1:8180",
+  "allPassed": true,
+  "suites": {
+    "base": 24,
+    "applications": 30,
+    "frozenSnapshot": 30,
+    "seekerPrivate": 47,
+    "news": 26,
+    "formalWork": 154,
+    "workFollowup": 101,
+    "h06": 28
+  },
+  "totalChecks": 440,
+  "rulesSha256": "41fb1006531e45487af5726fb286524f94b404668ae14ac091bc2189c26bb04a",
+  "productionRulesPublished": true,
+  "publishedDraftComparedToTestedSource": true,
+  "previousPublishedRulesMatchedPriorRelease": true,
+  "accessScope": "Existing applicant and job publisher only; stricter task links; private questionnaire/game/CV access unchanged",
+  "logSha256": "d8c1f3ec5c5b73c126eab654bc6bc61ed4afdbb55d94a2e8c70ae9569d3eb52f"
+}

@@ -1,0 +1,16 @@
+// Concrete skills across sectors; these remain self-reported, not test scores.
+const rows=[
+ ['Microsoft Excel','Excel 表格','Microsoft Excel'],['SQL','SQL','SQL'],['Python','Python','Python'],['Power BI','Power BI','Power BI'],['Figma','Figma','Figma'],
+ ['Bookkeeping','记账','Simpan kira'],['Financial reporting','财务报表','Pelaporan kewangan'],['Payroll','薪资核算','Penggajian'],['Tax preparation','税务申报','Penyediaan cukai'],['Budgeting','预算编制','Belanjawan'],['Auditing','审计','Pengauditan'],
+ ['Customer service','客户服务','Khidmat pelanggan'],['Sales','销售','Jualan'],['Account management','客户管理','Pengurusan pelanggan'],['Complaint handling','投诉处理','Pengendalian aduan'],['Retail operations','零售运营','Operasi runcit'],['Visual merchandising','商品陈列','Peragaan barangan'],
+ ['Food preparation','备餐','Penyediaan makanan'],['Food safety','食品安全','Keselamatan makanan'],['Barista skills','咖啡制作','Kemahiran barista'],['Front desk operations','前台接待','Operasi kaunter hadapan'],['Housekeeping','客房管理','Pengemasan'],['Event planning','活动策划','Perancangan acara'],
+ ['Inventory management','库存管理','Pengurusan inventori'],['Procurement','采购','Perolehan'],['Warehouse operations','仓储操作','Operasi gudang'],['Supply chain planning','供应链规划','Perancangan rantaian bekalan'],['Delivery coordination','配送协调','Penyelarasan penghantaran'],
+ ['Recruitment','招聘','Pengambilan pekerja'],['Onboarding','入职培训','Orientasi pekerja'],['Office administration','行政管理','Pentadbiran pejabat'],['Record keeping','档案管理','Penyimpanan rekod'],['Scheduling','排班与日程','Penjadualan'],['Project management','项目管理','Pengurusan projek'],
+ ['Lesson planning','备课','Perancangan pengajaran'],['Classroom management','课堂管理','Pengurusan bilik darjah'],['Tutoring','辅导教学','Bimbingan pelajaran'],['Training delivery','培训授课','Penyampaian latihan'],['Assessment design','教学评估设计','Reka bentuk penilaian'],
+ ['Patient care','病患照护','Penjagaan pesakit'],['First aid','急救','Pertolongan cemas'],['Care coordination','照护协调','Penyelarasan penjagaan'],['Infection prevention','感染预防','Pencegahan jangkitan'],['Medical administration','医疗行政','Pentadbiran perubatan'],
+ ['Graphic design','平面设计','Reka bentuk grafik'],['Copywriting','文案撰写','Penulisan iklan'],['Video editing','视频剪辑','Penyuntingan video'],['Photography','摄影','Fotografi'],['Social media management','社交媒体运营','Pengurusan media sosial'],['Digital marketing','数字营销','Pemasaran digital'],
+ ['AutoCAD','AutoCAD','AutoCAD'],['Quality assurance','质量保证','Jaminan kualiti'],['Workplace safety','工作场所安全','Keselamatan tempat kerja'],['Machine operation','机械操作','Operasi mesin'],['Electrical maintenance','电气维护','Penyelenggaraan elektrik'],['Construction supervision','施工监督','Penyeliaan pembinaan'],
+ ['Legal research','法律检索','Penyelidikan undang-undang'],['Contract review','合同审阅','Semakan kontrak'],['Laboratory techniques','实验室操作','Teknik makmal'],['Research methods','研究方法','Kaedah penyelidikan'],['Crop management','作物管理','Pengurusan tanaman'],['Community outreach','社区服务','Khidmat komuniti'],
+ ['Communication','沟通表达','Komunikasi'],['Teamwork','团队合作','Kerjasama'],['Presentation','演示汇报','Pembentangan'],['Problem solving','问题解决','Penyelesaian masalah'],['Language translation','语言翻译','Penterjemahan']
+];
+export const profileSkills=rows.map(([name,zh,ms])=>({name,label:{en:name,zh,ms}}));

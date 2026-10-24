@@ -1,0 +1,412 @@
+{
+  "at": "2026-10-22T10:57:03.222Z",
+  "source": "Independent authenticated production Firebase reads; actual shared UI renderer",
+  "syntheticOnly": true,
+  "applicationId": "icsrKzw7rATWG3B2QD2yeS8T69p2_IbyLRM1Iahi5FGGzJGqB",
+  "jobId": "IbyLRM1Iahi5FGGzJGqB",
+  "active": true,
+  "sameApplicationReadByBothRoles": true,
+  "postingVersion": 2,
+  "applicationVersion": 1,
+  "frozenCoverage": 60,
+  "frozenCosine": 75,
+  "currentPostingCoverage": 100,
+  "context": {
+    "schemaVersion": "aligna-evidence-v1",
+    "ruleVersion": "explicit-skills-v3-structured",
+    "jobVersion": "job:1b025077eed2c669",
+    "evidenceVersion": "evidence-set:5f5c5c8f26764fe9",
+    "inputVersion": "match:a49f3035021ee999",
+    "trendVersion": "not-used-in-job-match",
+    "scenarioVersion": "not-used-in-job-match",
+    "jobSnapshotPolicy": "frozen-at-application; job edits do not change this comparison",
+    "records": [
+      {
+        "schemaVersion": "aligna-evidence-v1",
+        "skillId": "skill:Communication",
+        "name": "Communication",
+        "recordId": "evidence:5243682b9ab2a995",
+        "recordVersion": "record:5243682b9ab2a995",
+        "sourceType": "self-report",
+        "sourceId": "shared-profile",
+        "example": "",
+        "verification": "not-independently-verified",
+        "scope": "Explicit record only; not proficiency or hiring probability"
+      },
+      {
+        "schemaVersion": "aligna-evidence-v1",
+        "skillId": "skill:Complex%20Problem%20Solving",
+        "name": "Complex Problem Solving",
+        "recordId": "evidence:ccf5f61eb1d24f78",
+        "recordVersion": "record:ccf5f61eb1d24f78",
+        "sourceType": "self-report",
+        "sourceId": "shared-profile",
+        "example": "",
+        "verification": "not-independently-verified",
+        "scope": "Explicit record only; not proficiency or hiring probability"
+      },
+      {
+        "schemaVersion": "aligna-evidence-v1",
+        "skillId": "skill:Customer%20service",
+        "name": "Customer service",
+        "recordId": "evidence:29647f552d222a6b",
+        "recordVersion": "record:29647f552d222a6b",
+        "sourceType": "self-report",
+        "sourceId": "shared-profile",
+        "example": "",
+        "verification": "not-independently-verified",
+        "scope": "Explicit record only; not proficiency or hiring probability"
+      },
+      {
+        "schemaVersion": "aligna-evidence-v1",
+        "skillId": "skill:Food%20safety",
+        "name": "Food safety",
+        "recordId": "evidence:6b4e6e3e6103296c",
+        "recordVersion": "record:6b4e6e3e6103296c",
+        "sourceType": "self-report",
+        "sourceId": "shared-profile",
+        "example": "",
+        "verification": "not-independently-verified",
+        "scope": "Explicit record only; not proficiency or hiring probability"
+      },
+      {
+        "schemaVersion": "aligna-evidence-v1",
+        "skillId": "skill:Instructing",
+        "name": "Instructing",
+        "recordId": "evidence:22b1fc7544ada525",
+        "recordVersion": "record:22b1fc7544ada525",
+        "sourceType": "self-report",
+        "sourceId": "shared-profile",
+        "example": "",
+        "verification": "not-independently-verified",
+        "scope": "Explicit record only; not proficiency or hiring probability"
+      },
+      {
+        "schemaVersion": "aligna-evidence-v1",
+        "skillId": "skill:Inventory%20management",
+        "name": "Inventory management",
+        "recordId": "evidence:25abaac7e2d0058b",
+        "recordVersion": "record:25abaac7e2d0058b",
+        "sourceType": "self-report",
+        "sourceId": "shared-profile",
+        "example": "",
+        "verification": "not-independently-verified",
+        "scope": "Explicit record only; not proficiency or hiring probability"
+      },
+      {
+        "schemaVersion": "aligna-evidence-v1",
+        "skillId": "skill:Judgment%20and%20Decision%20Making",
+        "name": "Judgment and Decision Making",
+        "recordId": "evidence:46a4039485bfc2a0",
+        "recordVersion": "record:46a4039485bfc2a0",
+        "sourceType": "self-report",
+        "sourceId": "shared-profile",
+        "example": "",
+        "verification": "not-independently-verified",
+        "scope": "Explicit record only; not proficiency or hiring probability"
+      },
+      {
+        "schemaVersion": "aligna-evidence-v1",
+        "skillId": "skill:Management%20of%20Personnel%20Resources",
+        "name": "Management of Personnel Resources",
+        "recordId": "evidence:ce9da7ab0b5157a3",
+        "recordVersion": "record:ce9da7ab0b5157a3",
+        "sourceType": "self-report",
+        "sourceId": "shared-profile",
+        "example": "",
+        "verification": "not-independently-verified",
+        "scope": "Explicit record only; not proficiency or hiring probability"
+      },
+      {
+        "schemaVersion": "aligna-evidence-v1",
+        "skillId": "skill:Mathematics",
+        "name": "Mathematics",
+        "recordId": "evidence:725a56d5bedb10a1",
+        "recordVersion": "record:725a56d5bedb10a1",
+        "sourceType": "self-report",
+        "sourceId": "shared-profile",
+        "example": "",
+        "verification": "not-independently-verified",
+        "scope": "Explicit record only; not proficiency or hiring probability"
+      },
+      {
+        "schemaVersion": "aligna-evidence-v1",
+        "skillId": "skill:Microsoft%20Excel",
+        "name": "Microsoft Excel",
+        "recordId": "evidence:b424613772166fb1",
+        "recordVersion": "record:b424613772166fb1",
+        "sourceType": "self-report",
+        "sourceId": "shared-profile",
+        "example": "",
+        "verification": "not-independently-verified",
+        "scope": "Explicit record only; not proficiency or hiring probability"
+      },
+      {
+        "schemaVersion": "aligna-evidence-v1",
+        "skillId": "skill:Operations%20Monitoring",
+        "name": "Operations Monitoring",
+        "recordId": "evidence:fc40bf80da460e78",
+        "recordVersion": "record:fc40bf80da460e78",
+        "sourceType": "self-report",
+        "sourceId": "shared-profile",
+        "example": "",
+        "verification": "not-independently-verified",
+        "scope": "Explicit record only; not proficiency or hiring probability"
+      },
+      {
+        "schemaVersion": "aligna-evidence-v1",
+        "skillId": "skill:Persuasion",
+        "name": "Persuasion",
+        "recordId": "evidence:888ded703abf2b0e",
+        "recordVersion": "record:888ded703abf2b0e",
+        "sourceType": "self-report",
+        "sourceId": "shared-profile",
+        "example": "",
+        "verification": "not-independently-verified",
+        "scope": "Explicit record only; not proficiency or hiring probability"
+      },
+      {
+        "schemaVersion": "aligna-evidence-v1",
+        "skillId": "skill:Quality%20Control%20Analysis",
+        "name": "Quality Control Analysis",
+        "recordId": "evidence:59c6406bc41a806d",
+        "recordVersion": "record:59c6406bc41a806d",
+        "sourceType": "self-report",
+        "sourceId": "shared-profile",
+        "example": "",
+        "verification": "not-independently-verified",
+        "scope": "Explicit record only; not proficiency or hiring probability"
+      },
+      {
+        "schemaVersion": "aligna-evidence-v1",
+        "skillId": "skill:Reading%20Comprehension",
+        "name": "Reading Comprehension",
+        "recordId": "evidence:a2564136a8ab2a3e",
+        "recordVersion": "record:a2564136a8ab2a3e",
+        "sourceType": "self-report",
+        "sourceId": "shared-profile",
+        "example": "",
+        "verification": "not-independently-verified",
+        "scope": "Explicit record only; not proficiency or hiring probability"
+      },
+      {
+        "schemaVersion": "aligna-evidence-v1",
+        "skillId": "skill:Sales",
+        "name": "Sales",
+        "recordId": "evidence:cceeaee7a4a183dd",
+        "recordVersion": "record:cceeaee7a4a183dd",
+        "sourceType": "self-report",
+        "sourceId": "shared-profile",
+        "example": "",
+        "verification": "not-independently-verified",
+        "scope": "Explicit record only; not proficiency or hiring probability"
+      },
+      {
+        "schemaVersion": "aligna-evidence-v1",
+        "skillId": "skill:Teamwork",
+        "name": "Teamwork",
+        "recordId": "evidence:daf366ad543406c9",
+        "recordVersion": "record:daf366ad543406c9",
+        "sourceType": "self-report",
+        "sourceId": "shared-profile",
+        "example": "",
+        "verification": "not-independently-verified",
+        "scope": "Explicit record only; not proficiency or hiring probability"
+      }
+    ]
+  },
+  "totals": {
+    "weight": 5,
+    "matchedWeight": 3,
+    "squareWeight": 9,
+    "matchedSquareWeight": 5
+  },
+  "vectors": {
+    "jd": [
+      2,
+      2,
+      1
+    ],
+    "candidate": [
+      2,
+      0,
+      1
+    ],
+    "dimensions": [
+      "Microsoft Excel",
+      "SQL",
+      "Communication"
+    ],
+    "scope": "Job description-listed skills only; extra candidate skills are not penalised"
+  },
+  "locales": [
+    {
+      "lang": "zh",
+      "sharedPanelHTMLIdentical": true,
+      "gapPlansIdentical": true,
+      "plans": [
+        {
+          "skill": "SQL",
+          "reference": "learning:b1faae9303423aeb",
+          "topics": "SELECT、筛选、JOIN、分组与空值处理",
+          "task": "在模拟订单和客户表上写 5 条查询，覆盖关联、汇总、空值与重复记录。",
+          "review": "交付 SQL 文件和预期结果；用手算样本核对，注明所用 SQL 方言。",
+          "resource": {
+            "title": "Microsoft Learn · Transact-SQL",
+            "url": "https://learn.microsoft.com/en-us/training/paths/get-started-querying-with-transact-sql/"
+          },
+          "credential": null,
+          "noExam": "先补作品或相关培训，不为这项技能强推考试。岗位若要求执照或认可课程，请向 HR 核对名称。"
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "skill:Microsoft%20Excel",
+          "jdTerm": "Microsoft Excel",
+          "weight": 2,
+          "recordId": "evidence:b424613772166fb1",
+          "recorded": true,
+          "example": "",
+          "coveragePoints": 40,
+          "cosinePoints": 59.6284793999944,
+          "learningReference": "learning:86089f6a2dce3800"
+        },
+        {
+          "skillId": "skill:SQL",
+          "jdTerm": "SQL",
+          "weight": 2,
+          "recordId": null,
+          "recorded": false,
+          "example": "",
+          "coveragePoints": 0,
+          "cosinePoints": 0,
+          "learningReference": "learning:b1faae9303423aeb"
+        },
+        {
+          "skillId": "skill:Communication",
+          "jdTerm": "Communication",
+          "weight": 1,
+          "recordId": "evidence:5243682b9ab2a995",
+          "recorded": true,
+          "example": "",
+          "coveragePoints": 20,
+          "cosinePoints": 14.9071198499986,
+          "learningReference": "learning:b766ca4f79fe4513"
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "sharedPanelHTMLIdentical": true,
+      "gapPlansIdentical": true,
+      "plans": [
+        {
+          "skill": "SQL",
+          "reference": "learning:b1faae9303423aeb",
+          "topics": "SELECT, filtering, JOINs, grouping and null handling",
+          "task": "Write five queries over fictional order and customer tables, covering joins, summaries, nulls and duplicates.",
+          "review": "Keep SQL files and expected results; reconcile against a manual sample and name the SQL dialect.",
+          "resource": {
+            "title": "Microsoft Learn · Transact-SQL",
+            "url": "https://learn.microsoft.com/en-us/training/paths/get-started-querying-with-transact-sql/"
+          },
+          "credential": null,
+          "noExam": "Start with a work sample or relevant training; no exam is prescribed for this skill. Ask HR to name any required licence or recognised course."
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "skill:Microsoft%20Excel",
+          "jdTerm": "Microsoft Excel",
+          "weight": 2,
+          "recordId": "evidence:b424613772166fb1",
+          "recorded": true,
+          "example": "",
+          "coveragePoints": 40,
+          "cosinePoints": 59.6284793999944,
+          "learningReference": "learning:86089f6a2dce3800"
+        },
+        {
+          "skillId": "skill:SQL",
+          "jdTerm": "SQL",
+          "weight": 2,
+          "recordId": null,
+          "recorded": false,
+          "example": "",
+          "coveragePoints": 0,
+          "cosinePoints": 0,
+          "learningReference": "learning:b1faae9303423aeb"
+        },
+        {
+          "skillId": "skill:Communication",
+          "jdTerm": "Communication",
+          "weight": 1,
+          "recordId": "evidence:5243682b9ab2a995",
+          "recorded": true,
+          "example": "",
+          "coveragePoints": 20,
+          "cosinePoints": 14.9071198499986,
+          "learningReference": "learning:b766ca4f79fe4513"
+        }
+      ]
+    },
+    {
+      "lang": "ms",
+      "sharedPanelHTMLIdentical": true,
+      "gapPlansIdentical": true,
+      "plans": [
+        {
+          "skill": "SQL",
+          "reference": "learning:b1faae9303423aeb",
+          "topics": "SELECT, penapisan, JOIN, pengelompokan dan nilai null",
+          "task": "Tulis lima pertanyaan jadual pesanan dan pelanggan rekaan meliputi JOIN, rumusan, null dan pendua.",
+          "review": "Simpan fail SQL dan hasil jangkaan; semak sampel manual dan nyatakan dialek SQL.",
+          "resource": {
+            "title": "Microsoft Learn · Transact-SQL",
+            "url": "https://learn.microsoft.com/en-us/training/paths/get-started-querying-with-transact-sql/"
+          },
+          "credential": null,
+          "noExam": "Mulakan dengan sampel kerja atau latihan; tiada peperiksaan ditetapkan untuk kemahiran ini. Minta HR menamakan lesen atau kursus diiktiraf yang diperlukan."
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "skill:Microsoft%20Excel",
+          "jdTerm": "Microsoft Excel",
+          "weight": 2,
+          "recordId": "evidence:b424613772166fb1",
+          "recorded": true,
+          "example": "",
+          "coveragePoints": 40,
+          "cosinePoints": 59.6284793999944,
+          "learningReference": "learning:86089f6a2dce3800"
+        },
+        {
+          "skillId": "skill:SQL",
+          "jdTerm": "SQL",
+          "weight": 2,
+          "recordId": null,
+          "recorded": false,
+          "example": "",
+          "coveragePoints": 0,
+          "cosinePoints": 0,
+          "learningReference": "learning:b1faae9303423aeb"
+        },
+        {
+          "skillId": "skill:Communication",
+          "jdTerm": "Communication",
+          "weight": 1,
+          "recordId": "evidence:5243682b9ab2a995",
+          "recorded": true,
+          "example": "",
+          "coveragePoints": 20,
+          "cosinePoints": 14.9071198499986,
+          "learningReference": "learning:b766ca4f79fe4513"
+        }
+      ]
+    }
+  ],
+  "privateProgressNotShared": true,
+  "noRulesChanged": true,
+  "allPassed": true
+}

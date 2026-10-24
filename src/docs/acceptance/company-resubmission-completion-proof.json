@@ -1,0 +1,59 @@
+{
+  "testedAt": "2026-10-23T11:00:27.722Z",
+  "passed": true,
+  "deployment": "dpl_FxfHhA73z5Tukzc5U3MpdAdsNMBH",
+  "codeCommit": "b682d6a0a799553784cb49761271dcd5ec8e306b",
+  "production": "https://aligna-two.vercel.app",
+  "nodeTests": 149,
+  "pendingChecks": 6,
+  "finalChecks": 10,
+  "assets": [
+    {
+      "name": "company.html",
+      "sha256": "085c9d51d5b7f38d3b7f8c722358839848d38783c26fe69ef94e3cc50bca9fff"
+    },
+    {
+      "name": "company-verification-core.js",
+      "sha256": "72a68d061cda7eb2537fde8ad68f12d70136716bca803e3f0fff361199d307fa"
+    },
+    {
+      "name": "company-verification-store.js",
+      "sha256": "a7f295c3cc21285a9c82d625865524f19506596141217c6be0151163fd79ebad"
+    },
+    {
+      "name": "company-verification.js",
+      "sha256": "f47d6926e76960397c8c75b879204635c7165d0ee98869b24018f9914b57d7a6"
+    },
+    {
+      "name": "company-verification.css",
+      "sha256": "86d42942bff0c7e0bbba8b25e9ea5204d71a11b3879be4cd4446bb23a09a8abb"
+    },
+    {
+      "name": "hiring-cloud.js",
+      "sha256": "5878973c63da9b9e2a21e493e903ecd9e044d19e274402acb39c8d8563b41b05"
+    }
+  ],
+  "closedTemporaryJob": true,
+  "jobId": "twoIfnNTceZZ0MIUZfP1",
+  "skillRequirements": 3,
+  "browserActions": [
+    "Existing synthetic HR login",
+    "Designated reviewer requested changes",
+    "HR selected and resubmitted PDF through file chooser",
+    "New request displayed saved and pending",
+    "Pending employer navigation redirected to company page",
+    "Designated reviewer downloaded exact resubmitted PDF",
+    "Reviewer saved sandbox decision for exact new version",
+    "Same HR published a new job with three structured skills",
+    "Temporary job closed after cross-account production readback"
+  ],
+  "scope": "Actual production UI plus ordinary authenticated Firebase clients; selected file 1874 bytes. Not a production 2 MB boundary test. Synthetic sandbox only, not government verification or professional validity.",
+  "fixes": [
+    "Show review feedback only for matching request version",
+    "Disable reviewer loading until account and initial server reads complete"
+  ],
+  "proofs": [
+    "company-resubmission-pending-live-proof.json",
+    "company-resubmission-final-live-proof.json"
+  ]
+}

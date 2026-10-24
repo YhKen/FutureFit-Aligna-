@@ -1,0 +1,23 @@
+{
+  "testedAt": "2026-10-23T10:53:18.152Z",
+  "stage": "pending",
+  "passed": true,
+  "checks": [
+    "same existing synthetic HR, not an Admin SDK or substitute user",
+    "new version actually persisted after UI resubmission",
+    "actual production PDF bytes exactly equal selected upload",
+    "persisted SHA256 equals actual uploaded and downloaded bytes",
+    "chunk 0 was actually written in the new submission",
+    "old review cannot approve the new request"
+  ],
+  "companyName": "SYNTHETIC QA Future Fit Studio",
+  "requestVersion": "company:f1505e312a04ed1f",
+  "previousVersion": "company:5745378866d2c562",
+  "fileHash": "15f27c4b73125b0e1d922009ddeaec37f39ec98b51297536e236459923d72caa",
+  "fileBytes": 1874,
+  "fileChunks": 1,
+  "reviewStatus": "needs_changes",
+  "access": "pending",
+  "jobId": null,
+  "scope": "Actual production browser actions plus independently authenticated ordinary Firebase client readback. No emulator, Admin SDK, or real government verification used."
+}

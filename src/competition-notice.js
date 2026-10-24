@@ -1,0 +1,4 @@
+const tr=(zh,en,ms)=>document.documentElement.lang.startsWith('zh')?zh:document.documentElement.lang==='ms'?ms:en;
+const note=document.createElement('p');note.className='scope-banner';note.style.cssText='max-width:1000px;margin:20px auto;padding:12px 18px;border:1px solid #ded7c8;border-radius:14px;background:#eeeade;font-size:13px;line-height:1.6';
+function paint(){note.textContent=tr('Domain 1 比赛版 · 请仅使用合成履历、虚构人物与职位。不要上传真实个人资料。','Domain 1 competition build · Use synthetic CVs, fictional people and roles only. Do not upload real personal data.','Versi pertandingan Domain 1 · Gunakan CV sintetik, individu dan jawatan rekaan sahaja. Jangan muat naik data peribadi sebenar.');}
+const main=document.querySelector('main');if(main)main.before(note);else document.body.append(note);paint();window.addEventListener('aligna-locale-render',paint);

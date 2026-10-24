@@ -1,0 +1,303 @@
+{
+  "date": "2026-10-23T06:42:46.655Z",
+  "environment": "Production https://aligna-two.vercel.app; real signed-in synthetic seeker; Chromium responsive viewport",
+  "views": [
+    {
+      "client": 305,
+      "draft": "QA unsaved language draft",
+      "heading": "两份工作，一起算清楚。",
+      "lang": "zh",
+      "loaded": true,
+      "page": "/portfolio-careers.html",
+      "scroll": 305,
+      "summary": "QA SYNTHETIC — weekend assistance + QA SYNTHETIC — record checking",
+      "width": 320
+    },
+    {
+      "client": 375,
+      "draft": "QA unsaved language draft",
+      "heading": "两份工作，一起算清楚。",
+      "lang": "zh",
+      "loaded": true,
+      "page": "/portfolio-careers.html",
+      "scroll": 375,
+      "summary": "QA SYNTHETIC — weekend assistance + QA SYNTHETIC — record checking",
+      "width": 390
+    },
+    {
+      "client": 305,
+      "draft": "QA unsaved language draft",
+      "heading": "See how two roles fit together.",
+      "lang": "en",
+      "loaded": true,
+      "page": "/portfolio-careers.html",
+      "scroll": 305,
+      "summary": "QA SYNTHETIC — weekend assistance + QA SYNTHETIC — record checking",
+      "width": 320
+    },
+    {
+      "client": 375,
+      "draft": "QA unsaved language draft",
+      "heading": "See how two roles fit together.",
+      "lang": "en",
+      "loaded": true,
+      "page": "/portfolio-careers.html",
+      "scroll": 375,
+      "summary": "QA SYNTHETIC — weekend assistance + QA SYNTHETIC — record checking",
+      "width": 390
+    },
+    {
+      "client": 305,
+      "draft": "QA unsaved language draft",
+      "heading": "Lihat dua kerja bersama.",
+      "lang": "ms",
+      "loaded": true,
+      "page": "/portfolio-careers.html",
+      "scroll": 305,
+      "summary": "QA SYNTHETIC — weekend assistance + QA SYNTHETIC — record checking",
+      "width": 320
+    },
+    {
+      "client": 375,
+      "draft": "QA unsaved language draft",
+      "heading": "Lihat dua kerja bersama.",
+      "lang": "ms",
+      "loaded": true,
+      "page": "/portfolio-careers.html",
+      "scroll": 375,
+      "summary": "QA SYNTHETIC — weekend assistance + QA SYNTHETIC — record checking",
+      "width": 390
+    },
+    {
+      "checkboxes": 168,
+      "client": 305,
+      "draft": "7",
+      "gridScroll": 560,
+      "heading": "学习，放进你的空档。",
+      "lang": "zh",
+      "loaded": true,
+      "page": "/study-calendar.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "checkboxes": 168,
+      "client": 375,
+      "draft": "7",
+      "gridScroll": 560,
+      "heading": "学习，放进你的空档。",
+      "lang": "zh",
+      "loaded": true,
+      "page": "/study-calendar.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "checkboxes": 168,
+      "client": 305,
+      "draft": "7",
+      "gridScroll": 560,
+      "heading": "Make learning fit your week.",
+      "lang": "en",
+      "loaded": true,
+      "page": "/study-calendar.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "checkboxes": 168,
+      "client": 375,
+      "draft": "7",
+      "gridScroll": 560,
+      "heading": "Make learning fit your week.",
+      "lang": "en",
+      "loaded": true,
+      "page": "/study-calendar.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "checkboxes": 168,
+      "client": 305,
+      "draft": "7",
+      "gridScroll": 560,
+      "heading": "Belajar mengikut masa lapang.",
+      "lang": "ms",
+      "loaded": true,
+      "page": "/study-calendar.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "checkboxes": 168,
+      "client": 375,
+      "draft": "7",
+      "gridScroll": 560,
+      "heading": "Belajar mengikut masa lapang.",
+      "lang": "ms",
+      "loaded": true,
+      "page": "/study-calendar.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "client": 305,
+      "coverage": "33",
+      "draft": "SYNTHETIC QA. Thank you for applying. We wish you well.",
+      "graphOpen": true,
+      "heading": "这次没成，下一步怎么走？",
+      "lang": "zh",
+      "loaded": true,
+      "page": "/application-reflection.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "client": 375,
+      "coverage": "33",
+      "draft": "SYNTHETIC QA. Thank you for applying. We wish you well.",
+      "graphOpen": true,
+      "heading": "这次没成，下一步怎么走？",
+      "lang": "zh",
+      "loaded": true,
+      "page": "/application-reflection.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "client": 305,
+      "coverage": "33",
+      "draft": "SYNTHETIC QA. Thank you for applying. We wish you well.",
+      "graphOpen": true,
+      "heading": "What comes after this application?",
+      "lang": "en",
+      "loaded": true,
+      "page": "/application-reflection.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "client": 375,
+      "coverage": "33",
+      "draft": "SYNTHETIC QA. Thank you for applying. We wish you well.",
+      "graphOpen": true,
+      "heading": "What comes after this application?",
+      "lang": "en",
+      "loaded": true,
+      "page": "/application-reflection.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "client": 305,
+      "coverage": "33",
+      "draft": "SYNTHETIC QA. Thank you for applying. We wish you well.",
+      "graphOpen": true,
+      "heading": "Langkah selepas permohonan ini?",
+      "lang": "ms",
+      "loaded": true,
+      "page": "/application-reflection.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "client": 375,
+      "coverage": "33",
+      "draft": "SYNTHETIC QA. Thank you for applying. We wish you well.",
+      "graphOpen": true,
+      "heading": "Langkah selepas permohonan ini?",
+      "lang": "ms",
+      "loaded": true,
+      "page": "/application-reflection.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "client": 305,
+      "heading": "技能，放到变化里看。",
+      "lang": "zh",
+      "loaded": true,
+      "page": "/ai-trends.html",
+      "scroll": 305,
+      "selected": "Bookkeeping",
+      "source": "https://www.ilo.org/resource/article/generative-ai-work-what-it-means-jobs-europe-and-beyond",
+      "width": 320
+    },
+    {
+      "client": 375,
+      "heading": "技能，放到变化里看。",
+      "lang": "zh",
+      "loaded": true,
+      "page": "/ai-trends.html",
+      "scroll": 375,
+      "selected": "Bookkeeping",
+      "source": "https://www.ilo.org/resource/article/generative-ai-work-what-it-means-jobs-europe-and-beyond",
+      "width": 390
+    },
+    {
+      "client": 305,
+      "heading": "Skills in a changing workplace.",
+      "lang": "en",
+      "loaded": true,
+      "page": "/ai-trends.html",
+      "scroll": 305,
+      "selected": "Bookkeeping",
+      "source": "https://www.ilo.org/resource/article/generative-ai-work-what-it-means-jobs-europe-and-beyond",
+      "width": 320
+    },
+    {
+      "client": 375,
+      "heading": "Skills in a changing workplace.",
+      "lang": "en",
+      "loaded": true,
+      "page": "/ai-trends.html",
+      "scroll": 375,
+      "selected": "Bookkeeping",
+      "source": "https://www.ilo.org/resource/article/generative-ai-work-what-it-means-jobs-europe-and-beyond",
+      "width": 390
+    },
+    {
+      "client": 305,
+      "heading": "Kemahiran dalam dunia berubah.",
+      "lang": "ms",
+      "loaded": true,
+      "page": "/ai-trends.html",
+      "scroll": 305,
+      "selected": "Bookkeeping",
+      "source": "https://www.ilo.org/resource/article/generative-ai-work-what-it-means-jobs-europe-and-beyond",
+      "width": 320
+    },
+    {
+      "client": 375,
+      "heading": "Kemahiran dalam dunia berubah.",
+      "lang": "ms",
+      "loaded": true,
+      "page": "/ai-trends.html",
+      "scroll": 375,
+      "selected": "Bookkeeping",
+      "source": "https://www.ilo.org/resource/article/generative-ai-work-what-it-means-jobs-europe-and-beyond",
+      "width": 390
+    }
+  ],
+  "allRecordedViewsPassed": true,
+  "savedDraftLanguageRetention": true,
+  "expandedSankey": {
+    "selectedSkill": "Management of Financial Resources",
+    "coverage": 33,
+    "contribution": 0,
+    "totalWeight": 12,
+    "learningAdviceVisible": true
+  },
+  "formalCalendarSavedAndReopened": true,
+  "prioritiesVisibleOnFormalGrowthPage": true,
+  "darkMode": {
+    "background": "rgb(40, 39, 47)",
+    "color": "rgb(243, 238, 227)",
+    "testedPage": "ai-trends.html",
+    "restoredLight": true
+  },
+  "limitations": [
+    "Viewport testing is not physical iOS/Android device testing",
+    "No human/professional validity claim"
+  ]
+}

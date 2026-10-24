@@ -1,0 +1,71 @@
+{
+  "testedAt": "2026-10-23",
+  "passed": true,
+  "suites": [
+    {
+      "suite": "rules checks: verified auth, owner drafts, publish visibility, close, cross-account isolation, schema, private assessment isolation.",
+      "checks": 24,
+      "passed": true
+    },
+    {
+      "suite": "application permission checks",
+      "checks": 30,
+      "passed": true
+    },
+    {
+      "suite": "H01 production-contract rule checks.",
+      "checks": 30,
+      "passed": true
+    },
+    {
+      "suite": "seeker rules checks: owner-only persistence, immutable attempts, no self-verification, tool conditions, learning actions, settings, routes and news receipts.",
+      "checks": 47,
+      "passed": true
+    },
+    {
+      "suite": "news rules checks: worker isolation, owner consent, stop, private profiles, no self-approval and immutable audit.",
+      "checks": 26,
+      "passed": true
+    },
+    {
+      "suite": "four forms; private drafts; immutable submissions and reviews; reviewer identity; withdrawn sharing; unrelated users and news worker denied",
+      "checks": 154,
+      "passed": true
+    },
+    {
+      "suite": "atomic correction history; stale/forged writes; explicit clarification; candidate-controlled blind review; no CV or primary rating access; revocation and withdrawal",
+      "checks": 101,
+      "passed": true
+    },
+    {
+      "suite": "alternative-time privacy and validation; immutable frozen basis; closed and withdrawn boundaries; exact task skill/output links; legacy withdrawal",
+      "checks": 28,
+      "passed": true
+    },
+    {
+      "suite": "expert privacy; immutable frozen plans and opinions; candidate-only research consent and withdrawal; private append-only statistics; no validity pass; max-panel transaction",
+      "checks": 126,
+      "passed": true
+    },
+    {
+      "suite": "private-life-and-career-trials",
+      "checks": 67,
+      "passed": true
+    },
+    {
+      "suite": "career-tools-private-rules",
+      "checks": 116,
+      "passed": true
+    },
+    {
+      "suite": "company-interview-rules",
+      "checks": 89,
+      "passed": true
+    }
+  ],
+  "checks": 838,
+  "newChecks": 89,
+  "published": true,
+  "userConfirmed": true,
+  "normalizedUIReadbackEqual": true
+}

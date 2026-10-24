@@ -1,0 +1,163 @@
+{
+  "sameQuestionThreeLocales": [
+    {
+      "index": "31 / 50",
+      "locale": "zh",
+      "options": [
+        "1很不喜欢",
+        "2不太喜欢",
+        "3说不上来",
+        "4比较喜欢",
+        "5很喜欢"
+      ],
+      "question": "通过实验室检测识别疾病"
+    },
+    {
+      "index": "31 / 50",
+      "locale": "en",
+      "options": [
+        "1Strongly dislike",
+        "2Dislike",
+        "3Unsure",
+        "4Like",
+        "5Strongly like"
+      ],
+      "question": "Do laboratory tests to identify diseases"
+    },
+    {
+      "index": "31 / 50",
+      "locale": "ms",
+      "options": [
+        "1Sangat tidak suka",
+        "2Tidak suka",
+        "3Tidak pasti",
+        "4Suka",
+        "5Sangat suka"
+      ],
+      "question": "Menjalankan ujian makmal untuk mengenal pasti penyakit"
+    }
+  ],
+  "selectedValueRetained": true,
+  "answers": [
+    {
+      "index": "31 / 50",
+      "locale": "en",
+      "question": "Do laboratory tests to identify diseases",
+      "value": 3
+    },
+    {
+      "index": "32 / 50",
+      "locale": "en",
+      "question": "Market a new line of clothing",
+      "value": 3
+    },
+    {
+      "index": "33 / 50",
+      "locale": "en",
+      "question": "Have difficulty understanding abstract ideas.",
+      "value": 3
+    },
+    {
+      "index": "34 / 50",
+      "locale": "en",
+      "question": "Write books or plays",
+      "value": 3
+    },
+    {
+      "index": "35 / 50",
+      "locale": "en",
+      "question": "Get chores done right away.",
+      "value": 3
+    },
+    {
+      "index": "36 / 50",
+      "locale": "en",
+      "question": "Keep shipping and receiving records",
+      "value": 3
+    },
+    {
+      "index": "37 / 50",
+      "locale": "en",
+      "question": "Am not really interested in others.",
+      "value": 3
+    },
+    {
+      "index": "38 / 50",
+      "locale": "zh",
+      "question": "教别人一套锻炼动作",
+      "value": 3
+    },
+    {
+      "index": "39 / 50",
+      "locale": "zh",
+      "question": "我很容易心烦。",
+      "value": 3
+    },
+    {
+      "index": "40 / 50",
+      "locale": "zh",
+      "question": "制作厨房橱柜",
+      "value": 3
+    },
+    {
+      "index": "41 / 50",
+      "locale": "zh",
+      "question": "我通常不引人注意。",
+      "value": 3
+    },
+    {
+      "index": "42 / 50",
+      "locale": "zh",
+      "question": "说到「科学方法」，你目前能做到什么程度？",
+      "value": 3
+    },
+    {
+      "index": "43 / 50",
+      "locale": "zh",
+      "question": "在工作中感到烦躁时，你通常能发现是什么触发的吗？",
+      "value": 3
+    },
+    {
+      "index": "44 / 50",
+      "locale": "zh",
+      "question": "工作计划突然改变，你能重新安排接下来的步骤吗？",
+      "value": 3
+    },
+    {
+      "index": "45 / 50",
+      "locale": "ms",
+      "question": "Sejauh mana anda boleh menggunakan kemahiran ini secara berdikari: Matematik?",
+      "value": 3
+    },
+    {
+      "index": "46 / 50",
+      "locale": "ms",
+      "question": "Bolehkah anda mencari titik mula pembelajaran dalam bidang baharu?",
+      "value": 3
+    },
+    {
+      "index": "47 / 50",
+      "locale": "ms",
+      "question": "Semasa memilih kerja, sejauh mana perkara ini penting: Menggunakan kebolehan saya?",
+      "value": 3
+    },
+    {
+      "index": "48 / 50",
+      "locale": "ms",
+      "question": "Sejauh mana anda boleh menggunakan kemahiran ini secara berdikari: Analisis sistem?",
+      "value": 3
+    },
+    {
+      "index": "49 / 50",
+      "locale": "ms",
+      "question": "Semasa memilih kerja, sejauh mana perkara ini penting: Peluang kenaikan pangkat?",
+      "value": 3
+    },
+    {
+      "index": "50 / 50",
+      "locale": "ms",
+      "question": "Sejauh mana anda yakin mencari pilihan lain jika rancangan kerjaya tidak berjaya?",
+      "value": 3
+    }
+  ]
+}

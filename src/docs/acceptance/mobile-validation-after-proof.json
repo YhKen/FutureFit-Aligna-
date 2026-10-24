@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-23",
+  "phase": "after",
+  "environment": "production Firebase project-d32d7",
+  "syntheticOnly": true,
+  "checks": 14,
+  "threeExpertOpinionsDirectReadback": true,
+  "threeResearchConsentsDirectReadback": true,
+  "twoIndependentRatingsDirectReadback": true,
+  "threeReportsDirectReadback": true,
+  "humanExperts": 0,
+  "humanCases": 0,
+  "professionalValidity": "pending",
+  "threeWithdrawalsExcludeNewStatistics": true,
+  "historicalSnapshotsPreserved": true,
+  "revokedExpertsApiAndFirestoreDenied": true,
+  "revokedRatersApiAndFirestoreDenied": true
+}

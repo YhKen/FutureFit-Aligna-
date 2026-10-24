@@ -1,0 +1,509 @@
+{
+  "testedAt": "2026-10-23",
+  "passed": true,
+  "scope": "Chromium CSS viewport checks, not physical devices",
+  "views": [
+    {
+      "stage": "HR merge identity secure disabled entry",
+      "client": 305,
+      "heading": "确认是你。",
+      "lang": "zh",
+      "page": "/identity.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "HR merge identity secure disabled entry",
+      "client": 375,
+      "heading": "确认是你。",
+      "lang": "zh",
+      "page": "/identity.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "HR merge identity secure disabled entry",
+      "client": 305,
+      "heading": "Make it yours.",
+      "lang": "en",
+      "page": "/identity.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "HR merge identity secure disabled entry",
+      "client": 375,
+      "heading": "Make it yours.",
+      "lang": "en",
+      "page": "/identity.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "HR merge identity secure disabled entry",
+      "client": 305,
+      "heading": "Sahkan diri anda.",
+      "lang": "ms",
+      "page": "/identity.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "HR merge identity secure disabled entry",
+      "client": 375,
+      "heading": "Sahkan diri anda.",
+      "lang": "ms",
+      "page": "/identity.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "merged-seeker-expanded-application",
+      "client": 305,
+      "heading": "每一步，都有着落。",
+      "lang": "zh",
+      "page": "/applications.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "merged-seeker-expanded-application",
+      "client": 375,
+      "heading": "每一步，都有着落。",
+      "lang": "zh",
+      "page": "/applications.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "merged-seeker-expanded-application",
+      "client": 305,
+      "heading": "Keep track of your next step.",
+      "lang": "en",
+      "page": "/applications.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "merged-seeker-expanded-application",
+      "client": 375,
+      "heading": "Keep track of your next step.",
+      "lang": "en",
+      "page": "/applications.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "merged-seeker-expanded-application",
+      "client": 305,
+      "heading": "Ikuti langkah seterusnya.",
+      "lang": "ms",
+      "page": "/applications.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "merged-seeker-expanded-application",
+      "client": 375,
+      "heading": "Ikuti langkah seterusnya.",
+      "lang": "ms",
+      "page": "/applications.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "merged-seeker-expanded-sankey-confirmed",
+      "client": 305,
+      "detailOpen": true,
+      "lang": "zh",
+      "scroll": 305,
+      "traceOpen": true,
+      "width": 320
+    },
+    {
+      "stage": "merged-seeker-expanded-sankey-confirmed",
+      "client": 375,
+      "detailOpen": true,
+      "lang": "zh",
+      "scroll": 375,
+      "traceOpen": true,
+      "width": 390
+    },
+    {
+      "stage": "merged-seeker-expanded-sankey-confirmed",
+      "client": 305,
+      "detailOpen": true,
+      "lang": "en",
+      "scroll": 305,
+      "traceOpen": true,
+      "width": 320
+    },
+    {
+      "stage": "merged-seeker-expanded-sankey-confirmed",
+      "client": 375,
+      "detailOpen": true,
+      "lang": "en",
+      "scroll": 375,
+      "traceOpen": true,
+      "width": 390
+    },
+    {
+      "stage": "merged-seeker-expanded-sankey-confirmed",
+      "client": 305,
+      "detailOpen": true,
+      "lang": "ms",
+      "scroll": 305,
+      "traceOpen": true,
+      "width": 320
+    },
+    {
+      "stage": "merged-seeker-expanded-sankey-confirmed",
+      "client": 375,
+      "detailOpen": true,
+      "lang": "ms",
+      "scroll": 375,
+      "traceOpen": true,
+      "width": 390
+    },
+    {
+      "stage": "HR-company-submit-form",
+      "client": 305,
+      "heading": "先认识你的公司。",
+      "lang": "zh",
+      "page": "/company.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "HR-company-submit-form",
+      "client": 375,
+      "heading": "先认识你的公司。",
+      "lang": "zh",
+      "page": "/company.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "HR-company-submit-form",
+      "client": 305,
+      "heading": "Let’s meet your company.",
+      "lang": "en",
+      "page": "/company.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "HR-company-submit-form",
+      "client": 375,
+      "heading": "Let’s meet your company.",
+      "lang": "en",
+      "page": "/company.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "HR-company-submit-form",
+      "client": 305,
+      "heading": "Kenali syarikat anda.",
+      "lang": "ms",
+      "page": "/company.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "HR-company-submit-form",
+      "client": 375,
+      "heading": "Kenali syarikat anda.",
+      "lang": "ms",
+      "page": "/company.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "HR-company-awaiting-review",
+      "client": 305,
+      "heading": "先认识你的公司。",
+      "lang": "zh",
+      "page": "/company.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "HR-company-awaiting-review",
+      "client": 375,
+      "heading": "先认识你的公司。",
+      "lang": "zh",
+      "page": "/company.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "HR-company-awaiting-review",
+      "client": 305,
+      "heading": "Let’s meet your company.",
+      "lang": "en",
+      "page": "/company.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "HR-company-awaiting-review",
+      "client": 375,
+      "heading": "Let’s meet your company.",
+      "lang": "en",
+      "page": "/company.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "HR-company-awaiting-review",
+      "client": 305,
+      "heading": "Kenali syarikat anda.",
+      "lang": "ms",
+      "page": "/company.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "HR-company-awaiting-review",
+      "client": 375,
+      "heading": "Kenali syarikat anda.",
+      "lang": "ms",
+      "page": "/company.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "company-review-open-draft",
+      "client": 305,
+      "heading": "核对公司资料",
+      "lang": "zh",
+      "page": "/company.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "company-review-open-draft",
+      "client": 375,
+      "heading": "核对公司资料",
+      "lang": "zh",
+      "page": "/company.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "company-review-open-draft",
+      "client": 305,
+      "heading": "Review company details",
+      "lang": "en",
+      "page": "/company.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "company-review-open-draft",
+      "client": 375,
+      "heading": "Review company details",
+      "lang": "en",
+      "page": "/company.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "company-review-open-draft",
+      "client": 305,
+      "heading": "Semak maklumat syarikat",
+      "lang": "ms",
+      "page": "/company.html",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "stage": "company-review-open-draft",
+      "client": 375,
+      "heading": "Semak maklumat syarikat",
+      "lang": "ms",
+      "page": "/company.html",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "stage": "HR-structured-interview-draft-and-Sankey",
+      "client": 305,
+      "lang": "zh",
+      "scroll": 305,
+      "traceOpen": true,
+      "width": 320,
+      "draftRetained": true,
+      "timeRetained": true
+    },
+    {
+      "stage": "HR-structured-interview-draft-and-Sankey",
+      "client": 375,
+      "lang": "zh",
+      "scroll": 375,
+      "traceOpen": true,
+      "width": 390,
+      "draftRetained": true,
+      "timeRetained": true
+    },
+    {
+      "stage": "HR-structured-interview-draft-and-Sankey",
+      "client": 305,
+      "lang": "en",
+      "scroll": 305,
+      "traceOpen": true,
+      "width": 320,
+      "draftRetained": true,
+      "timeRetained": true
+    },
+    {
+      "stage": "HR-structured-interview-draft-and-Sankey",
+      "client": 375,
+      "lang": "en",
+      "scroll": 375,
+      "traceOpen": true,
+      "width": 390,
+      "draftRetained": true,
+      "timeRetained": true
+    },
+    {
+      "stage": "HR-structured-interview-draft-and-Sankey",
+      "client": 305,
+      "lang": "ms",
+      "scroll": 305,
+      "traceOpen": true,
+      "width": 320,
+      "draftRetained": true,
+      "timeRetained": true
+    },
+    {
+      "stage": "HR-structured-interview-draft-and-Sankey",
+      "client": 375,
+      "lang": "ms",
+      "scroll": 375,
+      "traceOpen": true,
+      "width": 390,
+      "draftRetained": true,
+      "timeRetained": true
+    },
+    {
+      "stage": "HR-live-skill-interview-evidence",
+      "actualInterviewPanels": 3,
+      "client": 305,
+      "lang": "zh",
+      "scroll": 305,
+      "traceOpen": true,
+      "width": 320
+    },
+    {
+      "stage": "HR-live-skill-interview-evidence",
+      "actualInterviewPanels": 3,
+      "client": 375,
+      "lang": "zh",
+      "scroll": 375,
+      "traceOpen": true,
+      "width": 390
+    },
+    {
+      "stage": "HR-live-skill-interview-evidence",
+      "actualInterviewPanels": 3,
+      "client": 305,
+      "lang": "en",
+      "scroll": 305,
+      "traceOpen": true,
+      "width": 320
+    },
+    {
+      "stage": "HR-live-skill-interview-evidence",
+      "actualInterviewPanels": 3,
+      "client": 375,
+      "lang": "en",
+      "scroll": 375,
+      "traceOpen": true,
+      "width": 390
+    },
+    {
+      "stage": "HR-live-skill-interview-evidence",
+      "actualInterviewPanels": 3,
+      "client": 305,
+      "lang": "ms",
+      "scroll": 305,
+      "traceOpen": true,
+      "width": 320
+    },
+    {
+      "stage": "HR-live-skill-interview-evidence",
+      "actualInterviewPanels": 3,
+      "client": 375,
+      "lang": "ms",
+      "scroll": 375,
+      "traceOpen": true,
+      "width": 390
+    },
+    {
+      "stage": "final-beige-chart-theme",
+      "chartPadding": "16px",
+      "client": 305,
+      "conflictColor": "rgb(238, 232, 216)",
+      "lang": "zh",
+      "scroll": 305,
+      "traceOpen": true,
+      "width": 320
+    },
+    {
+      "stage": "final-beige-chart-theme",
+      "chartPadding": "16px",
+      "client": 375,
+      "conflictColor": "rgb(238, 232, 216)",
+      "lang": "zh",
+      "scroll": 375,
+      "traceOpen": true,
+      "width": 390
+    },
+    {
+      "stage": "final-beige-chart-theme",
+      "chartPadding": "16px",
+      "client": 305,
+      "conflictColor": "rgb(238, 232, 216)",
+      "lang": "en",
+      "scroll": 305,
+      "traceOpen": true,
+      "width": 320
+    },
+    {
+      "stage": "final-beige-chart-theme",
+      "chartPadding": "16px",
+      "client": 375,
+      "conflictColor": "rgb(238, 232, 216)",
+      "lang": "en",
+      "scroll": 375,
+      "traceOpen": true,
+      "width": 390
+    },
+    {
+      "stage": "final-beige-chart-theme",
+      "chartPadding": "16px",
+      "client": 305,
+      "conflictColor": "rgb(238, 232, 216)",
+      "lang": "ms",
+      "scroll": 305,
+      "traceOpen": true,
+      "width": 320
+    },
+    {
+      "stage": "final-beige-chart-theme",
+      "chartPadding": "16px",
+      "client": 375,
+      "conflictColor": "rgb(238, 232, 216)",
+      "lang": "ms",
+      "scroll": 375,
+      "traceOpen": true,
+      "width": 390
+    }
+  ],
+  "companyReview": "normal designated reviewer UI saved sandbox only; attempted live approval rejected",
+  "interviewSave": "normal HR UI with server readback and preserved follow-ups",
+  "draftAndTimeRetained": true,
+  "beigeThemeComputedStyleConfirmed": true
+}

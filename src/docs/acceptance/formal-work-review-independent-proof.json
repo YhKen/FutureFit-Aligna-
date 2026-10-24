@@ -1,0 +1,24 @@
+{
+  "method": "Independent Python Fraction accumulation and exact half-up rounding",
+  "inputs": "Actual authenticated production review ratings in formal-work-live-proof.json",
+  "checks": [
+    {
+      "task": "record-audit",
+      "points": 11,
+      "denominator": 12,
+      "observed": 4,
+      "percent": 92,
+      "passed": true
+    },
+    {
+      "task": "resource-plan",
+      "points": 10,
+      "denominator": 12,
+      "observed": 4,
+      "percent": 83,
+      "passed": true
+    }
+  ],
+  "allPassed": true,
+  "scope": "Checks rating arithmetic only; does not validate the substance of reviewer observations"
+}

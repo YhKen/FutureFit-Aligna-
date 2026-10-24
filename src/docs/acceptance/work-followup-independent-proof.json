@@ -1,0 +1,16 @@
+{
+  "method": "Independent Python Fraction exact arithmetic, half-up positive integer rounding",
+  "source": "work-followup-live-proof.json saved production numeric ratings only",
+  "originalPercent": 83,
+  "currentPercent": 83,
+  "secondPercent": 75,
+  "comparison": {
+    "paired": 4,
+    "exact": 3,
+    "agreementPercent": 75,
+    "meanAbsoluteDifference": 0.25
+  },
+  "nullOnlyNotComputed": true,
+  "allPassed": true,
+  "scope": "Arithmetic only, not independent human judgement or population reliability"
+}

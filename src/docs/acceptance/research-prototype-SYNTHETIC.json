@@ -1,0 +1,7449 @@
+{
+  "data": {
+    "version": "synthetic-research-v1",
+    "seed": 20261023,
+    "people": [
+      {
+        "personId": "SIM-001",
+        "synthetic": true,
+        "consent": false,
+        "trainingConsent": false,
+        "ratingConsent": false,
+        "withdrawn": true,
+        "language": "zh",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-002",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-003",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-004",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-005",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-006",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-007",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-008",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-009",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-010",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-011",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-012",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-013",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-014",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-015",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-016",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-017",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-018",
+        "synthetic": true,
+        "consent": false,
+        "trainingConsent": false,
+        "ratingConsent": false,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-019",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-020",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-021",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-022",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-023",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-024",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": true,
+        "language": "ms",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-025",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-026",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-027",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-028",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-029",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-030",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-031",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-032",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-033",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-034",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-035",
+        "synthetic": true,
+        "consent": false,
+        "trainingConsent": false,
+        "ratingConsent": false,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-036",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-037",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-038",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-039",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-040",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-041",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-042",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-043",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-044",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-045",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-046",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-047",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": true,
+        "language": "en",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-048",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-049",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-050",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-051",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-052",
+        "synthetic": true,
+        "consent": false,
+        "trainingConsent": false,
+        "ratingConsent": false,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-053",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-054",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-055",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-056",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-057",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-058",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-059",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-060",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-061",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-062",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-063",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-064",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-065",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-066",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-067",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-068",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-069",
+        "synthetic": true,
+        "consent": false,
+        "trainingConsent": false,
+        "ratingConsent": false,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-070",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": true,
+        "language": "zh",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-071",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-072",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-073",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-074",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-075",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-076",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-077",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-078",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-079",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-080",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-081",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-082",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-083",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-084",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-085",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-086",
+        "synthetic": true,
+        "consent": false,
+        "trainingConsent": false,
+        "ratingConsent": false,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-087",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-088",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-089",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-090",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-091",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-092",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-093",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": true,
+        "language": "ms",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-094",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-095",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-096",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-097",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-098",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-099",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-100",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-101",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-102",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-103",
+        "synthetic": true,
+        "consent": false,
+        "trainingConsent": false,
+        "ratingConsent": false,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-104",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-105",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-106",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-107",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-108",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-109",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-110",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-111",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-112",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-113",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-114",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-115",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-116",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": true,
+        "language": "en",
+        "form": "B",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-117",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "A",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-118",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "zh",
+        "form": "B",
+        "device": "mobile"
+      },
+      {
+        "personId": "SIM-119",
+        "synthetic": true,
+        "consent": true,
+        "trainingConsent": true,
+        "ratingConsent": true,
+        "withdrawn": false,
+        "language": "en",
+        "form": "A",
+        "device": "desktop"
+      },
+      {
+        "personId": "SIM-120",
+        "synthetic": true,
+        "consent": false,
+        "trainingConsent": false,
+        "ratingConsent": false,
+        "withdrawn": false,
+        "language": "ms",
+        "form": "B",
+        "device": "desktop"
+      }
+    ],
+    "records": [
+      {
+        "recordId": "SIM-001-0",
+        "personId": "SIM-001",
+        "x": [
+          0.4447077182121575,
+          0.35072506428696215,
+          0.8737002285197377
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-001-1",
+        "personId": "SIM-001",
+        "x": [
+          0.5614337190054357,
+          0.6971954957116395,
+          0.5685673896223307
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-002-0",
+        "personId": "SIM-002",
+        "x": [
+          0.17361454502679408,
+          0.9866286972537637,
+          0.36836429382674396
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-002-1",
+        "personId": "SIM-002",
+        "x": [
+          0.5571848743129522,
+          0.3889837395399809,
+          0.39512575953267515
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-003-0",
+        "personId": "SIM-003",
+        "x": [
+          0.3236413048580289,
+          0.2790367833804339,
+          0.9379242896102369
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-003-1",
+        "personId": "SIM-003",
+        "x": [
+          0.0943614561110735,
+          0.2388012574519962,
+          0.8991282568313181
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-004-0",
+        "personId": "SIM-004",
+        "x": [
+          0.6854599385987967,
+          0.4403641349636018,
+          0.3478182621765882
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-004-1",
+        "personId": "SIM-004",
+        "x": [
+          0.06831302284263074,
+          0.9704151027835906,
+          0.43502882891334593
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-005-0",
+        "personId": "SIM-005",
+        "x": [
+          0.8966721310280263,
+          0.41496739839203656,
+          0.8448764774948359
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-005-1",
+        "personId": "SIM-005",
+        "x": [
+          0.37766925105825067,
+          0.14618570753373206,
+          0.0009005581960082054
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-006-0",
+        "personId": "SIM-006",
+        "x": [
+          0.7127400182653219,
+          0.8149710576981306,
+          0.9358829536940902
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-006-1",
+        "personId": "SIM-006",
+        "x": [
+          0.4637023063842207,
+          0.31760216783732176,
+          0.9844873908441514
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-007-0",
+        "personId": "SIM-007",
+        "x": [
+          0.14494155533611774,
+          0.07846382423304021,
+          0.23309947410598397
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-007-1",
+        "personId": "SIM-007",
+        "x": [
+          0.6416902234777808,
+          0.6553023259621114,
+          0.34019005624577403
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-008-0",
+        "personId": "SIM-008",
+        "x": [
+          0.5409263723995537,
+          0.7060863398946822,
+          0.6009811686817557
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-008-1",
+        "personId": "SIM-008",
+        "x": [
+          0.8724737006705254,
+          0.5226765791885555,
+          0.46904180315323174
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-009-0",
+        "personId": "SIM-009",
+        "x": [
+          0.18966209003701806,
+          0.5264868403319269,
+          0.7439714735373855
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-009-1",
+        "personId": "SIM-009",
+        "x": [
+          0.7529414701275527,
+          0.13663203758187592,
+          0.6784239448606968
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-010-0",
+        "personId": "SIM-010",
+        "x": [
+          0.39483904861845076,
+          0.703469599597156,
+          0.9713374290149659
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-010-1",
+        "personId": "SIM-010",
+        "x": [
+          0.9553856116253883,
+          0.4712587222456932,
+          0.16071398532949388
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-011-0",
+        "personId": "SIM-011",
+        "x": [
+          0.6579640349373221,
+          0.8213220189791173,
+          0.26970918802544475
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-011-1",
+        "personId": "SIM-011",
+        "x": [
+          0.09342895075678825,
+          0.06032641581259668,
+          0.06334843533113599
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-012-0",
+        "personId": "SIM-012",
+        "x": [
+          0.27924752118997276,
+          0.7162767122499645,
+          0.7305258449632674
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-012-1",
+        "personId": "SIM-012",
+        "x": [
+          0.1957827431615442,
+          0.5066289422102273,
+          0.7761004513595253
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-013-0",
+        "personId": "SIM-013",
+        "x": [
+          0.15575199900195003,
+          0.3322066937107593,
+          0.5829168744385242
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-013-1",
+        "personId": "SIM-013",
+        "x": [
+          0.09310483979061246,
+          0.5695204420480877,
+          0.24986806605011225
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-014-0",
+        "personId": "SIM-014",
+        "x": [
+          0.5006392609793693,
+          0.8019496574997902,
+          0.48971781111322343
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-014-1",
+        "personId": "SIM-014",
+        "x": [
+          0.4871910831425339,
+          0.9737357990816236,
+          0.8170343122910708
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-015-0",
+        "personId": "SIM-015",
+        "x": [
+          0.17874806746840477,
+          0.8630708192940801,
+          0.1915534515865147
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-015-1",
+        "personId": "SIM-015",
+        "x": [
+          0.9048572266474366,
+          0.7112532972823828,
+          0.13072693115100265
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-016-0",
+        "personId": "SIM-016",
+        "x": [
+          0.02701625949703157,
+          0.47540726931765676,
+          0.5210289454553276
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-016-1",
+        "personId": "SIM-016",
+        "x": [
+          0.8560599840711802,
+          0.481054054107517,
+          0.7354812875855714
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-017-0",
+        "personId": "SIM-017",
+        "x": [
+          0.07121868478134274,
+          0.5173536373768002,
+          0.299322591163218
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-017-1",
+        "personId": "SIM-017",
+        "x": [
+          0.8178573600016534,
+          0.25822472502477467,
+          0.7464898359030485
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-018-0",
+        "personId": "SIM-018",
+        "x": [
+          0.5232439211104065,
+          0.8238542722538114,
+          0.26859124819748104
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-018-1",
+        "personId": "SIM-018",
+        "x": [
+          0.6044413775671273,
+          0.020062895491719246,
+          0.427186326822266
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-019-0",
+        "personId": "SIM-019",
+        "x": [
+          0.30301513615995646,
+          0.5055846243631095,
+          0.4829359776340425
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-019-1",
+        "personId": "SIM-019",
+        "x": [
+          0.6193474438041449,
+          0.5399660670664161,
+          0.25385169917717576
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-020-0",
+        "personId": "SIM-020",
+        "x": [
+          0.056703299982473254,
+          0.29647129913792014,
+          0.12526551936753094
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-020-1",
+        "personId": "SIM-020",
+        "x": [
+          0.7052477241959423,
+          0.704185223672539,
+          0.14550150581635535
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-021-0",
+        "personId": "SIM-021",
+        "x": [
+          0.6920028231106699,
+          0.23520626057870686,
+          0.9369577448815107
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-021-1",
+        "personId": "SIM-021",
+        "x": [
+          0.5495223053731024,
+          0.8514191361609846,
+          0.6736863357946277
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-022-0",
+        "personId": "SIM-022",
+        "x": [
+          0.1642867207992822,
+          0.590006398037076,
+          0.6357606367673725
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-022-1",
+        "personId": "SIM-022",
+        "x": [
+          0.994644362712279,
+          0.6439116289839149,
+          0.24030242371372879
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-023-0",
+        "personId": "SIM-023",
+        "x": [
+          0.06321234069764614,
+          0.7574677222874016,
+          0.19650840992107987
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-023-1",
+        "personId": "SIM-023",
+        "x": [
+          0.56154106836766,
+          0.3828926521819085,
+          0.6279410640709102
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-024-0",
+        "personId": "SIM-024",
+        "x": [
+          0.7696283848490566,
+          0.9233588487841189,
+          0.12384035834111273
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-024-1",
+        "personId": "SIM-024",
+        "x": [
+          0.1446084852796048,
+          0.6750280070118606,
+          0.22943939012475312
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-025-0",
+        "personId": "SIM-025",
+        "x": [
+          0.5206156768836081,
+          0.04563266062177718,
+          0.9404894364997745
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-025-1",
+        "personId": "SIM-025",
+        "x": [
+          0.6114002759568393,
+          0.2804050308186561,
+          0.4199913963675499
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-026-0",
+        "personId": "SIM-026",
+        "x": [
+          0.40137562551535666,
+          0.9991289218887687,
+          0.3047748755197972
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-026-1",
+        "personId": "SIM-026",
+        "x": [
+          0.6262260277289897,
+          0.11487356945872307,
+          0.16427125385962427
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-027-0",
+        "personId": "SIM-027",
+        "x": [
+          0.8248136667534709,
+          0.20472079399041831,
+          0.11568487389013171
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-027-1",
+        "personId": "SIM-027",
+        "x": [
+          0.4729077219963074,
+          0.9620238763745874,
+          0.02889038296416402
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-028-0",
+        "personId": "SIM-028",
+        "x": [
+          0.851783039746806,
+          0.4003025251440704,
+          0.796733406605199
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-028-1",
+        "personId": "SIM-028",
+        "x": [
+          0.4533993264194578,
+          0.7498763208277524,
+          0.11899378732778132
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-029-0",
+        "personId": "SIM-029",
+        "x": [
+          0.6326161469332874,
+          0.6280421030241996,
+          0.01760432869195938
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-029-1",
+        "personId": "SIM-029",
+        "x": [
+          0.41381656052544713,
+          0.24647659272886813,
+          0.6865799920633435
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-030-0",
+        "personId": "SIM-030",
+        "x": [
+          0.8924507845658809,
+          0.8782474957406521,
+          0.14891568175517023
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-030-1",
+        "personId": "SIM-030",
+        "x": [
+          0.4898024557624012,
+          0.6687458837404847,
+          0.4782011031638831
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-031-0",
+        "personId": "SIM-031",
+        "x": [
+          0.3750040680170059,
+          0.8823839796241373,
+          0.429751839954406
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-031-1",
+        "personId": "SIM-031",
+        "x": [
+          0.7928120763972402,
+          0.7575330890249461,
+          0.0010772212408483028
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-032-0",
+        "personId": "SIM-032",
+        "x": [
+          0.49312989017926157,
+          0.26651860820129514,
+          0.12238423363305628
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-032-1",
+        "personId": "SIM-032",
+        "x": [
+          0.07164772297255695,
+          0.6621488681994379,
+          0.5809076421428472
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-033-0",
+        "personId": "SIM-033",
+        "x": [
+          0.6407831353135407,
+          0.7843757441733032,
+          0.27163804043084383
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-033-1",
+        "personId": "SIM-033",
+        "x": [
+          0.555988812353462,
+          0.5139506191480905,
+          0.890405448153615
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-034-0",
+        "personId": "SIM-034",
+        "x": [
+          0.2326815037522465,
+          0.41610118094831705,
+          0.054285970283672214
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-034-1",
+        "personId": "SIM-034",
+        "x": [
+          0.7076158591080457,
+          0.5239497926086187,
+          0.7646098339464515
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-035-0",
+        "personId": "SIM-035",
+        "x": [
+          0.9068713607266545,
+          0.2877815074753016,
+          0.7497982992790639
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-035-1",
+        "personId": "SIM-035",
+        "x": [
+          0.5382135603576899,
+          0.1626223565544933,
+          0.21411184081807733
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-036-0",
+        "personId": "SIM-036",
+        "x": [
+          0.8110035404097289,
+          0.9041684768162668,
+          0.26994056929834187
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-036-1",
+        "personId": "SIM-036",
+        "x": [
+          0.22765400796197355,
+          0.02367087686434388,
+          0.0023805948439985514
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-037-0",
+        "personId": "SIM-037",
+        "x": [
+          0.6251082210801542,
+          0.49776141648180783,
+          0.5578373540192842
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-037-1",
+        "personId": "SIM-037",
+        "x": [
+          0.7218400374986231,
+          0.024485368514433503,
+          0.7440944602712989
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-038-0",
+        "personId": "SIM-038",
+        "x": [
+          0.8295272805262357,
+          0.13268590532243252,
+          0.24262479483149946
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-038-1",
+        "personId": "SIM-038",
+        "x": [
+          0.026759676868095994,
+          0.3872068403288722,
+          0.7019663888495415
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-039-0",
+        "personId": "SIM-039",
+        "x": [
+          0.8522309307008982,
+          0.9259928853716701,
+          0.5435912520624697
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-039-1",
+        "personId": "SIM-039",
+        "x": [
+          0.985123879276216,
+          0.5612202163320035,
+          0.31665800092741847
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-040-0",
+        "personId": "SIM-040",
+        "x": [
+          0.8682380148675293,
+          0.11776534700766206,
+          0.6002959015313536
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-040-1",
+        "personId": "SIM-040",
+        "x": [
+          0.5508453759830445,
+          0.1355261499993503,
+          0.9008956414181739
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-041-0",
+        "personId": "SIM-041",
+        "x": [
+          0.10673364857211709,
+          0.0624574760440737,
+          0.2663802346214652
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-041-1",
+        "personId": "SIM-041",
+        "x": [
+          0.697881895583123,
+          0.09831347060389817,
+          0.4657249264419079
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-042-0",
+        "personId": "SIM-042",
+        "x": [
+          0.41158790164627135,
+          0.5880557326599956,
+          0.7044738519471139
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-042-1",
+        "personId": "SIM-042",
+        "x": [
+          0.9618177351076156,
+          0.9015979766845703,
+          0.6082088572438806
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-043-0",
+        "personId": "SIM-043",
+        "x": [
+          0.7662082528695464,
+          0.028175654588267207,
+          0.31752150831744075
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-043-1",
+        "personId": "SIM-043",
+        "x": [
+          0.6049473471939564,
+          0.21915599307976663,
+          0.8654490713961422
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-044-0",
+        "personId": "SIM-044",
+        "x": [
+          0.9266457620542496,
+          0.27315132273361087,
+          0.4415411364752799
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-044-1",
+        "personId": "SIM-044",
+        "x": [
+          0.5606064496096224,
+          0.6866044295020401,
+          0.47408485622145236
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-045-0",
+        "personId": "SIM-045",
+        "x": [
+          0.3939606281928718,
+          0.5507107127923518,
+          0.9852786622941494
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-045-1",
+        "personId": "SIM-045",
+        "x": [
+          0.091293313074857,
+          0.23801389918662608,
+          0.3216115916147828
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-046-0",
+        "personId": "SIM-046",
+        "x": [
+          0.4368676033336669,
+          0.28350694477558136,
+          0.633320547407493
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-046-1",
+        "personId": "SIM-046",
+        "x": [
+          0.10254246951080859,
+          0.7401304515078664,
+          0.875864104134962
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-047-0",
+        "personId": "SIM-047",
+        "x": [
+          0.716704223304987,
+          0.3333647062536329,
+          0.12374480115249753
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-047-1",
+        "personId": "SIM-047",
+        "x": [
+          0.9588290313258767,
+          0.12943567777983844,
+          0.15762445842847228
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-048-0",
+        "personId": "SIM-048",
+        "x": [
+          0.8264732209499925,
+          0.5741697591729462,
+          0.15445532114244998
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-048-1",
+        "personId": "SIM-048",
+        "x": [
+          0.17171140830032527,
+          0.16796907177194953,
+          0.9552591771353036
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-049-0",
+        "personId": "SIM-049",
+        "x": [
+          0.8784529496915638,
+          0.13215332315303385,
+          0.7462892765179276
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-049-1",
+        "personId": "SIM-049",
+        "x": [
+          0.5763194090686738,
+          0.30044800718314946,
+          0.4552245046943426
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-050-0",
+        "personId": "SIM-050",
+        "x": [
+          0.9160782939288765,
+          0.45826993603259325,
+          0.0013426251243799925
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-050-1",
+        "personId": "SIM-050",
+        "x": [
+          0.3521972105372697,
+          0.29793752171099186,
+          0.6893939615692943
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-051-0",
+        "personId": "SIM-051",
+        "x": [
+          0.8818683037534356,
+          0.07437316025607288,
+          0.2206432125531137
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-051-1",
+        "personId": "SIM-051",
+        "x": [
+          0.503135709092021,
+          0.2022443690802902,
+          0.04451134288683534
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-052-0",
+        "personId": "SIM-052",
+        "x": [
+          0.6324579499196261,
+          0.30515793850645423,
+          0.25366042857058346
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-052-1",
+        "personId": "SIM-052",
+        "x": [
+          0.606982679804787,
+          0.08117003599181771,
+          0.790227253222838
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-053-0",
+        "personId": "SIM-053",
+        "x": [
+          0.10976090794429183,
+          0.01136394520290196,
+          0.8069568332284689
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-053-1",
+        "personId": "SIM-053",
+        "x": [
+          0.7471157335676253,
+          0.05248462432064116,
+          0.20536528807133436
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-054-0",
+        "personId": "SIM-054",
+        "x": [
+          0.41660683904774487,
+          0.7348339203745127,
+          0.6673793585505337
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-054-1",
+        "personId": "SIM-054",
+        "x": [
+          0.11218753107823431,
+          0.1862359708175063,
+          0.6653929825406522
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-055-0",
+        "personId": "SIM-055",
+        "x": [
+          0.30870447866618633,
+          0.5584198066499084,
+          0.964731911662966
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-055-1",
+        "personId": "SIM-055",
+        "x": [
+          0.5091946376487613,
+          0.4403002772014588,
+          0.054976731073111296
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-056-0",
+        "personId": "SIM-056",
+        "x": [
+          0.9371123181190342,
+          0.11738505819812417,
+          0.6000652054790407
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-056-1",
+        "personId": "SIM-056",
+        "x": [
+          0.35780119406990707,
+          0.2686271849088371,
+          0.9010283548850566
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-057-0",
+        "personId": "SIM-057",
+        "x": [
+          0.7262905412353575,
+          0.999217756325379,
+          0.17191547434777021
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-057-1",
+        "personId": "SIM-057",
+        "x": [
+          0.9051628182642162,
+          0.37613921728916466,
+          0.36672621965408325
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-058-0",
+        "personId": "SIM-058",
+        "x": [
+          0.2627714092377573,
+          0.8160294508561492,
+          0.6577543045859784
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-058-1",
+        "personId": "SIM-058",
+        "x": [
+          0.6786066566128284,
+          0.9811664409935474,
+          0.30626275739632547
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-059-0",
+        "personId": "SIM-059",
+        "x": [
+          0.03593502473086119,
+          0.9831081095617265,
+          0.26213620556518435
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-059-1",
+        "personId": "SIM-059",
+        "x": [
+          0.5504151359200478,
+          0.9901852903421968,
+          0.40647481800988317
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-060-0",
+        "personId": "SIM-060",
+        "x": [
+          0.4618587594013661,
+          0.6875605317763984,
+          0.9302230824250728
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-060-1",
+        "personId": "SIM-060",
+        "x": [
+          0.0830931996461004,
+          0.9442088981159031,
+          0.5522043465171009
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-061-0",
+        "personId": "SIM-061",
+        "x": [
+          0.5708431820385158,
+          0.9836506333667785,
+          0.3065728098154068
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-061-1",
+        "personId": "SIM-061",
+        "x": [
+          0.35937603982165456,
+          0.6387521123979241,
+          0.0959571273997426
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-062-0",
+        "personId": "SIM-062",
+        "x": [
+          0.19799189013428986,
+          0.6869937516748905,
+          0.5105746199842542
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-062-1",
+        "personId": "SIM-062",
+        "x": [
+          0.3663199378643185,
+          0.9306415775790811,
+          0.40798779274336994
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-063-0",
+        "personId": "SIM-063",
+        "x": [
+          0.03424709290266037,
+          0.3783817735966295,
+          0.15776390256360173
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-063-1",
+        "personId": "SIM-063",
+        "x": [
+          0.25991797912865877,
+          0.2102771035861224,
+          0.7319146632216871
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-064-0",
+        "personId": "SIM-064",
+        "x": [
+          0.846641588723287,
+          0.3265376021154225,
+          0.2382291464600712
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-064-1",
+        "personId": "SIM-064",
+        "x": [
+          0.5874186425935477,
+          0.2521309978328645,
+          0.5852357216645032
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-065-0",
+        "personId": "SIM-065",
+        "x": [
+          0.5688503202982247,
+          0.8154623752925545,
+          0.746301812119782
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-065-1",
+        "personId": "SIM-065",
+        "x": [
+          0.06703579565510154,
+          0.9938307807315141,
+          0.41636509634554386
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-066-0",
+        "personId": "SIM-066",
+        "x": [
+          0.02449935511685908,
+          0.025143862701952457,
+          0.8241319402586669
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-066-1",
+        "personId": "SIM-066",
+        "x": [
+          0.1262133859563619,
+          0.5723269861191511,
+          0.8126379528548568
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-067-0",
+        "personId": "SIM-067",
+        "x": [
+          0.6670471029356122,
+          0.8150818727444857,
+          0.3902979879640043
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-067-1",
+        "personId": "SIM-067",
+        "x": [
+          0.31179760582745075,
+          0.14590791030786932,
+          0.6004731790162623
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-068-0",
+        "personId": "SIM-068",
+        "x": [
+          0.7686403810512275,
+          0.366337267216295,
+          0.7757811762858182
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-068-1",
+        "personId": "SIM-068",
+        "x": [
+          0.26878610788844526,
+          0.432300987187773,
+          0.036766700679436326
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-069-0",
+        "personId": "SIM-069",
+        "x": [
+          0.1974287792108953,
+          0.37478398834355175,
+          0.5542655233293772
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-069-1",
+        "personId": "SIM-069",
+        "x": [
+          0.6936629922129214,
+          0.6281811858061701,
+          0.5243719881400466
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-070-0",
+        "personId": "SIM-070",
+        "x": [
+          0.9862096004653722,
+          0.771282596513629,
+          0.4000298210885376
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-070-1",
+        "personId": "SIM-070",
+        "x": [
+          0.6712312700692564,
+          0.4658800018951297,
+          0.14622246357612312
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-071-0",
+        "personId": "SIM-071",
+        "x": [
+          0.6248479504138231,
+          0.27073054178617895,
+          0.9911346123553813
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-071-1",
+        "personId": "SIM-071",
+        "x": [
+          0.8291421374306083,
+          0.052374656079337,
+          0.1604784312658012
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-072-0",
+        "personId": "SIM-072",
+        "x": [
+          0.7807099127676338,
+          0.40361751848831773,
+          0.6860297399107367
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-072-1",
+        "personId": "SIM-072",
+        "x": [
+          0.676819323329255,
+          0.9202326009981334,
+          0.40624439087696373
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-073-0",
+        "personId": "SIM-073",
+        "x": [
+          0.6233812035061419,
+          0.8338340336922556,
+          0.830999574624002
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-073-1",
+        "personId": "SIM-073",
+        "x": [
+          0.41996484575793147,
+          0.22095319372601807,
+          0.3508547730743885
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-074-0",
+        "personId": "SIM-074",
+        "x": [
+          0.9103857430163771,
+          0.0649623079225421,
+          0.6216627422254533
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-074-1",
+        "personId": "SIM-074",
+        "x": [
+          0.37682777759619057,
+          0.49257127195596695,
+          0.4325204787310213
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-075-0",
+        "personId": "SIM-075",
+        "x": [
+          0.5364140262827277,
+          0.7931662301998585,
+          0.25539139239117503
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-075-1",
+        "personId": "SIM-075",
+        "x": [
+          0.671936210244894,
+          0.8564258550759405,
+          0.4824882526881993
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-076-0",
+        "personId": "SIM-076",
+        "x": [
+          0.5101716655772179,
+          0.7277128915302455,
+          0.5368423548061401
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-076-1",
+        "personId": "SIM-076",
+        "x": [
+          0.07190022594295442,
+          0.9596556690521538,
+          0.08859700919128954
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-077-0",
+        "personId": "SIM-077",
+        "x": [
+          0.8382668602280319,
+          0.38158903759904206,
+          0.7288775183260441
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-077-1",
+        "personId": "SIM-077",
+        "x": [
+          0.07397599564865232,
+          0.1302250458393246,
+          0.0804936746135354
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-078-0",
+        "personId": "SIM-078",
+        "x": [
+          0.3737148803193122,
+          0.9972314760088921,
+          0.9586716738995165
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-078-1",
+        "personId": "SIM-078",
+        "x": [
+          0.47145773679949343,
+          0.42541414964944124,
+          0.7235132090281695
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-079-0",
+        "personId": "SIM-079",
+        "x": [
+          0.7097890488803387,
+          0.8526555185671896,
+          0.6631110240705311
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-079-1",
+        "personId": "SIM-079",
+        "x": [
+          0.30797162000089884,
+          0.6968499689828604,
+          0.4306891686283052
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-080-0",
+        "personId": "SIM-080",
+        "x": [
+          0.10858189291320741,
+          0.5113693294115365,
+          0.2691067105624825
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-080-1",
+        "personId": "SIM-080",
+        "x": [
+          0.12591359089128673,
+          0.5559462918899953,
+          0.7375761673320085
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-081-0",
+        "personId": "SIM-081",
+        "x": [
+          0.3686677520163357,
+          0.9259929640684277,
+          0.6745839724317193
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-081-1",
+        "personId": "SIM-081",
+        "x": [
+          0.41651993012055755,
+          0.0727518938947469,
+          0.5822531264275312
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-082-0",
+        "personId": "SIM-082",
+        "x": [
+          0.4084238132927567,
+          0.8838890986517072,
+          0.7380012057255954
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-082-1",
+        "personId": "SIM-082",
+        "x": [
+          0.28273140196688473,
+          0.722926901653409,
+          0.1370426134672016
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-083-0",
+        "personId": "SIM-083",
+        "x": [
+          0.7063317084684968,
+          0.023106497479602695,
+          0.5787852085195482
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-083-1",
+        "personId": "SIM-083",
+        "x": [
+          0.21989077888429165,
+          0.9347903484012932,
+          0.1407406353391707
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-084-0",
+        "personId": "SIM-084",
+        "x": [
+          0.09310124884359539,
+          0.5922993584536016,
+          0.32569795404560864
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-084-1",
+        "personId": "SIM-084",
+        "x": [
+          0.1552182228770107,
+          0.8485023290850222,
+          0.5753882194403559
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-085-0",
+        "personId": "SIM-085",
+        "x": [
+          0.3897750428877771,
+          0.5393307500053197,
+          0.7527205776423216
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-085-1",
+        "personId": "SIM-085",
+        "x": [
+          0.6581157245673239,
+          0.31250339769758284,
+          0.9541205419227481
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-086-0",
+        "personId": "SIM-086",
+        "x": [
+          0.5140588313806802,
+          0.01237189956009388,
+          0.5721832381095737
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-086-1",
+        "personId": "SIM-086",
+        "x": [
+          0.5548583010677248,
+          0.7496527275070548,
+          0.9423216532450169
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-087-0",
+        "personId": "SIM-087",
+        "x": [
+          0.7008841242641211,
+          0.3830087089445442,
+          0.8073238902725279
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-087-1",
+        "personId": "SIM-087",
+        "x": [
+          0.05148798506706953,
+          0.27441173675470054,
+          0.43218959076330066
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-088-0",
+        "personId": "SIM-088",
+        "x": [
+          0.9700909794773906,
+          0.9236825765110552,
+          0.9767350370530039
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-088-1",
+        "personId": "SIM-088",
+        "x": [
+          0.5264697100501508,
+          0.23018920002505183,
+          0.9142396722454578
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-089-0",
+        "personId": "SIM-089",
+        "x": [
+          0.3204207965172827,
+          0.662390902871266,
+          0.453669766895473
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-089-1",
+        "personId": "SIM-089",
+        "x": [
+          0.5354550923220813,
+          0.6236153852660209,
+          0.6352278962731361
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-090-0",
+        "personId": "SIM-090",
+        "x": [
+          0.9905545602086931,
+          0.06539934780448675,
+          0.08547223615460098
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-090-1",
+        "personId": "SIM-090",
+        "x": [
+          0.10300514590926468,
+          0.8765625916421413,
+          0.5839211081620306
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-091-0",
+        "personId": "SIM-091",
+        "x": [
+          0.8311981139704585,
+          0.276724650291726,
+          0.3345948080532253
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-091-1",
+        "personId": "SIM-091",
+        "x": [
+          0.9463935047388077,
+          0.8845433366950601,
+          0.7335803178139031
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-092-0",
+        "personId": "SIM-092",
+        "x": [
+          0.2815606768708676,
+          0.021736453752964735,
+          0.10675112647004426
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-092-1",
+        "personId": "SIM-092",
+        "x": [
+          0.12591974041424692,
+          0.7919809971936047,
+          0.4054216577205807
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-093-0",
+        "personId": "SIM-093",
+        "x": [
+          0.2276800270192325,
+          0.33304216084070504,
+          0.23884134739637375
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-093-1",
+        "personId": "SIM-093",
+        "x": [
+          0.5255747479386628,
+          0.5433805754873902,
+          0.7884811209514737
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-094-0",
+        "personId": "SIM-094",
+        "x": [
+          0.8582168717402965,
+          0.6745014898478985,
+          0.8284570460673422
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-094-1",
+        "personId": "SIM-094",
+        "x": [
+          0.3201928047928959,
+          0.16446586791425943,
+          0.7848579555284232
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-095-0",
+        "personId": "SIM-095",
+        "x": [
+          0.9897442758083344,
+          0.3267578405793756,
+          0.8306583580560982
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-095-1",
+        "personId": "SIM-095",
+        "x": [
+          0.7822654666379094,
+          0.6619234390091151,
+          0.34838462015613914
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-096-0",
+        "personId": "SIM-096",
+        "x": [
+          0.9650925954338163,
+          0.9884824459441006,
+          0.9794030769262463
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-096-1",
+        "personId": "SIM-096",
+        "x": [
+          0.03281698073260486,
+          0.9209219119511545,
+          0.7815584682393819
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-097-0",
+        "personId": "SIM-097",
+        "x": [
+          0.6191680622287095,
+          0.9548492154572159,
+          0.6264268951490521
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-097-1",
+        "personId": "SIM-097",
+        "x": [
+          0.025849082972854376,
+          0.6809033632744104,
+          0.9068223107606173
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-098-0",
+        "personId": "SIM-098",
+        "x": [
+          0.8802448569331318,
+          0.8065545940771699,
+          0.5217742740642279
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-098-1",
+        "personId": "SIM-098",
+        "x": [
+          0.30235733767040074,
+          0.583553796634078,
+          0.11941031157039106
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-099-0",
+        "personId": "SIM-099",
+        "x": [
+          0.7610288830474019,
+          0.8376224495004863,
+          0.7438227697275579
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-099-1",
+        "personId": "SIM-099",
+        "x": [
+          0.2536145690828562,
+          0.02667061402462423,
+          0.13987731048837304
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-100-0",
+        "personId": "SIM-100",
+        "x": [
+          0.16786753083579242,
+          0.9378324202261865,
+          0.7453449659515172
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-100-1",
+        "personId": "SIM-100",
+        "x": [
+          0.7875345179345459,
+          0.12953297281637788,
+          0.10764515423215926
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-101-0",
+        "personId": "SIM-101",
+        "x": [
+          0.4511582194827497,
+          0.37135249678976834,
+          0.7507869619876146
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-101-1",
+        "personId": "SIM-101",
+        "x": [
+          0.5779281542636454,
+          0.09704366722144186,
+          0.8462497433647513
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-102-0",
+        "personId": "SIM-102",
+        "x": [
+          0.45341686089523137,
+          0.9364496078342199,
+          0.019548227777704597
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-102-1",
+        "personId": "SIM-102",
+        "x": [
+          0.607200093800202,
+          0.9722007540985942,
+          0.6962839353363961
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-103-0",
+        "personId": "SIM-103",
+        "x": [
+          0.4575435910373926,
+          0.9819394887890667,
+          0.06364459404721856
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-103-1",
+        "personId": "SIM-103",
+        "x": [
+          0.006386599503457546,
+          0.8906064655166119,
+          0.9630820113234222
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-104-0",
+        "personId": "SIM-104",
+        "x": [
+          0.9054172614123672,
+          0.9031203933991492,
+          0.7088906916324049
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-104-1",
+        "personId": "SIM-104",
+        "x": [
+          0.8950488630216569,
+          0.4447890962474048,
+          0.8064991843421012
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-105-0",
+        "personId": "SIM-105",
+        "x": [
+          0.4306447939015925,
+          0.2616370210889727,
+          0.5985960951074958
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-105-1",
+        "personId": "SIM-105",
+        "x": [
+          0.46374598471447825,
+          0.02127483976073563,
+          0.7387207113206387
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-106-0",
+        "personId": "SIM-106",
+        "x": [
+          0.382565580541268,
+          0.20901842694729567,
+          0.633182420162484
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-106-1",
+        "personId": "SIM-106",
+        "x": [
+          0.9124518719036132,
+          0.18814833462238312,
+          0.8427552951034158
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-107-0",
+        "personId": "SIM-107",
+        "x": [
+          0.45747295673936605,
+          0.4093845661263913,
+          0.0809995043091476
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-107-1",
+        "personId": "SIM-107",
+        "x": [
+          0.2774277664721012,
+          0.6890549471136183,
+          0.4219122682698071
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-108-0",
+        "personId": "SIM-108",
+        "x": [
+          0.20572855207137764,
+          0.5542045827023685,
+          0.6190906327683479
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-108-1",
+        "personId": "SIM-108",
+        "x": [
+          0.4543955174740404,
+          0.9347914499230683,
+          0.9742511680815369
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-109-0",
+        "personId": "SIM-109",
+        "x": [
+          0.9394763591699302,
+          0.12281530094332993,
+          0.3748706690967083
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-109-1",
+        "personId": "SIM-109",
+        "x": [
+          0.2517241765744984,
+          0.42108063981868327,
+          0.48806216660887003
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-110-0",
+        "personId": "SIM-110",
+        "x": [
+          0.8044672247488052,
+          0.04334297776222229,
+          0.7061276359017938
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-110-1",
+        "personId": "SIM-110",
+        "x": [
+          0.08917614282108843,
+          0.15519724506884813,
+          0.9304161972831935
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-111-0",
+        "personId": "SIM-111",
+        "x": [
+          0.2972847707569599,
+          0.16911220154725015,
+          0.7233484094031155
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-111-1",
+        "personId": "SIM-111",
+        "x": [
+          0.741957844235003,
+          0.6167432412039489,
+          0.7796329758130014
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-112-0",
+        "personId": "SIM-112",
+        "x": [
+          0.6293237206991762,
+          0.3022647690959275,
+          0.5008473715279251
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-112-1",
+        "personId": "SIM-112",
+        "x": [
+          0.05472610215656459,
+          0.20126012852415442,
+          0.751499640988186
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-113-0",
+        "personId": "SIM-113",
+        "x": [
+          0.1586843808181584,
+          0.35504931793548167,
+          0.702004530467093
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-113-1",
+        "personId": "SIM-113",
+        "x": [
+          0.12129583721980453,
+          0.189516267972067,
+          0.8020141776651144
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-114-0",
+        "personId": "SIM-114",
+        "x": [
+          0.776769737014547,
+          0.8825721116736531,
+          0.5802515603136271
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-114-1",
+        "personId": "SIM-114",
+        "x": [
+          0.4557363346684724,
+          0.7585320118814707,
+          0.7331449778284878
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-115-0",
+        "personId": "SIM-115",
+        "x": [
+          0.22232820186764002,
+          0.08628170634619892,
+          0.29332387959584594
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-115-1",
+        "personId": "SIM-115",
+        "x": [
+          0.5221761297434568,
+          0.458429200341925,
+          0.10076711559668183
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-116-0",
+        "personId": "SIM-116",
+        "x": [
+          0.30594276706688106,
+          0.6204199730418622,
+          0.7916954786051065
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-116-1",
+        "personId": "SIM-116",
+        "x": [
+          0.3285920487251133,
+          0.9159721420146525,
+          0.7657549122814089
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-117-0",
+        "personId": "SIM-117",
+        "x": [
+          0.22113214200362563,
+          0.21473655779846013,
+          0.6049374546855688
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-117-1",
+        "personId": "SIM-117",
+        "x": [
+          0.04387481743469834,
+          0.9665584641043097,
+          0.9635311989113688
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-118-0",
+        "personId": "SIM-118",
+        "x": [
+          0.2975850806105882,
+          0.04237131215631962,
+          0.3444349707569927
+        ],
+        "y": 0,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-118-1",
+        "personId": "SIM-118",
+        "x": [
+          0.2280521804932505,
+          0.7918035006150603,
+          0.9579292561393231
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-119-0",
+        "personId": "SIM-119",
+        "x": [
+          0.1485647540539503,
+          0.9833096244838089,
+          0.6887618848122656
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-119-1",
+        "personId": "SIM-119",
+        "x": [
+          0.5601252121850848,
+          0.6548803511541337,
+          0.9525728072039783
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-120-0",
+        "personId": "SIM-120",
+        "x": [
+          0.878452064236626,
+          0.6582914427854121,
+          0.7998703608755022
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      },
+      {
+        "recordId": "SIM-120-1",
+        "personId": "SIM-120",
+        "x": [
+          0.8030798535328358,
+          0.7292697164230049,
+          0.9107969750184566
+        ],
+        "y": 1,
+        "synthetic": true,
+        "version": "original-toy-v1",
+        "outcome": "synthetic-task-completion"
+      }
+    ],
+    "binary": [
+      {
+        "personId": "SIM-001",
+        "answers": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-002",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-003",
+        "answers": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-004",
+        "answers": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-005",
+        "answers": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-006",
+        "answers": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-007",
+        "answers": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-008",
+        "answers": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-009",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-010",
+        "answers": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-011",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-012",
+        "answers": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-013",
+        "answers": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-014",
+        "answers": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-015",
+        "answers": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-016",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-017",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-018",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-019",
+        "answers": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-020",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-021",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-022",
+        "answers": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-023",
+        "answers": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-024",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-025",
+        "answers": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-026",
+        "answers": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-027",
+        "answers": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-028",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-029",
+        "answers": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-030",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-031",
+        "answers": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-032",
+        "answers": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-033",
+        "answers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-034",
+        "answers": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-035",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-036",
+        "answers": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-037",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-038",
+        "answers": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-039",
+        "answers": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-040",
+        "answers": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-041",
+        "answers": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-042",
+        "answers": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-043",
+        "answers": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-044",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-045",
+        "answers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-046",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-047",
+        "answers": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-048",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-049",
+        "answers": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-050",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-051",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-052",
+        "answers": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-053",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-054",
+        "answers": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-055",
+        "answers": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-056",
+        "answers": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-057",
+        "answers": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-058",
+        "answers": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-059",
+        "answers": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-060",
+        "answers": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-061",
+        "answers": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-062",
+        "answers": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-063",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-064",
+        "answers": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-065",
+        "answers": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-066",
+        "answers": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-067",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-068",
+        "answers": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-069",
+        "answers": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-070",
+        "answers": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-071",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-072",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-073",
+        "answers": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-074",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-075",
+        "answers": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-076",
+        "answers": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-077",
+        "answers": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-078",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-079",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-080",
+        "answers": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-081",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-082",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-083",
+        "answers": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-084",
+        "answers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-085",
+        "answers": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-086",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-087",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-088",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-089",
+        "answers": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-090",
+        "answers": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-091",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-092",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-093",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-094",
+        "answers": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-095",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-096",
+        "answers": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-097",
+        "answers": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-098",
+        "answers": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-099",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-100",
+        "answers": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-101",
+        "answers": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-102",
+        "answers": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-103",
+        "answers": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-104",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-105",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-106",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-107",
+        "answers": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-108",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-109",
+        "answers": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-110",
+        "answers": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-111",
+        "answers": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-112",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-113",
+        "answers": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-114",
+        "answers": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-115",
+        "answers": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "personId": "SIM-116",
+        "answers": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-117",
+        "answers": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-118",
+        "answers": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-119",
+        "answers": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "personId": "SIM-120",
+        "answers": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "cases": [
+      {
+        "caseId": "SIM-001",
+        "personId": "SIM-001",
+        "a": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "b": [
+          3,
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "caseId": "SIM-002",
+        "personId": "SIM-002",
+        "a": [
+          3,
+          3,
+          1,
+          1
+        ],
+        "b": [
+          3,
+          3,
+          3,
+          1
+        ]
+      },
+      {
+        "caseId": "SIM-003",
+        "personId": "SIM-003",
+        "a": [
+          1,
+          3,
+          2,
+          2
+        ],
+        "b": [
+          1,
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "caseId": "SIM-004",
+        "personId": "SIM-004",
+        "a": [
+          3,
+          3,
+          1,
+          2
+        ],
+        "b": [
+          3,
+          3,
+          1,
+          2
+        ]
+      },
+      {
+        "caseId": "SIM-005",
+        "personId": "SIM-005",
+        "a": [
+          2,
+          3,
+          3,
+          2
+        ],
+        "b": [
+          1,
+          3,
+          null,
+          2
+        ]
+      },
+      {
+        "caseId": "SIM-006",
+        "personId": "SIM-006",
+        "a": [
+          3,
+          2,
+          1,
+          3
+        ],
+        "b": [
+          3,
+          3,
+          1,
+          3
+        ]
+      },
+      {
+        "caseId": "SIM-007",
+        "personId": "SIM-007",
+        "a": [
+          1,
+          3,
+          1,
+          3
+        ],
+        "b": [
+          1,
+          1,
+          1,
+          3
+        ]
+      },
+      {
+        "caseId": "SIM-008",
+        "personId": "SIM-008",
+        "a": [
+          2,
+          2,
+          3,
+          3
+        ],
+        "b": [
+          2,
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "caseId": "SIM-009",
+        "personId": "SIM-009",
+        "a": [
+          3,
+          2,
+          2,
+          3
+        ],
+        "b": [
+          1,
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "caseId": "SIM-010",
+        "personId": "SIM-010",
+        "a": [
+          2,
+          3,
+          3,
+          1
+        ],
+        "b": [
+          2,
+          3,
+          3,
+          1
+        ]
+      },
+      {
+        "caseId": "SIM-011",
+        "personId": "SIM-011",
+        "a": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "b": [
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "caseId": "SIM-012",
+        "personId": "SIM-012",
+        "a": [
+          1,
+          2,
+          2,
+          2
+        ],
+        "b": [
+          1,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "caseId": "SIM-013",
+        "personId": "SIM-013",
+        "a": [
+          2,
+          1,
+          1,
+          3
+        ],
+        "b": [
+          2,
+          1,
+          1,
+          3
+        ]
+      },
+      {
+        "caseId": "SIM-014",
+        "personId": "SIM-014",
+        "a": [
+          2,
+          3,
+          1,
+          2
+        ],
+        "b": [
+          2,
+          3,
+          1,
+          2
+        ]
+      },
+      {
+        "caseId": "SIM-015",
+        "personId": "SIM-015",
+        "a": [
+          1,
+          3,
+          1,
+          1
+        ],
+        "b": [
+          1,
+          3,
+          1,
+          1
+        ]
+      },
+      {
+        "caseId": "SIM-016",
+        "personId": "SIM-016",
+        "a": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "b": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "caseId": "SIM-017",
+        "personId": "SIM-017",
+        "a": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "b": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "caseId": "SIM-018",
+        "personId": "SIM-018",
+        "a": [
+          2,
+          3,
+          2,
+          2
+        ],
+        "b": [
+          2,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "caseId": "SIM-019",
+        "personId": "SIM-019",
+        "a": [
+          2,
+          2,
+          2,
+          3
+        ],
+        "b": [
+          2,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "caseId": "SIM-020",
+        "personId": "SIM-020",
+        "a": [
+          1,
+          2,
+          2,
+          3
+        ],
+        "b": [
+          1,
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "caseId": "SIM-021",
+        "personId": "SIM-021",
+        "a": [
+          1,
+          3,
+          2,
+          1
+        ],
+        "b": [
+          1,
+          3,
+          2,
+          1
+        ]
+      },
+      {
+        "caseId": "SIM-022",
+        "personId": "SIM-022",
+        "a": [
+          1,
+          3,
+          2,
+          3
+        ],
+        "b": [
+          1,
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "caseId": "SIM-023",
+        "personId": "SIM-023",
+        "a": [
+          2,
+          1,
+          1,
+          3
+        ],
+        "b": [
+          2,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "caseId": "SIM-024",
+        "personId": "SIM-024",
+        "a": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "b": [
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "caseId": "SIM-025",
+        "personId": "SIM-025",
+        "a": [
+          2,
+          1,
+          3,
+          3
+        ],
+        "b": [
+          2,
+          2,
+          3,
+          1
+        ]
+      },
+      {
+        "caseId": "SIM-026",
+        "personId": "SIM-026",
+        "a": [
+          3,
+          2,
+          3,
+          3
+        ],
+        "b": [
+          3,
+          2,
+          3,
+          1
+        ]
+      },
+      {
+        "caseId": "SIM-027",
+        "personId": "SIM-027",
+        "a": [
+          1,
+          2,
+          3,
+          2
+        ],
+        "b": [
+          1,
+          3,
+          3,
+          2
+        ]
+      },
+      {
+        "caseId": "SIM-028",
+        "personId": "SIM-028",
+        "a": [
+          2,
+          2,
+          3,
+          1
+        ],
+        "b": [
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      {
+        "caseId": "SIM-029",
+        "personId": "SIM-029",
+        "a": [
+          2,
+          2,
+          1,
+          2
+        ],
+        "b": [
+          2,
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "caseId": "SIM-030",
+        "personId": "SIM-030",
+        "a": [
+          1,
+          1,
+          2,
+          1
+        ],
+        "b": [
+          1,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "caseId": "SIM-031",
+        "personId": "SIM-031",
+        "a": [
+          1,
+          2,
+          2,
+          3
+        ],
+        "b": [
+          1,
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "caseId": "SIM-032",
+        "personId": "SIM-032",
+        "a": [
+          2,
+          3,
+          3,
+          3
+        ],
+        "b": [
+          2,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "caseId": "SIM-033",
+        "personId": "SIM-033",
+        "a": [
+          3,
+          1,
+          3,
+          1
+        ],
+        "b": [
+          3,
+          1,
+          3,
+          1
+        ]
+      },
+      {
+        "caseId": "SIM-034",
+        "personId": "SIM-034",
+        "a": [
+          1,
+          1,
+          1,
+          3
+        ],
+        "b": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "caseId": "SIM-035",
+        "personId": "SIM-035",
+        "a": [
+          1,
+          2,
+          3,
+          2
+        ],
+        "b": [
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "caseId": "SIM-036",
+        "personId": "SIM-036",
+        "a": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "b": [
+          2,
+          2,
+          1,
+          1
+        ]
+      }
+    ],
+    "experts": [
+      {
+        "expertId": "SIM-EXPERT-1",
+        "synthetic": true,
+        "conflictDeclared": true,
+        "criteria": [
+          {
+            "criterionId": "logic",
+            "relevance": 4
+          },
+          {
+            "criterionId": "evidence",
+            "relevance": 4
+          },
+          {
+            "criterionId": "priorities",
+            "relevance": 3
+          },
+          {
+            "criterionId": "communication",
+            "relevance": 4
+          }
+        ]
+      },
+      {
+        "expertId": "SIM-EXPERT-2",
+        "synthetic": true,
+        "conflictDeclared": true,
+        "criteria": [
+          {
+            "criterionId": "logic",
+            "relevance": 2
+          },
+          {
+            "criterionId": "evidence",
+            "relevance": 2
+          },
+          {
+            "criterionId": "priorities",
+            "relevance": 4
+          },
+          {
+            "criterionId": "communication",
+            "relevance": 2
+          }
+        ]
+      },
+      {
+        "expertId": "SIM-EXPERT-3",
+        "synthetic": true,
+        "conflictDeclared": true,
+        "criteria": [
+          {
+            "criterionId": "logic",
+            "relevance": 4
+          },
+          {
+            "criterionId": "evidence",
+            "relevance": 4
+          },
+          {
+            "criterionId": "priorities",
+            "relevance": 4
+          },
+          {
+            "criterionId": "communication",
+            "relevance": 2
+          }
+        ]
+      },
+      {
+        "expertId": "SIM-EXPERT-4",
+        "synthetic": true,
+        "conflictDeclared": true,
+        "criteria": [
+          {
+            "criterionId": "logic",
+            "relevance": 4
+          },
+          {
+            "criterionId": "evidence",
+            "relevance": 2
+          },
+          {
+            "criterionId": "priorities",
+            "relevance": 2
+          },
+          {
+            "criterionId": "communication",
+            "relevance": 2
+          }
+        ]
+      },
+      {
+        "expertId": "SIM-EXPERT-5",
+        "synthetic": true,
+        "conflictDeclared": true,
+        "criteria": [
+          {
+            "criterionId": "logic",
+            "relevance": 2
+          },
+          {
+            "criterionId": "evidence",
+            "relevance": 4
+          },
+          {
+            "criterionId": "priorities",
+            "relevance": 2
+          },
+          {
+            "criterionId": "communication",
+            "relevance": 2
+          }
+        ]
+      },
+      {
+        "expertId": "SIM-EXPERT-6",
+        "synthetic": true,
+        "conflictDeclared": true,
+        "criteria": [
+          {
+            "criterionId": "logic",
+            "relevance": 3
+          },
+          {
+            "criterionId": "evidence",
+            "relevance": 4
+          },
+          {
+            "criterionId": "priorities",
+            "relevance": 4
+          },
+          {
+            "criterionId": "communication"
+          }
+        ]
+      }
+    ],
+    "licenses": [
+      {
+        "name": "DISC",
+        "state": "not-obtained",
+        "itemsIncluded": false
+      },
+      {
+        "name": "CAAS",
+        "state": "not-obtained",
+        "itemsIncluded": false
+      },
+      {
+        "name": "CDSE",
+        "state": "not-obtained",
+        "itemsIncluded": false
+      },
+      {
+        "name": "TEIQue-SF",
+        "state": "not-obtained",
+        "itemsIncluded": false
+      }
+    ],
+    "events": []
+  },
+  "report": {
+    "version": "synthetic-research-v1",
+    "synthetic": true,
+    "eligiblePeople": 107,
+    "excludedPeople": 13,
+    "groups": {
+      "train": {
+        "people": 61,
+        "rows": 122
+      },
+      "validation": {
+        "people": 25,
+        "rows": 50
+      },
+      "test": {
+        "people": 21,
+        "rows": 42
+      }
+    },
+    "model": {
+      "w": [
+        -0.711113715720722,
+        0.9636345869358209,
+        0.7031634516389664,
+        0.10759138946610483
+      ],
+      "iterations": 1500,
+      "rate": 0.4,
+      "penalty": 0.02,
+      "method": "L2 logistic regression; full-batch gradient descent; intercept not penalised"
+    },
+    "evaluation": {
+      "train": {
+        "model": {
+          "n": 122,
+          "brier": 0.2259750106839997,
+          "logLoss": 0.643586175158813,
+          "auc": 0.6922659430122117,
+          "bins": [
+            {
+              "range": [
+                0,
+                0.2
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "range": [
+                0.2,
+                0.4
+              ],
+              "n": 9,
+              "predicted": 0.37573111664837944,
+              "observed": 0.2222222222222222
+            },
+            {
+              "range": [
+                0.4,
+                0.6
+              ],
+              "n": 74,
+              "predicted": 0.517193125144079,
+              "observed": 0.4864864864864865
+            },
+            {
+              "range": [
+                0.6,
+                0.8
+              ],
+              "n": 39,
+              "predicted": 0.6499008101944883,
+              "observed": 0.7435897435897436
+            },
+            {
+              "range": [
+                0.8,
+                1
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            }
+          ]
+        },
+        "baseline": {
+          "n": 122,
+          "brier": 0.24758129535071263,
+          "logLoss": 0.6883019407416134,
+          "auc": 0.5,
+          "bins": [
+            {
+              "range": [
+                0,
+                0.2
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "range": [
+                0.2,
+                0.4
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "range": [
+                0.4,
+                0.6
+              ],
+              "n": 122,
+              "predicted": 0.5491803278688533,
+              "observed": 0.5491803278688525
+            },
+            {
+              "range": [
+                0.6,
+                0.8
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "range": [
+                0.8,
+                1
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            }
+          ]
+        }
+      },
+      "validation": {
+        "model": {
+          "n": 50,
+          "brier": 0.2313216122738704,
+          "logLoss": 0.6542972147779822,
+          "auc": 0.7216,
+          "bins": [
+            {
+              "range": [
+                0,
+                0.2
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "range": [
+                0.2,
+                0.4
+              ],
+              "n": 3,
+              "predicted": 0.3956364692780175,
+              "observed": 0.6666666666666666
+            },
+            {
+              "range": [
+                0.4,
+                0.6
+              ],
+              "n": 37,
+              "predicted": 0.525940861782316,
+              "observed": 0.35135135135135137
+            },
+            {
+              "range": [
+                0.6,
+                0.8
+              ],
+              "n": 10,
+              "predicted": 0.6471530631208331,
+              "observed": 1
+            },
+            {
+              "range": [
+                0.8,
+                1
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            }
+          ]
+        },
+        "baseline": {
+          "n": 50,
+          "brier": 0.25241870464928784,
+          "logLoss": 0.6980081424215379,
+          "auc": 0.5,
+          "bins": [
+            {
+              "range": [
+                0,
+                0.2
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "range": [
+                0.2,
+                0.4
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "range": [
+                0.4,
+                0.6
+              ],
+              "n": 50,
+              "predicted": 0.5491803278688528,
+              "observed": 0.5
+            },
+            {
+              "range": [
+                0.6,
+                0.8
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "range": [
+                0.8,
+                1
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            }
+          ]
+        }
+      },
+      "test": {
+        "model": {
+          "n": 42,
+          "brier": 0.23702661252328747,
+          "logLoss": 0.666993173174236,
+          "auc": 0.6296296296296297,
+          "bins": [
+            {
+              "range": [
+                0,
+                0.2
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "range": [
+                0.2,
+                0.4
+              ],
+              "n": 2,
+              "predicted": 0.3968613452001253,
+              "observed": 0.5
+            },
+            {
+              "range": [
+                0.4,
+                0.6
+              ],
+              "n": 36,
+              "predicted": 0.5124048933329177,
+              "observed": 0.6388888888888888
+            },
+            {
+              "range": [
+                0.6,
+                0.8
+              ],
+              "n": 4,
+              "predicted": 0.6179093659383194,
+              "observed": 0.75
+            },
+            {
+              "range": [
+                0.8,
+                1
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            }
+          ]
+        },
+        "baseline": {
+          "n": 42,
+          "brier": 0.2383671824010442,
+          "logLoss": 0.6698139375417527,
+          "auc": 0.5,
+          "bins": [
+            {
+              "range": [
+                0,
+                0.2
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "range": [
+                0.2,
+                0.4
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "range": [
+                0.4,
+                0.6
+              ],
+              "n": 42,
+              "predicted": 0.5491803278688527,
+              "observed": 0.6428571428571429
+            },
+            {
+              "range": [
+                0.6,
+                0.8
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "range": [
+                0.8,
+                1
+              ],
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            }
+          ]
+        }
+      }
+    },
+    "reliability": {
+      "version": "validation-statistics-v1",
+      "n": 32,
+      "dimensions": [
+        {
+          "criterionId": "logic",
+          "n": 32,
+          "missing": 0,
+          "matrix": [
+            [
+              11,
+              0,
+              0
+            ],
+            [
+              1,
+              12,
+              0
+            ],
+            [
+              2,
+              0,
+              6
+            ]
+          ],
+          "exact": 0.90625,
+          "meanAbsoluteDifference": 0.15625,
+          "meanSignedDifference": -0.15625,
+          "kappa": 0.8104265402843602,
+          "reason": null,
+          "weights": "linear ordinal disagreement |a-b|/2; categories fixed at 1,2,3",
+          "interval": {
+            "lower": 0.5769230769230769,
+            "upper": 1,
+            "reason": null,
+            "valid": 200,
+            "iterations": 200,
+            "method": "case-level percentile bootstrap; 95%; seed 20261023"
+          }
+        },
+        {
+          "criterionId": "evidence",
+          "n": 32,
+          "missing": 0,
+          "matrix": [
+            [
+              6,
+              1,
+              0
+            ],
+            [
+              2,
+              9,
+              2
+            ],
+            [
+              1,
+              1,
+              10
+            ]
+          ],
+          "exact": 0.78125,
+          "meanAbsoluteDifference": 0.25,
+          "meanSignedDifference": -0.0625,
+          "kappa": 0.7043879907621247,
+          "reason": null,
+          "weights": "linear ordinal disagreement |a-b|/2; categories fixed at 1,2,3",
+          "interval": {
+            "lower": 0.4628055703260854,
+            "upper": 0.8655702076419279,
+            "reason": null,
+            "valid": 200,
+            "iterations": 200,
+            "method": "case-level percentile bootstrap; 95%; seed 20261024"
+          }
+        },
+        {
+          "criterionId": "priorities",
+          "n": 31,
+          "missing": 1,
+          "matrix": [
+            [
+              10,
+              1,
+              1
+            ],
+            [
+              1,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "exact": 0.9032258064516129,
+          "meanAbsoluteDifference": 0.12903225806451613,
+          "meanSignedDifference": 0.06451612903225806,
+          "kappa": 0.8554778554778555,
+          "reason": null,
+          "weights": "linear ordinal disagreement |a-b|/2; categories fixed at 1,2,3",
+          "interval": {
+            "lower": 0.6760639477832409,
+            "upper": 1,
+            "reason": null,
+            "valid": 200,
+            "iterations": 200,
+            "method": "case-level percentile bootstrap; 95%; seed 20261025"
+          }
+        },
+        {
+          "criterionId": "communication",
+          "n": 32,
+          "missing": 0,
+          "matrix": [
+            [
+              8,
+              0,
+              1
+            ],
+            [
+              0,
+              8,
+              0
+            ],
+            [
+              4,
+              0,
+              11
+            ]
+          ],
+          "exact": 0.84375,
+          "meanAbsoluteDifference": 0.3125,
+          "meanSignedDifference": -0.1875,
+          "kappa": 0.6666666666666667,
+          "reason": null,
+          "weights": "linear ordinal disagreement |a-b|/2; categories fixed at 1,2,3",
+          "interval": {
+            "lower": 0.4034980453690803,
+            "upper": 0.9270649956280967,
+            "reason": null,
+            "valid": 200,
+            "iterations": 200,
+            "method": "case-level percentile bootstrap; 95%; seed 20261026"
+          }
+        }
+      ],
+      "totals": {
+        "n": 31,
+        "value": 0.7662061636556854,
+        "reason": null,
+        "msRow": 5.331182795698924,
+        "msColumn": 1.6129032258064488,
+        "msError": 0.6795698924731185,
+        "model": "ICC(A,1): two-way absolute agreement, single rating; fixed selected pair; no generalisation to all raters",
+        "missing": 1,
+        "interval": {
+          "lower": 0.5341897141800017,
+          "upper": 0.883476344008488,
+          "reason": null,
+          "valid": 200,
+          "iterations": 200,
+          "method": "case-level percentile bootstrap; 95%; seed 20261101"
+        }
+      },
+      "validationStatus": "pending-human-validation",
+      "scope": "Each dimension is analysed across cases; dimensions are not pooled as independent people. Null is missing, not zero. Negative coefficients are retained. No automatic pass."
+    },
+    "content": {
+      "n": 6,
+      "dimensions": [
+        {
+          "criterionId": "logic",
+          "n": 6,
+          "missing": 0,
+          "relevant": 4,
+          "iCvi": 0.6666666666666666
+        },
+        {
+          "criterionId": "evidence",
+          "n": 6,
+          "missing": 0,
+          "relevant": 4,
+          "iCvi": 0.6666666666666666
+        },
+        {
+          "criterionId": "priorities",
+          "n": 6,
+          "missing": 0,
+          "relevant": 4,
+          "iCvi": 0.6666666666666666
+        },
+        {
+          "criterionId": "communication",
+          "n": 5,
+          "missing": 1,
+          "relevant": 1,
+          "iCvi": 0.2
+        }
+      ],
+      "sCviAverage": null,
+      "sCviUniversal": null,
+      "validationStatus": "pending-human-validation",
+      "scope": "Relevance 1-4; 3/4 counts as relevant. Expert opinion is one source of content evidence, not a validity percentage or proof of predictive performance. Missing reviews are reported."
+    },
+    "conditions": [
+      {
+        "language": "zh",
+        "A": {
+          "n": 18,
+          "completion": 0.5
+        },
+        "B": {
+          "n": 18,
+          "completion": 0.5833333333333334
+        }
+      },
+      {
+        "language": "en",
+        "A": {
+          "n": 18,
+          "completion": 0.5277777777777778
+        },
+        "B": {
+          "n": 18,
+          "completion": 0.6388888888888888
+        }
+      },
+      {
+        "language": "ms",
+        "A": {
+          "n": 18,
+          "completion": 0.5
+        },
+        "B": {
+          "n": 17,
+          "completion": 0.5882352941176471
+        }
+      }
+    ],
+    "rasch": {
+      "theta": [
+        0.6329719823409393,
+        -1.011284018424454,
+        0.10002142853199401,
+        -1.011284018424454,
+        0.6329719823409393,
+        -1.697568100235921,
+        -1.011284018424454,
+        -1.697568100235921,
+        -0.4344736219966493,
+        0.6329719823409393,
+        1.2045756193577977,
+        0.6329719823409393,
+        0.6329719823409393,
+        -1.697568100235921,
+        0.6329719823409394,
+        1.2045756193577977,
+        -1.011284018424454,
+        2.835241763375697,
+        -1.011284018424454,
+        -2.663166864206951,
+        1.2045756193577977,
+        -0.4344736219966493,
+        -1.011284018424454,
+        0.10002142853199414,
+        -1.697568100235921,
+        0.10002142853199414,
+        -0.4344736219966493,
+        1.2045756193577977,
+        1.8812297597763086,
+        1.8812297597763086,
+        0.10002142853199414,
+        -1.011284018424454,
+        -1.011284018424454,
+        -1.011284018424454,
+        0.10002142853199414,
+        -1.697568100235921,
+        1.2045756193577977,
+        1.8812297597763086,
+        -1.697568100235921,
+        0.10002142853199414,
+        1.8812297597763084,
+        0.6329719823409393,
+        -1.697568100235921,
+        -1.011284018424454,
+        0.6329719823409393,
+        -0.4344736219966493,
+        -1.6975681002359209,
+        -0.4344736219966493,
+        0.6329719823409393,
+        0.10002142853199414,
+        2.835241763375697,
+        -0.4344736219966493,
+        0.10002142853199414,
+        1.8812297597763086,
+        -0.4344736219966493,
+        0.6329719823409393,
+        1.8812297597763086,
+        0.10002142853199401,
+        -1.011284018424454,
+        0.6329719823409394,
+        -0.4344736219966493
+      ],
+      "difficulty": [
+        -1.4869038264136483,
+        -0.815016295515778,
+        -0.3557171530200595,
+        -0.13158355642820058,
+        0.09208288330279171,
+        0.9469373407210306,
+        1.2910832710668072,
+        1.2023753021368582
+      ],
+      "iterations": 1200,
+      "penalty": 0.03,
+      "method": "regularised joint Rasch toy fit; theta centred; fixed discrimination 1; research rehearsal only",
+      "n": 61,
+      "next": {
+        "item": 4,
+        "p": 0.4769955319447449,
+        "information": 0.24947079444949471
+      }
+    },
+    "gate": {
+      "allowed": false,
+      "reasons": [
+        "synthetic-only",
+        "no-real-expert-attestation",
+        "no-human-outcome-validation",
+        "no-scale-permission",
+        "no-measurement-equivalence",
+        "no-approved-release"
+      ],
+      "status": "prototype-only"
+    },
+    "scope": "Synthetic workflow and arithmetic rehearsal. Not validity, real outcome prediction, scale permission, or production CAT."
+  }
+}

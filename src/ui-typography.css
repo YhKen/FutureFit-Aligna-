@@ -1,0 +1,31 @@
+/* One type scale across both workspaces. No external font download required. */
+:root{--ff-font-ui:Arial,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;--f-body:var(--ff-font-ui);--f-display:var(--ff-font-ui);--font:var(--ff-font-ui)}
+html body[data-page]{font-family:var(--ff-font-ui)!important;font-size:16px!important;line-height:1.6!important}
+body[data-page] *{font-family:var(--ff-font-ui)!important}
+body[data-page] :is(p,li,dd,blockquote,pre){font-size:16px!important;line-height:1.65!important}
+body[data-page] :is(button,input,select,textarea){font-size:16px!important;line-height:1.5!important}
+body[data-page] :is(input,select,textarea){max-width:100%;min-width:0}
+body[data-page] :is(label,summary,th,td,dt){font-size:14px!important;line-height:1.6!important}
+body[data-page] small,body[data-page] :is(.source-note,.explore-note,.jd-record-refs,.orb-note,.eyebrow,.account-footer,.company-meta dt,.trace-input-versions p){font-size:13px!important;line-height:1.6!important}
+body[data-page] h1{font-size:36px!important;line-height:1.25!important;letter-spacing:-.025em!important}
+body[data-page=account] #account h1{font-size:36px!important}
+body[data-page=account] #account .account-identity strong{font-size:14px!important;overflow-wrap:anywhere}
+body[data-page] h2{font-size:24px!important;line-height:1.35!important}
+body[data-page] h3{font-size:20px!important;line-height:1.4!important}
+body[data-page] h4{font-size:16px!important;line-height:1.5!important}
+body[data-page] h5{font-size:14px!important;line-height:1.5!important}
+body[data-page=landing] h1{font-size:clamp(36px,6vw,72px)!important;line-height:1.15!important}
+body[data-page] :is(.h02-bullet-row>span,.jd-flow-skill>span,.jd-flow-list-item>span){font-size:14px!important;line-height:1.5!important}
+body[data-page] .h02-bullet-row{grid-template-columns:minmax(100px,1.2fr) minmax(80px,1fr) 84px}
+body[data-page] .h02-matrix table{font-size:14px!important}
+body[data-page] :is(.trace-metrics b,.h02-ring-gauge strong){font-size:28px!important;font-variant-numeric:tabular-nums}
+body[data-page] .jd-flow-skill{min-height:46px}
+body[data-page] .jd-flow-group{overflow-wrap:anywhere}
+body[data-page] :is(.jd-flow-group strong,.jd-flow-group small){font-size:13px!important;line-height:1.4!important}
+body[data-page] :is(.recruit-actions,.company-actions,.account-mode){gap:12px}
+body[data-page] .application-focus-tools{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0 20px}
+body[data-page] .application-focus-tools a{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border:1px solid var(--line,#e1dbcf);border-radius:12px;font-size:14px}
+@media(max-width:680px){body[data-page] h1{font-size:28px!important}body[data-page] h2{font-size:22px!important}body[data-page] .h02-bullet-row{grid-template-columns:minmax(85px,1fr) minmax(65px,1fr)}body[data-page] .h02-bullet-row>small{grid-column:2}body[data-page] :is(button,input,select,textarea){font-size:16px!important}body[data-page] .account-aside h2{font-size:20px!important}}
+@media(max-width:700px){body[data-page=account] #account h1{font-size:28px!important}body[data-page=account] #account .account-aside{display:none!important}body[data-page=account] #account .account-content{padding:26px 20px!important}}
+
+body[data-page] .application-job-description{padding:16px 18px;border:1px solid var(--line,#e1dbcf);border-radius:14px;margin-bottom:22px;background:var(--surface,#fffefa)}body[data-page] .application-job-description p{white-space:pre-wrap;overflow-wrap:anywhere}body[data-page] .application-job-description summary{cursor:pointer;min-height:28px}

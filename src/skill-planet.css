@@ -1,0 +1,94 @@
+.skill-planet{position:relative;width:100%;max-width:430px;margin:auto;text-align:center;padding:8px 8px 20px;box-sizing:border-box}
+.planet-eyebrow{display:block;font-size:11px;letter-spacing:.8px;color:#9b8b76;text-align:left}
+.planet-scene{position:relative;width:100%;aspect-ratio:1;max-height:390px}
+.planet-halo{position:absolute;inset:14%;border-radius:50%;background:radial-gradient(circle,#e9dfed66,transparent 70%);box-shadow:0 0 70px #e7dfc640;animation:planet-breathe 7s ease-in-out infinite}
+.planet-orbit{position:absolute;left:9%;right:9%;top:30%;bottom:30%;border:1px solid #d7ccb5;border-radius:50%;transform:rotate(-24deg);box-shadow:0 0 0 20px #f3edde66}
+.planet-core{position:absolute;inset:26%;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:50%;border:1px solid #ddd0bf;cursor:pointer;color:#4b4861;background:radial-gradient(circle at 30% 20%,#fffdf4 0,#eee3cf 36%,#cbbcd2 73%,#9b9ba94d 100%);box-shadow:inset -12px -18px 26px #9e90ac33,inset 6px 6px 16px #fffdf6,0 24px 40px -18px #998da94d;transition:scale .3s,box-shadow .3s;animation:planet-bob 7s ease-in-out infinite;z-index:2;overflow:hidden}
+.planet-core:hover,.planet-core:focus-visible{scale:1.035;box-shadow:inset -12px -18px 26px #9e90ac33,inset 6px 6px 16px #fffdf6,0 25px 45px -14px #998da966}
+.planet-count{font-size:clamp(30px,3.7vw,44px);font-weight:600;letter-spacing:-2px;position:relative;z-index:1;line-height:1.2}
+.planet-core small{font-size:8px;letter-spacing:.4px;position:relative;z-index:1;color:#80738e;margin-top:4px}
+.planet-open{font-size:14px;position:relative;z-index:1;margin-top:8px;opacity:.7}
+.planet-shine{position:absolute;width:130%;height:40%;border:1px solid #fffdf670;border-radius:50%;left:-10%;top:20%;rotate:-25deg;box-shadow:0 15px 0 #fffdf615}
+.planet-satellites{position:absolute;inset:0;animation:satellite-orbit 65s linear infinite;pointer-events:none;z-index:3}
+.planet-satellites button{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;translate:-50% -50%;animation:satellite-counter 65s linear infinite;border:0;background:transparent;color:#6e667b;padding:4px;cursor:pointer;pointer-events:auto;width:70px}
+.planet-satellites button>b{display:grid;place-items:center;width:31px;height:31px;border-radius:50%;font-size:11px;border:1px solid #d8cfc0;background:#fffaf0;box-shadow:0 5px 12px #82718b15;transition:background .2s,scale .2s;color:#716780}
+.planet-satellites button:nth-child(even)>b{background:#e8e0ef;border-color:#d6cade}
+.planet-satellites button:nth-child(3n)>b{background:#e5eada;border-color:#d2dcc3}
+.planet-satellites button>span{font-size:9px;white-space:nowrap;margin-top:7px;background:#faf8efb3;padding:2px 4px;border-radius:7px}
+.planet-satellites button:hover>b{scale:1.15;background:#ded3e9}
+.planet-scene:has(button:hover) .planet-satellites,.planet-scene:has(button:hover) .planet-satellites button,.planet-scene:focus-within .planet-satellites,.planet-scene:focus-within .planet-satellites button{animation-play-state:paused}
+.planet-star{position:absolute;color:#b3a080}.planet-star.one{left:16%;top:17%;font-size:25px;animation:planet-breathe 5s ease-in-out infinite}.planet-star.two{right:17%;bottom:18%;font-size:14px}
+.planet-invitation{border:1px solid #e0d6c6;background:#fffcf4;padding:11px 18px;border-radius:24px;color:#807086;font-size:11px;cursor:pointer;display:inline-flex;gap:22px;align-items:center}
+.planet-dialog{position:fixed;inset:0;width:min(850px,calc(100vw - 36px));max-height:86dvh;box-sizing:border-box;border:1px solid #ddd3c0;border-radius:26px;padding:26px;background:#faf8ef;color:#3a3e59;text-align:left;box-shadow:0 30px 100px #3a3e5930;overflow:auto}
+.planet-dialog::backdrop{background:#34334555;backdrop-filter:blur(5px)}
+.planet-dialog header{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:20px}
+.planet-dialog header small{font-size:9px;color:#9a8c73;letter-spacing:.7px}.planet-dialog header h2{font-size:25px;margin:5px 0 0}
+.planet-dialog header button{border:1px solid #ded6c7;background:#fffdf8;border-radius:50%;font-size:23px;color:#73667c;width:35px;height:35px;cursor:pointer}
+.planet-tabs{display:flex;gap:8px;border-bottom:1px solid #e5dece;padding-bottom:14px;margin-bottom:20px;flex-wrap:wrap}
+.planet-tabs button{border:0;border-radius:24px;padding:10px 16px;font-size:12px;color:#8c7b80;background:transparent;cursor:pointer}
+.planet-tabs button[aria-selected=true]{background:#e9e1ee;color:#625171}
+.evidence-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.evidence-summary>div{padding:18px;border-radius:15px;background:#eee9d8;border:1px solid #e2d9c1;display:grid;gap:6px}
+.evidence-summary>div:nth-child(even){background:#e9e5ef;border-color:#ddd5e7}.evidence-summary strong{font-size:25px}.evidence-summary span{font-size:10px;color:#908174}
+.planet-meta{font-size:11px;color:#9b8e7b;margin:16px 0}
+.planet-skill-chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px}.planet-skill-chips span{padding:7px 11px;border:1px solid #e2d8c4;border-radius:20px;background:#fffdf5;font-size:11px}
+.planet-skill-table{border:1px solid #e4dccd;border-radius:16px;overflow:hidden;background:#fffdf7}
+.planet-skill-table>div{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:12px;border-bottom:1px solid #eee7d9;padding:13px 16px;font-size:11px;align-items:center}.planet-skill-table>div:last-child{border:0}.planet-skill-table strong{font-size:12px;font-weight:500}.planet-skill-table span{font-size:10px;color:#9e8d77}.planet-skill-table b{font-weight:400;color:#8e7d9e;font-size:10px;text-align:right}
+.planet-role{display:grid;gap:8px;font-size:12px;font-weight:600}.planet-role input{width:100%;box-sizing:border-box;padding:13px;border:1px solid #dcd2c2;border-radius:12px;background:#fffdf7;color:#5b5670;font:inherit;font-weight:400}
+.planet-target{margin-top:10px;border:1px solid #d9cde2;background:#ece5f2;color:#786580;border-radius:20px;padding:9px 14px;font-size:11px;cursor:pointer}.planet-target-status{font-size:10px;color:#80725c}
+.comparison-heading{display:flex;justify-content:space-between;align-items:center;gap:20px;margin:22px 0 12px}.comparison-heading h3{font-size:17px}.comparison-heading span{font-size:10px;color:#97856a}
+.planet-practice-pace{display:grid;gap:8px;background:#e8ecde;border:1px solid #d9dfcb;border-radius:15px;padding:17px;margin:20px 0}.planet-practice-pace strong{font-size:13px}.planet-practice-pace small{font-size:10px;line-height:1.7;color:#858b73}
+.planet-plan-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.planet-plan-cards article{border:1px solid #e5dccb;border-radius:17px;padding:18px;background:#fffdf7}.planet-plan-cards h4{font-size:15px;margin:10px 0}.planet-plan-cards p{font-size:11px;line-height:1.8;color:#948873}.planet-plan-cards article>span{font-size:9px;color:#a28fa5}.planet-plan-cards a{display:block;margin-top:12px;font-size:10px;line-height:1.7;color:#796186}
+.planet-news-heading{display:flex;gap:20px;justify-content:space-between;align-items:center;margin-top:25px}.planet-news-heading h3{font-size:15px}.planet-news-heading button{border:1px solid #ddd3c0;background:#fffdf5;border-radius:18px;padding:8px 12px;font-size:10px;color:#8f7a69;cursor:pointer}
+.planet-news article{padding:15px 0;border-bottom:1px solid #e5ddcf}.planet-news a{color:#6d5b79;font-size:12px;line-height:1.7;text-decoration:none}.planet-news small{display:block;font-size:9px;color:#a1927a;margin:6px 0}.planet-news .news-to-plan{font-size:10px;color:#8e7c63;text-decoration:underline}
+.planet-footnote{font-size:10px;line-height:1.8;color:#a1947f}.planet-method{display:inline-block;font-size:10px;color:#93839b;margin-top:15px}
+@keyframes satellite-orbit{to{rotate:360deg}}@keyframes satellite-counter{to{rotate:-360deg}}@keyframes planet-bob{0%,100%{translate:0 -4px}50%{translate:0 5px}}@keyframes planet-breathe{0%,100%{opacity:.65;scale:.98}50%{opacity:1;scale:1.04}}
+@media(max-width:650px){.planet-dialog{padding:20px;border-radius:20px}.evidence-summary{grid-template-columns:1fr 1fr}.planet-plan-cards{grid-template-columns:1fr}.comparison-heading{display:block}.planet-tabs button{font-size:11px;padding:9px 12px}}
+@media(prefers-reduced-motion:reduce){.skill-planet *{animation:none!important;transition:none!important}}
+
+.news-plan-controls{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-top:10px}.news-plan-controls select{padding:7px 10px;border:1px solid #ded4c0;border-radius:10px;background:#fffdf7;color:#8b7599;font-size:10px;max-width:200px}.planet-news .news-to-plan{border:1px solid #e0d3e8;background:#eee7f4;color:#7c638c;border-radius:18px;padding:7px 11px;font-size:10px;text-decoration:none;cursor:pointer}.news-plan-controls [role=status]{font-size:9px;color:#8b8e75}.planet-news .news-plan-open{font-size:10px;text-decoration:underline;color:#897098}
+
+/* Shared button styles must not flatten the sphere or its satellites. */
+body .skill-planet .planet-core {
+  border-radius:50%!important;border:1px solid #d6cbbf!important;
+  background:radial-gradient(circle at 30% 20%,#fffdf4 0%,#eee3cf 36%,#cbbcd2 73%,#a59caf 100%)!important;
+  box-shadow:inset -12px -18px 26px #9e90ac33,inset 6px 6px 16px #fffdf6,0 24px 40px -18px #998da94d!important;
+}
+body .skill-planet .planet-satellites button {
+  border:0!important;background:transparent!important;box-shadow:none!important;padding:4px!important;
+}
+body .skill-planet .planet-satellites button>b {
+  box-shadow:inset 0 1px 0 #fff,0 3px 0 #d8d0bf,0 8px 14px -7px #82718b38;
+}
+body .skill-planet .planet-core:active {scale:.98;}
+body .skill-planet .planet-invitation {
+  border-radius:24px!important;background:linear-gradient(145deg,#fffdf7,#f0e9dc)!important;
+  box-shadow:inset 0 1px 0 #fff,0 3px 0 #ddd2bf,0 8px 14px -9px #82718b35!important;
+}
+
+/* Personal planet: readable skill labels in depth, direct manipulation. */
+.personal-planet .planet-satellites,.personal-planet .planet-satellites button{animation:none;rotate:none}
+.personal-planet{aspect-ratio:auto;height:350px}
+.personal-planet .planet-core{touch-action:pan-y;cursor:grab;animation:none;inset:auto;left:26%;top:50%;width:48%;height:auto;aspect-ratio:1;translate:0 -50%;box-sizing:border-box}
+.personal-planet.planet-dragging .planet-core{cursor:grabbing}
+.personal-planet .planet-shine{rotate:calc(var(--planet-turn,0rad) * .2 - 25deg);box-shadow:0 18px 0 #fffdf624,0 36px 0 #fffdf61a}
+body .personal-planet .planet-satellites .orbit-skill{width:100px;min-height:46px;box-sizing:border-box;flex-direction:row;gap:5px;padding:9px 7px!important;border-radius:30px!important;border:1px solid #ded4c2!important;background:linear-gradient(140deg,#fffef9,#f1ebdc)!important;box-shadow:inset 0 1px 0 #fff,0 3px 0 #ded4c2,0 10px 16px -9px #75678050!important;font-size:11px;line-height:1.35;transform:none;transition:box-shadow .2s}
+body .personal-planet .planet-satellites .orbit-skill:nth-child(even){background:linear-gradient(140deg,#fdfaff,#e9e0ef)!important;border-color:#dbcee1!important}
+body .personal-planet .planet-satellites .orbit-skill>span{margin:0;font-size:11px;overflow-wrap:anywhere;white-space:normal;background:none;padding:0}
+body .personal-planet .planet-satellites .orbit-skill>b{width:auto;height:auto;background:none;border:0;box-shadow:none;font-size:12px}
+body .personal-planet .planet-satellites .orbit-skill:active{translate:-50% calc(-50% + 2px)}
+body .personal-planet .planet-satellites .orbit-skill:focus-visible{outline:2px solid #736080;outline-offset:4px}
+.planet-orbit-controls{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:-2px 0 16px;font-size:10px;color:#84768d}
+body .planet-orbit-controls button{padding:6px 10px!important;border-radius:20px!important;font-size:12px!important;min-width:30px;min-height:30px}
+.planet-orbit-controls span{font-size:10px}
+body .planet-skill-chips button,body .planet-skill-table [data-insight-skill]{font-size:11px!important;color:#5b526b!important;border-radius:20px!important;padding:8px 11px!important;line-height:1.5;text-align:left}
+body .planet-skill-table [data-insight-skill]{background:transparent!important;border:0!important;box-shadow:none!important;padding:2px!important}
+.insight-heading{display:flex;justify-content:space-between;align-items:center;gap:18px;margin:20px 0}.insight-heading h3{font-size:27px;margin:8px 0;letter-spacing:-.6px}.insight-heading small{font-size:11px;color:#a08d77}
+.skill-status{padding:9px 13px;border-radius:25px;font-size:11px;background:#e8e4d4;color:#726a51;max-width:230px}.skill-status.practice{background:#efe0c9;color:#7d6243}.skill-status.unknown{background:#eeeaee;color:#83738c}.skill-status.confirm{background:#e8e0ee;color:#776283}
+body .planet-back{padding:7px 12px!important;border-radius:20px!important;font-size:11px!important}
+.insight-sources{display:grid;grid-template-columns:1fr 1fr;gap:12px}.insight-sources .card{padding:19px;text-align:left;margin:0}.insight-sources small{font-size:10px;color:#908276;line-height:1.6}.insight-sources h4{font-size:14px;line-height:1.6;margin:10px 0}.insight-sources h4 strong{font-size:25px;display:inline-block}.insight-sources p,.insight-sources blockquote{font-size:11px;line-height:1.8;color:#7a7180;margin:10px 0}.insight-sources blockquote{padding-left:12px;border-left:2px solid #d5c8de}
+.insight-games{margin-top:14px;border:1px solid #dfd7c9;border-radius:16px;padding:15px 18px;background:#f4f0e8}.insight-games summary{font-size:12px;color:#73667b;cursor:pointer}.insight-game-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.insight-game-grid section{display:grid;gap:7px}.insight-game-grid h4{font-size:13px;margin:15px 0 4px}.insight-game-grid strong{font-size:24px}.insight-game-grid span,.insight-game-grid small,.insight-games p{font-size:10px;line-height:1.8;color:#8b7f75}
+.insight-role{position:relative;padding:20px;border-radius:18px;background:#ede7f0;margin:18px 0;text-align:left}.insight-role>small{font-size:10px;color:#97859c}.insight-role h4{font-size:18px;margin:10px 0}.insight-role h5{font-size:11px}.insight-role p{font-size:11px;line-height:1.8;color:#827389}.insight-role>button{font-size:10px!important;padding:6px 10px!important}.importance-track{height:5px;background:#ddd4e1;border-radius:5px;margin-top:15px}.importance-track span{height:100%;background:#9c88aa;display:block;border-radius:5px}.insight-role .planet-skill-chips{margin-bottom:0}
+.insight-learning{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.insight-learning article{border:1px solid #dfd7c6;border-radius:17px;background:#fffdf6;padding:18px;text-align:left}.insight-learning article>span{font-size:12px;color:#b29b77}.insight-learning h4{font-size:14px;line-height:1.5}.insight-learning p,.insight-learning a,.insight-credential p{font-size:11px;line-height:1.9;color:#85776c}.insight-learning a,.insight-credential a{color:#776184;font-size:11px;line-height:1.8}
+.insight-credential{padding:18px 0}.insight-credential h4{font-size:14px;margin:0 0 9px}.insight-progress{border-radius:18px;border:1px solid #dfd6c5;background:#f2edde;padding:20px}.insight-progress>div:first-child{display:flex;gap:20px;align-items:center;justify-content:space-between}.insight-progress h4{font-size:15px;margin:0}.insight-progress span{font-size:11px}.insight-checks{display:flex;flex-wrap:wrap;gap:13px;margin:20px 0}.insight-checks label{display:flex;gap:7px;align-items:center;cursor:pointer}.insight-checks input{accent-color:#8e789e;width:17px;height:17px}.insight-progress-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.insight-progress-actions button{padding:10px 15px!important;font-size:12px!important}.insight-progress-actions a{font-size:11px;color:#74617f}.insight-progress [role=status]{font-size:11px;line-height:1.7;margin-bottom:0;color:#857466}
+@media(max-width:650px){.insight-heading{align-items:flex-start;flex-direction:column;gap:6px}.insight-sources,.insight-learning{grid-template-columns:1fr}.insight-game-grid{grid-template-columns:1fr}.insight-heading h3{font-size:24px}.insight-progress>div:first-child{align-items:flex-start;flex-direction:column;gap:7px}.planet-dialog{max-width:calc(100vw - 24px);box-sizing:border-box}.planet-tabs{flex-wrap:wrap}.planet-skill-table>div{grid-template-columns:1.3fr .7fr .8fr;gap:7px;padding:12px}.planet-orbit-controls{gap:6px}body .personal-planet .planet-satellites .orbit-skill{width:104px;max-width:104px;padding:9px 8px!important}body .personal-planet .planet-satellites .orbit-skill>span{font-size:10px}}

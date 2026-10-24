@@ -1,0 +1,27 @@
+{
+  "testedAt": "2026-10-23T08:11:29.508Z",
+  "execution": "ordinary authenticated production Firebase SDK, not Admin SDK; synthetic records only",
+  "applicationId": "PdRLSAORDGZLgUIucoVLhyll3Lz1_IbyLRM1Iahi5FGGzJGqB",
+  "jobRequirementsVersion": 2,
+  "skillCount": 3,
+  "coverage": 80,
+  "cosinePercent": 94,
+  "sharedSkillCount": 1,
+  "sharedFollowupCount": 1,
+  "professionalValidity": "not tested; no real interview or human reliability claim",
+  "checks": [
+    "existing structured synthetic job remains published",
+    "new S003 application freezes real structured requirements",
+    "private record transaction confirmed by server readback",
+    "seeker reads only one selected skill and one selected follow-up",
+    "private evaluator conditions and note are absent from seeker projection",
+    "seeker cannot read private HR interview record",
+    "r1 cannot read private interview",
+    "r1 cannot read shared feedback for another candidate",
+    "r2 cannot read private interview",
+    "r2 cannot read shared feedback for another candidate",
+    "unchecking sharing removes previously visible feedback on next save",
+    "saving interview does not change the frozen candidate or application",
+    "HR and seeker read same match inputs and percent"
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "checkedAt": "2026-10-22T15:17:19.846Z",
+  "syntheticOnly": true,
+  "environment": "Production HTTPS and authenticated Firestore SDK; server readback",
+  "checks": [
+    {
+      "name": "Old frozen application retained",
+      "passed": true,
+      "requirementsVersion": 1,
+      "cosine": 75,
+      "coverage": 60
+    },
+    {
+      "name": "Old four rubric hashes still reopen existing submissions and reviews",
+      "passed": true,
+      "tasks": 2,
+      "unavailableUnlinkedTasks": 2
+    },
+    {
+      "name": "New structured job and consented application saved and read from Firebase",
+      "passed": true
+    },
+    {
+      "name": "Both tasks require real frozen-JD skills and outputs",
+      "passed": true
+    },
+    {
+      "name": "resource-plan: HR denied private draft",
+      "passed": true
+    },
+    {
+      "name": "resource-plan: submitted evidence, links and 83% anchored review read back identically by both roles",
+      "passed": true
+    },
+    {
+      "name": "record-audit: HR denied private draft",
+      "passed": true
+    },
+    {
+      "name": "record-audit: submitted evidence, links and 83% anchored review read back identically by both roles",
+      "passed": true
+    },
+    {
+      "name": "Same frozen candidate/job produces identical match on both sides",
+      "passed": true
+    },
+    {
+      "name": "Tokyo invitation and Malaysian candidate proposal saved with correct UTC",
+      "passed": true,
+      "invitationAt": "2026-11-02T00:30:00.000Z",
+      "proposalAt": "2026-11-03T03:00:00.000Z"
+    },
+    {
+      "name": "HR no-op save preserves candidate proposal",
+      "passed": true
+    },
+    {
+      "name": "Candidate retry is idempotent",
+      "passed": true
+    },
+    {
+      "name": "Stale invitation token rejected after reschedule",
+      "passed": true
+    },
+    {
+      "name": "Reschedule clears old proposal and new invitation can be accepted",
+      "passed": true
+    },
+    {
+      "name": "Browser-created proposal read back through both authenticated accounts",
+      "passed": true,
+      "proposalAt": "2026-11-06T05:15:00.000Z",
+      "timeZone": "Asia/Tokyo"
+    },
+    {
+      "name": "Public posting v2 leaves both roles on identical frozen v1 score and skill evidence",
+      "passed": true,
+      "coverage": 33,
+      "cosinePercent": 58,
+      "publicVersion": 2,
+      "frozenVersion": 1
+    }
+  ],
+  "tasks": [
+    {
+      "id": "icsrKzw7rATWG3B2QD2yeS8T69p2_w1aslg12KnQXnRu8TV2T--resource-plan--A",
+      "taskId": "resource-plan",
+      "variant": "A",
+      "skillIds": [
+        "skill:Mathematics",
+        "skill:Management%20of%20Financial%20Resources",
+        "skill:Judgment%20and%20Decision%20Making",
+        "skill:Critical%20Thinking"
+      ],
+      "workOutputIds": [
+        "resource-output",
+        "audit-output"
+      ],
+      "frozenJobVersion": 1,
+      "numericPassed": true,
+      "humanReview": {
+        "observed": 4,
+        "totalCriteria": 4,
+        "points": 10,
+        "maxPoints": 12,
+        "percent": 83,
+        "notObserved": 0,
+        "scope": "Observed criteria in this work sample only; not job-match score"
+      }
+    },
+    {
+      "id": "icsrKzw7rATWG3B2QD2yeS8T69p2_w1aslg12KnQXnRu8TV2T--record-audit--B",
+      "taskId": "record-audit",
+      "variant": "B",
+      "skillIds": [
+        "skill:Mathematics",
+        "skill:Critical%20Thinking",
+        "skill:Quality%20Control%20Analysis",
+        "skill:Complex%20Problem%20Solving"
+      ],
+      "workOutputIds": [
+        "resource-output",
+        "audit-output"
+      ],
+      "frozenJobVersion": 1,
+      "numericPassed": true,
+      "humanReview": {
+        "observed": 4,
+        "totalCriteria": 4,
+        "points": 10,
+        "maxPoints": 12,
+        "percent": 83,
+        "notObserved": 0,
+        "scope": "Observed criteria in this work sample only; not job-match score"
+      }
+    }
+  ],
+  "applicationId": "icsrKzw7rATWG3B2QD2yeS8T69p2_w1aslg12KnQXnRu8TV2T",
+  "jobId": "w1aslg12KnQXnRu8TV2T",
+  "allPassed": true,
+  "match": {
+    "coverage": 33,
+    "cosinePercent": 58,
+    "totals": {
+      "weight": 12,
+      "matchedWeight": 4,
+      "squareWeight": 24,
+      "matchedSquareWeight": 8
+    },
+    "vectors": {
+      "jd": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "candidate": [
+        2,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "dimensions": [
+        "Mathematics",
+        "Management of Financial Resources",
+        "Judgment and Decision Making",
+        "Critical Thinking",
+        "Quality Control Analysis",
+        "Complex Problem Solving"
+      ],
+      "scope": "Job description-listed skills only; extra candidate skills are not penalised"
+    }
+  },
+  "cleanup": {
+    "syntheticPostingClosed": true,
+    "applicationRetainedForReview": true,
+    "proposalPreserved": true,
+    "noRealEmailSent": true
+  }
+}

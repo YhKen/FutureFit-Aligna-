@@ -1,0 +1,920 @@
+{
+  "testedAt": "2026-10-23T13:09:09.871Z",
+  "passed": true,
+  "views": [
+    {
+      "chineseInContent": false,
+      "heading": "我的模拟参与授权",
+      "inner": 1280,
+      "lang": "zh",
+      "role": "seeker",
+      "scroll": 1265,
+      "tab": "0",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "双人独立盲评",
+      "inner": 1280,
+      "lang": "zh",
+      "role": "seeker",
+      "scroll": 1265,
+      "tab": "1",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "在合成资料上训练",
+      "inner": 1280,
+      "lang": "zh",
+      "role": "seeker",
+      "scroll": 1265,
+      "tab": "2",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 道原创二元练习题",
+      "inner": 1280,
+      "lang": "zh",
+      "role": "seeker",
+      "scroll": 1265,
+      "tab": "3",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "正式使用前还需要什么",
+      "inner": 1280,
+      "lang": "zh",
+      "role": "seeker",
+      "scroll": 1265,
+      "tab": "4",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "My synthetic participation choices",
+      "inner": 1280,
+      "lang": "en",
+      "role": "seeker",
+      "scroll": 1265,
+      "tab": "0",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Independent paired ratings",
+      "inner": 1280,
+      "lang": "en",
+      "role": "seeker",
+      "scroll": 1265,
+      "tab": "1",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Train on synthetic records",
+      "inner": 1280,
+      "lang": "en",
+      "role": "seeker",
+      "scroll": 1265,
+      "tab": "2",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 original binary practice items",
+      "inner": 1280,
+      "lang": "en",
+      "role": "seeker",
+      "scroll": 1265,
+      "tab": "3",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "What is still needed for real use",
+      "inner": 1280,
+      "lang": "en",
+      "role": "seeker",
+      "scroll": 1265,
+      "tab": "4",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Pilihan penyertaan sintetik saya",
+      "inner": 1280,
+      "lang": "ms",
+      "role": "seeker",
+      "scroll": 1265,
+      "tab": "0",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Penilaian berpasangan bebas",
+      "inner": 1280,
+      "lang": "ms",
+      "role": "seeker",
+      "scroll": 1265,
+      "tab": "1",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Latih menggunakan rekod sintetik",
+      "inner": 1280,
+      "lang": "ms",
+      "role": "seeker",
+      "scroll": 1265,
+      "tab": "2",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 item latihan binari asli",
+      "inner": 1280,
+      "lang": "ms",
+      "role": "seeker",
+      "scroll": 1265,
+      "tab": "3",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Keperluan untuk kegunaan sebenar",
+      "inner": 1280,
+      "lang": "ms",
+      "role": "seeker",
+      "scroll": 1265,
+      "tab": "4",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "我的模拟参与授权",
+      "inner": 390,
+      "lang": "zh",
+      "role": "seeker",
+      "scroll": 375,
+      "tab": "0",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "双人独立盲评",
+      "inner": 390,
+      "lang": "zh",
+      "role": "seeker",
+      "scroll": 375,
+      "tab": "1",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "在合成资料上训练",
+      "inner": 390,
+      "lang": "zh",
+      "role": "seeker",
+      "scroll": 375,
+      "tab": "2",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 道原创二元练习题",
+      "inner": 390,
+      "lang": "zh",
+      "role": "seeker",
+      "scroll": 375,
+      "tab": "3",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "正式使用前还需要什么",
+      "inner": 390,
+      "lang": "zh",
+      "role": "seeker",
+      "scroll": 375,
+      "tab": "4",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "My synthetic participation choices",
+      "inner": 390,
+      "lang": "en",
+      "role": "seeker",
+      "scroll": 375,
+      "tab": "0",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Independent paired ratings",
+      "inner": 390,
+      "lang": "en",
+      "role": "seeker",
+      "scroll": 375,
+      "tab": "1",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Train on synthetic records",
+      "inner": 390,
+      "lang": "en",
+      "role": "seeker",
+      "scroll": 375,
+      "tab": "2",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 original binary practice items",
+      "inner": 390,
+      "lang": "en",
+      "role": "seeker",
+      "scroll": 375,
+      "tab": "3",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "What is still needed for real use",
+      "inner": 390,
+      "lang": "en",
+      "role": "seeker",
+      "scroll": 375,
+      "tab": "4",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Pilihan penyertaan sintetik saya",
+      "inner": 390,
+      "lang": "ms",
+      "role": "seeker",
+      "scroll": 375,
+      "tab": "0",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Penilaian berpasangan bebas",
+      "inner": 390,
+      "lang": "ms",
+      "role": "seeker",
+      "scroll": 375,
+      "tab": "1",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Latih menggunakan rekod sintetik",
+      "inner": 390,
+      "lang": "ms",
+      "role": "seeker",
+      "scroll": 375,
+      "tab": "2",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 item latihan binari asli",
+      "inner": 390,
+      "lang": "ms",
+      "role": "seeker",
+      "scroll": 375,
+      "tab": "3",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Keperluan untuk kegunaan sebenar",
+      "inner": 390,
+      "lang": "ms",
+      "role": "seeker",
+      "scroll": 375,
+      "tab": "4",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "我的模拟参与授权",
+      "inner": 320,
+      "lang": "zh",
+      "role": "seeker",
+      "scroll": 305,
+      "tab": "0",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "双人独立盲评",
+      "inner": 320,
+      "lang": "zh",
+      "role": "seeker",
+      "scroll": 305,
+      "tab": "1",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "在合成资料上训练",
+      "inner": 320,
+      "lang": "zh",
+      "role": "seeker",
+      "scroll": 305,
+      "tab": "2",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 道原创二元练习题",
+      "inner": 320,
+      "lang": "zh",
+      "role": "seeker",
+      "scroll": 305,
+      "tab": "3",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "正式使用前还需要什么",
+      "inner": 320,
+      "lang": "zh",
+      "role": "seeker",
+      "scroll": 305,
+      "tab": "4",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "My synthetic participation choices",
+      "inner": 320,
+      "lang": "en",
+      "role": "seeker",
+      "scroll": 305,
+      "tab": "0",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Independent paired ratings",
+      "inner": 320,
+      "lang": "en",
+      "role": "seeker",
+      "scroll": 305,
+      "tab": "1",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Train on synthetic records",
+      "inner": 320,
+      "lang": "en",
+      "role": "seeker",
+      "scroll": 305,
+      "tab": "2",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 original binary practice items",
+      "inner": 320,
+      "lang": "en",
+      "role": "seeker",
+      "scroll": 305,
+      "tab": "3",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "What is still needed for real use",
+      "inner": 320,
+      "lang": "en",
+      "role": "seeker",
+      "scroll": 305,
+      "tab": "4",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Pilihan penyertaan sintetik saya",
+      "inner": 320,
+      "lang": "ms",
+      "role": "seeker",
+      "scroll": 305,
+      "tab": "0",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Penilaian berpasangan bebas",
+      "inner": 320,
+      "lang": "ms",
+      "role": "seeker",
+      "scroll": 305,
+      "tab": "1",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Latih menggunakan rekod sintetik",
+      "inner": 320,
+      "lang": "ms",
+      "role": "seeker",
+      "scroll": 305,
+      "tab": "2",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 item latihan binari asli",
+      "inner": 320,
+      "lang": "ms",
+      "role": "seeker",
+      "scroll": 305,
+      "tab": "3",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Keperluan untuk kegunaan sebenar",
+      "inner": 320,
+      "lang": "ms",
+      "role": "seeker",
+      "scroll": 305,
+      "tab": "4",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "同一份 Job description、技能证据与学习建议",
+      "inner": 1280,
+      "lang": "zh",
+      "role": "hr",
+      "scroll": 1265,
+      "tab": "0",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "专家审题",
+      "inner": 1280,
+      "lang": "zh",
+      "role": "hr",
+      "scroll": 1265,
+      "tab": "1",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "在合成资料上训练",
+      "inner": 1280,
+      "lang": "zh",
+      "role": "hr",
+      "scroll": 1265,
+      "tab": "2",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 道原创二元练习题",
+      "inner": 1280,
+      "lang": "zh",
+      "role": "hr",
+      "scroll": 1265,
+      "tab": "3",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "正式使用前还需要什么",
+      "inner": 1280,
+      "lang": "zh",
+      "role": "hr",
+      "scroll": 1265,
+      "tab": "4",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Shared Job description, skill evidence and learning advice",
+      "inner": 1280,
+      "lang": "en",
+      "role": "hr",
+      "scroll": 1265,
+      "tab": "0",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Expert item review",
+      "inner": 1280,
+      "lang": "en",
+      "role": "hr",
+      "scroll": 1265,
+      "tab": "1",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Train on synthetic records",
+      "inner": 1280,
+      "lang": "en",
+      "role": "hr",
+      "scroll": 1265,
+      "tab": "2",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 original binary practice items",
+      "inner": 1280,
+      "lang": "en",
+      "role": "hr",
+      "scroll": 1265,
+      "tab": "3",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "What is still needed for real use",
+      "inner": 1280,
+      "lang": "en",
+      "role": "hr",
+      "scroll": 1265,
+      "tab": "4",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Job description, bukti kemahiran dan cadangan pembelajaran yang sama",
+      "inner": 1280,
+      "lang": "ms",
+      "role": "hr",
+      "scroll": 1265,
+      "tab": "0",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Semakan item oleh pakar",
+      "inner": 1280,
+      "lang": "ms",
+      "role": "hr",
+      "scroll": 1265,
+      "tab": "1",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Latih menggunakan rekod sintetik",
+      "inner": 1280,
+      "lang": "ms",
+      "role": "hr",
+      "scroll": 1265,
+      "tab": "2",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 item latihan binari asli",
+      "inner": 1280,
+      "lang": "ms",
+      "role": "hr",
+      "scroll": 1265,
+      "tab": "3",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Keperluan untuk kegunaan sebenar",
+      "inner": 1280,
+      "lang": "ms",
+      "role": "hr",
+      "scroll": 1265,
+      "tab": "4",
+      "w": 1280
+    },
+    {
+      "chineseInContent": false,
+      "heading": "同一份 Job description、技能证据与学习建议",
+      "inner": 390,
+      "lang": "zh",
+      "role": "hr",
+      "scroll": 375,
+      "tab": "0",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "专家审题",
+      "inner": 390,
+      "lang": "zh",
+      "role": "hr",
+      "scroll": 375,
+      "tab": "1",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "在合成资料上训练",
+      "inner": 390,
+      "lang": "zh",
+      "role": "hr",
+      "scroll": 375,
+      "tab": "2",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 道原创二元练习题",
+      "inner": 390,
+      "lang": "zh",
+      "role": "hr",
+      "scroll": 375,
+      "tab": "3",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "正式使用前还需要什么",
+      "inner": 390,
+      "lang": "zh",
+      "role": "hr",
+      "scroll": 375,
+      "tab": "4",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Shared Job description, skill evidence and learning advice",
+      "inner": 390,
+      "lang": "en",
+      "role": "hr",
+      "scroll": 375,
+      "tab": "0",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Expert item review",
+      "inner": 390,
+      "lang": "en",
+      "role": "hr",
+      "scroll": 375,
+      "tab": "1",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Train on synthetic records",
+      "inner": 390,
+      "lang": "en",
+      "role": "hr",
+      "scroll": 375,
+      "tab": "2",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 original binary practice items",
+      "inner": 390,
+      "lang": "en",
+      "role": "hr",
+      "scroll": 375,
+      "tab": "3",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "What is still needed for real use",
+      "inner": 390,
+      "lang": "en",
+      "role": "hr",
+      "scroll": 375,
+      "tab": "4",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Job description, bukti kemahiran dan cadangan pembelajaran yang sama",
+      "inner": 390,
+      "lang": "ms",
+      "role": "hr",
+      "scroll": 375,
+      "tab": "0",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Semakan item oleh pakar",
+      "inner": 390,
+      "lang": "ms",
+      "role": "hr",
+      "scroll": 375,
+      "tab": "1",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Latih menggunakan rekod sintetik",
+      "inner": 390,
+      "lang": "ms",
+      "role": "hr",
+      "scroll": 375,
+      "tab": "2",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 item latihan binari asli",
+      "inner": 390,
+      "lang": "ms",
+      "role": "hr",
+      "scroll": 375,
+      "tab": "3",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Keperluan untuk kegunaan sebenar",
+      "inner": 390,
+      "lang": "ms",
+      "role": "hr",
+      "scroll": 375,
+      "tab": "4",
+      "w": 390
+    },
+    {
+      "chineseInContent": false,
+      "heading": "同一份 Job description、技能证据与学习建议",
+      "inner": 320,
+      "lang": "zh",
+      "role": "hr",
+      "scroll": 305,
+      "tab": "0",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "专家审题",
+      "inner": 320,
+      "lang": "zh",
+      "role": "hr",
+      "scroll": 305,
+      "tab": "1",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "在合成资料上训练",
+      "inner": 320,
+      "lang": "zh",
+      "role": "hr",
+      "scroll": 305,
+      "tab": "2",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 道原创二元练习题",
+      "inner": 320,
+      "lang": "zh",
+      "role": "hr",
+      "scroll": 305,
+      "tab": "3",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "正式使用前还需要什么",
+      "inner": 320,
+      "lang": "zh",
+      "role": "hr",
+      "scroll": 305,
+      "tab": "4",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Shared Job description, skill evidence and learning advice",
+      "inner": 320,
+      "lang": "en",
+      "role": "hr",
+      "scroll": 305,
+      "tab": "0",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Expert item review",
+      "inner": 320,
+      "lang": "en",
+      "role": "hr",
+      "scroll": 305,
+      "tab": "1",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Train on synthetic records",
+      "inner": 320,
+      "lang": "en",
+      "role": "hr",
+      "scroll": 305,
+      "tab": "2",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 original binary practice items",
+      "inner": 320,
+      "lang": "en",
+      "role": "hr",
+      "scroll": 305,
+      "tab": "3",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "What is still needed for real use",
+      "inner": 320,
+      "lang": "en",
+      "role": "hr",
+      "scroll": 305,
+      "tab": "4",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Job description, bukti kemahiran dan cadangan pembelajaran yang sama",
+      "inner": 320,
+      "lang": "ms",
+      "role": "hr",
+      "scroll": 305,
+      "tab": "0",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Semakan item oleh pakar",
+      "inner": 320,
+      "lang": "ms",
+      "role": "hr",
+      "scroll": 305,
+      "tab": "1",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Latih menggunakan rekod sintetik",
+      "inner": 320,
+      "lang": "ms",
+      "role": "hr",
+      "scroll": 305,
+      "tab": "2",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "8 item latihan binari asli",
+      "inner": 320,
+      "lang": "ms",
+      "role": "hr",
+      "scroll": 305,
+      "tab": "3",
+      "w": 320
+    },
+    {
+      "chineseInContent": false,
+      "heading": "Keperluan untuk kegunaan sebenar",
+      "inner": 320,
+      "lang": "ms",
+      "role": "hr",
+      "scroll": 305,
+      "tab": "4",
+      "w": 320
+    }
+  ],
+  "consoleErrors": [],
+  "actions": [
+    "HR browser saved training snapshot and read verified status",
+    "Seeker training opt-out saved, persisted after reload, stale report cleared; restored own choices",
+    "Seeker clicked Communication skill and saw source, formula, missing evidence, resource and optional-credential explanation",
+    "Seeker learning plan saved; keyboard and label-click steps tested; reload retained progress",
+    "Actual Firebase read-back of private learning steps and HR denial separately verified",
+    "Seeker item history cleared and next item persisted after reload",
+    "Wrong role URL redirected to actual application role",
+    "Original seeker application card contains exact paired research link",
+    "HR original candidate card contains exact paired research link"
+  ],
+  "scope": "90 role/size/language/tab views; actual API/Firebase mutations. Not human validity.",
+  "finalUiCopy": "Asked count is separate from toy item IDs; final release asset bytes verified"
+}

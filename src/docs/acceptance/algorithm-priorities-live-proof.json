@@ -1,0 +1,57 @@
+{
+  "testedAt": "2026-10-23T11:33:12.125Z",
+  "passed": true,
+  "checks": [
+    "both accounts read the same active frozen application",
+    "current score unchanged at 80 coverage and 94 cosine",
+    "full trace and version are identical on both sides",
+    "three sensitivity scenarios are identical on both sides",
+    "zh shared sensitivity explanation uses exactly the same data",
+    "en shared sensitivity explanation uses exactly the same data",
+    "ms shared sensitivity explanation uses exactly the same data",
+    "job-requirements.js production bytes match tested source",
+    "match-engine.js production bytes match tested source",
+    "algorithm-sensitivity.js production bytes match tested source",
+    "match-sensitivity-view.js production bytes match tested source",
+    "match-trace-panel.js production bytes match tested source",
+    "ready deployment is aliased to existing production"
+  ],
+  "deployment": "dpl_Ci9ovagnYMEx4yid1xpSSS785yN1",
+  "codeCommit": "4bf72bc25b774f6f9bd776909a3152dfd2ba7a20",
+  "matchVersion": "explicit-skills-v4-input-check",
+  "applicationId": "PdRLSAORDGZLgUIucoVLhyll3Lz1_xIa9M0PKvNq3y2EYkres",
+  "baseline": {
+    "coverage": 80,
+    "cosine": 94
+  },
+  "weightScenarios": [
+    {
+      "id": "equal",
+      "role": 1,
+      "collaboration": 1,
+      "coverage": 66.66666666666667,
+      "coveragePercent": 67,
+      "cosine": 0.816496580927726,
+      "cosinePercent": 82
+    },
+    {
+      "id": "current",
+      "role": 2,
+      "collaboration": 1,
+      "coverage": 80,
+      "coveragePercent": 80,
+      "cosine": 0.9428090415820634,
+      "cosinePercent": 94
+    },
+    {
+      "id": "role-emphasis",
+      "role": 3,
+      "collaboration": 1,
+      "coverage": 85.71428571428571,
+      "coveragePercent": 86,
+      "cosine": 0.9733285267845752,
+      "cosinePercent": 97
+    }
+  ],
+  "scope": "Actual production frozen application read through ordinary authenticated HR and seeker SDK clients; production static asset bytes checked. Rendered HTML equality is not a second browser login or a validity study."
+}

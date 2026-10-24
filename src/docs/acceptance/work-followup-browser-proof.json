@@ -1,0 +1,36 @@
+{
+  "views": [
+    {
+      "comparison": "Original and independent ratings",
+      "lang": "en",
+      "rows": 2,
+      "scrollWidth": 305,
+      "title": "Reviews and clarification",
+      "width": 320
+    },
+    {
+      "comparison": "Perbandingan skor asal dan bebas",
+      "lang": "ms",
+      "rows": 2,
+      "scrollWidth": 305,
+      "title": "Penilaian dan penjelasan",
+      "width": 320
+    },
+    {
+      "comparison": "原评分与独立评分对照",
+      "lang": "zh",
+      "rows": 2,
+      "scrollWidth": 305,
+      "title": "评分与澄清",
+      "width": 320
+    }
+  ],
+  "allPassed": true,
+  "previousOverflow": "Long correction reference wrapped after measured 386px on 320px viewport",
+  "practiceToolbar": {
+    "width": 320,
+    "scrollWidth": 305,
+    "customRoleTextRetainedOnBlur": true
+  },
+  "scope": "Actual Chromium viewport; synthetic accounts; original input language retained"
+}

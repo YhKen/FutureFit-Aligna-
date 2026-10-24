@@ -1,0 +1,3 @@
+import {saveReadBack,readPrivate} from './seeker-records.js';
+import {cleanAvailability,cleanOption} from './seeker-tools-core.js';
+export const toolsStore={availability:c=>readPrivate(c,'seeker_availability','current'),saveAvailability:(c,value)=>saveReadBack(c,'seeker_availability','current',cleanAvailability(value)),reflections:c=>c.recent('career_reflections',100),saveReflection:(c,value)=>saveReadBack(c,'career_reflections',value.reflectionId,value),priorities:c=>readPrivate(c,'career_priorities','rejection'),savePriorities:(c,value)=>saveReadBack(c,'career_priorities','rejection',value),options:c=>c.recent('career_options',30),saveOption:(c,value)=>saveReadBack(c,'career_options',value.optionId,cleanOption(value))};

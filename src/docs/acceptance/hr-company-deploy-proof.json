@@ -1,0 +1,115 @@
+{
+  "testedAt": "2026-10-23T08:27:55.141Z",
+  "production": "https://aligna-two.vercel.app",
+  "deployment": "dpl_CELLMXBun4aNxfRn4hAe3nEF6n3Y",
+  "ready": true,
+  "codeCommit": "b5aca69ab43fe6abfd6f74f92657a86cf3b48522",
+  "assetsExact": 24,
+  "assets": [
+    {
+      "asset": "company.html",
+      "sha256": "085c9d51d5b7f38d3b7f8c722358839848d38783c26fe69ef94e3cc50bca9fff"
+    },
+    {
+      "asset": "company-verification.js",
+      "sha256": "e16f16806364843f90290e42e8cffbfe7ed1e889bac3795ff34d1ffb0db3472b"
+    },
+    {
+      "asset": "company-verification-core.js",
+      "sha256": "14122d8808c30be85eaa1a5687369712f8b122779224b83fe2cf8e7905564f5e"
+    },
+    {
+      "asset": "company-verification-store.js",
+      "sha256": "7592b6b1c80e740167ad3625101ab2f7af7837f1b825689fb22e28ffe28e3f9e"
+    },
+    {
+      "asset": "company-verification.css",
+      "sha256": "f0352b8a9cafd3b1b904f723e7522442a19b1264a62be45f3479f3e267353fc0"
+    },
+    {
+      "asset": "hiring-company-gate.js",
+      "sha256": "8a44926b4d79a50dd716cf43d15f3f3d49f36b3beafe13b015e73ea4bd353429"
+    },
+    {
+      "asset": "identity.html",
+      "sha256": "9b07f804964280fb1468b3ae8bf403d8c9bc2b66950ce2c6af4934c7861c0744"
+    },
+    {
+      "asset": "identity.js",
+      "sha256": "a6fa59672c7234f244a0cc9cead155ba38883235bb80041dd5cc20ecbfa8f6af"
+    },
+    {
+      "asset": "hr-polish.css",
+      "sha256": "034eaf68c728fc2c8cba9ff4543277e061ffa549446924140367ebfb0c63eeec"
+    },
+    {
+      "asset": "applications.js",
+      "sha256": "3f23ae6aa308fe67c9cc0f94db073d565ca1491ba714c283a6b3358f03b8d9a1"
+    },
+    {
+      "asset": "applications-api.js",
+      "sha256": "2f01ba8dd670395770a39c6f6900205109a1e629233dcb30276bfef59ff7a92f"
+    },
+    {
+      "asset": "interview-record.js",
+      "sha256": "6d1d14d50365c757967c3e71c20a376b923c624dd30ddf92937cedc1cbf1685c"
+    },
+    {
+      "asset": "interview-record-ui.js",
+      "sha256": "fc1b35c13548242a7860c2f38d314c5eafc4e2e8363b9b203dd83960fa133c70"
+    },
+    {
+      "asset": "interview-record-store.js",
+      "sha256": "5dc10c750807a824d7e25bee92cabcf2571e25bc855891966a52c0294e4fabc3"
+    },
+    {
+      "asset": "interview-evidence-charts.js",
+      "sha256": "749103a50ff312e5fb6ad879c9bec86f01f62079e61358a1b4667393966374e5"
+    },
+    {
+      "asset": "match-trace.js",
+      "sha256": "9c7f4a885068c494b9a0993db99db0168e009a912f29c58c2d060fbf310ee3a3"
+    },
+    {
+      "asset": "match-trace-panel.js",
+      "sha256": "0f2d6fbbb0072888c3433deb1dd445f61f086bfdff3b1e8ee571a1ae0920b1c4"
+    },
+    {
+      "asset": "match-trace.css",
+      "sha256": "a5968edac0601ae01d73d5c64f615df51baced165745b18041c2742c2c92ce0b"
+    },
+    {
+      "asset": "jd-sankey.js",
+      "sha256": "f9a9525bf0e2a56dcc3c364834b1792933eb09cad07bae0db11ec15df81c694f"
+    },
+    {
+      "asset": "jd-sankey.css",
+      "sha256": "30e3c55052d32f87e9f2fba2d7b437867d9097c73f213a87bf6cd80c4602294e"
+    },
+    {
+      "asset": "shared.js",
+      "sha256": "3fcf37a2c8db30f510b7b9ef0de797f136f88d24e57f7e60609b94ac79d28df0"
+    },
+    {
+      "asset": "account-screen.js",
+      "sha256": "817e40c09710f0942ec739c9d2528761a49d1b740ebfc322904cce48d5ba1a90"
+    },
+    {
+      "asset": "account-service.js",
+      "sha256": "b142e52be52ade2a13165cb048cc6cfe955854567c4f9bf6d6868ebc368b226b"
+    },
+    {
+      "asset": "auth-popup.js",
+      "sha256": "ffc04aeead59858a021709a3cd495dd2e583ab7beec466d82b8a428c87dd27f0"
+    }
+  ],
+  "rulesPublishedAndUICopiedBackEqual": true,
+  "rulesSHA256": "ff999d8f75233da15979ae7cfa4a6137291832d135e71769d421c5b01122738f",
+  "checks": [
+    "actual HR UI invitation persisted in both views",
+    "MYT 10:00 invitation stored as UTC 02:00 without shifting",
+    "saved interview still includes original and new follow-ups",
+    "seeker still only receives explicitly shared feedback",
+    "Vercel reports ready production alias"
+  ]
+}

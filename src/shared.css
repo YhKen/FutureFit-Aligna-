@@ -1,0 +1,35 @@
+:root, :root[data-theme="light"] {--bg:#fdfaf4;--surface:#fff;--surface-2:#f5efdf;--line:#ede4d3;--ink:#2a2722;--ink-2:#655e52;--ink-3:#81786b;--page:#fdfaf4;--blue:#3b6ce6;--blue-soft:#eaf1ff;--purple:#3b6ce6;--purple-soft:#eaf1ff;--radius:24px;--f-display:'Nunito','Noto Sans SC',system-ui,sans-serif;--f-body:'Nunito','Noto Sans SC',system-ui,sans-serif}
+body{margin:0;background:#fdfaf4;font-family:'Nunito','Noto Sans SC','Microsoft YaHei',sans-serif}
+[hidden]{display:none!important}
+.unified-nav{position:sticky;top:0;z-index:100;background:rgba(253,250,244,.96);backdrop-filter:blur(16px);border-bottom:1px solid #ede4d3}
+.unified-inner{max-width:1200px;padding:15px 20px;margin:auto;display:flex;align-items:center;gap:28px}
+.unified-brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-size:24px;font-weight:800;color:#2a2722;letter-spacing:-1px}
+.unified-mark{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:#3b6ce6;color:white;font-size:22px;letter-spacing:-3px;padding-right:3px}
+.unified-links{display:flex;gap:6px;margin:auto}
+.unified-links a{padding:9px 18px;text-decoration:none;color:#6e675c;font-size:14px;font-weight:600;border-radius:30px;white-space:nowrap}
+.unified-links a:hover,.unified-links a[aria-current]{background:#eaf1ff;color:#2b55bf}
+.local-label{font-size:11px;letter-spacing:1px;color:#81786b;white-space:nowrap}
+.local-label::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:#3b6ce6;margin-right:7px}
+[data-page="home"] .hdr{position:relative;top:0;background:transparent}
+[data-page="home"] .hdr .logo,[data-page="home"] .hdr .btn-ink{display:none}
+[data-page="home"] .hdr-in{padding-top:8px;padding-bottom:8px}
+[data-page="seeker"] header.top{position:relative;top:0;background:transparent}
+[data-page="seeker"] header.top .brand{display:none}
+[data-page="seeker"] .top-inner{padding:16px 20px}
+[data-page="seeker"] .stepper{margin-left:0;margin-right:auto}
+[data-page="seeker"] main{padding-top:40px}
+[data-page="seeker"] .panel{border-radius:24px;padding:26px;box-shadow:0 12px 36px -28px #927e55}
+[data-page="seeker"] .panel.tint{background:#f6efdf}
+[data-page="seeker"] .btn{border-radius:30px;padding:11px 20px}
+[data-page="seeker"] input,[data-page="seeker"] select{background:white}
+[data-page="employer"] .topbar{display:none}
+[data-page="employer"] .page-shell{max-width:1040px}
+[data-page="employer"] .form-card{box-shadow:0 18px 50px -35px #927e55}
+[data-page="employer"] .primary-button{border-radius:30px}
+.workspace-note{padding:14px 18px;margin:0 0 24px;border:1px solid #ede4d3;border-radius:14px;color:#6e675c;font-size:13px;background:#f6efdf}
+.draft-tools{display:flex;gap:10px;align-items:center;margin-bottom:20px;flex-wrap:wrap}
+.draft-tools button{border:1px solid #ede4d3;border-radius:30px;background:#fff;padding:9px 16px;cursor:pointer;color:#2b55bf}
+.draft-tools span{color:#81786b;font-size:12px}
+a:focus-visible,button:focus-visible{outline:3px solid #3b6ce6;outline-offset:3px}
+@media(max-width:680px){.unified-inner{gap:10px;padding:12px}.unified-brand{font-size:20px}.unified-links{margin-left:auto;margin-right:0;gap:0}.unified-links a{padding:9px 10px;font-size:12px}.local-label{display:none}.unified-mark{width:29px;height:29px}.navlinks{gap:16px!important}.navlink{font-size:12px!important}[data-page="seeker"] .panel{padding:18px}.hero-in{padding-top:40px!important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

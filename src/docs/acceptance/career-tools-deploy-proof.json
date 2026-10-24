@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "assets": [
+    {
+      "file": "ai-trends.html",
+      "status": 200,
+      "sha256": "7f524dbc97f6338161b762d3a2d771677944ea25f34f754f014688b0f5933272"
+    },
+    {
+      "file": "study-calendar.html",
+      "status": 200,
+      "sha256": "24f7fe9aa86be9fabc0b73c72b5c191cb8cc4455adaf927c940f545b49229e9d"
+    },
+    {
+      "file": "application-reflection.html",
+      "status": 200,
+      "sha256": "5639dba41d253c1412f3257c1545348efe025b0becd4a534801c33f3ed9d46ba"
+    },
+    {
+      "file": "portfolio-careers.html",
+      "status": 200,
+      "sha256": "948ae72b0c1cab6ea32fbbcf9037b46ff1ac65add0fa226e3ed4787816eb22f1"
+    },
+    {
+      "file": "career-tools.js",
+      "status": 200,
+      "sha256": "a2d2a403765339ea0816b5d1cfe7a874615f188e9536b34ceecbd4998c52ca1c"
+    },
+    {
+      "file": "seeker-tools-core.js",
+      "status": 200,
+      "sha256": "8b1067ae84b8bdaefec3dd1af54de1287aeccc1219120f8aa85e089ad6d396ed"
+    },
+    {
+      "file": "career-tools.css",
+      "status": 200,
+      "sha256": "1f6e9694ef02e23adf9665d39f92db596d0363e745cf374cd552973bdaf3f66f"
+    },
+    {
+      "file": "career-tools-links.js",
+      "status": 200,
+      "sha256": "de258d5ed062af14b2002de9824e221670192d93f1bf0f05d985b19bcf585e44"
+    },
+    {
+      "file": "shared.js",
+      "status": 200,
+      "sha256": "34df89ccae36eb0f8104027af45c053db4f609e0552e6c4d87cf1fbe46aca09a"
+    }
+  ]
+}

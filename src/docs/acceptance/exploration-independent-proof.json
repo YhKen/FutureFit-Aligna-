@@ -1,0 +1,11 @@
+{
+  "occupations": 923,
+  "pointChecks": 4550,
+  "failed": 0,
+  "methods": [
+    "Python Fraction exact weighted presence and half-up rounding",
+    "Independent squared-weight dot product and Euclidean norm",
+    "Enumerate every missing skill from the same frozen requirement rows"
+  ],
+  "scope": "Synthetic current profile; arithmetic verification, not measurement or hiring validity"
+}

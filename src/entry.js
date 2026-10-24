@@ -1,0 +1,1 @@
+import {requireAccount} from './account-gate.js';import {ensureSeekerReady} from './journey.js';try{const c=await requireAccount('seeker');await ensureSeekerReady(c);location.replace('workspace.html');}catch(e){if(!['account-required','journey-required'].includes(e.message))location.replace('assessment.html?onboarding=1');}

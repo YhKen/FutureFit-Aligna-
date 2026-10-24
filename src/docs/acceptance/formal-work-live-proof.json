@@ -1,0 +1,122 @@
+{
+  "checkedAt": "2026-10-22T11:29:10.906Z",
+  "project": "project-d32d7",
+  "syntheticOnly": true,
+  "applicationId": "icsrKzw7rATWG3B2QD2yeS8T69p2_IbyLRM1Iahi5FGGzJGqB",
+  "browserJourney": "Both A forms assigned, started, entered, submitted and reviewed via production browser UI",
+  "bothRolesReadSameFirebaseRecords": true,
+  "unrelatedSeekerDenied": true,
+  "numericalReferenceHiddenUntilReview": true,
+  "threeCollectionsDirectReadBack": true,
+  "originalApplicationUnchanged": true,
+  "existingMatchUnchanged": {
+    "coverage": 60,
+    "cosine": 75
+  },
+  "serverKeysNotPublic": {
+    "status": 404
+  },
+  "rows": [
+    {
+      "task": "record-audit",
+      "form": "A",
+      "assignmentId": "icsrKzw7rATWG3B2QD2yeS8T69p2_IbyLRM1Iahi5FGGzJGqB--record-audit--A",
+      "numeric": {
+        "correct": 3,
+        "checked": 3
+      },
+      "review": {
+        "observed": 4,
+        "totalCriteria": 4,
+        "points": 11,
+        "maxPoints": 12,
+        "percent": 92,
+        "notObserved": 0,
+        "scope": "Observed criteria in this work sample only; not job-match score"
+      },
+      "ratings": [
+        {
+          "criterionId": "numeracy",
+          "sourceField": "calculation",
+          "score": 3,
+          "observation": "Synthetic QA: Calculation identifies E6 duplicate, lists the six latest event IDs, and derives 3/6. Counts are reproducible."
+        },
+        {
+          "criterionId": "constraints",
+          "sourceField": "decision",
+          "score": 3,
+          "observation": "Synthetic QA: Decision lists P102/P103/P106 and names the dispatch coordinator; returned items are prioritised for contact."
+        },
+        {
+          "criterionId": "reasoning",
+          "sourceField": "reasoning",
+          "score": 2,
+          "observation": "Synthetic QA: Explains why counting delivered rows is wrong and recognises latest-status conflict; no complete changed-condition scenario is worked through."
+        },
+        {
+          "criterionId": "verification",
+          "sourceField": "verification",
+          "score": 3,
+          "observation": "Synthetic QA: Verification requests source slips and acknowledgement, a second GROUP BY check, retained originals and appended corrections with an owner."
+        }
+      ],
+      "reviewerUid": "FOGHo9LQL9UdIX5lsXjg43iHPuu2",
+      "taskVersion": "formal-work-v1",
+      "rubricVersion": "formal-rubric:7b57b5c3a72b980f",
+      "attemptVersion": "2026-10-22T11:24:42.648615Z",
+      "submittedAt": "2026-10-22T11:24:42.602Z",
+      "reviewedAt": "2026-10-22T11:27:17.729Z"
+    },
+    {
+      "task": "resource-plan",
+      "form": "A",
+      "assignmentId": "icsrKzw7rATWG3B2QD2yeS8T69p2_IbyLRM1Iahi5FGGzJGqB--resource-plan--A",
+      "numeric": {
+        "correct": 6,
+        "checked": 6
+      },
+      "review": {
+        "observed": 4,
+        "totalCriteria": 4,
+        "points": 10,
+        "maxPoints": 12,
+        "percent": 83,
+        "notObserved": 0,
+        "scope": "Observed criteria in this work sample only; not job-match score"
+      },
+      "ratings": [
+        {
+          "criterionId": "numeracy",
+          "sourceField": "calculation",
+          "score": 2,
+          "observation": "Synthetic QA: A+B+E arithmetic and alternative A+C+D are correct. The answer claims all 64 subsets but does not supply the complete enumeration, so the stronger proof anchor is not fully evidenced."
+        },
+        {
+          "criterionId": "constraints",
+          "sourceField": "decision",
+          "score": 3,
+          "observation": "Synthetic QA: Decision meets cost125/time145/safeguard constraints, names RM5 and 5-minute slack, and re-enumeration if E cancels."
+        },
+        {
+          "criterionId": "reasoning",
+          "sourceField": "reasoning",
+          "score": 2,
+          "observation": "Synthetic QA: Compares budget slack with time slack and recognises non-overlap assumptions; no changed-data optimum is actually calculated."
+        },
+        {
+          "criterionId": "verification",
+          "sourceField": "verification",
+          "score": 3,
+          "observation": "Synthetic QA: Gives a second coordinator a reproducible subset check, retains inputs and totals, checks overlap and staffing, and corrects before publishing."
+        }
+      ],
+      "reviewerUid": "FOGHo9LQL9UdIX5lsXjg43iHPuu2",
+      "taskVersion": "formal-work-v1",
+      "rubricVersion": "formal-rubric:28dae21ed97d0656",
+      "attemptVersion": "2026-10-22T11:23:51.596844Z",
+      "submittedAt": "2026-10-22T11:23:51.566Z",
+      "reviewedAt": "2026-10-22T11:28:19.619Z"
+    }
+  ],
+  "allPassed": true
+}

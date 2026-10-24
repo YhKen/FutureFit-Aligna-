@@ -1,0 +1,185 @@
+/* Cream light and depth; every preview card responds to the same pointer. */
+#landing .pointer-card {
+  position:relative;
+  isolation:isolate;
+  transform:perspective(1100px) translate3d(var(--follow-x,0px),var(--follow-y,0px),0) rotateX(var(--rotate-x,0deg)) rotateY(var(--rotate-y,0deg)) rotateZ(var(--card-rest,0deg));
+  transition:box-shadow .35s,border-color .35s;
+}
+#landing .pointer-active {
+  box-shadow:0 18px 42px -24px #78715c55,0 1px 0 #fffaf0 inset;
+  border-color:#cbbd99;
+}
+.card-sheen {
+  position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:3;
+  opacity:var(--card-light,0);
+  background:radial-gradient(360px circle at var(--light-x,50%) var(--light-y,50%),#fffdf680,transparent 70%);
+  box-shadow:inset 0 0 0 1px #fffdf645;
+  mix-blend-mode:soft-light;
+}
+#landing .landing-art {overflow:hidden;transform-style:flat;}
+#landing .landing-art .preview-sheet {
+  transform:translate3d(var(--layer-x,0px),var(--layer-y,0px),0) rotate(-6deg);
+  box-shadow:0 25px 50px -15px #77715c30;
+  animation:card-bob 6s ease-in-out infinite;
+}
+#landing .landing-art .art-note {
+  transform:translate3d(calc(var(--layer-x,0px)*-.65),calc(var(--layer-y,0px)*-.65),0);
+  animation:card-bob 7s ease-in-out -3s infinite;
+}
+#landing .landing-art::before {
+  transform:translate3d(calc(var(--layer-x,0px)*-.85),calc(var(--layer-y,0px)*-.85),0) rotate(var(--rotate-y,0deg));
+}
+#landing .landing-art::after {
+  transform:translate3d(calc(var(--layer-x,0px)*.7),calc(var(--layer-y,0px)*.7),0);
+}
+#landing .preview-ring span {animation:skill-star-turn 28s linear infinite;}
+#landing .preview-bars i {transform-origin:left;animation:skill-bar-breathe 5s ease-in-out infinite;}
+#landing .preview-bars i:nth-child(2){animation-delay:-1.5s}
+#landing .preview-bars i:nth-child(3){animation-delay:-3s}
+#landing .skill-demo .star-centre {
+  margin-left:calc(var(--layer-x,0px)*.45);margin-top:calc(var(--layer-y,0px)*.45);
+}
+#landing .cv-preview>div {
+  transform:translate3d(calc(var(--layer-x,0px)*.35),calc(var(--layer-y,0px)*.35),0);
+}
+#landing .cv-preview>div:nth-of-type(2){transform:translate3d(calc(var(--layer-x,0px)*.65),calc(var(--layer-y,0px)*.65),0)}
+#landing .cv-preview>div:nth-of-type(3){transform:translate3d(var(--layer-x,0px),var(--layer-y,0px),0)}
+#landing .challenge-preview .mini-tiles,#landing .challenge-preview .mini-rules {
+  transform:translate3d(calc(var(--layer-x,0px)*.8),calc(var(--layer-y,0px)*.8),0);
+}
+#landing .journey-steps article {border-radius:14px;padding:16px 20px;margin-top:-4px;}
+#landing .faq-section details {border-radius:12px;padding-inline:14px;}
+#landing .landing-last {overflow:hidden;}
+#landing .motion-paused .pointer-card {transform:none;}
+#landing.motion-paused .pointer-card {transform:rotate(var(--card-rest,0deg));}
+#landing.motion-paused .card-sheen {opacity:0;}
+#landing.motion-paused .landing-art .preview-sheet {transform:rotate(-6deg);translate:none;}
+#landing.motion-paused .landing-art .art-note {transform:none;translate:none;}
+@keyframes card-bob {0%,100%{translate:0 -3px}50%{translate:0 4px}}
+@keyframes skill-star-turn {to{transform:rotate(360deg)}}
+@keyframes skill-bar-breathe {0%,100%{scale:1 1}50%{scale:.9 1}}
+@media(prefers-reduced-motion:reduce),(hover:none),(pointer:coarse){
+  #landing .pointer-card {transform:none!important;}
+  #landing .card-sheen {display:none;}
+  #landing .landing-art .preview-sheet {animation:none;translate:none;transform:rotate(-6deg);}
+  #landing .landing-art .art-note,#landing .cv-preview>div,#landing .challenge-preview .mini-tiles,#landing .challenge-preview .mini-rules {transform:none;animation:none;translate:none;}
+  #landing .preview-ring span,#landing .preview-bars i {animation:none;}
+}
+
+#landing .card-focused{box-shadow:0 0 0 3px #e6d9b2,0 16px 38px -20px #77715c30}
+#landing .card-pressed{animation:card-touch .4s ease-out}
+#landing .skill-constellation button{animation:skill-point-bob 5s ease-in-out infinite;animation-play-state:paused}
+#landing .card-visible .skill-constellation button{animation-play-state:running}
+#landing .skill-constellation button:nth-of-type(2n){animation-delay:-2.5s}
+#landing .cv-preview.card-visible i{transform-origin:left;animation:cv-line-flow 4s ease-in-out infinite}
+#landing .cv-preview.card-visible>div:nth-of-type(2) i{animation-delay:-1.4s}
+#landing .cv-preview.card-visible>div:nth-of-type(3) i{animation-delay:-2.8s}
+#landing .card-visible .mini-rules>span{display:inline-block;animation:rule-dance 4s ease-in-out infinite}
+#landing .card-visible .mini-rules>span:last-child{animation-delay:-2s}
+#landing #plan-example>h3{animation:plan-arrive .45s ease-out}
+#landing #plan-example>p{animation:plan-arrive .6s ease-out}
+#landing .landing-last.card-visible>span{display:inline-block;animation:cta-star-sway 6s ease-in-out infinite}
+@keyframes skill-point-bob{0%,100%{translate:0 -2px}50%{translate:0 3px}}
+@keyframes cv-line-flow{0%,100%{scale:1 1;opacity:.8}50%{scale:.82 1;opacity:1}}
+@keyframes rule-dance{0%,100%{translate:0 0;rotate:0deg}35%{translate:0 -7px;rotate:14deg}65%{translate:0 2px;rotate:-7deg}}
+@keyframes plan-arrive{from{opacity:0;translate:0 7px}to{opacity:1;translate:0 0}}
+@keyframes cta-star-sway{0%,100%{rotate:-12deg;scale:.95}50%{rotate:12deg;scale:1.1}}
+@keyframes card-touch{0%,100%{scale:1}35%{scale:.992}}
+@media(prefers-reduced-motion:reduce){#landing .pointer-card *{animation:none!important}}
+
+/* The skill scene has a back orbit, a lit core and raised, readable nodes. */
+#landing .skill-constellation {
+  height:340px;min-width:0;perspective:900px;
+  background:radial-gradient(ellipse at 50% 48%,#eee7f280,transparent 60%);
+}
+#landing .skill-constellation .star-lines {
+  inset:12px 0 16px;height:calc(100% - 28px);opacity:.55;
+  stroke:#b9ac91;stroke-dasharray:3 7;filter:drop-shadow(0 2px 1px #c4b38e25);
+}
+#landing .skill-constellation .star-centre {
+  display:grid;place-items:center;width:112px;height:112px;z-index:2;
+  border:1px solid #c9c3d0;border-radius:50%;margin:0;
+  background:radial-gradient(circle at 30% 22%,#fffefb 2%,#eee9f3 27%,#c9c2d8 58%,#9e97b4 83%,#7f7895 100%);
+  box-shadow:inset 2px 3px 6px #ffffffdc,inset -9px -11px 19px #645c8045,0 19px 29px -15px #5c52657a;
+  transform:translate(-50%,-50%) translate3d(calc(var(--layer-x,0px)*.65),calc(var(--layer-y,0px)*.65),24px);
+  animation:none;color:#fffdf1;text-shadow:0 2px 2px #685b7466;
+}
+#landing .star-centre i {font:normal 60px/1 Georgia,serif;filter:drop-shadow(0 2px 0 #a79aac);}
+#landing .skill-orbit {
+  position:absolute;left:50%;top:50%;width:68%;height:44%;border:1px solid #c1b292;
+  border-radius:50%;pointer-events:none;
+  box-shadow:0 1px 0 #fffef7,inset 0 1px 0 #fffef7;
+}
+#landing .orbit-back {transform:translate(-50%,-50%) rotate(-27deg);opacity:.6;}
+#landing .orbit-front {
+  z-index:3;transform:translate(-50%,-50%) rotate(25deg);border-width:2px;
+  border-top-color:transparent;border-left-color:transparent;border-right-color:#c7b38d80;
+}
+#landing .constellation-shadow {
+  position:absolute;left:50%;top:79%;width:48%;height:23px;transform:translateX(-50%);
+  border-radius:50%;background:radial-gradient(ellipse,#82748926,transparent 70%);filter:blur(5px);pointer-events:none;
+}
+#landing .skill-constellation button {
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  white-space:nowrap;max-width:none;min-height:44px;font-size:12px;padding:12px 17px;
+  border:1px solid #ddd5c5;border-top-color:#fffdf6;z-index:4;
+  background:linear-gradient(145deg,#fffef9,#eee9df);color:#535065;
+  box-shadow:inset 0 1px 1px #fff,0 4px 0 #d9d1c1,0 12px 21px -9px #685c6540;
+  transition:background .2s,box-shadow .2s,scale .2s;
+}
+#landing .skill-constellation button span {margin:0;color:#a89b80;font-size:16px;line-height:1;}
+#landing .skill-constellation button:nth-of-type(1){left:50%;top:10%;}
+#landing .skill-constellation button:nth-of-type(2){left:80%;top:29%;}
+#landing .skill-constellation button:nth-of-type(3){left:80%;top:73%;}
+#landing .skill-constellation button:nth-of-type(4){left:50%;top:89%;}
+#landing .skill-constellation button:nth-of-type(5){left:20%;top:73%;}
+#landing .skill-constellation button:nth-of-type(6){left:20%;top:29%;}
+#landing .skill-constellation button[aria-pressed=true] {
+  background:linear-gradient(145deg,#eeebf7,#d9d2e8);border-color:#c3b8d2;
+  box-shadow:inset 0 1px 0 #fff,0 4px 0 #b7aac9,0 12px 24px -7px #7c6a9b50;
+}
+@media(hover:hover) and (pointer:fine) {
+  #landing .skill-constellation button:hover {scale:1.05;box-shadow:inset 0 1px 0 #fff,0 6px 0 #d9d1c1,0 16px 24px -9px #685c654d;}
+}
+#landing .skill-constellation button:active {scale:.97;box-shadow:inset 0 1px 4px #6b5b7130,0 1px 0 #cfc3ad;}
+@media(max-width:500px) {
+  #landing .skill-demo {padding:17px;}
+  #landing .skill-constellation {height:310px;}
+  #landing .skill-constellation button {font-size:10px;gap:5px;padding:10px 11px!important;min-height:40px;}
+  #landing .skill-constellation button:nth-of-type(2),#landing .skill-constellation button:nth-of-type(3){left:79%;}
+  #landing .skill-constellation button:nth-of-type(5),#landing .skill-constellation button:nth-of-type(6){left:21%;}
+  #landing .skill-constellation .star-centre {width:90px;height:90px;}
+}
+@media(prefers-reduced-motion:reduce) {
+  #landing .skill-constellation .star-centre {transform:translate(-50%,-50%);}
+  #landing .skill-constellation button {animation:none!important;transition:none;scale:1;}
+}
+
+/* Positions move around the ellipse; labels themselves never rotate. */
+#landing .skill-constellation.orbiting-skills button {
+  width:clamp(72px,24%,104px);min-height:46px;padding:10px 9px!important;
+  max-width:none;white-space:normal;overflow-wrap:anywhere;font-size:11px;line-height:1.35;
+  gap:6px;animation:none!important;translate:none;
+  transform:translate(-50%,-50%);scale:var(--orbit-scale,1);
+  opacity:calc(.88 + var(--orbit-shade,1)*.12);
+}
+#landing .skill-constellation.orbiting-skills button span {flex:none;font-size:12px;}
+#landing .orbiting-skills .star-lines {display:none;}
+#landing .orbiting-skills .skill-orbit {
+  width:var(--orbit-width,70%);height:var(--orbit-height,68%);
+  transform:translate(-50%,-50%) skewY(-4deg);
+}
+#landing .orbiting-skills .orbit-back {border:1px solid #d7c9af;opacity:.6;}
+#landing .orbiting-skills .orbit-front {border-top-color:transparent;border-left-color:transparent;}
+@media(hover:hover) and (pointer:fine) {
+  #landing .skill-constellation.orbiting-skills button:hover {scale:calc(var(--orbit-scale,1)*1.05);}
+}
+#landing .skill-constellation.orbiting-skills button:active {scale:calc(var(--orbit-scale,1)*.97);}
+@media(max-width:500px) {
+  #landing .skill-constellation.orbiting-skills {height:340px;}
+  #landing .skill-constellation.orbiting-skills button {display:block;padding:10px 7px!important;text-align:center;}
+  #landing .skill-constellation.orbiting-skills button span {display:none;}
+}
+@media(prefers-reduced-motion:reduce) {
+  #landing .skill-constellation.orbiting-skills button {scale:1!important;}
+}

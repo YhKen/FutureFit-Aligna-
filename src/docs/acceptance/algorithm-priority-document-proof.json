@@ -1,0 +1,11 @@
+{
+  "priorityPages": 6,
+  "masterPages": 44,
+  "technicalOnly": true,
+  "layoutAssertionsPassed": true,
+  "prioritySHA256": "2071a97178ed1e8cbb432a72de1c071aba1c93f5ead8d947fef26741f2394a2c",
+  "priorityPagesRenderedAndInspected": 6,
+  "masterCurrentPagesMatchPriorityDocument": true,
+  "masterSHA256": "0cf6be73013d8eb15f9e04595a1d823e3081807c5837a2136004bc8773f7a829",
+  "scope": "First six pages are current; remaining 38 pages are historical. Companion DOCX was not regenerated."
+}

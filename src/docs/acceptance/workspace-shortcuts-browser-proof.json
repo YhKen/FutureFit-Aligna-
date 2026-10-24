@@ -1,0 +1,235 @@
+{
+  "shortcutViews": [
+    {
+      "cards": 4,
+      "checked": 4,
+      "confirmVisible": true,
+      "dialogFits": true,
+      "disabledUnselected": 8,
+      "lang": "zh",
+      "options": 12,
+      "title": "选 4 个你常用的",
+      "width": 1280
+    },
+    {
+      "cards": 4,
+      "checked": 4,
+      "confirmVisible": true,
+      "dialogFits": true,
+      "disabledUnselected": 8,
+      "lang": "en",
+      "options": 12,
+      "title": "Choose your everyday four",
+      "width": 1280
+    },
+    {
+      "cards": 4,
+      "checked": 4,
+      "confirmVisible": true,
+      "dialogFits": true,
+      "disabledUnselected": 8,
+      "lang": "ms",
+      "options": 12,
+      "title": "Pilih empat yang selalu digunakan",
+      "width": 1280
+    },
+    {
+      "cards": 4,
+      "checked": 4,
+      "confirmVisible": true,
+      "dialogFits": true,
+      "lang": "zh",
+      "options": 12,
+      "width": 390
+    },
+    {
+      "cards": 4,
+      "checked": 4,
+      "confirmVisible": true,
+      "dialogFits": true,
+      "lang": "en",
+      "options": 12,
+      "width": 390
+    },
+    {
+      "cards": 4,
+      "checked": 4,
+      "confirmVisible": true,
+      "dialogFits": true,
+      "lang": "ms",
+      "options": 12,
+      "width": 390
+    }
+  ],
+  "navigationViews": [
+    {
+      "groups": 4,
+      "hrefs": [
+        "company.html",
+        "account.html?role=hr",
+        "terms.html?role=hr",
+        "employer.html",
+        "employer.html#job-form",
+        "candidates.html",
+        "candidates.html#application-content",
+        "candidates.html#application-content",
+        "work-review.html",
+        "validation.html"
+      ],
+      "labels": [
+        "公司资料",
+        "职位管理",
+        "候选人与面试",
+        "评估与复核"
+      ],
+      "language": "zh",
+      "oldTwoTileNav": false,
+      "role": "hr",
+      "top": 76,
+      "width": 1280,
+      "withinWidth": true
+    },
+    {
+      "groups": 4,
+      "hrefs": [
+        "company.html",
+        "account.html?role=hr",
+        "terms.html?role=hr",
+        "employer.html",
+        "employer.html#job-form",
+        "candidates.html",
+        "candidates.html#application-content",
+        "candidates.html#application-content",
+        "work-review.html",
+        "validation.html"
+      ],
+      "labels": [
+        "Company",
+        "Job descriptions",
+        "Candidates & interviews",
+        "Assessment & review"
+      ],
+      "language": "en",
+      "oldTwoTileNav": false,
+      "role": "hr",
+      "top": 76,
+      "width": 1280,
+      "withinWidth": true
+    },
+    {
+      "groups": 4,
+      "hrefs": [
+        "company.html",
+        "account.html?role=hr",
+        "terms.html?role=hr",
+        "employer.html",
+        "employer.html#job-form",
+        "candidates.html",
+        "candidates.html#application-content",
+        "candidates.html#application-content",
+        "work-review.html",
+        "validation.html"
+      ],
+      "labels": [
+        "Syarikat",
+        "Huraian kerja",
+        "Calon & temu duga",
+        "Penilaian & semakan"
+      ],
+      "language": "ms",
+      "oldTwoTileNav": false,
+      "role": "hr",
+      "top": 76,
+      "width": 1280,
+      "withinWidth": true
+    },
+    {
+      "groups": 4,
+      "hrefs": [
+        "company.html",
+        "account.html?role=hr",
+        "terms.html?role=hr",
+        "employer.html",
+        "employer.html#job-form",
+        "candidates.html",
+        "candidates.html#application-content",
+        "candidates.html#application-content",
+        "work-review.html",
+        "validation.html"
+      ],
+      "labels": [
+        "公司资料",
+        "职位管理",
+        "候选人与面试",
+        "评估与复核"
+      ],
+      "language": "zh",
+      "oldTwoTileNav": false,
+      "role": "hr",
+      "top": 66,
+      "width": 390,
+      "withinWidth": true
+    },
+    {
+      "groups": 4,
+      "hrefs": [
+        "company.html",
+        "account.html?role=hr",
+        "terms.html?role=hr",
+        "employer.html",
+        "employer.html#job-form",
+        "candidates.html",
+        "candidates.html#application-content",
+        "candidates.html#application-content",
+        "work-review.html",
+        "validation.html"
+      ],
+      "labels": [
+        "Company",
+        "Job descriptions",
+        "Candidates & interviews",
+        "Assessment & review"
+      ],
+      "language": "en",
+      "oldTwoTileNav": false,
+      "role": "hr",
+      "top": 66,
+      "width": 390,
+      "withinWidth": true
+    },
+    {
+      "groups": 4,
+      "hrefs": [
+        "company.html",
+        "account.html?role=hr",
+        "terms.html?role=hr",
+        "employer.html",
+        "employer.html#job-form",
+        "candidates.html",
+        "candidates.html#application-content",
+        "candidates.html#application-content",
+        "work-review.html",
+        "validation.html"
+      ],
+      "labels": [
+        "Syarikat",
+        "Huraian kerja",
+        "Calon & temu duga",
+        "Penilaian & semakan"
+      ],
+      "language": "ms",
+      "oldTwoTileNav": false,
+      "role": "hr",
+      "top": 66,
+      "width": 390,
+      "withinWidth": true
+    }
+  ],
+  "firstVisitPrompt": true,
+  "fifthChoiceBlocked": true,
+  "cancelPreservesSelection": true,
+  "changedSelectionSaved": true,
+  "refreshRestoredSelection": true,
+  "browserScope": "Existing verified browser session; only personal navigation preferences changed. Synthetic SDK isolation was tested separately. No assessment, game, company, job or application data changed.",
+  "finalNavigationChildFont": "14px"
+}

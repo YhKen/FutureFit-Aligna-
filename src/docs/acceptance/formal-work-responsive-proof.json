@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-22T11:33:13.006Z",
+  "role": "hr",
+  "views": [
+    {
+      "headings": [
+        "Rekod serahan yang boleh disahkan · A",
+        "Rancang sumber acara · A"
+      ],
+      "lang": "ms",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "headings": [
+        "交接台账，哪些记录能确认 · A",
+        "一场活动，怎样安排资源 · A"
+      ],
+      "lang": "zh",
+      "scrollWidth": 305,
+      "width": 320
+    },
+    {
+      "headings": [
+        "Which handover records can we confirm · A",
+        "Plan resources for an event · A"
+      ],
+      "lang": "en",
+      "scrollWidth": 1425,
+      "width": 1440
+    }
+  ],
+  "allNoHorizontalOverflow": true,
+  "scope": "Chromium viewport simulation; original user-entered answers retain source language"
+}

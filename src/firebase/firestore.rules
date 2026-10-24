@@ -1,0 +1,977 @@
+rules_version = '2';
+service cloud.firestore {
+ match /databases/{database}/documents {
+  match /aligna_question_banks/{bank} {
+   allow get: if request.auth != null && bank in ['mini-ipip-en-v1','onet-mini-ip-en-v1','aligna-multidomain-v2'];
+  }
+  match /aligna_users/{uid}/sessions/{session} {
+   function owner() { return request.auth != null && request.auth.uid == uid; }
+   function valid() {
+    let d = request.resource.data;
+    return d.keys().hasOnly(['schemaVersion','seed','responses','status','createdAt','updatedAt','completedAt','nextReviewAt','locale','bankVersions','consentVersion','algorithmVersion','isTest','totalQuestions','profile'])
+      && d.seed is int && d.responses is list && d.status in ['in-progress','complete']
+      && d.createdAt is string && d.updatedAt is string && d.locale in ['zh','en','ms'] && d.isTest is bool
+      && ((d.schemaVersion == 1 && d.responses.size() <= 30 && d.algorithmVersion == 'coverage-clarification-v1' && d.bankVersions == ['mini-ipip-en-v1','onet-mini-ip-en-v1'] && d.consentVersion == '2026-10-pilot-v1' && (d.status != 'complete' || d.responses.size() == 30))
+      || (d.schemaVersion == 2 && d.totalQuestions in [30,40,50,60] && d.responses.size() <= d.totalQuestions && (d.status != 'complete' || d.responses.size() == d.totalQuestions)
+      && d.algorithmVersion == 'evidence-routing-v2' && d.bankVersions == ['aligna-multidomain-v2'] && d.consentVersion == '2026-10-profile-v2'
+      && d.profile is map && d.profile.keys().hasOnly(['name','education','experience','goal','confirmedSkills'])
+      && d.profile.name is string && d.profile.name.size() <= 200 && d.profile.education is string && d.profile.education.size() <= 12000
+      && d.profile.experience is string && d.profile.experience.size() <= 20000 && d.profile.goal is string && d.profile.goal.size() <= 3000
+      && d.profile.confirmedSkills is list && d.profile.confirmedSkills.size() <= 35));
+   }
+   allow read: if owner();
+   allow create: if owner() && valid();
+   allow update: if owner() && valid() && request.resource.data.createdAt == resource.data.createdAt && request.resource.data.seed == resource.data.seed;
+  }
+  match /aligna_users/{uid}/preferences/{preference} {
+   function ownsPreference() { return request.auth != null && request.auth.uid == uid && request.auth.token.email_verified == true; }
+   allow read: if ownsPreference();
+   allow create, update: if ownsPreference() && preference == 'job-search'
+    && request.resource.data.keys().hasOnly(['location','minSalary','employmentType','arrangement','companyWish','updatedAt'])
+    && request.resource.data.location is string && request.resource.data.location.size() <= 200
+    && request.resource.data.minSalary is number && request.resource.data.minSalary >= 0 && request.resource.data.minSalary <= 10000000
+    && request.resource.data.employmentType in ['','Full-time','Part-time']
+    && request.resource.data.arrangement in ['','remote','hybrid','onsite']
+    && request.resource.data.companyWish is string && request.resource.data.companyWish.size() <= 500
+    && request.resource.data.updatedAt is string;
+  }
+  match /aligna_users/{uid}/plans/{plan} {
+   function owner() { return request.auth != null && request.auth.uid == uid; }
+   allow read: if owner();
+   allow create, update: if owner() && request.resource.data.keys().hasOnly(['skillId','steps','version','updatedAt'])
+    && request.resource.data.skillId == plan && plan.matches('skill-.*')
+    && request.resource.data.version == 1 && request.resource.data.updatedAt is string
+    && request.resource.data.steps is list && request.resource.data.steps.size() == 3
+    && request.resource.data.steps[0] is bool && request.resource.data.steps[1] is bool && request.resource.data.steps[2] is bool;
+  }
+  match /aligna_users/{uid}/games/{run} {
+   allow read: if request.auth != null && request.auth.uid == uid;
+   allow create: if request.auth != null && request.auth.uid == uid
+    && request.resource.data.keys().hasOnly(['type','trials','summary','updatedAt','consentVersion','version'])
+    && request.resource.data.type in ['memory','switch'] && request.resource.data.version == 1
+    && request.resource.data.trials is list && request.resource.data.trials.size() <= 60
+    && request.resource.data.summary is map && request.resource.data.updatedAt is string
+    && request.resource.data.consentVersion == 'games-v1';
+  }
+
+  // Private seeker records never grant employers or the news worker access.
+  function privateSeeker(uid) { return request.auth != null && request.auth.uid == uid && request.auth.token.email_verified == true; }
+  function seekerSettings(s) {
+   return s is map && s.keys().hasOnly(['goalId','country','months','hours','budget','learningLanguage'])
+    && s.goalId is string && (s.goalId == '' || s.goalId.matches('[0-9]{2}-[0-9]{4}[.][0-9]{2}'))
+    && s.country in ['MY','SG','UK','AU','US'] && s.months in [3,5,6,12]
+    && s.hours is int && s.hours >= 1 && s.hours <= 40
+    && s.budget is number && s.budget >= 0 && s.budget <= 1000000
+    && s.learningLanguage in ['zh','en','ms'];
+  }
+
+  // Life experience and career try-outs stay private, including after an application.
+  function lifeClaim(c) {
+   return c is map && c.keys().hasOnly(['skillId','name','evidenceQuote','start','end','confidence','sourceType','verified'])
+    && c.skillId is string && c.skillId.size() <= 180 && c.name is string && c.name.size() <= 100
+    && c.evidenceQuote is string && c.evidenceQuote.size() > 0 && c.evidenceQuote.size() <= 4000
+    && c.start is int && c.end is int && c.start >= 0 && c.end > c.start && c.end <= 4000
+    && c.confidence == 'explicit-action' && c.sourceType == 'life-experience-self-report' && c.verified == false;
+  }
+  function lifeClaimAt(list, i) { return list.size() <= i || lifeClaim(list[i]); }
+  function lifeRef(c) {
+   return c.keys().hasOnly(['skillId','start','end']) && c.skillId is string && c.skillId.size() <= 180
+    && c.start is int && c.end is int && c.start >= 0 && c.end > c.start && c.end <= 4000;
+  }
+  function lifeRefAt(list,i) { return list.size() <= i || lifeRef(list[i]); }
+  match /aligna_users/{uid}/life_experiences/{id} {
+   function validLife(d) {
+    let claims=d.claims;
+    return d.keys().hasOnly(['version','experienceId','text','type','locale','claims','active','sourceType','verified','createdAt','updatedAt'])
+     && d.version in ['life-evidence-v1','life-evidence-v2'] && d.experienceId == id && id.size() <= 80
+     && d.text is string && d.text.size() >= 8 && d.text.size() <= 4000
+     && d.type in ['care','market','club','sport','part-time','community','other'] && d.locale in ['zh','en','ms']
+     && d.claims is list && d.claims.size() > 0 && d.claims.size() <= 12
+     && ((d.version == 'life-evidence-v1'
+     && lifeClaimAt(claims,0) && lifeClaimAt(claims,1) && lifeClaimAt(claims,2) && lifeClaimAt(claims,3)
+     && lifeClaimAt(claims,4) && lifeClaimAt(claims,5) && lifeClaimAt(claims,6) && lifeClaimAt(claims,7)
+     && lifeClaimAt(claims,8) && lifeClaimAt(claims,9) && lifeClaimAt(claims,10) && lifeClaimAt(claims,11))
+     || (d.version == 'life-evidence-v2'
+     && lifeRefAt(claims,0) && lifeRefAt(claims,1) && lifeRefAt(claims,2) && lifeRefAt(claims,3)
+     && lifeRefAt(claims,4) && lifeRefAt(claims,5) && lifeRefAt(claims,6) && lifeRefAt(claims,7)
+     && lifeRefAt(claims,8) && lifeRefAt(claims,9) && lifeRefAt(claims,10) && lifeRefAt(claims,11)))
+     && d.active is bool && d.sourceType == 'life-experience-self-report' && d.verified == false
+     && d.createdAt is string && d.updatedAt is string;
+   }
+   allow read: if privateSeeker(uid);
+   allow create: if privateSeeker(uid) && validLife(request.resource.data) && request.resource.data.active == true
+    && request.resource.data.updatedAt == request.resource.data.createdAt;
+   allow update: if privateSeeker(uid) && validLife(request.resource.data) && request.resource.data.active == false
+    && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['active','updatedAt']);
+  }
+  function tryCheckAt(list,i) { return list.size() <= i || (list[i] is map && list[i].keys().hasOnly(['key','status'])
+   && list[i].key in ['selection','time','budget','target','feasibility','maximum','sum','mismatch','facts','approval','privacy','written-reasoning']
+   && list[i].status in ['pass','conflict','unobserved']); }
+  match /aligna_users/{uid}/career_trials/{id} {
+   function validTrial(d) {
+    let a=d.answers;let r=d.reflection;let v=d.result;
+    return d.keys().hasOnly(['version','definitionHash','attemptId','goalId','templateId','locale','sourceType','verified','answers','result','reflection','startedAt','createdAt','updatedAt'])
+     && d.version == 'career-try-v1' && d.attemptId == id && id.size() <= 80
+     && d.definitionHash is string && d.definitionHash.matches('try-definition:[a-f0-9]{16}')
+     && d.goalId is string && d.goalId.matches('[0-9]{2}-[0-9]{4}[.][0-9]{2}')
+     && d.templateId in ['budget','records','customer'] && d.locale in ['zh','en','ms']
+     && d.sourceType == 'career-simulation-self-report' && d.verified == false
+     && a is map && a.keys().hasOnly(['selected','followUp','infeasible','maximum','sum','mismatch','policy','explanation','verification'])
+     && a.selected is list && a.selected.size() <= 4 && a.selected.hasOnly(['A','B','C','D'])
+     && a.followUp is bool && a.infeasible is bool && a.mismatch is bool
+     && a.maximum is string && a.maximum.size() <= 30 && a.sum is string && a.sum.size() <= 30
+     && a.policy in ['','check-order','promise-refund','request-password']
+     && a.explanation is string && a.explanation.size() >= 10 && a.explanation.size() <= 4000
+     && a.verification is string && a.verification.size() <= 4000
+     && r is map && r.keys().hasOnly(['ease','interest','liked','hard']) && r.ease is int && r.ease >= 1 && r.ease <= 5
+     && r.interest is int && r.interest >= 1 && r.interest <= 5
+     && r.liked is string && r.liked.size() <= 4000 && r.hard is string && r.hard.size() <= 4000
+     && v is map && v.keys().hasOnly(['version','checks','verified','scope']) && v.version == 'career-try-v1'
+     && v.verified == false && v.scope == 'this-simplified-scenario-only'
+     && v.checks is list && v.checks.size() > 0 && v.checks.size() <= 8
+     && tryCheckAt(v.checks,0) && tryCheckAt(v.checks,1) && tryCheckAt(v.checks,2) && tryCheckAt(v.checks,3)
+     && tryCheckAt(v.checks,4) && tryCheckAt(v.checks,5) && tryCheckAt(v.checks,6) && tryCheckAt(v.checks,7)
+     && d.startedAt is string && d.startedAt.size() <= 40 && d.createdAt is string && d.updatedAt == d.createdAt;
+   }
+   allow read: if privateSeeker(uid);
+   allow create: if privateSeeker(uid) && validTrial(request.resource.data);
+  }
+
+
+  // Seeker career tools: private planning and reflection, never employer evidence.
+  match /aligna_users/{uid}/seeker_availability/{id} {
+   allow read: if privateSeeker(uid);
+   allow create, update: if privateSeeker(uid) && id == 'current'
+    && request.resource.data.keys().hasOnly(['version','blocked','timeZone','studyHours','workHours','startDate','weeks','goalId','updatedAt'])
+    && request.resource.data.version == 'seeker-tools-v1' && request.resource.data.blocked is string && request.resource.data.blocked.matches('[01]{168}')
+    && request.resource.data.timeZone == 'Asia/Kuala_Lumpur' && request.resource.data.studyHours is int && request.resource.data.studyHours >= 1 && request.resource.data.studyHours <= 40
+    && request.resource.data.workHours is int && request.resource.data.workHours >= 1 && request.resource.data.workHours <= 80
+    && request.resource.data.weeks is int && request.resource.data.weeks >= 1 && request.resource.data.weeks <= 52
+    && request.resource.data.startDate is string && request.resource.data.startDate.matches('[0-9]{4}-[0-9]{2}-[0-9]{2}')
+    && request.resource.data.goalId is string && (request.resource.data.goalId == '' || request.resource.data.goalId.matches('[0-9]{2}-[0-9]{4}[.][0-9]{2}'))
+    && request.resource.data.updatedAt is string;
+  }
+  match /aligna_users/{uid}/career_reflections/{id} {
+   function validReflection(d) {return d.keys().hasOnly(['version','reflectionId','applicationId','applicationDigest','event','letter','locale','active','createdAt','updatedAt'])
+    && d.version == 'seeker-tools-v1' && d.reflectionId == id && id.size() <= 80
+    && d.applicationId is string && d.applicationId.size() > 0 && d.applicationId.size() <= 200
+    && d.applicationDigest is string && d.applicationDigest.matches('reflection-source:[a-f0-9]{16}')
+    && d.event in ['rejected','no-reply'] && d.letter is string && d.letter.size() <= 6000 && (d.event != 'no-reply' || d.letter == '')
+    && d.locale in ['zh','en','ms'] && d.active is bool && d.createdAt is string && d.updatedAt is string;}
+   allow read: if privateSeeker(uid);
+   allow create: if privateSeeker(uid) && validReflection(request.resource.data) && request.resource.data.active == true && request.resource.data.createdAt == request.resource.data.updatedAt
+    && get(/databases/$(database)/documents/aligna_applications/$(request.resource.data.applicationId)).data.seekerUid == uid;
+   allow update: if privateSeeker(uid) && validReflection(request.resource.data) && request.resource.data.active == false
+    && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['active','updatedAt']);
+  }
+  function prioritySkillAt(list,i) {return list.size() <= i || (list[i] is string && list[i].size() > 0 && list[i].size() <= 100);}
+  match /aligna_users/{uid}/career_priorities/{id} {
+   allow read: if privateSeeker(uid);
+   allow create, update: if privateSeeker(uid) && id == 'rejection'
+    && request.resource.data.keys().hasOnly(['version','skills','sourceDigest','sourceType','updatedAt'])
+    && request.resource.data.version == 'seeker-tools-v1' && request.resource.data.sourceType == 'reflection-user-confirmed'
+    && request.resource.data.skills is list && request.resource.data.skills.size() > 0 && request.resource.data.skills.size() <= 6
+    && prioritySkillAt(request.resource.data.skills,0) && prioritySkillAt(request.resource.data.skills,1) && prioritySkillAt(request.resource.data.skills,2) && prioritySkillAt(request.resource.data.skills,3) && prioritySkillAt(request.resource.data.skills,4) && prioritySkillAt(request.resource.data.skills,5)
+    && request.resource.data.sourceDigest is string && request.resource.data.sourceDigest.matches('reflection-priority:[a-f0-9]{16}')
+    && request.resource.data.updatedAt is string;
+  }
+  match /aligna_users/{uid}/career_options/{id} {
+   function validOption(d) {return d.keys().hasOnly(['version','optionId','title','slots','ratePeriod','rateMinCents','rateMaxCents','skills','sourceType','sourceJobId','sourceUrl','checkedAt','arrangement','createdAt','updatedAt','active'])
+    && d.version == 'seeker-tools-v1' && d.optionId == id && id.size() <= 80 && d.title is string && d.title.size() > 0 && d.title.size() <= 150
+    && d.slots is string && d.slots.matches('[01]{168}') && d.slots.matches('.*1.*')
+    && d.ratePeriod in ['hour','month'] && d.rateMinCents is int && d.rateMaxCents is int && d.rateMinCents >= 0 && d.rateMaxCents >= d.rateMinCents && d.rateMaxCents <= 100000000
+    && d.skills is string && d.skills.size() <= 1500 && d.sourceType == 'user-entered' && d.sourceJobId == ''
+    && d.sourceUrl is string && d.sourceUrl.size() <= 500 && d.sourceUrl.matches('https://.+')
+    && d.checkedAt is string && d.checkedAt.matches('[0-9]{4}-[0-9]{2}-[0-9]{2}') && d.arrangement in ['onsite','remote']
+    && d.createdAt is string && d.updatedAt is string && d.active is bool;}
+   allow read: if privateSeeker(uid);
+   allow create: if privateSeeker(uid) && validOption(request.resource.data) && request.resource.data.active == true && request.resource.data.createdAt == request.resource.data.updatedAt;
+   allow update: if privateSeeker(uid) && validOption(request.resource.data) && request.resource.data.active == false
+    && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['active','updatedAt']);
+  }
+
+  match /aligna_users/{uid}/seeker_state/{id} {
+   allow read: if privateSeeker(uid);
+   allow create, update: if privateSeeker(uid) && id == 'settings'
+    && request.resource.data.keys().hasOnly(['version','goalId','country','months','hours','budget','learningLanguage','updatedAt'])
+    && request.resource.data.version == 'seeker-private-v1' && request.resource.data.updatedAt is string
+    && seekerSettings({'goalId':request.resource.data.goalId,'country':request.resource.data.country,'months':request.resource.data.months,'hours':request.resource.data.hours,'budget':request.resource.data.budget,'learningLanguage':request.resource.data.learningLanguage});
+  }
+  match /aligna_users/{uid}/practice_attempts/{id} {
+   function validPractice(d) {
+    return d.keys().hasOnly(['version','attemptId','taskId','formVersion','sourceType','verified','condition','locale','goalId','answers','result','createdAt','updatedAt'])
+     && d.version == 'seeker-private-v1' && d.attemptId == id && id.size() <= 80
+     && d.taskId in ['task-budget-tradeoff','task-delivery-handover'] && d.formVersion == 'H03-public-v1'
+     && d.sourceType == 'public-self-practice' && d.verified == false && d.condition in ['independent','ai-assisted']
+     && d.locale in ['zh','en','ms'] && d.goalId is string && d.goalId.size() <= 20
+     && d.createdAt is string && d.updatedAt == d.createdAt
+     && d.answers is map && d.answers.keys().hasOnly(['selected','followUp','infeasible','maximum','sum','mismatch','explanation','verification'])
+     && d.answers.selected is list && d.answers.selected.size() <= 4 && d.answers.selected.hasOnly(['A','B','C','D'])
+     && d.answers.followUp is bool && d.answers.infeasible is bool && d.answers.mismatch is bool
+     && d.answers.maximum is string && d.answers.maximum.size() <= 30 && d.answers.sum is string && d.answers.sum.size() <= 30
+     && d.answers.explanation is string && d.answers.explanation.size() <= 4000
+     && d.answers.verification is string && d.answers.verification.size() <= 4000
+     && d.result is map && d.result.size() <= 15 && d.result.numericPassed is bool
+     && d.result.reviewRequired == true && d.result.recommendedAdjustment == null && d.result.verification == 'public-practice-unverified';
+   }
+   allow read: if privateSeeker(uid);
+   allow create: if privateSeeker(uid) && validPractice(request.resource.data);
+  }
+  match /aligna_users/{uid}/learning_actions/{id} {
+   function validAction(d) {
+    let source = get(/databases/$(database)/documents/aligna_users/$(uid)/practice_attempts/$(id)).data;
+    return d.keys().hasOnly(['version','sourceAttemptId','taskId','goalId','skillName','topic','state','sourceType','createdAt','updatedAt'])
+     && d.version == 'seeker-private-v1' && d.sourceAttemptId == id && d.taskId == source.taskId && d.goalId == source.goalId
+     && d.skillName in ['Management of Financial Resources','Critical Thinking']
+     && d.topic in ['check-constraints','explain-tradeoffs','reconcile-totals','verify-records']
+     && d.state in ['pending','done'] && d.sourceType == 'self-practice-reflection'
+     && d.createdAt is string && d.updatedAt is string;
+   }
+   allow read: if privateSeeker(uid);
+   allow create: if privateSeeker(uid) && validAction(request.resource.data);
+   allow update: if privateSeeker(uid) && validAction(request.resource.data)
+    && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['state','updatedAt']);
+  }
+  match /aligna_users/{uid}/interview_attempts/{id} {
+   allow read: if privateSeeker(uid);
+   allow create: if privateSeeker(uid)
+    && request.resource.data.keys().hasOnly(['version','attemptId','formVersion','sourceType','verified','goalId','locale','answers','checks','createdAt','updatedAt'])
+    && request.resource.data.version == 'seeker-private-v1' && request.resource.data.attemptId == id && id.size() <= 80
+    && request.resource.data.formVersion in ['public-interview-v1-0','public-interview-v1-1']
+    && request.resource.data.sourceType == 'interview-self-practice' && request.resource.data.verified == false
+    && request.resource.data.goalId is string && request.resource.data.goalId.size() <= 20 && request.resource.data.locale in ['zh','en','ms']
+    && request.resource.data.answers is list && request.resource.data.answers.size() == 3
+    && request.resource.data.answers[0] is string && request.resource.data.answers[0].size() <= 4000
+    && request.resource.data.answers[1] is string && request.resource.data.answers[1].size() <= 4000
+    && request.resource.data.answers[2] is string && request.resource.data.answers[2].size() <= 4000
+    && request.resource.data.checks is list && request.resource.data.checks.size() == 3
+    && request.resource.data.checks[0] is bool && request.resource.data.checks[1] is bool && request.resource.data.checks[2] is bool
+    && request.resource.data.createdAt is string && request.resource.data.updatedAt == request.resource.data.createdAt;
+  }
+  match /aligna_users/{uid}/learning_routes/{id} {
+   allow read: if privateSeeker(uid);
+   allow create, update: if privateSeeker(uid) && id.matches('route:[a-f0-9]{16}')
+    && request.resource.data.keys().hasOnly(['version','settings','completed','unitVersion','updatedAt'])
+    && request.resource.data.version == 'seeker-private-v1' && seekerSettings(request.resource.data.settings)
+    && request.resource.data.completed is list && request.resource.data.completed.size() <= 30
+    && request.resource.data.unitVersion == 'work-sample-route-v1' && request.resource.data.updatedAt is string;
+  }
+  match /aligna_users/{uid}/news_receipts/{id} {
+   allow read: if privateSeeker(uid);
+   allow create, update: if privateSeeker(uid) && id.matches('news:[a-f0-9]{16}')
+    && request.resource.data.keys().hasOnly(['version','key','goalId','newsVersion','status','before','after','createdAt','updatedAt','snoozeUntil'])
+    && request.resource.data.version == 'seeker-private-v1' && request.resource.data.key == id
+    && request.resource.data.goalId is string && request.resource.data.goalId.size() <= 20
+    && request.resource.data.newsVersion is string && request.resource.data.newsVersion.size() <= 200
+    && request.resource.data.status in ['viewed','later','applied','dismissed','undone']
+    && request.resource.data.before is list && request.resource.data.before.size() <= 6
+    && request.resource.data.after is list && request.resource.data.after.size() <= 6
+    && request.resource.data.createdAt is string && request.resource.data.updatedAt is string && request.resource.data.snoozeUntil is string
+    && (!exists(/databases/$(database)/documents/aligna_users/$(uid)/news_receipts/$(id))
+     || (request.resource.data.createdAt == resource.data.createdAt
+      && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status','updatedAt','snoozeUntil'])));
+  }
+
+  function verifiedAccount() { return request.auth != null && request.auth.token.email_verified == true; }
+  match /aligna_applications/{application} {
+   function snapshotValid(d) {
+    let j = get(/databases/$(database)/documents/aligna_jobs/$(d.jobId)).data;
+    let r = j.get('requirements', {'skills': [], 'skillIds': []});
+    let structured = r.skills.size() > 0;
+    return d.jobRequirementsVersion == j.get('requirementsVersion',0)
+     && d.matchingBasis == {'schema': structured ? 'structured-v1' : 'legacy-v1', 'skillIds': structured ? r.skillIds : [], 'legacySkills': structured ? '' : j.skills}
+     && d.jobSnapshot == {'jobTitle':j.jobTitle,'salary':j.salary,'jobDescription':j.jobDescription,'jobField':j.jobField,'location':j.location,'skills':j.skills,'softSkills':j.softSkills,'jobRequirements':j.jobRequirements,'futureSkills':j.futureSkills,'employmentType':j.employmentType,'employeeCount':j.employeeCount,'workingTime':j.workingTime,'jobSchemaVersion':j.get('jobSchemaVersion',1),'requirementsVersion':j.get('requirementsVersion',0),'requirements':j.get('requirements',null)};
+   }
+   function candidateValid(d) {
+    let c = d.candidate;
+    return c is map && c.keys().hasOnly(['displayName','summary','education','experience','location','employmentType','portfolio','skills','synthetic'])
+     && c.displayName is string && c.displayName.size() > 0 && c.displayName.size() <= 120
+     && c.summary is string && c.summary.size() <= 2000 && c.education is string && c.education.size() <= 1500
+     && c.experience is string && c.experience.size() <= 3000 && c.location is string && c.location.size() <= 150
+     && c.employmentType in ['','Full-time','Part-time'] && c.portfolio is string && c.portfolio.size() <= 500
+     && c.skills is list && c.skills.size() > 0 && c.skills.size() <= 50 && c.synthetic == true;
+   }
+   function employer() { return verifiedAccount() && resource.data.employerUid == request.auth.uid && resource.data.active == true; }
+   function seeker() { return verifiedAccount() && resource.data.seekerUid == request.auth.uid; }
+   allow read: if seeker() || employer();
+   allow create: if verifiedAccount()
+    && request.resource.data.keys().hasOnly(['seekerUid','employerUid','jobId','jobTitle','companyName','jobRequirementsVersion','matchingBasis','jobSnapshot','candidate','consentVersion','synthetic','active','status','interviewAt','interviewTimeZone','interviewDetails','interviewResponse','interviewProposalAt','interviewProposalTimeZone','interviewProposalDetails','createdAt','updatedAt'])
+    && application == request.auth.uid + '_' + request.resource.data.jobId
+    && request.resource.data.seekerUid == request.auth.uid
+    && get(/databases/$(database)/documents/aligna_jobs/$(request.resource.data.jobId)).data.status == 'published'
+    && request.resource.data.employerUid == get(/databases/$(database)/documents/aligna_jobs/$(request.resource.data.jobId)).data.ownerUid
+    && request.resource.data.employerUid != request.auth.uid
+    && request.resource.data.jobTitle == get(/databases/$(database)/documents/aligna_jobs/$(request.resource.data.jobId)).data.jobTitle
+    && request.resource.data.companyName == get(/databases/$(database)/documents/aligna_jobs/$(request.resource.data.jobId)).data.companyName
+    && ((!request.resource.data.keys().hasAny(['jobRequirementsVersion','matchingBasis','jobSnapshot'])
+       && !get(/databases/$(database)/documents/aligna_jobs/$(request.resource.data.jobId)).data.keys().hasAny(['requirementsVersion']))
+     || (request.resource.data.jobRequirementsVersion is int && request.resource.data.matchingBasis is map && request.resource.data.jobSnapshot is map && snapshotValid(request.resource.data)))
+    && candidateValid(request.resource.data)
+    && request.resource.data.consentVersion == 'application-share-v1' && request.resource.data.synthetic == true
+    && request.resource.data.active == true && request.resource.data.status == 'submitted'
+    && request.resource.data.interviewAt == '' && request.resource.data.get('interviewTimeZone','Asia/Kuala_Lumpur') in ['Asia/Kuala_Lumpur','Asia/Singapore','Asia/Tokyo','UTC'] && request.resource.data.interviewDetails == '' && request.resource.data.interviewResponse == 'pending'
+    && request.resource.data.get('interviewProposalAt','') == '' && request.resource.data.get('interviewProposalTimeZone','Asia/Kuala_Lumpur') in ['Asia/Kuala_Lumpur','Asia/Singapore','Asia/Tokyo','UTC'] && request.resource.data.get('interviewProposalDetails','') == ''
+    && request.resource.data.createdAt == request.time && request.resource.data.updatedAt == request.time;
+   allow update: if request.resource.data.updatedAt == request.time && (
+    (seeker() && resource.data.active == true
+      && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['active','status','candidate','interviewAt','interviewTimeZone','interviewDetails','interviewResponse','interviewProposalAt','interviewProposalTimeZone','interviewProposalDetails','updatedAt'])
+     && request.resource.data.active == false && request.resource.data.status == 'withdrawn' && request.resource.data.candidate == null
+      && request.resource.data.interviewAt == '' && request.resource.data.get('interviewTimeZone','Asia/Kuala_Lumpur') in ['Asia/Kuala_Lumpur','Asia/Singapore','Asia/Tokyo','UTC'] && request.resource.data.interviewDetails == '' && request.resource.data.interviewResponse == 'pending'
+      && request.resource.data.get('interviewProposalAt','') == '' && request.resource.data.get('interviewProposalTimeZone','Asia/Kuala_Lumpur') in ['Asia/Kuala_Lumpur','Asia/Singapore','Asia/Tokyo','UTC'] && request.resource.data.get('interviewProposalDetails','') == '')
+    || (seeker() && resource.data.active == true && resource.data.status == 'interview'
+     && resource.data.interviewResponse == 'pending'
+      && get(/databases/$(database)/documents/aligna_jobs/$(resource.data.jobId)).data.status == 'published'
+      && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['interviewResponse','interviewProposalAt','interviewProposalTimeZone','interviewProposalDetails','updatedAt'])
+      && request.resource.data.interviewResponse in ['accepted','declined','proposed']
+      && request.resource.data.get('interviewProposalAt','') is string && request.resource.data.get('interviewProposalAt','').size() <= 40
+      && request.resource.data.get('interviewProposalTimeZone','Asia/Kuala_Lumpur') in ['Asia/Kuala_Lumpur','Asia/Singapore','Asia/Tokyo','UTC']
+      && request.resource.data.get('interviewProposalDetails','') is string && request.resource.data.get('interviewProposalDetails','').size() <= 1000
+      && (request.resource.data.interviewResponse == 'proposed' ? request.resource.data.get('interviewProposalAt','').matches('[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9][.][0-9]{3}Z') : request.resource.data.get('interviewProposalAt','') == '' && request.resource.data.get('interviewProposalDetails','') == ''))
+    || (employer()
+      && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status','interviewAt','interviewTimeZone','interviewDetails','interviewResponse','interviewProposalAt','interviewProposalTimeZone','interviewProposalDetails','updatedAt'])
+      && (request.resource.data.status != 'interview' || get(/databases/$(database)/documents/aligna_jobs/$(resource.data.jobId)).data.status == 'published')
+     && request.resource.data.status in ['submitted','reviewing','interview','completed','not-progressing']
+     && request.resource.data.interviewAt is string && request.resource.data.interviewAt.size() <= 40
+      && request.resource.data.get('interviewTimeZone','Asia/Kuala_Lumpur') in ['Asia/Kuala_Lumpur','Asia/Singapore','Asia/Tokyo','UTC']
+     && request.resource.data.interviewDetails is string && request.resource.data.interviewDetails.size() <= 2000
+     && request.resource.data.interviewResponse == 'pending'
+      && request.resource.data.get('interviewProposalAt','') == '' && request.resource.data.get('interviewProposalTimeZone','Asia/Kuala_Lumpur') in ['Asia/Kuala_Lumpur','Asia/Singapore','Asia/Tokyo','UTC'] && request.resource.data.get('interviewProposalDetails','') == ''
+     && (request.resource.data.status != 'interview' || (request.resource.data.interviewAt.size() > 0 && request.resource.data.interviewDetails.size() > 0))));
+  }
+  match /aligna_application_notes/{application} {
+   function ownsApplication() { return verifiedAccount()
+    && get(/databases/$(database)/documents/aligna_applications/$(application)).data.employerUid == request.auth.uid
+    && get(/databases/$(database)/documents/aligna_applications/$(application)).data.active == true; }
+   allow read: if ownsApplication();
+   allow create, update: if ownsApplication()
+    && request.resource.data.keys().hasOnly(['employerUid','text','updatedAt'])
+    && request.resource.data.employerUid == request.auth.uid
+    && request.resource.data.text is string && request.resource.data.text.size() <= 6000
+    && request.resource.data.updatedAt == request.time;
+  }
+
+  // Company files are private to the submitting account and the designated reviewer.
+  function companyReviewer() { return verifiedAccount() && request.auth.token.email == 'liuevaceryana@gmail.com'; }
+  function companyRequest(uid) { return get(/databases/$(database)/documents/aligna_company_requests/$(uid)).data; }
+  function companyApproved(uid,name) {
+   let r=get(/databases/$(database)/documents/aligna_company_requests/$(uid)).data;
+   let v=get(/databases/$(database)/documents/aligna_company_reviews/$(uid)).data;
+   return v.requestVersion == r.requestVersion && v.expiresAt > request.time
+    && ((v.status == 'approved' && r.synthetic == false && v.registryMatched && v.documentChecked && v.authorityConfirmed && name == r.legalName)
+     || (v.status == 'sandbox' && r.synthetic == true && name.matches('.*[Ss][Yy][Nn][Tt][Hh][Ee][Tt][Ii][Cc].*')));
+  }
+  match /aligna_company_requests/{uid} {
+   function owner() { return verifiedAccount() && request.auth.uid == uid; }
+   function editable() {return !exists(/databases/$(database)/documents/aligna_company_reviews/$(uid)) || get(/databases/$(database)/documents/aligna_company_reviews/$(uid)).data.status == 'needs_changes';}
+   function validCompany(d) {return d.keys().hasOnly(['version','ownerUid','legalName','registrationCode','country','state','city','registeredAddress','workEmail','authorityNote','synthetic','fileHash','fileName','fileBytes','fileChunks','requestVersion','status','createdAt','updatedAt'])
+    && d.version == 'company-check-v1' && d.ownerUid == uid && d.status == 'submitted'
+    && d.legalName is string && d.legalName.size() > 0 && d.legalName.size() <= 180
+    && d.registrationCode is string && d.registrationCode.matches('[A-Z0-9()/ -]{5,40}')
+    && d.country == 'MY' && d.state in ['Johor','Kedah','Kelantan','Melaka','Negeri Sembilan','Pahang','Penang','Perak','Perlis','Sabah','Sarawak','Selangor','Terengganu','Kuala Lumpur','Labuan','Putrajaya']
+    && d.city is string && d.city.size() > 0 && d.city.size() <= 100
+    && d.registeredAddress is string && d.registeredAddress.size() > 0 && d.registeredAddress.size() <= 500
+    && d.workEmail is string && d.workEmail.size() > 3 && d.workEmail.size() <= 180
+    && d.authorityNote is string && d.authorityNote.size() > 0 && d.authorityNote.size() <= 800
+    && d.synthetic is bool && (!d.synthetic || d.legalName.matches('SYNTHETIC QA.*'))
+    && d.fileHash is string && d.fileHash.matches('[a-f0-9]{64}') && d.fileName is string && d.fileName.size() <= 150
+    && d.fileBytes is int && d.fileBytes >= 5 && d.fileBytes <= 2097152
+    && d.fileChunks is int && d.fileChunks >= 1 && d.fileChunks <= 9
+    && d.requestVersion is string && d.requestVersion.matches('company:[a-f0-9]{16}')
+    && d.createdAt == request.time && d.updatedAt == request.time;}
+   allow get: if owner() || companyReviewer();
+   allow list: if companyReviewer();
+   allow create,update: if owner() && editable() && validCompany(request.resource.data);
+   match /documents/{chunk} {
+    allow read: if owner() || companyReviewer();
+    allow create,update: if owner() && editable()
+     && request.resource.data.keys().hasOnly(['ownerUid','fileHash','index','body','createdAt'])
+     && request.resource.data.ownerUid == uid && request.resource.data.index is int && request.resource.data.index >= 0 && request.resource.data.index < 9
+     && chunk == string(request.resource.data.index)
+     && request.resource.data.index < getAfter(/databases/$(database)/documents/aligna_company_requests/$(uid)).data.fileChunks
+     && request.resource.data.fileHash == getAfter(/databases/$(database)/documents/aligna_company_requests/$(uid)).data.fileHash
+     && request.resource.data.body is string && request.resource.data.body.size() > 0 && request.resource.data.body.size() <= 320000
+     && request.resource.data.createdAt == request.time;
+   }
+  }
+  match /aligna_company_reviews/{uid} {
+   allow get: if verifiedAccount() && (request.auth.uid == uid || companyReviewer());
+   allow list: if companyReviewer();
+   allow create,update: if companyReviewer() && request.auth.uid != uid
+    && request.resource.data.keys().hasOnly(['version','ownerUid','reviewerUid','requestVersion','status','registryMatched','documentChecked','authorityConfirmed','sourceURL','note','checkedAt','expiresAt'])
+    && request.resource.data.version == 'company-check-v1' && request.resource.data.ownerUid == uid && request.resource.data.reviewerUid == request.auth.uid
+    && request.resource.data.requestVersion == companyRequest(uid).requestVersion
+    && request.resource.data.status in ['approved','needs_changes','rejected','sandbox']
+    && request.resource.data.registryMatched is bool && request.resource.data.documentChecked is bool && request.resource.data.authorityConfirmed is bool
+    && request.resource.data.sourceURL is string && request.resource.data.sourceURL.size() <= 500
+    && request.resource.data.note is string && request.resource.data.note.size() > 0 && request.resource.data.note.size() <= 1200
+    && request.resource.data.checkedAt == request.time && request.resource.data.expiresAt is timestamp
+    && request.resource.data.expiresAt > request.time && request.resource.data.expiresAt <= request.time + duration.value(91,'d')
+    && (request.resource.data.status != 'approved' || (companyRequest(uid).synthetic == false && request.resource.data.registryMatched && request.resource.data.documentChecked && request.resource.data.authorityConfirmed
+     && request.resource.data.sourceURL.matches('https://(www[.])?(ssm[.]com[.]my|ssm-einfo[.]my|mydata-ssm[.]com[.]my|ssmsearch[.]com|safedata-ssm[.]com)/.*')))
+    && (request.resource.data.status != 'sandbox' || companyRequest(uid).synthetic == true);
+  }
+  function interviewApp(id) {return get(/databases/$(database)/documents/aligna_applications/$(id)).data;}
+  function interviewOwner(id) {return verifiedAccount() && interviewApp(id).active == true && interviewApp(id).employerUid == request.auth.uid;}
+
+
+
+  // Policy maps are validated in bounded set operations, including all 30 requirements.
+  function interviewKeys(m,ids) {return m is map && m.keys().toSet() == ids.toSet();}
+  function interviewSkills(m,ids) {return m is map && m.keys().hasOnly(['status','quote','observation','share'])
+   && interviewKeys(m.status,ids) && m.status.values().toSet().hasOnly(['unobserved','partial','sufficient','not_applicable'])
+   && interviewKeys(m.share,ids) && m.share.values().toSet().hasOnly([true,false])
+   && interviewKeys(m.quote,ids) && m.quote.values().join('').size() <= 54000
+   && interviewKeys(m.observation,ids) && m.observation.values().join('').size() <= 54000;}
+  function interviewFollowups(m,ids) {return m is map && m.keys().hasOnly(['question','status','response','share'])
+   && interviewKeys(m.status,ids) && m.status.values().toSet().hasOnly(['pending','answered','not_applicable'])
+   && interviewKeys(m.share,ids) && m.share.values().toSet().hasOnly([true,false])
+   && interviewKeys(m.question,ids) && m.question.values().join('').size() <= 6000
+   && interviewKeys(m.response,ids) && m.response.values().join('').size() <= 18000;}
+  match /aligna_interview_records/{application} {
+   function validRecord(d) {let a=interviewApp(application);return d.keys().hasOnly(['applicationId','employerUid','seekerUid','jobId','jobRequirementsVersion','evaluatorUid','version','rubricVersion','interviewAt','interviewTimeZone','toolCondition','skillIds','skillData','followupIds','followupData','createdAt','updatedAt'])
+    && d.applicationId == application && d.employerUid == request.auth.uid && d.evaluatorUid == request.auth.uid
+    && d.seekerUid == a.seekerUid && d.jobId == a.jobId && d.jobRequirementsVersion == a.jobRequirementsVersion
+    && d.version == 'interview-record-v1' && d.rubricVersion is string && d.rubricVersion.matches('interview-rubric:[a-f0-9]{16}')
+    && d.interviewAt is string && d.interviewAt.size() > 0 && d.interviewAt.size() <= 40
+    && d.interviewTimeZone in ['Asia/Kuala_Lumpur','Asia/Singapore','Asia/Tokyo','UTC']
+    && d.toolCondition is string && d.toolCondition.size() > 0 && d.toolCondition.size() <= 500
+    && d.skillIds == a.jobSnapshot.requirements.skillIds && d.skillIds.size() > 0 && d.skillIds.size() <= 30 && interviewSkills(d.skillData,d.skillIds)
+    && d.followupIds is list && d.followupIds.size() <= 10 && d.followupIds.toSet().size() == d.followupIds.size() && d.skillIds.hasAll(d.followupIds) && interviewFollowups(d.followupData,d.followupIds)
+    && d.createdAt is timestamp && d.updatedAt == request.time
+    && getAfter(/databases/$(database)/documents/aligna_interview_feedback/$(application)).data.updatedAt == request.time;}
+   allow get: if interviewOwner(application);
+   allow create: if interviewOwner(application) && validRecord(request.resource.data) && request.resource.data.createdAt == request.time;
+   allow update: if interviewOwner(application) && validRecord(request.resource.data) && request.resource.data.createdAt == resource.data.createdAt;
+  }
+  match /aligna_interview_feedback/{application} {
+   function subset(m,p) {return m.diff(p).addedKeys().size() == 0 && m.diff(p).changedKeys().size() == 0;}
+   function sharedSkills(m,p,ids) {return interviewSkills(m,ids) && m.status.values().toSet().hasOnly(['partial','sufficient','not_applicable']) && m.share.values().toSet().hasOnly([true])
+    && subset(m.status,p.status) && subset(m.quote,p.quote) && subset(m.observation,p.observation) && subset(m.share,p.share);}
+   function sharedFollowups(m,p,ids) {return interviewFollowups(m,ids) && m.status.values().toSet().hasOnly(['answered']) && m.share.values().toSet().hasOnly([true])
+    && subset(m.question,p.question) && subset(m.status,p.status) && subset(m.response,p.response) && subset(m.share,p.share);}
+   function validFeedback(d) {let p=getAfter(/databases/$(database)/documents/aligna_interview_records/$(application)).data;return d.keys().hasOnly(['applicationId','employerUid','seekerUid','version','rubricVersion','interviewAt','interviewTimeZone','skillIds','skillData','followupIds','followupData','updatedAt'])
+    && d.applicationId == application && d.employerUid == request.auth.uid && d.seekerUid == p.seekerUid
+    && d.version == p.version && d.rubricVersion == p.rubricVersion && d.interviewAt == p.interviewAt && d.interviewTimeZone == p.interviewTimeZone
+    && d.skillIds is list && d.skillIds.size() <= 30 && d.skillIds.toSet().size() == d.skillIds.size() && p.skillIds.hasAll(d.skillIds) && sharedSkills(d.skillData,p.skillData,d.skillIds)
+    && d.followupIds is list && d.followupIds.size() <= 10 && d.followupIds.toSet().size() == d.followupIds.size() && p.followupIds.hasAll(d.followupIds) && sharedFollowups(d.followupData,p.followupData,d.followupIds)
+    && p.updatedAt == request.time && d.updatedAt == request.time;}
+   allow get: if verifiedAccount() && (interviewApp(application).seekerUid == request.auth.uid || interviewOwner(application));
+   allow create,update: if interviewOwner(application) && validFeedback(request.resource.data);
+  }
+  match /aligna_employers/{uid} {
+   allow read: if verifiedAccount() && request.auth.uid == uid;
+   allow create, update: if verifiedAccount() && request.auth.uid == uid
+    && request.resource.data.keys().hasOnly(['ownerUid','companyName','createdAt','updatedAt'])
+    && request.resource.data.ownerUid == uid
+    && request.resource.data.companyName is string && request.resource.data.companyName.size() > 0 && request.resource.data.companyName.size() <= 150
+    && request.resource.data.createdAt is timestamp && request.resource.data.updatedAt == request.time
+    && (resource == null ? request.resource.data.createdAt == request.time : request.resource.data.createdAt == resource.data.createdAt);
+  }
+  match /aligna_jobs/{job} {
+   function owns() { return verifiedAccount() && resource.data.ownerUid == request.auth.uid; }
+   function text(d,k,n) { return d[k] is string && d[k].size() > 0 && d[k].size() <= n; }
+   // Flat policy maps validate all 30 skill classifications within the expression budget.
+   // Source text and labels are unverified public claims; the shared reader validates them.
+   function validRequirements(r) {
+    let skills=r.skills; let ids=r.skillIds; let n=skills.size();
+    let c=r.workConditions; let l=c.location; let pay=c.salary; let a=c.workArrangement;
+    return r is map && r.keys().hasOnly(['workOutputs','skills','skillIds','skillTypes','entryLevels','qualifications','workConditions'])
+     && r.workOutputs is list && r.workOutputs.size() <= 20
+     && skills is list && n <= 30 && ids is list && ids.size() == n && ids.toSet().size() == ids.size()
+     && r.qualifications is list && r.qualifications.size() <= 10
+     && c is map && c.keys().hasOnly(['location','salary','workArrangement'])
+     && l is map && l.keys().hasOnly(['value','status'])
+     && l.value is string && l.value.size() <= 500 && l.status in ['specified','unknown']
+     && pay is map && pay.keys().hasOnly(['min','max','currency','period'])
+     && pay.min is number && pay.max is number
+     && pay.min >= 0 && pay.max >= pay.min && pay.max <= 10000000
+     && pay.currency is string && pay.currency.size() <= 10 && pay.period == 'monthly'
+     && a is map && a.keys().hasOnly(['mode','schedule'])
+     && a.mode in ['onsite','hybrid','remote','unknown']
+     && a.schedule is string && a.schedule.size() <= 500
+     && r.skillTypes is map && r.skillTypes.keys().toSet() == ids.toSet() && r.skillTypes.values().hasOnly(['professional','collaboration'])
+     && r.entryLevels is map && r.entryLevels.keys().toSet() == ids.toSet() && r.entryLevels.values().hasOnly(['entry_required','trainable']);
+   }
+   function validJob() {
+    let d = request.resource.data;
+    return d.keys().hasOnly(['jobTitle','salary','jobDescription','jobField','location','skills','softSkills','jobRequirements','futureSkills','employmentType','employeeCount','workingTime','jobSchemaVersion','requirementsVersion','requirements','ownerUid','companyName','status','createdAt','updatedAt','publishedAt'])
+     && d.ownerUid == request.auth.uid
+     && exists(/databases/$(database)/documents/aligna_employers/$(request.auth.uid))
+     && d.companyName == get(/databases/$(database)/documents/aligna_employers/$(request.auth.uid)).data.companyName
+     && text(d,'jobTitle',500) && text(d,'companyName',150) && text(d,'jobDescription',6000) && text(d,'jobField',500)
+     && text(d,'location',500) && text(d,'skills',500) && text(d,'softSkills',500) && text(d,'jobRequirements',6000)
+     && text(d,'futureSkills',500) && text(d,'workingTime',500)
+     && d.salary is number && d.salary >= 0 && d.salary <= 10000000
+     && d.employeeCount is int && d.employeeCount >= 1 && d.employeeCount <= 100000
+     && d.employmentType in ['Full-time','Part-time'] && d.status in ['draft','published','closed']
+      && (d.status != 'published' || companyApproved(d.ownerUid,d.companyName))
+     && (!d.keys().hasAny(['jobSchemaVersion','requirementsVersion','requirements'])
+      || (d.jobSchemaVersion == 2 && d.requirementsVersion is int && d.requirementsVersion >= 1 && validRequirements(d.requirements)))
+     && d.createdAt is timestamp && d.updatedAt == request.time
+     && (d.status == 'published' ? d.publishedAt == request.time : d.publishedAt == null);
+   }
+   allow read: if verifiedAccount() && (resource.data.status == 'published' || resource.data.ownerUid == request.auth.uid);
+   allow create: if verifiedAccount() && validJob() && request.resource.data.createdAt == request.time && (!request.resource.data.keys().hasAny(['requirementsVersion']) || request.resource.data.requirementsVersion == 1);
+   allow update: if owns() && validJob() && request.resource.data.createdAt == resource.data.createdAt
+    && (!resource.data.keys().hasAny(['requirementsVersion'])
+      ? (!request.resource.data.keys().hasAny(['requirementsVersion']) || request.resource.data.requirementsVersion == 1)
+      : (request.resource.data.requirementsVersion == resource.data.requirementsVersion + (request.resource.data.diff(resource.data).affectedKeys().hasAny(['jobTitle','salary','jobDescription','jobField','location','skills','softSkills','jobRequirements','futureSkills','employmentType','employeeCount','workingTime','requirements']) ? 1 : 0)));
+  }
+  // Versioned work samples. Drafts remain seeker-only; sharing follows the active application.
+  function workApplication(id) { return get(/databases/$(database)/documents/aligna_applications/$(id)).data; }
+  function workAssignment(id) { return get(/databases/$(database)/documents/aligna_work_assignments/$(id)).data; }
+  function workSeeker(a) { return verifiedAccount() && a.seekerUid == request.auth.uid; }
+  function workEmployer(a) { return verifiedAccount() && a.employerUid == request.auth.uid && workApplication(a.applicationId).active == true; }
+  function workRubric(task,form) {
+   return task == 'resource-plan' ? (form == 'A' ? 'formal-rubric:28dae21ed97d0656' : 'formal-rubric:aea0ea2e72bdca7c') : (form == 'A' ? 'formal-rubric:7b57b5c3a72b980f' : 'formal-rubric:2d5526ad706e17fb');
+  }
+  function workTaskLinks(d) {
+   let r = workApplication(d.applicationId).jobSnapshot.requirements;
+   let allowed = d.taskId == 'resource-plan'
+    ? ['skill:Mathematics','skill:Management%20of%20Financial%20Resources','skill:Judgment%20and%20Decision%20Making','skill:Critical%20Thinking']
+    : ['skill:Mathematics','skill:Quality%20Control%20Analysis','skill:Complex%20Problem%20Solving','skill:Critical%20Thinking'];
+   let expectedOutputs = [r.workOutputs.size() > 0 && r.workOutputs[0].skillIds.hasAny(d.skillIds) ? r.workOutputs[0].id : '',
+r.workOutputs.size() > 1 && r.workOutputs[1].skillIds.hasAny(d.skillIds) ? r.workOutputs[1].id : '',
+r.workOutputs.size() > 2 && r.workOutputs[2].skillIds.hasAny(d.skillIds) ? r.workOutputs[2].id : '',
+r.workOutputs.size() > 3 && r.workOutputs[3].skillIds.hasAny(d.skillIds) ? r.workOutputs[3].id : '',
+r.workOutputs.size() > 4 && r.workOutputs[4].skillIds.hasAny(d.skillIds) ? r.workOutputs[4].id : '',
+r.workOutputs.size() > 5 && r.workOutputs[5].skillIds.hasAny(d.skillIds) ? r.workOutputs[5].id : '',
+r.workOutputs.size() > 6 && r.workOutputs[6].skillIds.hasAny(d.skillIds) ? r.workOutputs[6].id : '',
+r.workOutputs.size() > 7 && r.workOutputs[7].skillIds.hasAny(d.skillIds) ? r.workOutputs[7].id : '',
+r.workOutputs.size() > 8 && r.workOutputs[8].skillIds.hasAny(d.skillIds) ? r.workOutputs[8].id : '',
+r.workOutputs.size() > 9 && r.workOutputs[9].skillIds.hasAny(d.skillIds) ? r.workOutputs[9].id : '',
+r.workOutputs.size() > 10 && r.workOutputs[10].skillIds.hasAny(d.skillIds) ? r.workOutputs[10].id : '',
+r.workOutputs.size() > 11 && r.workOutputs[11].skillIds.hasAny(d.skillIds) ? r.workOutputs[11].id : '',
+r.workOutputs.size() > 12 && r.workOutputs[12].skillIds.hasAny(d.skillIds) ? r.workOutputs[12].id : '',
+r.workOutputs.size() > 13 && r.workOutputs[13].skillIds.hasAny(d.skillIds) ? r.workOutputs[13].id : '',
+r.workOutputs.size() > 14 && r.workOutputs[14].skillIds.hasAny(d.skillIds) ? r.workOutputs[14].id : '',
+r.workOutputs.size() > 15 && r.workOutputs[15].skillIds.hasAny(d.skillIds) ? r.workOutputs[15].id : '',
+r.workOutputs.size() > 16 && r.workOutputs[16].skillIds.hasAny(d.skillIds) ? r.workOutputs[16].id : '',
+r.workOutputs.size() > 17 && r.workOutputs[17].skillIds.hasAny(d.skillIds) ? r.workOutputs[17].id : '',
+r.workOutputs.size() > 18 && r.workOutputs[18].skillIds.hasAny(d.skillIds) ? r.workOutputs[18].id : '',
+r.workOutputs.size() > 19 && r.workOutputs[19].skillIds.hasAny(d.skillIds) ? r.workOutputs[19].id : ''];
+   return d.skillIds.toSet() == r.skillIds.toSet().intersection(allowed.toSet())
+    && d.workOutputIds.toSet() == expectedOutputs.removeAll(['']).toSet();
+  }
+  match /aligna_work_assignments/{id} {
+   allow read: if workSeeker(resource.data) || workEmployer(resource.data);
+   allow get: if workExternal(id);
+   allow create: if verifiedAccount()
+    && request.resource.data.keys().hasOnly(['applicationId','jobId','jobRequirementsVersion','skillIds','workOutputIds','employerUid','seekerUid','taskId','variant','taskVersion','rubricVersion','condition','minutes','createdAt'])
+    && request.resource.data.applicationId is string && request.resource.data.applicationId.size() <= 150
+    && workApplication(request.resource.data.applicationId).active == true
+    && workApplication(request.resource.data.applicationId).employerUid == request.auth.uid
+    && request.resource.data.employerUid == request.auth.uid
+    && request.resource.data.seekerUid == workApplication(request.resource.data.applicationId).seekerUid
+    && request.resource.data.jobId == workApplication(request.resource.data.applicationId).jobId
+    && request.resource.data.jobRequirementsVersion is int
+    && request.resource.data.jobRequirementsVersion == workApplication(request.resource.data.applicationId).jobRequirementsVersion
+    && request.resource.data.skillIds is list && request.resource.data.skillIds.size() > 0 && request.resource.data.skillIds.size() <= 8
+    && request.resource.data.skillIds.toSet().size() == request.resource.data.skillIds.size()
+    && request.resource.data.workOutputIds is list && request.resource.data.workOutputIds.size() > 0 && request.resource.data.workOutputIds.size() <= 20
+    && request.resource.data.workOutputIds.toSet().size() == request.resource.data.workOutputIds.size()
+    && workTaskLinks(request.resource.data)
+    && request.resource.data.taskId in ['resource-plan','record-audit'] && request.resource.data.variant in ['A','B']
+    && id == request.resource.data.applicationId + '--' + request.resource.data.taskId + '--' + request.resource.data.variant
+    && request.resource.data.taskVersion == 'formal-work-v1'
+    && request.resource.data.rubricVersion == workRubric(request.resource.data.taskId,request.resource.data.variant)
+    && request.resource.data.condition in ['independent','ai-assisted'] && request.resource.data.minutes in [15,20,25,30,45,60]
+    && request.resource.data.createdAt == request.time;
+  }
+  function workAnswers(v,task) {
+   return v is map && v.keys().hasAll(['decision','calculation','reasoning','verification','claimedMaximum','uniqueCount','completedCount','selected','exceptions'])
+    && v.keys().hasOnly(['decision','calculation','reasoning','verification','claimedMaximum','uniqueCount','completedCount','selected','exceptions'])
+    && v.decision is string && v.decision.size() <= 4000 && v.calculation is string && v.calculation.size() <= 4000
+    && v.reasoning is string && v.reasoning.size() <= 4000 && v.verification is string && v.verification.size() <= 4000
+    && v.claimedMaximum is string && v.claimedMaximum.size() <= 40 && v.uniqueCount is string && v.uniqueCount.size() <= 40 && v.completedCount is string && v.completedCount.size() <= 40
+    && v.selected is list && v.selected.size() <= 6 && v.selected.toSet().size() == v.selected.size() && v.selected.hasOnly(['A','B','C','D','E','F'])
+    && v.exceptions is list && v.exceptions.size() <= 12 && v.exceptions.toSet().size() == v.exceptions.size()
+    && v.exceptions.hasOnly(['P101','P102','P103','P104','P105','P106','Q201','Q202','Q203','Q204','Q205','Q206'])
+    && (task == 'resource-plan' ? (v.uniqueCount == '' && v.completedCount == '' && v.exceptions.size() == 0) : (v.selected.size() == 0 && v.claimedMaximum == ''));
+  }
+  match /aligna_work_attempts/{id} {
+   function validAttempt(d) {
+    let a = workAssignment(id);
+    return d.keys().hasOnly(['assignmentId','applicationId','employerUid','seekerUid','taskId','variant','taskVersion','rubricVersion','condition','status','answers','declaredTools','consentVersion','createdAt','startedAt','updatedAt','submittedAt'])
+     && d.assignmentId == id && d.applicationId == a.applicationId && d.employerUid == a.employerUid && d.seekerUid == a.seekerUid
+     && d.taskId == a.taskId && d.variant == a.variant && d.taskVersion == a.taskVersion && d.rubricVersion == a.rubricVersion && d.condition == a.condition
+     && workAnswers(d.answers,a.taskId) && d.declaredTools is list && d.declaredTools.size() <= 3
+     && d.declaredTools.toSet().size() == d.declaredTools.size() && d.declaredTools.hasOnly(['calculator','spreadsheet','ai'])
+     && (a.condition != 'independent' || !d.declaredTools.hasAny(['ai']))
+     && d.createdAt is timestamp && d.startedAt == d.createdAt && d.updatedAt == request.time
+     && (d.status == 'in-progress' ? (d.consentVersion == '' && d.submittedAt == null)
+      : (d.status == 'submitted' && d.consentVersion == 'work-sample-share-v1' && d.submittedAt == request.time
+       && d.answers.decision.size() > 0 && d.answers.calculation.size() > 0 && d.answers.reasoning.size() > 0 && d.answers.verification.size() > 0));
+   }
+   allow get: if workSeeker(workAssignment(id)) || (resource.data.status == 'submitted' && (workEmployer(workAssignment(id)) || workExternal(id)));
+   allow list: if workSeeker(resource.data) || (resource.data.status == 'submitted' && workEmployer(resource.data));
+   allow create: if workSeeker(workAssignment(id)) && workApplication(workAssignment(id).applicationId).active == true
+    && validAttempt(request.resource.data) && request.resource.data.status == 'in-progress' && request.resource.data.createdAt == request.time;
+   allow update: if workSeeker(workAssignment(id)) && workApplication(workAssignment(id).applicationId).active == true
+    && resource.data.status == 'in-progress' && validAttempt(request.resource.data)
+    && request.resource.data.createdAt == resource.data.createdAt
+    && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['answers','declaredTools','consentVersion','status','updatedAt','submittedAt']);
+  }
+  function workRating(r,key,field) {
+   return r is map && r.keys().hasOnly(['criterionId','sourceField','score','observation'])
+    && r.criterionId == key && r.sourceField == field && r.score in [null,1,2,3]
+    && r.observation is string && r.observation.size() <= 1500 && (r.score == null || r.observation.size() > 0);
+  }
+  match /aligna_work_reviews/{id} {
+   allow get: if workSeeker(workAssignment(id)) || workEmployer(workAssignment(id));
+   allow create: if workEmployer(workAssignment(id))
+    && get(/databases/$(database)/documents/aligna_work_attempts/$(id)).data.status == 'submitted'
+    && request.resource.data.keys().hasOnly(['assignmentId','applicationId','employerUid','seekerUid','reviewerUid','taskVersion','rubricVersion','attemptVersion','ratings','createdAt'])
+    && request.resource.data.assignmentId == id && request.resource.data.applicationId == workAssignment(id).applicationId
+    && request.resource.data.employerUid == request.auth.uid && request.resource.data.reviewerUid == request.auth.uid
+    && request.resource.data.seekerUid == workAssignment(id).seekerUid && request.resource.data.taskVersion == workAssignment(id).taskVersion
+    && request.resource.data.rubricVersion == workAssignment(id).rubricVersion
+    && request.resource.data.attemptVersion is string && request.resource.data.attemptVersion.size() <= 80
+    && request.resource.data.ratings is list && request.resource.data.ratings.size() == 4
+    && workRating(request.resource.data.ratings[0],'numeracy','calculation')
+    && workRating(request.resource.data.ratings[1],'constraints','decision')
+    && workRating(request.resource.data.ratings[2],'reasoning','reasoning')
+    && workRating(request.resource.data.ratings[3],'verification','verification')
+    && request.resource.data.createdAt == request.time;
+  }
+
+
+  match /aligna_users/{uid}/preferences/profile {
+   allow get: if verifiedAccount() && request.auth.uid == uid;
+   allow create, update: if verifiedAccount() && request.auth.uid == uid
+    && request.resource.data.keys().hasAll(['version','displayName','photoDataUrl','theme','updatedAt'])
+    && request.resource.data.keys().hasOnly(['version','displayName','photoDataUrl','theme','updatedAt'])
+    && request.resource.data.version == 'profile-preferences-v1'
+    && request.resource.data.displayName is string && request.resource.data.displayName.size() <= 80
+    && request.resource.data.photoDataUrl is string && request.resource.data.photoDataUrl.size() <= 180000
+    && (request.resource.data.photoDataUrl == '' || request.resource.data.photoDataUrl.matches('data:image/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+'))
+    && request.resource.data.theme in ['light','dark'] && request.resource.data.updatedAt == request.time;
+  }
+
+  // Personal home shortcuts only. No HR/candidate evidence or sharing access changes.
+  match /aligna_users/{uid}/preferences/workspace {
+   allow get: if verifiedAccount() && request.auth.uid == uid;
+   allow create, update: if verifiedAccount() && request.auth.uid == uid
+    && request.resource.data.keys().hasOnly(['version','ids','updatedAt'])
+    && request.resource.data.version == 'workspace-shortcuts-v1'
+    && request.resource.data.ids is list && request.resource.data.ids.size() == 4
+    && request.resource.data.ids.toSet().size() == 4
+    && request.resource.data.ids.hasOnly(['assessment','games','growth','transition','life-skills','career-try','ai-trends','study-calendar','reflection','portfolio','jobs','applications'])
+    && request.resource.data.updatedAt == request.time;
+  }
+
+  // Follow-up reviews: immutable corrections, candidate clarification and explicitly consented blind review.
+  function workExternal(id) {
+   let a = workAssignment(id);
+   let r = get(/databases/$(database)/documents/aligna_work_review_requests/$(id + '--' + request.auth.uid)).data;
+   return verifiedAccount() && r.reviewerUid == request.auth.uid && r.assignmentId == id && r.status == 'approved'
+    && r.consentVersion == 'independent-task-share-v1' && workApplication(a.applicationId).active == true;
+  }
+  function workAllRatings(v) {
+   return v is list && v.size() == 4 && workRating(v[0],'numeracy','calculation') && workRating(v[1],'constraints','decision')
+    && workRating(v[2],'reasoning','reasoning') && workRating(v[3],'verification','verification');
+  }
+  function workSameAssignment(d,a) {
+   return d.assignmentId is string && d.applicationId == a.applicationId && d.employerUid == a.employerUid && d.seekerUid == a.seekerUid;
+  }
+  function workShared(d) { return workSeeker(d) || workEmployer(d); }
+  function workOriginal(id) { return get(/databases/$(database)/documents/aligna_work_reviews/$(id)).data; }
+  match /aligna_work_review_heads/{id} {
+   allow get: if workShared(workAssignment(id));
+   function validHead(d) {
+    let a = workAssignment(id);
+    let c = getAfter(/databases/$(database)/documents/aligna_work_corrections/$(d.correctionId)).data;
+    return workEmployer(a) && d.keys().hasOnly(['assignmentId','applicationId','employerUid','seekerUid','correctionId','revision','updatedAt'])
+     && d.assignmentId == id && workSameAssignment(d,a) && d.revision is int && d.revision >= 1 && d.revision <= 20
+     && c.assignmentId == id && c.revision == d.revision && d.updatedAt == request.time;
+   }
+   allow create: if validHead(request.resource.data) && request.resource.data.revision == 1;
+   allow update: if validHead(request.resource.data) && request.resource.data.revision == resource.data.revision + 1;
+  }
+  match /aligna_work_corrections/{id} {
+   allow get, list: if workShared(resource.data);
+   allow create: if validCorrection(request.resource.data);
+   function validCorrection(d) {
+    let a = workAssignment(d.assignmentId);
+    let hpath = /databases/$(database)/documents/aligna_work_review_heads/$(d.assignmentId);
+    let prior = exists(hpath) ? get(hpath).data : {'revision':0,'correctionId':''};
+    return workEmployer(a) && d.keys().hasOnly(['assignmentId','applicationId','employerUid','seekerUid','reviewerUid','revision','previousId','reason','attemptVersion','rubricVersion','ratings','createdAt'])
+     && workSameAssignment(d,a) && d.reviewerUid == request.auth.uid && d.revision is int && d.revision == prior.revision + 1 && d.revision <= 20
+     && id == d.assignmentId + '--r' + string(d.revision) && d.previousId == prior.correctionId
+     && d.reason is string && d.reason.size() > 0 && d.reason.size() <= 3000
+     && d.attemptVersion == workOriginal(d.assignmentId).attemptVersion && d.rubricVersion == a.rubricVersion
+     && workAllRatings(d.ratings) && d.createdAt == request.time
+     && getAfter(hpath).data.correctionId == id && getAfter(hpath).data.revision == d.revision;
+   }
+  }
+  match /aligna_work_clarifications/{id} {
+   allow get, list: if workShared(resource.data);
+   function validQuestion(d) {
+    let a = workAssignment(d.assignmentId);
+    return workSeeker(a) && workApplication(a.applicationId).active == true && workSameAssignment(d,a)
+     && d.keys().hasOnly(['assignmentId','applicationId','employerUid','seekerUid','reviewRef','criterionId','message','status','response','resolution','correctionId','answeredAt','respondedBy','consentVersion','createdAt','updatedAt'])
+     && d.reviewRef is string && (d.reviewRef == 'original' ? !exists(/databases/$(database)/documents/aligna_work_review_heads/$(d.assignmentId))
+      : (get(/databases/$(database)/documents/aligna_work_review_heads/$(d.assignmentId)).data.correctionId == d.reviewRef))
+     && workOriginal(d.assignmentId).assignmentId == d.assignmentId
+     && d.criterionId in ['overall','numeracy','constraints','reasoning','verification'] && d.message is string && d.message.size() > 0 && d.message.size() <= 3000
+     && d.status == 'open' && d.response == '' && d.resolution == '' && d.correctionId == '' && d.answeredAt == null && d.respondedBy == ''
+     && d.consentVersion == 'work-clarification-share-v1' && d.createdAt == request.time && d.updatedAt == request.time;
+   }
+   allow create: if validQuestion(request.resource.data);
+   allow update: if workEmployer(resource.data) && resource.data.status == 'open' && request.resource.data.status == 'answered'
+    && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status','response','resolution','correctionId','answeredAt','respondedBy','updatedAt'])
+    && request.resource.data.response is string && request.resource.data.response.size() > 0 && request.resource.data.response.size() <= 3000
+    && request.resource.data.respondedBy == request.auth.uid && request.resource.data.resolution in ['explain','corrected','need-info']
+    && (request.resource.data.resolution == 'corrected'
+     ? (get(/databases/$(database)/documents/aligna_work_corrections/$(request.resource.data.correctionId)).data.assignmentId == resource.data.assignmentId
+       && get(/databases/$(database)/documents/aligna_work_corrections/$(request.resource.data.correctionId)).data.revision >
+        (resource.data.reviewRef == 'original' ? 0 : get(/databases/$(database)/documents/aligna_work_corrections/$(resource.data.reviewRef)).data.revision))
+     : request.resource.data.correctionId == '')
+    && request.resource.data.answeredAt == request.time && request.resource.data.updatedAt == request.time;
+  }
+  match /aligna_work_review_requests/{id} {
+   allow list: if workShared(resource.data);
+   allow get: if workShared(resource.data) || (verifiedAccount() && resource.data.reviewerUid == request.auth.uid
+    && resource.data.status == 'approved' && workApplication(resource.data.applicationId).active == true);
+   allow create: if validRequest(request.resource.data);
+   function validRequest(d) {
+    let a = workAssignment(d.assignmentId);
+    return workEmployer(a) && workSameAssignment(d,a)
+     && d.keys().hasOnly(['assignmentId','applicationId','employerUid','seekerUid','reviewerUid','attemptVersion','taskVersion','rubricVersion','status','consentVersion','approvedAt','revokedAt','createdAt','updatedAt'])
+     && d.reviewerUid is string && d.reviewerUid.matches('[a-zA-Z0-9_-]{1,128}') && d.reviewerUid != a.employerUid && d.reviewerUid != a.seekerUid
+     && id == d.assignmentId + '--' + d.reviewerUid && d.attemptVersion == workOriginal(d.assignmentId).attemptVersion
+     && d.taskVersion == a.taskVersion && d.rubricVersion == a.rubricVersion && d.status == 'pending' && d.consentVersion == ''
+     && d.approvedAt == null && d.revokedAt == null && d.createdAt == request.time && d.updatedAt == request.time;
+   }
+   allow update: if workSeeker(resource.data) && workApplication(resource.data.applicationId).active == true
+    && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status','consentVersion','approvedAt','revokedAt','updatedAt'])
+    && request.resource.data.updatedAt == request.time
+    && ((resource.data.status == 'pending' && request.resource.data.status == 'approved' && request.resource.data.consentVersion == 'independent-task-share-v1'
+       && request.resource.data.approvedAt == request.time && request.resource.data.revokedAt == null)
+     || (resource.data.status in ['pending','approved'] && request.resource.data.status == 'revoked'
+       && request.resource.data.consentVersion == resource.data.consentVersion && request.resource.data.approvedAt == resource.data.approvedAt && request.resource.data.revokedAt == request.time));
+  }
+  match /aligna_work_independent_reviews/{id} {
+   function req() { return get(/databases/$(database)/documents/aligna_work_review_requests/$(id)).data; }
+   allow get: if workShared(req()) || (verifiedAccount() && req().reviewerUid == request.auth.uid && req().status == 'approved' && workApplication(req().applicationId).active == true);
+   allow create: if verifiedAccount() && req().reviewerUid == request.auth.uid && req().status == 'approved' && workApplication(req().applicationId).active == true
+    && request.auth.uid != req().employerUid && request.auth.uid != req().seekerUid && validIndependent(request.resource.data);
+   function validIndependent(d) {
+    let r = req();
+    return d.keys().hasOnly(['requestId','assignmentId','applicationId','employerUid','seekerUid','reviewerUid','attemptVersion','rubricVersion','ratings','blindReview','raterDeclaration','createdAt'])
+     && d.requestId == id && d.assignmentId == r.assignmentId && d.applicationId == r.applicationId && d.employerUid == r.employerUid && d.seekerUid == r.seekerUid
+     && d.reviewerUid == request.auth.uid && d.attemptVersion == r.attemptVersion && d.rubricVersion == r.rubricVersion
+     && d.blindReview == true && workAllRatings(d.ratings) && (!d.keys().hasAny(['raterDeclaration']) || vRaterDeclaration(d.raterDeclaration)) && d.createdAt == request.time;
+   }
+  }
+
+  // Validation studies: private coordination; public task packets for named experts.
+  // Existing candidate-controlled work review remains the ONLY raw-answer sharing path.
+  function vStudy(id) { return get(/databases/$(database)/documents/aligna_validation_studies/$(id)).data; }
+  function vOwner(s) { return verifiedAccount() && s.ownerUid == request.auth.uid; }
+  function vText(v,n) { return v is string && v.size() > 0 && v.size() <= n; }
+  function vOpinionRating(r,id) {
+   return r is map && r.keys().hasOnly(['criterionId','relevance','clarity','observability','fairness','comment']) && r.criterionId == id
+    && r.relevance is int && r.relevance >= 1 && r.relevance <= 4 && r.clarity is int && r.clarity >= 1 && r.clarity <= 4
+    && r.observability is int && r.observability >= 1 && r.observability <= 4 && r.fairness is int && r.fairness >= 1 && r.fairness <= 4
+    && vText(r.comment,1500) && r.comment.size() >= 5;
+  }
+  function vRaterDeclaration(d) {
+   return d is map && d.keys().hasOnly(['version','ownWork','noDiscussion','aiUsed','identityRecognized','conflicts','synthetic'])
+    && d.version == 'rater-declaration-v1' && d.ownWork is bool && d.noDiscussion is bool && d.aiUsed is bool
+    && d.identityRecognized is bool && d.conflicts is string && d.conflicts.size() <= 1000 && d.synthetic is bool;
+  }
+  match /aligna_validation_studies/{id} {
+   allow get, list: if vOwner(resource.data);
+   allow create: if verifiedAccount() && validStudy(request.resource.data);
+   function validStudy(d) {
+    let a=workAssignment(d.referenceAssignmentId); let app=workApplication(a.applicationId);
+    return workEmployer(a) && d.keys().hasOnly(['ownerUid','title','referenceAssignmentId','jobId','jobRequirementsVersion','publicJob','taskId','variant','taskVersion','rubricVersion','condition','minutes','language','raterA','raterB','expertUids','protocol','phase','caseIds','reportIds','validationStatus','frozenAt','closedAt','createdAt','updatedAt'])
+     && d.ownerUid == request.auth.uid && vText(d.title,160) && d.jobId == a.jobId && d.jobRequirementsVersion == app.jobRequirementsVersion && d.publicJob == app.jobSnapshot
+     && d.taskId == a.taskId && d.variant == a.variant && d.taskVersion == a.taskVersion && d.rubricVersion == a.rubricVersion && d.condition == a.condition && d.minutes == a.minutes
+     && d.language in ['zh','en','ms'] && d.raterA is string && d.raterA.matches('[a-zA-Z0-9_-]{1,128}') && d.raterB is string && d.raterB.matches('[a-zA-Z0-9_-]{1,128}')
+     && d.raterA != d.raterB && d.raterA != request.auth.uid && d.raterB != request.auth.uid
+     && d.expertUids is list && d.expertUids.size() > 0 && d.expertUids.size() <= 10 && d.expertUids.toSet().size() == d.expertUids.size() && !d.expertUids.hasAny([request.auth.uid])
+     && d.protocol is map && d.protocol.keys().hasOnly(['targetCases','targetExperts','acceptanceRule','samplingPlan'])
+     && d.protocol.targetCases is int && d.protocol.targetCases >= 10 && d.protocol.targetCases <= 60 && d.protocol.targetExperts is int && d.protocol.targetExperts >= 2 && d.protocol.targetExperts <= 10
+     && vText(d.protocol.acceptanceRule,3000) && d.protocol.acceptanceRule.size() >= 20 && vText(d.protocol.samplingPlan,3000)
+     && d.phase == 'draft' && d.caseIds == [] && d.reportIds == [] && d.validationStatus == 'pending-human-validation' && d.frozenAt == null && d.closedAt == null && d.createdAt == request.time && d.updatedAt == request.time;
+   }
+   function manifestChange(d,old) {
+    let nc=d.caseIds.size(); let nr=d.reportIds.size();
+    return (d.caseIds == old.caseIds && d.reportIds == old.reportIds)
+     || (old.phase == 'collecting' && nc == old.caseIds.size()+1 && nc <= 60 && d.caseIds == old.caseIds.concat([d.caseIds[nc-1]]) && d.reportIds == old.reportIds
+      && getAfter(/databases/$(database)/documents/aligna_validation_cases/$(d.caseIds[nc-1])).data.studyId == id)
+     || (nr == old.reportIds.size()+1 && nr <= 20 && d.reportIds == old.reportIds.concat([d.reportIds[nr-1]]) && d.caseIds == old.caseIds
+      && getAfter(/databases/$(database)/documents/aligna_validation_reports/$(d.reportIds[nr-1])).data.studyId == id);
+   }
+   allow update: if vOwner(resource.data) && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['phase','caseIds','reportIds','updatedAt','frozenAt','closedAt'])
+    && request.resource.data.updatedAt == request.time
+    && ((resource.data.phase == 'draft' && request.resource.data.phase == 'collecting' && request.resource.data.frozenAt == request.time && request.resource.data.closedAt == null && request.resource.data.caseIds == [] && request.resource.data.reportIds == [])
+     || (resource.data.phase == 'collecting' && request.resource.data.phase == 'closed' && request.resource.data.frozenAt == resource.data.frozenAt && request.resource.data.closedAt == request.time && request.resource.data.caseIds == resource.data.caseIds && request.resource.data.reportIds == resource.data.reportIds)
+     || (resource.data.phase in ['collecting','closed'] && request.resource.data.phase == resource.data.phase && request.resource.data.frozenAt == resource.data.frozenAt && request.resource.data.closedAt == resource.data.closedAt && manifestChange(request.resource.data,resource.data)));
+  }
+  match /aligna_validation_experts/{id} {
+   allow get, list: if vOwner(resource.data) || (verifiedAccount() && resource.data.expertUid == request.auth.uid && resource.data.state != 'revoked');
+   allow create: if validPacket(request.resource.data);
+   function validPacket(d) {
+    let s=getAfter(/databases/$(database)/documents/aligna_validation_studies/$(d.studyId)).data;
+    return vOwner(s) && s.phase == 'collecting' && s.expertUids.hasAny([d.expertUid]) && id == d.studyId+'--'+d.expertUid
+     && d.keys().hasOnly(['studyId','ownerUid','expertUid','publicJob','taskId','variant','taskVersion','rubricVersion','language','state','createdAt','updatedAt'])
+     && d.ownerUid == s.ownerUid && d.publicJob == s.publicJob && d.taskId == s.taskId && d.variant == s.variant && d.taskVersion == s.taskVersion && d.rubricVersion == s.rubricVersion && d.language == s.language
+     && d.state == 'open' && d.createdAt == request.time && d.updatedAt == request.time;
+   }
+   allow update: if vOwner(resource.data) && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['state','updatedAt']) && request.resource.data.updatedAt == request.time
+    && ((resource.data.state in ['open','closed'] && request.resource.data.state == 'revoked')
+     || (resource.data.state == 'open' && request.resource.data.state == 'closed' && getAfter(/databases/$(database)/documents/aligna_validation_studies/$(resource.data.studyId)).data.phase == 'closed'));
+  }
+  match /aligna_validation_opinions/{id} {
+   function packet(){return get(/databases/$(database)/documents/aligna_validation_experts/$(id)).data;}
+   allow get: if vOwner(packet()) || (verifiedAccount() && packet().expertUid == request.auth.uid && packet().state != 'revoked');
+   allow list: if vOwner(resource.data);
+   allow create: if verifiedAccount() && packet().expertUid == request.auth.uid && packet().state == 'open' && vStudy(packet().studyId).phase == 'collecting' && validOpinion(request.resource.data);
+   function validOpinion(d) {
+    let p=packet();
+    return d.keys().hasOnly(['studyId','ownerUid','expertUid','packetVersion','rubricVersion','background','conflicts','coverageNotes','recommendation','synthetic','independent','criteria','consentVersion','createdAt'])
+     && d.studyId == p.studyId && d.ownerUid == p.ownerUid && d.expertUid == request.auth.uid && d.rubricVersion == p.rubricVersion && vText(d.packetVersion,100)
+     && vText(d.background,1500) && d.background.size() >= 10 && vText(d.conflicts,1000) && vText(d.coverageNotes,2000) && d.coverageNotes.size() >= 10
+     && d.recommendation in ['revise','pilot-review','not-suitable'] && d.synthetic is bool && d.independent is bool && (d.synthetic || d.independent)
+     && d.criteria is list && d.criteria.size() == 4 && vOpinionRating(d.criteria[0],'numeracy') && vOpinionRating(d.criteria[1],'constraints') && vOpinionRating(d.criteria[2],'reasoning') && vOpinionRating(d.criteria[3],'verification')
+     && d.consentVersion == 'expert-opinion-share-v1' && d.createdAt == request.time;
+   }
+  }
+  match /aligna_validation_credentials/{id} {
+   allow get, list: if vOwner(resource.data);
+   allow create: if validCredential(request.resource.data);
+   function validCredential(d){let s=vStudy(d.studyId);return vOwner(s) && id == d.studyId+'--'+d.reviewerUid && s.expertUids.concat([s.raterA,s.raterB]).hasAny([d.reviewerUid])
+    && d.keys().hasOnly(['studyId','ownerUid','reviewerUid','reviewerName','professionalRole','verificationNote','humanChecked','synthetic','scope','createdAt'])
+    && d.ownerUid == request.auth.uid && vText(d.reviewerName,120) && vText(d.professionalRole,300) && vText(d.verificationNote,2000) && d.verificationNote.size() >= 20
+    && d.humanChecked == true && d.synthetic is bool && d.scope == 'Qualification check declared by study owner, not independently verified by the software' && d.createdAt == request.time;}
+  }
+  match /aligna_validation_cases/{id} {
+   allow get: if vOwner(resource.data) || (verifiedAccount() && resource.data.seekerUid == request.auth.uid);
+   allow list: if vOwner(resource.data);
+   allow create: if validCase(request.resource.data);
+   function validCase(d){let s=vStudy(d.studyId);let a=workAssignment(d.assignmentId);let app=workApplication(a.applicationId);
+    return vOwner(s) && s.phase == 'collecting' && workEmployer(a) && d.keys().hasOnly(['studyId','ownerUid','studyTitle','caseAlias','assignmentId','applicationId','seekerUid','attemptVersion','profileSynthetic','redactionChecked','languageChecked','taskId','variant','condition','minutes','reviewerUids','createdAt'])
+     && d.ownerUid == request.auth.uid && d.studyTitle == s.title && id == d.studyId+'--'+d.caseAlias && d.caseAlias.matches('C[0-9]{3}')
+     && d.applicationId == a.applicationId && d.seekerUid == a.seekerUid && d.seekerUid != s.raterA && d.seekerUid != s.raterB
+     && a.jobId == s.jobId && app.jobRequirementsVersion == s.jobRequirementsVersion && a.taskId == s.taskId && a.variant == s.variant && a.rubricVersion == s.rubricVersion && a.condition == s.condition && a.minutes == s.minutes
+     && d.taskId == s.taskId && d.variant == s.variant && d.condition == s.condition && d.minutes == s.minutes && d.reviewerUids == [s.raterA,s.raterB]
+     && d.get('languageChecked',false) is bool && d.profileSynthetic is bool && d.redactionChecked == true && vText(d.attemptVersion,100)
+     && get(/databases/$(database)/documents/aligna_work_attempts/$(d.assignmentId)).data.status == 'submitted'
+     && getAfter(/databases/$(database)/documents/aligna_validation_studies/$(d.studyId)).data.caseIds.hasAny([id]) && d.createdAt == request.time;
+   }
+  }
+  match /aligna_validation_participation/{id} {
+   function source(){return get(/databases/$(database)/documents/aligna_validation_cases/$(id)).data;}
+   allow get: if vOwner(source()) || (verifiedAccount() && source().seekerUid == request.auth.uid);
+   allow list: if vOwner(resource.data);
+   allow create: if verifiedAccount() && source().seekerUid == request.auth.uid && validParticipation(request.resource.data);
+   function validParticipation(d){let c=source();return d.keys().hasOnly(['studyId','caseId','ownerUid','seekerUid','attemptVersion','active','ownHumanResponse','syntheticTest','consentVersion','revokedAt','createdAt','updatedAt'])
+    && d.studyId == c.studyId && d.caseId == id && d.ownerUid == c.ownerUid && d.seekerUid == request.auth.uid && d.attemptVersion == c.attemptVersion
+    && workApplication(c.applicationId).active == true && vStudy(c.studyId).phase == 'collecting'
+    && d.active == true && d.ownHumanResponse is bool && d.syntheticTest is bool && d.consentVersion == 'validation-research-share-v1' && d.revokedAt == null && d.createdAt == request.time && d.updatedAt == request.time;}
+   allow update: if verifiedAccount() && resource.data.seekerUid == request.auth.uid && resource.data.active == true && request.resource.data.active == false
+    && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['active','updatedAt','revokedAt']) && request.resource.data.updatedAt == request.time && request.resource.data.revokedAt == request.time;
+  }
+  match /aligna_validation_reports/{id} {
+   allow get, list: if vOwner(resource.data);
+   allow create: if validReport(request.resource.data);
+   function validReport(d){let s=vStudy(d.studyId);return vOwner(s) && s.phase in ['collecting','closed'] && d.ownerUid == request.auth.uid
+    && d.keys().hasOnly(['studyId','ownerUid','statisticsVersion','sourceDigest','human','demonstration','missingHumanCases','missingHumanExperts','validationStatus','excludedCases','protocol','createdAt'])
+    && d.statisticsVersion == 'validation-statistics-v1' && vText(d.sourceDigest,100) && d.human is map && d.demonstration is map
+    && d.human.reliability.validationStatus == 'pending-human-validation' && d.human.content.validationStatus == 'pending-human-validation'
+    && d.validationStatus == 'pending-human-validation' && d.protocol == s.protocol && d.excludedCases is list && d.excludedCases.size() <= 60
+    && d.missingHumanCases is int && d.missingHumanCases >= 0 && d.missingHumanExperts is int && d.missingHumanExperts >= 0
+    && getAfter(/databases/$(database)/documents/aligna_validation_studies/$(d.studyId)).data.reportIds.hasAny([id]) && d.createdAt == request.time;}
+  }
+  match /aligna_validation_decisions/{id} {
+   allow get, list: if vOwner(resource.data);
+   allow create: if validDecision(request.resource.data);
+   function validDecision(d){let s=vStudy(d.studyId);let r=get(/databases/$(database)/documents/aligna_validation_reports/$(d.reportId)).data;return vOwner(s) && s.reportIds.hasAny([d.reportId]) && r.studyId == d.studyId
+    && d.keys().hasOnly(['studyId','ownerUid','reportId','sourceDigest','decision','rationale','reviewerName','synthetic','validationStatus','scope','createdAt'])
+    && d.ownerUid == request.auth.uid && d.sourceDigest == r.sourceDigest && d.decision in ['revise','pilot-only','need-more-evidence'] && vText(d.rationale,3000) && d.rationale.size() >= 20 && vText(d.reviewerName,120)
+    && d.synthetic is bool && d.validationStatus == 'pending-human-validation' && d.scope == 'Internal review record, not a validity certificate or hiring decision' && d.createdAt == request.time;}
+  }
+
+  // Isolated news worker: no permission to read raw profiles, answers, games or HR notes.
+  function newsWorker() { return request.auth != null && request.auth.uid == 'I03hRbRU9khcQMws8YbdAyjTwSv1'; }
+  // Paired synthetic research: no raw CV, questionnaire or game access is granted.
+  function pApp(id) {return workApplication(id);}
+  function pAccess(id) {let a=pApp(id);return verifiedAccount() && a.active == true && a.synthetic == true && request.auth.uid in [a.employerUid,a.seekerUid];}
+  function pOwner(id) {return pAccess(id) && request.auth.uid == pApp(id).employerUid;}
+  function pConsentRevision(id) {return exists(/databases/$(database)/documents/aligna_research_prototype_consents/$(id)) ? get(/databases/$(database)/documents/aligna_research_prototype_consents/$(id)).data.version : 0;}
+  match /aligna_research_prototypes/{id} {
+   allow get: if pAccess(id);
+   allow create: if pOwner(id) && validRun(request.resource.data) && request.resource.data.revision == 1 && request.resource.data.events == [] && request.resource.data.lastReportId == '' && request.resource.data.createdAt == request.time;
+   function validRun(d) {let a=pApp(id);return d.keys().hasOnly(['applicationId','ownerUid','seekerUid','jobRequirementsVersion','basisVersion','version','synthetic','linkedPerson','sourceJson','stateJson','revision','lastReportId','events','createdAt','updatedAt'])
+    && d.applicationId == id && d.ownerUid == a.employerUid && d.seekerUid == a.seekerUid && d.jobRequirementsVersion == a.jobRequirementsVersion
+    && d.basisVersion is string && d.basisVersion.size() <= 100 && d.version == 'synthetic-research-v1' && d.synthetic == true && d.linkedPerson == 'SIM-002'
+    && d.sourceJson is string && d.sourceJson.size() > 1000 && d.sourceJson.size() <= 150000 && d.stateJson is string && d.stateJson.size() <= 20000
+    && d.revision is int && d.revision >= 1 && d.lastReportId is string && d.lastReportId.size() <= 300 && d.events is list && d.events.size() <= 100 && d.updatedAt == request.time;}
+   allow update: if pOwner(id) && validRun(request.resource.data) && request.resource.data.createdAt == resource.data.createdAt && (
+    (request.resource.data.diff(resource.data).affectedKeys().hasOnly(['lastReportId','updatedAt']) && request.resource.data.revision == resource.data.revision
+     && getAfter(/databases/$(database)/documents/aligna_research_prototype_reports/$(request.resource.data.lastReportId)).data.runRevision == resource.data.revision
+     && getAfter(/databases/$(database)/documents/aligna_research_prototype_reports/$(request.resource.data.lastReportId)).data.applicationId == id)
+    || (request.resource.data.diff(resource.data).affectedKeys().hasOnly(['stateJson','revision','events','lastReportId','updatedAt']) && request.resource.data.revision == resource.data.revision + 1 && request.resource.data.lastReportId == ''
+     && request.resource.data.events.size() == resource.data.events.size() + 1 && validEvent(request.resource.data.events[resource.data.events.size()])
+     && request.resource.data.events == resource.data.events.concat([request.resource.data.events[resource.data.events.size()]])));
+   function validEvent(e) {return e.keys().hasOnly(['sequence','actor','action','subject','synthetic']) && e.sequence == resource.data.events.size() + 1 && e.actor == 'hr' && e.synthetic == true && e.action in ['person','expert','rating','item','clear-items'] && e.subject is string && e.subject.size() <= 100;}
+  }
+  match /aligna_research_prototype_consents/{id} {
+   function seeker() {return verifiedAccount() && pApp(id).seekerUid == request.auth.uid;}
+   allow get: if seeker() || pOwner(id);
+   function validConsent(d) {let a=pApp(id);return d.keys().hasOnly(['applicationId','ownerUid','seekerUid','version','synthetic','research','training','ratings','withdrawn','theta','asked','consentVersion','createdAt','updatedAt'])
+    && d.applicationId == id && d.ownerUid == a.employerUid && d.seekerUid == a.seekerUid && d.synthetic == true && d.version is int && d.version >= 1
+    && d.research is bool && d.training is bool && d.ratings is bool && d.withdrawn is bool && d.theta in [-2,-1,0,1,2]
+    && d.asked is list && d.asked.size() <= 8 && d.asked.toSet().size() == d.asked.size() && d.asked.hasOnly([0,1,2,3,4,5,6,7])
+    && d.consentVersion == 'prototype-linked-consent-v1' && d.updatedAt == request.time;}
+   allow create: if seeker() && pAccess(id) && validConsent(request.resource.data) && request.resource.data.version == 1 && request.resource.data.createdAt == request.time;
+   allow update: if seeker() && validConsent(request.resource.data) && request.resource.data.createdAt == resource.data.createdAt && (
+    (pAccess(id) && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['research','training','ratings','withdrawn','version','updatedAt']) && request.resource.data.version == resource.data.version + 1)
+    || (pAccess(id) && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['theta','asked','updatedAt']) && request.resource.data.version == resource.data.version)
+    || (!pApp(id).active && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['withdrawn','version','updatedAt']) && request.resource.data.withdrawn == true && request.resource.data.version == resource.data.version + 1));
+  }
+  match /aligna_research_prototype_reports/{id} {
+   function appId() {return id.split('--')[0];}
+   function current(d) {return d.runRevision == get(/databases/$(database)/documents/aligna_research_prototypes/$(d.applicationId)).data.revision && d.consentRevision == pConsentRevision(d.applicationId);}
+   allow get: if pAccess(appId()) && (!exists(/databases/$(database)/documents/aligna_research_prototype_reports/$(id)) || current(resource.data));
+   allow create: if pOwner(appId()) && request.resource.data.keys().hasOnly(['applicationId','ownerUid','seekerUid','version','synthetic','runRevision','consentRevision','sourceDigest','payload','productionEnabled','createdAt'])
+    && request.resource.data.applicationId == appId() && request.resource.data.ownerUid == pApp(appId()).employerUid && request.resource.data.seekerUid == pApp(appId()).seekerUid
+    && request.resource.data.version == 'synthetic-research-v1' && request.resource.data.synthetic == true && request.resource.data.productionEnabled == false && current(request.resource.data)
+    && request.resource.data.payload is string && request.resource.data.payload.size() <= 150000 && request.resource.data.sourceDigest is string && request.resource.data.sourceDigest.size() <= 100
+    && getAfter(/databases/$(database)/documents/aligna_research_prototypes/$(appId())).data.lastReportId == id && request.resource.data.createdAt == request.time;
+  }
+  match /aligna_news_items/{id} { allow read, create, update: if newsWorker(); }
+  match /aligna_news_alerts/{id} { allow read, create, update: if newsWorker(); }
+  match /aligna_news_runs/{id} { allow read, create, update: if newsWorker(); }
+  match /aligna_news_state/{id} { allow read, create, update: if newsWorker(); }
+  match /aligna_news_audit/{id} { allow read, create: if newsWorker(); }
+  match /aligna_news_public/{sector} {
+   allow read: if request.auth != null;
+   allow create, update: if newsWorker();
+  }
+  match /aligna_news_subscriptions/{uid} {
+   function ownsNews() { return request.auth != null && request.auth.uid == uid && request.auth.token.email_verified == true; }
+   allow read: if ownsNews() || newsWorker();
+   allow create, update: if ownsNews()
+    && request.resource.data.keys().hasOnly(['goalId','country','months','hours','skills','active','consentVersion','updatedAt'])
+    && request.resource.data.goalId is string && request.resource.data.goalId.matches('[0-9]{2}-[0-9]{4}.[0-9]{2}')
+    && request.resource.data.country in ['MY','SG','UK','AU','US']
+    && request.resource.data.months in [3,5,6,12] && request.resource.data.hours is int && request.resource.data.hours >= 1 && request.resource.data.hours <= 40
+    && request.resource.data.skills is list && request.resource.data.skills.size() <= 35
+    && request.resource.data.active is bool && request.resource.data.consentVersion == 'career-news-v1'
+    && request.resource.data.updatedAt is string;
+  }
+  match /aligna_users/{uid}/trend_updates/{id} {
+   allow read: if request.auth != null && request.auth.uid == uid;
+   allow create, update: if newsWorker() && id == 'current'
+    && get(/databases/$(database)/documents/aligna_news_subscriptions/$(uid)).data.active == true
+    && request.resource.data.keys().hasOnly(['version','goalId','goalTitle','sector','newsVersion','generatedAt','country','months','hours','coverage','baseline','priorities','referenceSources','phases','unchanged','method','evidenceScope','subscriptionUpdatedAt','updatedAt'])
+    && request.resource.data.version == 'career-news-v1'
+    && request.resource.data.priorities is list && request.resource.data.priorities.size() <= 6;
+  }
+
+ }
+}

@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-23",
+  "actualBrowserOwnerCreatedAndFroze": true,
+  "actualBrowserExpertSubmitted": true,
+  "formRetainedAfterLanguageSwitch": true,
+  "referenceAnswerVisible": true,
+  "referenceMaximum": 120,
+  "serviceAndDirectFirebaseReadbackMatch": true,
+  "synthetic": true,
+  "humanIndependentDeclared": false,
+  "humanExperts": 0,
+  "humanPairedCases": 0,
+  "professionalValidity": "pending",
+  "sourceChecks": [
+    {
+      "path": "validation.html",
+      "status": 200,
+      "sha256": "f33005f45887e8111dcd994f78e3e250bb1059f31c7d4219dc45264d530c19d3"
+    },
+    {
+      "path": "validation.js",
+      "status": 200,
+      "sha256": "b196280c938120c29724f23552154151b4081eb2c3721d697145712df51c9c2f"
+    },
+    {
+      "path": "validation-view.js",
+      "status": 200,
+      "sha256": "465b4d0d4bd1bbb95336653b0110497583911cf64109ef736303943e895e7418"
+    },
+    {
+      "path": "validation-statistics.js",
+      "status": 200,
+      "sha256": "19f10355e5ccca146a38e0c98375f611f5c8e868b1b79eb999232b4fc271694e"
+    },
+    {
+      "path": "validation.css",
+      "status": 200,
+      "sha256": "e18ba09fe3b7bc37b80be94588d57654da76c437763ecb41e81d8017d24a6b7b"
+    },
+    {
+      "path": "api/validation",
+      "status": 401,
+      "noStore": true
+    },
+    {
+      "path": ".env",
+      "status": 404
+    },
+    {
+      "path": "lib/validation-service.js",
+      "status": 404
+    },
+    {
+      "path": "firebase/firestore.rules",
+      "status": 404
+    }
+  ]
+}

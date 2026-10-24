@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-23",
+  "phase": "before",
+  "environment": "production Firebase project-d32d7",
+  "syntheticOnly": true,
+  "checks": 8,
+  "threeExpertOpinionsDirectReadback": true,
+  "threeResearchConsentsDirectReadback": true,
+  "twoIndependentRatingsDirectReadback": true,
+  "threeReportsDirectReadback": true,
+  "humanExperts": 0,
+  "humanCases": 0,
+  "professionalValidity": "pending",
+  "pairedSyntheticCasesPerRound": 1
+}

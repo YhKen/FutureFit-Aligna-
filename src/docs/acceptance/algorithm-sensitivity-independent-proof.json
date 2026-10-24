@@ -1,0 +1,174 @@
+{
+  "passed": true,
+  "numericComparisons": 11268,
+  "jobRecordPatterns": 16,
+  "jobWeightPolicies": 3,
+  "occupationCount": 923,
+  "syntheticProfiles": 3,
+  "careerWeightPolicies": 4,
+  "scope": "Independent Python sums, dot products and centred correlation from raw fixture inputs. Synthetic implementation check only; not human calibration. Near ties and language collation are not independent ranking evidence.",
+  "careerScenarioSummary": [
+    {
+      "profile": "differentiated-full",
+      "flat": false,
+      "scenarios": [
+        {
+          "policy": "interest-only",
+          "top5Overlap": 5,
+          "jaccard": 1,
+          "top5": [
+            "19-1013.00",
+            "17-2199.07",
+            "19-3092.00",
+            "17-2021.00",
+            "17-1012.00"
+          ]
+        },
+        {
+          "policy": "interest-90",
+          "top5Overlap": 5,
+          "jaccard": 1,
+          "top5": [
+            "19-1013.00",
+            "17-2199.07",
+            "17-2021.00",
+            "19-3092.00",
+            "17-1012.00"
+          ]
+        },
+        {
+          "policy": "current",
+          "top5Overlap": 5,
+          "jaccard": 1,
+          "top5": [
+            "19-1013.00",
+            "17-2199.07",
+            "17-2021.00",
+            "19-3092.00",
+            "17-1012.00"
+          ]
+        },
+        {
+          "policy": "skill-30",
+          "top5Overlap": 2,
+          "jaccard": 0.25,
+          "top5": [
+            "27-4015.00",
+            "17-3028.00",
+            "17-2199.07",
+            "19-1013.00",
+            "19-4044.00"
+          ]
+        }
+      ]
+    },
+    {
+      "profile": "differentiated-partial",
+      "flat": false,
+      "scenarios": [
+        {
+          "policy": "interest-only",
+          "top5Overlap": 5,
+          "jaccard": 1,
+          "top5": [
+            "29-1129.01",
+            "29-1129.02",
+            "27-3043.05",
+            "27-3011.00",
+            "27-2011.00"
+          ]
+        },
+        {
+          "policy": "interest-90",
+          "top5Overlap": 5,
+          "jaccard": 1,
+          "top5": [
+            "29-1129.01",
+            "29-1129.02",
+            "27-3043.05",
+            "27-3011.00",
+            "27-2011.00"
+          ]
+        },
+        {
+          "policy": "current",
+          "top5Overlap": 5,
+          "jaccard": 1,
+          "top5": [
+            "29-1129.01",
+            "29-1129.02",
+            "27-3043.05",
+            "27-3011.00",
+            "27-2011.00"
+          ]
+        },
+        {
+          "policy": "skill-30",
+          "top5Overlap": 5,
+          "jaccard": 1,
+          "top5": [
+            "29-1129.01",
+            "29-1129.02",
+            "27-3043.05",
+            "27-3011.00",
+            "27-2011.00"
+          ]
+        }
+      ]
+    },
+    {
+      "profile": "flat-full",
+      "flat": true,
+      "scenarios": [
+        {
+          "policy": "interest-only",
+          "top5Overlap": 5,
+          "jaccard": 1,
+          "top5": [
+            "13-2011.00",
+            "27-2011.00",
+            "15-2011.00",
+            "29-1291.00",
+            "29-1141.01"
+          ]
+        },
+        {
+          "policy": "interest-90",
+          "top5Overlap": 5,
+          "jaccard": 1,
+          "top5": [
+            "13-2011.00",
+            "27-2011.00",
+            "15-2011.00",
+            "29-1291.00",
+            "29-1141.01"
+          ]
+        },
+        {
+          "policy": "current",
+          "top5Overlap": 5,
+          "jaccard": 1,
+          "top5": [
+            "13-2011.00",
+            "27-2011.00",
+            "15-2011.00",
+            "29-1291.00",
+            "29-1141.01"
+          ]
+        },
+        {
+          "policy": "skill-30",
+          "top5Overlap": 5,
+          "jaccard": 1,
+          "top5": [
+            "13-2011.00",
+            "27-2011.00",
+            "15-2011.00",
+            "29-1291.00",
+            "29-1141.01"
+          ]
+        }
+      ]
+    }
+  ]
+}

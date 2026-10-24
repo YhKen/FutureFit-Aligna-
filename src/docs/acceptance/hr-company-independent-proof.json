@@ -1,0 +1,25 @@
+{
+  "testedAt": "2026-10-23",
+  "method": "Independent Python Fraction, dot product and set cardinality; input from actual synthetic Firebase records; no matching JS imported",
+  "checks": 12,
+  "passed": true,
+  "coverage": 80,
+  "cosineRounded": 94,
+  "hrVisibleEvidenceCompleteness": 67,
+  "seekerVisibleEvidenceCompleteness": 33,
+  "notes": "Completeness differs by authorized visible fields. Same application coverage and cosine remain identical. Arithmetic checks do not establish professional validity.",
+  "assertions": [
+    "three frozen requirements",
+    "weights reconstructed from role classifications",
+    "candidate vector reconstructed from explicit shared skill names",
+    "exact fractional coverage",
+    "dot product 8",
+    "rounded cosine 94",
+    "per-skill contributions sum exactly to coverage",
+    "HR has two observed skill records",
+    "seeker receives one observed skill feedback",
+    "private conditions counted only where visible",
+    "HR completeness 67 percent",
+    "seeker visible completeness 33 percent"
+  ]
+}

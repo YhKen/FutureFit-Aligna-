@@ -1,0 +1,65 @@
+{
+  "testedAt": "2026-10-23T13:10:58.729Z",
+  "passed": true,
+  "deployment": "dpl_5eVpKdegsrVyF4xC6YbrkNca9CAh",
+  "readyState": "READY",
+  "team": "eva-005f",
+  "project": "aligna",
+  "productionUrl": "https://aligna-two.vercel.app/",
+  "assets": [
+    {
+      "path": "research-lab.html",
+      "sha256": "ec76a9796ef9c732f55117b66b6dad5237e2b484ff3a1a699af7e1923e5731d3",
+      "bytes": 511,
+      "exact": true
+    },
+    {
+      "path": "research-lab.css",
+      "sha256": "752f1ffb26e0a1e318273331fc807d5db5d437e972a0c330e7d7311c7e762318",
+      "bytes": 9179,
+      "exact": true
+    },
+    {
+      "path": "research-lab.js",
+      "sha256": "10f6d48ef535c356bed1d5dce3c56527ba13ebf5c8907dbc8b196af3e354fef7",
+      "bytes": 37503,
+      "exact": true
+    },
+    {
+      "path": "research-cloud-client.js",
+      "sha256": "421907b7ec8effe1c17ad111a2f3383fcc2afd200d784eec9666e426eafe82d2",
+      "bytes": 1492,
+      "exact": true
+    },
+    {
+      "path": "shared.js",
+      "sha256": "e3317a1dcd2623e99bd031499ceae9f063822ff745fa873b9df35053b50fd2a6",
+      "bytes": 20124,
+      "exact": true
+    },
+    {
+      "path": "applications.js",
+      "sha256": "8b8e03c15b53f649e8e22b2eecd1470aac8eb65155b5108160f28b74ed955cff",
+      "bytes": 34491,
+      "exact": true
+    },
+    {
+      "path": "research-prototype-guide.pdf",
+      "sha256": "4e67a0e73f95eac8fa77b38b8a63ae793a574c65f954f0ea362c9a3d130d26df",
+      "bytes": 152515,
+      "exact": true
+    }
+  ],
+  "unauthenticatedApiStatus": 401,
+  "applicationId": "PdRLSAORDGZLgUIucoVLhyll3Lz1_xIa9M0PKvNq3y2EYkres",
+  "jobId": "xIa9M0PKvNq3y2EYkres",
+  "sameSnapshotBothRoles": "PdRLSAORDGZLgUIucoVLhyll3Lz1_xIa9M0PKvNq3y2EYkres--browser-final-1792760693307",
+  "sourceDigest": "prototype-evidence:51347d0c02651088",
+  "seekerAskedPersisted": [
+    4
+  ],
+  "hrAskedSeparate": [],
+  "synthetic": true,
+  "professionalValidation": "pending",
+  "productionModelEnabled": false
+}

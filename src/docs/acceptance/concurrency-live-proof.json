@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-22T09:50:23.044Z",
+  "target": "project-d32d7",
+  "syntheticOnly": true,
+  "productionFunctionsReused": [
+    "saveJobRecord",
+    "applyJobRecord",
+    "saveReadBack"
+  ],
+  "users": 3,
+  "sessions": 4,
+  "checks": [
+    {
+      "name": "same-job-edit-race",
+      "passed": true,
+      "writesAccepted": 1,
+      "staleRejected": 1,
+      "version": 2
+    },
+    {
+      "name": "simultaneous-applications-and-double-submit",
+      "passed": true,
+      "uniqueApplications": 2,
+      "duplicateRejected": 1,
+      "duplicateReason": "already-applied",
+      "jobSnapshotVersion": 2
+    },
+    {
+      "name": "hr-realtime-multi-candidate",
+      "passed": true
+    },
+    {
+      "name": "parallel-private-save-readback",
+      "passed": true,
+      "concurrentWrites": 6,
+      "owners": 2,
+      "threeLocales": true
+    },
+    {
+      "name": "cross-user-read-write-isolation",
+      "passed": true,
+      "denied": 5
+    },
+    {
+      "name": "withdraw-versus-invitation-race",
+      "passed": true,
+      "withdrawals": 2,
+      "revivedConsent": 0
+    }
+  ],
+  "noRulesChanged": true,
+  "jobId": "UOMiaxPWgmpUViLLOQmi",
+  "allPassed": true,
+  "syntheticJobClosed": true
+}

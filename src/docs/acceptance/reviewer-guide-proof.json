@@ -1,0 +1,297 @@
+{
+  "testedAt": "2026-10-23T09:04:31.430Z",
+  "production": "https://aligna-two.vercel.app",
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "html": true,
+      "protectedRedirect": false
+    },
+    {
+      "path": "/account.html?role=seeker",
+      "status": 200,
+      "html": true,
+      "protectedRedirect": false
+    },
+    {
+      "path": "/account.html?role=hr",
+      "status": 200,
+      "html": true,
+      "protectedRedirect": false
+    },
+    {
+      "path": "/assessment.html?onboarding=1",
+      "status": 200,
+      "html": true,
+      "protectedRedirect": false
+    },
+    {
+      "path": "/games.html?onboarding=1",
+      "status": 200,
+      "html": true,
+      "protectedRedirect": false
+    },
+    {
+      "path": "/applications.html",
+      "status": 200,
+      "html": true,
+      "protectedRedirect": false
+    },
+    {
+      "path": "/candidates.html",
+      "status": 200,
+      "html": true,
+      "protectedRedirect": false
+    },
+    {
+      "path": "/company.html",
+      "status": 200,
+      "html": true,
+      "protectedRedirect": false
+    },
+    {
+      "path": "/formal-work.html",
+      "status": 200,
+      "html": true,
+      "protectedRedirect": false
+    },
+    {
+      "path": "/validation.html",
+      "status": 200,
+      "html": true,
+      "protectedRedirect": false
+    },
+    {
+      "path": "/transition.html",
+      "status": 200,
+      "html": true,
+      "protectedRedirect": false
+    },
+    {
+      "path": "/counterfactual.html",
+      "status": 200,
+      "html": true,
+      "protectedRedirect": false
+    }
+  ],
+  "news": [
+    {
+      "sector": "technology",
+      "status": 200,
+      "count": 0,
+      "updatedAt": null,
+      "version": "none",
+      "error": null
+    },
+    {
+      "sector": "finance",
+      "status": 200,
+      "count": 0,
+      "updatedAt": null,
+      "version": "none",
+      "error": null
+    },
+    {
+      "sector": "health",
+      "status": 200,
+      "count": 0,
+      "updatedAt": null,
+      "version": "none",
+      "error": null
+    },
+    {
+      "sector": "education",
+      "status": 200,
+      "count": 1,
+      "updatedAt": "2026-10-23T00:18:24.294Z",
+      "version": "90e92d9b87753148f5d5",
+      "error": null
+    },
+    {
+      "sector": "manufacturing",
+      "status": 200,
+      "count": 0,
+      "updatedAt": null,
+      "version": "none",
+      "error": null
+    },
+    {
+      "sector": "construction",
+      "status": 200,
+      "count": 1,
+      "updatedAt": "2026-10-23T00:18:24.346Z",
+      "version": "0769e6585a9c8a66de0b",
+      "error": null
+    },
+    {
+      "sector": "logistics",
+      "status": 200,
+      "count": 0,
+      "updatedAt": null,
+      "version": "none",
+      "error": null
+    },
+    {
+      "sector": "hospitality",
+      "status": 200,
+      "count": 0,
+      "updatedAt": null,
+      "version": "none",
+      "error": null
+    },
+    {
+      "sector": "creative",
+      "status": 200,
+      "count": 0,
+      "updatedAt": null,
+      "version": "none",
+      "error": null
+    },
+    {
+      "sector": "sales",
+      "status": 200,
+      "count": 0,
+      "updatedAt": null,
+      "version": "none",
+      "error": null
+    },
+    {
+      "sector": "agriculture",
+      "status": 200,
+      "count": 0,
+      "updatedAt": null,
+      "version": "none",
+      "error": null
+    },
+    {
+      "sector": "legal",
+      "status": 200,
+      "count": 0,
+      "updatedAt": null,
+      "version": "none",
+      "error": null
+    },
+    {
+      "sector": "science",
+      "status": 200,
+      "count": 0,
+      "updatedAt": null,
+      "version": "none",
+      "error": null
+    },
+    {
+      "sector": "service",
+      "status": 200,
+      "count": 0,
+      "updatedAt": null,
+      "version": "none",
+      "error": null
+    },
+    {
+      "sector": "business",
+      "status": 200,
+      "count": 1,
+      "updatedAt": "2026-10-23T00:18:24.558Z",
+      "version": "919019d23cf3eec3a47d",
+      "error": null
+    }
+  ],
+  "localGuide": {
+    "status": 200,
+    "exact": true,
+    "bytes": 251969,
+    "sha256": "022a88ac66d44ea22010bb8b464bef5f893a14f6147cc163efcf021d8c9d0bf9",
+    "pages": 14
+  },
+  "nodeTests": 141,
+  "firebasePairChecks": 11,
+  "newGuideDeployed": true,
+  "deploymentBlocker": null,
+  "scope": "Read-only route and news catalogue checks; existing verified synthetic accounts read back. This run does not re-register an account, re-run challenges, approve news or validate real human ratings.",
+  "deployment": "dpl_XXEm2pSED3J2iGFtr3TnSTDLZpfh",
+  "codeCommit": "2f2171a30ab0d4cd74db44c24bf49e35bc284aae",
+  "assets": [
+    {
+      "name": "review-guide.html",
+      "bytes": 610,
+      "sha256": "7739963b96de5e61dde2dab73ee650c8f64a3b6f8e590a8d636af0631a521ff2"
+    },
+    {
+      "name": "review-guide.css",
+      "bytes": 2355,
+      "sha256": "ccf5d1fd75478ca5653d10d1494674449cc0d1cb0893fa14ad8e98610f940e17"
+    },
+    {
+      "name": "review-guide.js",
+      "bytes": 8239,
+      "sha256": "c2545da5354d945a1689b9df41d7028486b62b2d3cd00d4d63fc9c0aeb90f67b"
+    },
+    {
+      "name": "project-guide.pdf",
+      "bytes": 251969,
+      "sha256": "022a88ac66d44ea22010bb8b464bef5f893a14f6147cc163efcf021d8c9d0bf9"
+    }
+  ],
+  "verifiedAt": "2026-10-23T09:07:18.441Z",
+  "browser": {
+    "views": [
+      {
+        "heading": "从同一份申请，检查两边。",
+        "language": "zh",
+        "noOverflow": true,
+        "pdf": "project-guide.pdf",
+        "width": 390
+      },
+      {
+        "heading": "Review both sides of the same application.",
+        "language": "en",
+        "noOverflow": true,
+        "pdf": "project-guide.pdf",
+        "width": 390
+      },
+      {
+        "heading": "Semak kedua-dua pihak bagi permohonan yang sama.",
+        "language": "ms",
+        "noOverflow": true,
+        "pdf": "project-guide.pdf",
+        "width": 390
+      },
+      {
+        "heading": "从同一份申请，检查两边。",
+        "language": "zh",
+        "noOverflow": true,
+        "pdf": "project-guide.pdf",
+        "width": 1280
+      },
+      {
+        "heading": "Review both sides of the same application.",
+        "language": "en",
+        "noOverflow": true,
+        "pdf": "project-guide.pdf",
+        "width": 1280
+      },
+      {
+        "heading": "Semak kedua-dua pihak bagi permohonan yang sama.",
+        "language": "ms",
+        "noOverflow": true,
+        "pdf": "project-guide.pdf",
+        "width": 1280
+      }
+    ],
+    "seekerDeepLinkRestored": true,
+    "seekerCloudApplicationVisible": true,
+    "seekerMissingSkillAdviceVisible": true,
+    "hrEntryPreservesApplication": true,
+    "hrBrowserLoginNotRepeated": true
+  },
+  "independentChecks": {
+    "matchOccupations": 923,
+    "matchPointChecks": 4550,
+    "formalWorkForms": 4,
+    "statisticsPointComparisons": 320,
+    "bootstrapReplicates": 2000,
+    "allPassed": true,
+    "scope": "Independent arithmetic and implementation checks only; no human validity claim."
+  }
+}

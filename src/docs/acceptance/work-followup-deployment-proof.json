@@ -1,0 +1,82 @@
+{
+  "deployment": "dpl_9srg2KRKEH9PGRnYCtwZuRUsndXp",
+  "date": "2026-10-22T12:41:05.701Z",
+  "checks": [
+    {
+      "file": "work-review.html",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "work-review.js",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "work-review.css",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "settings-profile.js",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "settings-profile.css",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "profile-preferences.js",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "shared.js",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "formal-work.js",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "interview-practice.js",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "seeker-enhancements.css",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "game-results.js",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "lib/formal-work-keys.js",
+      "status": 404,
+      "serverSourceNotStatic": true
+    },
+    {
+      "file": "lib/work-followup.js",
+      "status": 404,
+      "serverSourceNotStatic": true
+    },
+    {
+      "file": "api/work-followup",
+      "status": 401,
+      "noStore": true
+    },
+    {
+      "file": "api/work-samples",
+      "status": 401,
+      "noStore": true
+    }
+  ],
+  "allPassed": true
+}

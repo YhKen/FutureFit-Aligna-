@@ -1,0 +1,37 @@
+{
+  "at": "2026-10-22T10:57:47.638Z",
+  "deployment": "dpl_BhhR1ibxXXUofVd8mHAxEPX9CKT7",
+  "results": [
+    {
+      "file": "applications-api.js",
+      "status": 200,
+      "sourceMatches": true,
+      "sha256": "af97c727d02f6399128a6ac05b2bb6842f996bd26d0ec71492a393b81b3631a5"
+    },
+    {
+      "file": "jd-learning-data.js",
+      "status": 200,
+      "sourceMatches": true,
+      "sha256": "a72d4fce4fdc79daccc0536a5031b217785c550955234b67c40a347db7a5d0f2"
+    },
+    {
+      "file": "jd-learning-ui.js",
+      "status": 200,
+      "sourceMatches": true,
+      "sha256": "89d1f547d7454a79da362c08536a918b4c00bb4ca8f971feb9be8f4c6bf8a09c"
+    },
+    {
+      "file": "jd-sankey.js",
+      "status": 200,
+      "sourceMatches": true,
+      "sha256": "d32357d825f731c0d58fc835e421d9bc4bbbce9962d59c26f486a5536bd77ba6"
+    },
+    {
+      "file": "match-trace-panel.js",
+      "status": 200,
+      "sourceMatches": true,
+      "sha256": "4862df0ce580d63eafdf737af4d6c8860fb7c419cde436a9f5abe71eb8a6a983"
+    }
+  ],
+  "passed": true
+}

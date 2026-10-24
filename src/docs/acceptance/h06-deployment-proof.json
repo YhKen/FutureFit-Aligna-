@@ -1,0 +1,87 @@
+{
+  "deployment": "dpl_5WwyGNJUePkH9NdGV8hzyLZWVH4Q",
+  "checkedAt": "2026-10-22T15:30:25.837Z",
+  "checks": [
+    {
+      "file": "applications-api.js",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "applications.js",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "interview-time.js",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "formal-work-data.js",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "formal-work.css",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "formal-work.js",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "recruitment.css",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "work-review.js",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "shared.js",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "job-requirements.js",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "match-engine.js",
+      "status": 200,
+      "sourceIdentical": true
+    },
+    {
+      "file": "lib/formal-work-keys.js",
+      "status": 404,
+      "serverOnly": true
+    },
+    {
+      "file": "lib/formal-work-service.js",
+      "status": 404,
+      "serverOnly": true
+    },
+    {
+      "file": "lib/work-followup.js",
+      "status": 404,
+      "serverOnly": true
+    },
+    {
+      "file": "api/work-followup",
+      "status": 401,
+      "noStore": true
+    },
+    {
+      "file": "api/work-samples",
+      "status": 401,
+      "noStore": true
+    }
+  ],
+  "allPassed": true
+}

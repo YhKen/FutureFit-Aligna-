@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-22T10:10:33.001Z",
+  "realProduction": true,
+  "concurrentRequests": 8,
+  "accounts": 2,
+  "peakInFlight": 8,
+  "accountIsolationPassed": true,
+  "noStoreHeadersPassed": true,
+  "statuses": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200
+  ],
+  "maximumMs": 2211,
+  "medianMs": 1761,
+  "boundedAcceptanceOnly": true,
+  "notCapacityBenchmark": true
+}

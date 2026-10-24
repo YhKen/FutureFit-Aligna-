@@ -1,0 +1,13 @@
+{
+  "testedAt": "2026-10-23T09:36:32.475Z",
+  "checks": [
+    "owner saved four shortcuts with server timestamp",
+    "ordinary SDK readback preserves exact selected order",
+    "another HR account cannot read personal shortcuts",
+    "another account cannot overwrite personal shortcuts",
+    "stale window cannot overwrite the saved choice",
+    "fresh S003 preferences remain unset for first-visit browser test"
+  ],
+  "passed": true,
+  "scope": "Synthetic existing accounts; actual Firestore save/readback and cross-account denial. No assessment, game, application or HR evidence changed."
+}

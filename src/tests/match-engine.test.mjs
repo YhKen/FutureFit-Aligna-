@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';import {matchCandidate,interviewPlan,canonical,splitSkills} from '../match-engine.js';
+const job={skills:'Excel, SQL',softSkills:'Communication',location:'Kuala Lumpur',employmentType:'Full-time'};
+assert.equal(canonical('积极倾听'),canonical('Active Listening'));
+assert.equal(canonical('EXCEL'),canonical('Microsoft Excel'));
+assert.equal(splitSkills('SQL, sql, SQL').length,1);
+const c={skills:[{name:'excel',example:'Cleaned a synthetic workbook'}],location:''};
+const m=matchCandidate(job,c);assert.equal(m.coverage,40);assert.equal(m.examples,1);assert.equal(m.gaps.length,2);assert.equal(m.preference.location,null);
+assert.equal(matchCandidate(job,{skills:[]}).coverage,0);
+assert.equal(matchCandidate({skills:'',softSkills:''},c).coverage,null);
+assert.equal(matchCandidate(job,{skills:[{name:'Not SQL',example:'negative'}]}).coverage,0);
+assert.equal(matchCandidate(job,{skills:[{name:'Excel'},{name:'SQL'},{name:'沟通'}]}).coverage,100);
+assert.deepEqual(interviewPlan(job,c).common,interviewPlan(job,{skills:[]}).common);
+assert.equal(interviewPlan(job,c).followups.length,2);
+assert.equal(matchCandidate(job,{...c,gender:'female',age:65,personality:{N:5},gameScore:0}).coverage,m.coverage);
+console.log('PASS 12 matching checks: aliases, weights, missing data, no substring false matches, consistent interview core, sensitive-field invariance.');

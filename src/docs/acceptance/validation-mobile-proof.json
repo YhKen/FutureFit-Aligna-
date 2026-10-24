@@ -1,0 +1,351 @@
+{
+  "date": "2026-10-23",
+  "records": [
+    {
+      "client": 305,
+      "lang": "zh",
+      "locale": "zh",
+      "page": "owner",
+      "scroll": 305,
+      "smallControls": [],
+      "width": 320
+    },
+    {
+      "client": 305,
+      "lang": "en",
+      "locale": "en",
+      "page": "owner",
+      "scroll": 305,
+      "smallControls": [],
+      "width": 320
+    },
+    {
+      "client": 305,
+      "lang": "ms",
+      "locale": "ms",
+      "page": "owner",
+      "scroll": 305,
+      "smallControls": [],
+      "width": 320
+    },
+    {
+      "client": 305,
+      "lang": "zh",
+      "locale": "zh",
+      "page": "expert-form",
+      "scroll": 305,
+      "selects": 16,
+      "width": 320
+    },
+    {
+      "page": "expert-submit",
+      "locale": "zh",
+      "status": "已从 Firebase 读回确认。"
+    },
+    {
+      "client": 305,
+      "lang": "en",
+      "locale": "en",
+      "page": "expert-form",
+      "scroll": 305,
+      "selects": 16,
+      "width": 320
+    },
+    {
+      "page": "expert-submit",
+      "locale": "en",
+      "status": "Confirmed by reading back from Firebase."
+    },
+    {
+      "client": 305,
+      "lang": "ms",
+      "locale": "ms",
+      "page": "expert-form",
+      "scroll": 305,
+      "selects": 16,
+      "width": 320
+    },
+    {
+      "page": "expert-submit",
+      "locale": "ms",
+      "status": "Disahkan melalui bacaan semula Firebase."
+    },
+    {
+      "client": 305,
+      "lang": "zh",
+      "locale": "zh",
+      "page": "research-consent",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "page": "research-consent-submit",
+      "locale": "zh",
+      "status": "已从 Firebase 读回确认。"
+    },
+    {
+      "client": 305,
+      "lang": "en",
+      "locale": "en",
+      "page": "research-consent",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "page": "research-consent-submit",
+      "locale": "en",
+      "status": "Confirmed by reading back from Firebase."
+    },
+    {
+      "client": 305,
+      "lang": "ms",
+      "locale": "ms",
+      "page": "research-consent",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "page": "research-consent-submit",
+      "locale": "ms",
+      "status": "Disahkan melalui bacaan semula Firebase."
+    },
+    {
+      "page": "per-rater-consent",
+      "locale": "zh",
+      "status": "已从 Firebase 读回确认。"
+    },
+    {
+      "page": "per-rater-consent",
+      "locale": "en",
+      "status": "Confirmed by reading back from Firebase."
+    },
+    {
+      "client": 305,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44
+        },
+        {
+          "font": "16px",
+          "height": 44
+        },
+        {
+          "font": "16px",
+          "height": 44
+        },
+        {
+          "font": "16px",
+          "height": 44
+        }
+      ],
+      "headers": [
+        "事件",
+        "运单",
+        "时间",
+        "状态"
+      ],
+      "lang": "zh",
+      "locale": "zh",
+      "page": "blind-form",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "client": 305,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44
+        },
+        {
+          "font": "16px",
+          "height": 44
+        },
+        {
+          "font": "16px",
+          "height": 44
+        },
+        {
+          "font": "16px",
+          "height": 44
+        }
+      ],
+      "headers": [
+        "Event",
+        "Delivery",
+        "Time",
+        "Status"
+      ],
+      "lang": "en",
+      "locale": "en",
+      "page": "blind-form",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "client": 305,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44
+        },
+        {
+          "font": "16px",
+          "height": 44
+        },
+        {
+          "font": "16px",
+          "height": 44
+        },
+        {
+          "font": "16px",
+          "height": 44
+        }
+      ],
+      "headers": [
+        "Peristiwa",
+        "Penghantaran",
+        "Masa",
+        "Status"
+      ],
+      "lang": "ms",
+      "locale": "ms",
+      "page": "blind-form",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "page": "blind-submit",
+      "locale": "ms",
+      "status": "Disahkan melalui bacaan semula Firebase."
+    },
+    {
+      "page": "second-blind-submit",
+      "locale": "en",
+      "status": "Confirmed by reading back from Firebase."
+    },
+    {
+      "page": "research-withdrawal",
+      "locale": "zh",
+      "status": "已从 Firebase 读回确认。"
+    },
+    {
+      "page": "research-withdrawal",
+      "locale": "en",
+      "status": "Confirmed by reading back from Firebase."
+    },
+    {
+      "page": "research-withdrawal",
+      "locale": "ms",
+      "status": "Disahkan melalui bacaan semula Firebase."
+    },
+    {
+      "page": "rater-access-withdrawal",
+      "locale": "ms",
+      "status": "Disahkan melalui bacaan semula Firebase."
+    },
+    {
+      "page": "rater-access-withdrawal",
+      "locale": "en",
+      "status": "Confirmed by reading back from Firebase."
+    },
+    {
+      "client": 320,
+      "lang": "zh",
+      "locale": "zh",
+      "page": "seeker-review-after-withdrawal",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "client": 305,
+      "lang": "en",
+      "locale": "en",
+      "page": "seeker-review-after-withdrawal",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "client": 305,
+      "lang": "ms",
+      "locale": "ms",
+      "page": "seeker-review-after-withdrawal",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "client": 375,
+      "lang": "zh",
+      "locale": "zh",
+      "page": "owner-after-withdrawal",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "client": 375,
+      "lang": "zh",
+      "locale": "zh",
+      "page": "owner-after-withdrawal",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "page": "owner-revoke-expert",
+      "locale": "zh",
+      "status": "",
+      "apiAndFirestoreDenialVerified": true,
+      "statusReadBeforeAsyncCompletion": true
+    },
+    {
+      "client": 375,
+      "lang": "en",
+      "locale": "en",
+      "page": "owner-after-withdrawal",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "page": "owner-revoke-expert",
+      "locale": "en",
+      "status": "",
+      "apiAndFirestoreDenialVerified": true,
+      "statusReadBeforeAsyncCompletion": true
+    },
+    {
+      "client": 375,
+      "lang": "ms",
+      "locale": "ms",
+      "page": "owner-after-withdrawal",
+      "scroll": 375,
+      "width": 390
+    },
+    {
+      "page": "owner-revoke-expert",
+      "locale": "ms",
+      "status": "",
+      "apiAndFirestoreDenialVerified": true,
+      "statusReadBeforeAsyncCompletion": true
+    }
+  ],
+  "scope": "Actual Chromium CSS viewport testing; not physical iOS/Android/Safari certification",
+  "rawResponsesTranslated": false,
+  "humanExperts": 0,
+  "humanCases": 0,
+  "actualViewportVerified": true,
+  "noPageHorizontalOverflow": true,
+  "measuredViews": 19,
+  "measuredWidths": [
+    320,
+    390
+  ],
+  "threeLanguageExpertSubmissions": true,
+  "threeLanguageResearchConsentAndWithdrawal": true,
+  "twoBrowserIndependentRatings": true,
+  "expertAndRaterApiAndFirestoreRevocation": true,
+  "localeSwitchPreservesDraft": true,
+  "releaseDeployment": "dpl_LmR2TP2w2Jip3m9Hfg2uwf5RT1AL",
+  "physicalDevices": "pending",
+  "status": "passed-with-explicit-scope",
+  "functionalScope": "Core interactions at actual 320px; owner post-withdrawal views at actual 390px. Not every operation-language-width permutation."
+}

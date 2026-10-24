@@ -1,0 +1,50 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
+  "regions": [
+    "sin1"
+  ],
+  "functions": {
+    "api/trends.js": {
+      "maxDuration": 30
+    },
+    "api/news-sync.js": {
+      "maxDuration": 300
+    },
+    "api/news-review.js": {
+      "maxDuration": 300
+    },
+    "api/news-plan.js": {
+      "maxDuration": 60
+    },
+    "api/news-feed.js": {
+      "maxDuration": 30
+    },
+    "api/validation.js": {
+      "maxDuration": 300
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/news-sync",
+      "schedule": "0 0 * * *"
+    }
+  ]
+}
